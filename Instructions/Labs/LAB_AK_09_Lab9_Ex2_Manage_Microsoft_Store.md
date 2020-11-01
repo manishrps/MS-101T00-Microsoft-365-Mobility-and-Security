@@ -4,7 +4,7 @@ In this exercise, you will add five apps to Adatum's company store, and you will
 
 ### Task 1: Add apps to your private store 
 
-1. On LON-CL1, you should still have the **Microsoft Store for Business** tab open in your Edge browser. If so, select it now; otherwise, navigate to **https://www.microsoft.com/business-store** and sign in as **Holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your tenant ID provided by your lab hosting provider).
+1. On LON-CL1, you should still have the **Microsoft Store for Business** tab open in your Edge browser. If so, select it now; otherwise, navigate to **https://www.microsoft.com/business-store** and sign in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider).
 
 2. In the **Microsoft Store for Business**, you ended the previous exercise by renaming Adatum's private store and verifying the product apps that are available in it. In the menu bar at the top of the page, select **Shop for my group**. 
 
@@ -81,7 +81,7 @@ In this exercise, you will add five apps to Adatum's company store, and you will
 
 In this task, you are going to sign into the Microsoft Store for Business as one of Adatum’s employees, Joni Sherman. You’ll then verify that when Joni navigates to Adatum’s private store, she can see the 5 apps that Holly added to the private store, as well as the collection of apps that Holly created in the prior task. 
 
-1. Switch to LON-CL2 where you should be logged in as the **Admin** account, and into Microsoft 365 as Joni Sherman (**jonis@M365xZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**.
+1. Switch to LON-CL2 where you should be logged in as the **Admin** account, and into Microsoft 365 as Joni Sherman (**jonis@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**.
 
 2. If you are still logged into Microsoft 365 as another user, select the user ID in the upper right corner, select **Sign out,** and then close the other tabs in the browser. 
 
@@ -89,7 +89,7 @@ In this task, you are going to sign into the Microsoft Store for Business as one
 
 4. On the **Microsoft Store for Business** page, in the upper-right corner of the page, select **Sign in.** 
 
-5. If you are not signed in automatically as Joni Sherman, then enter **JoniS@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your tenant ID provided by your lab hosting provider) with a password of **Pa55w.rd**.
+5. If you are not signed in automatically as Joni Sherman, then enter **JoniS@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with a password of **Pa55w.rd**.
 
 7. In the **Microsoft Store for Business**, on the menu bar at the top of the page, select **Adatum private store.**
 
