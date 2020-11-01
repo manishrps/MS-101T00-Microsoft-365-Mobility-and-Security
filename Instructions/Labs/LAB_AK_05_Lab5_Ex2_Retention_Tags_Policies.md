@@ -8,7 +8,7 @@ In this next phase of your Adatum pilot project, you will access the Security & 
 
 1. You should still be logged into LON-CL1 as the **Admin** and into **Microsoft 365** as Holly Dickson.
 
-2. In Microsoft Edge, select the **Security and Compliance admin center** tab; if you closed this tab earlier, then open a new tab and go to https://Protection.office.com.
+2. In Microsoft Edge, select the **Security and Compliance admin center** tab; if you closed this tab earlier, then open a new tab and go to **https://protection.office.com**.
 
 3. In the **Security and Compliance admin center**, in the left-hand navigation pane, select **Information governance**, and then under it select **Archive**.
 
