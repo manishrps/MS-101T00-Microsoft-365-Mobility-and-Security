@@ -30,10 +30,10 @@ In this exercise you will create an Sensitvity label and add it to the default p
 
 2. In **Microsoft Edge**, open a new tab and enter the following URL in the address bar: **https://protection.office.com/**
 
-3. In the **Sign in** dialog box, enter **HOlly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant suffice ID username provided by your lab hosting provider) and then select **Next****.
+3. In the **Sign in** dialog box, enter **holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix username provided by your lab hosting provider) and then select **Next****.
 
-	**Important:** Your Microsoft 365 tenant came with a default system administrator account already created. The name of this user account is **MOD Administrator**. The user name that you just entered, **admin@M365xZZZZZZ.onmicrosoft.com**, is the user name for the MOD Administrator. 
-4. In the **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting provider for the **admin@M365xZZZZZZ.onmicrosoft.com** account and then select **Sign in**.
+	**Important:** Your Microsoft 365 tenant came with a default system administrator account already created. The name of this user account is **MOD Administrator**. The user name that you just entered, **admin@xxxxxZZZZZZ.onmicrosoft.com**, is the user name for the MOD Administrator. 
+4. In the **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting provider for the **admin@xxxxxZZZZZZ.onmicrosoft.com** account and then select **Sign in**.
 
 5. At this point you should be in the **Microsoft 365 Security & Complaince Admin center**. On the **Navigation pane** select **classification**, then select **Sensitivity Labels.**
 
@@ -125,7 +125,7 @@ Select **Done**.
 
 	- Name : **PII Policy**
 
-	- Description : *This policy is to detect and apply an encryption to emails and documents that have sensitive information such as ABA bank routing numbers and US social security numbers. the user must provide an explanation for removing the classification label.*
+	- Description : **This policy is to detect and apply an encryption to emails and documents that have sensitive information such as ABA bank routing numbers and US social security numbers. The user must provide an explanation for removing the classification label.**
 
 31. In the **Sensitivity Labels policy** window, under **Name your policy** select **Next**.
 
@@ -141,13 +141,11 @@ In this exercise you will use the Sensitivity label that you created in the prev
 
 2. In **Microsoft Edge**, open a new tab and enter the following URL in the address bar: **https://portal.office.com/** 
 
-3. then sign in as **AlexW@M365xZZZZZZ.onmicrosoft** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) and then select **Next**.
+3. then sign in as **AlexW@xxxxxZZZZZZ.onmicrosoft** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**.
 
 4. On the **Enter password** window, enter **Pa55w.rd** and select **Sign in**.
 
 5. Open **Word online,** select **Blank document**.
-	
-
 
 6. If the **Privacy** window appears, close it.
 
@@ -192,7 +190,7 @@ In the prior task, you created a Word document and protected it with a Sensitivt
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Alex Wilber**. 
 
-2. If you have **Outlook on the web** open in a tab in your **Edge** browser, then select it now and proceed to the next step; otherwise, if you have a tab with the **Microsoft Office Home** page, then select the tab, select **Outlook**, and then proceed to the next step. If you have neither tab open, then in a new tab enter **https://outlook.office365.com** and sign in as **AlexW@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider).
+2. If you have **Outlook on the web** open in a tab in your **Edge** browser, then select it now and proceed to the next step; otherwise, if you have a tab with the **Microsoft Office Home** page, then select the tab, select **Outlook**, and then proceed to the next step. If you have neither tab open, then in a new tab enter **https://outlook.office365.com** and sign in as **AlexW@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider).
 
 3. In **Outlook on the web**, select **New Message** in the upper left part of the screen.
 
@@ -212,7 +210,7 @@ In the prior task, you created a Word document and protected it with a Sensitivt
 
 6. Switch to LON-CL2. 
 
-7. In LON-CL2, you should be logged into **Outlook on the Web** as **Lynne Robbins** from a previous lab exercise. Sign out as Lynne and then navigate to **https://outlook.office365.com** and sign back in as Joni Sherman (**JoniS@M365xZZZZZZ.onmicrosoft.com**, where ZZZZZZ is the tenant suffix ID provided by your lab hosting provider) with a password of **Pa55w.rd**.
+7. In LON-CL2, you should be logged into **Outlook on the Web** as **Lynne Robbins** from a previous lab exercise. Sign out as Lynne and then navigate to **https://outlook.office365.com** and sign back in as Joni Sherman (**JoniS@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with a password of **Pa55w.rd**.
 
 8. In Joni’s **Inbox** in **Outlook on the web**, select the email that Holly just sent her, and then select **Open** file to open it. 
 
@@ -228,7 +226,7 @@ In the prior task, you created a Word document and protected it with a Sensitivt
 
 14. Because the file is RMS protected and no AIP unified labeling client is installed on LON-CL2, you need to use the native RMS features of Word Microsoft Apps and register this installation to Joni’s account. <br/>
 
-	‎In the **Sign in** window, enter **JoniS@M365xZZZZZZ.onmicrosoft.com** and then select **Next.** 
+	‎In the **Sign in** window, enter **JoniS@xxxxxZZZZZZ.onmicrosoft.com** and then select **Next.** 
 
 15. In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in.**
 
@@ -244,7 +242,7 @@ In the prior task, you created a Word document and protected it with a Sensitivt
 
 20. You will now test what happens when you attempt to open the document that was sent to your personal email address. Use your phone or classroom PC to access your personal email address. Open the email that you (in the role of Holly) just sent to your personal email address, and then attempt to open the attached file. 
 
-21. You should receive a messaging indicating that you are not signed into Office with an account that has permission to access the document. You can optionally sign in with an account that has permission to access the file, or request access from the **AlexW@M365xZZZZZZ.onmicrosoft.com** account, or Cancel out of the operation. Select **Cancel**.  <br/>
+21. You should receive a messaging indicating that you are not signed into Office with an account that has permission to access the document. You can optionally sign in with an account that has permission to access the file, or request access from the **AlexW@xxxxxZZZZZZ.onmicrosoft.com** account, or Cancel out of the operation. Select **Cancel**.  <br/>
 
 	‎Since only Joni was assigned permission to read the document, you just verified that Azure Information Protection protected the document based on the PII policy parameters that you configured.
 
