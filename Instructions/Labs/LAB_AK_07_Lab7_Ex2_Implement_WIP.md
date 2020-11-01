@@ -8,9 +8,9 @@ In this lesson you will create a WIP policy and assign it to the WIP Users group
 
 1. Switch to LON-CL1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson.** 
 
-2. In **Microsoft Edge**, if you have the Azure portal open in a tab, then select it now; otherwise, enter **https://endpoint.microsoft.com/** and, if necessary, sign in as **holly@M365xZZZZZZ.onmicrosoft.com.**
+2. In **Microsoft Edge**, if you have the Azure portal open in a tab, then select it now; otherwise, enter **https://endpoint.microsoft.com/** and, if necessary, sign in as **holly@xxxxxZZZZZZ.onmicrosoft.com.**
 
-3. In the **Microsoft Endpoint manager Admin center**, select **Apps* then  select **App protection policies** and then select **Create Policy** for **Windows 10**.
+3. In the **Microsoft Endpoint Manager admin center**, select **Apps**, select **App protection policies**, and then select **Create Policy** for **Windows 10**.
 
 4. In the **Create policy** window, the steps to create a policy are displayed at the top of the page. You are currently in **Step 1 - Basics**. Enter the following information:
 
@@ -33,7 +33,7 @@ In this lesson you will create a WIP policy and assign it to the WIP Users group
 
 	- Windows Information Protection mode: **Block**
 	
-	- Corporate identity: verify that it displays **M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your tenant ID provided by your lab hosting provider) and then select **OK.**
+	- Corporate identity: verify that it displays **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **OK.**
 
 9. Select **Next**.
 
@@ -66,7 +66,7 @@ In this exercise you will enroll your LON-CL2 device to Azure AD. You will then 
 
 3. In the **Access work or school**  window, select **Connect**.
 
-4. In the **Set up a work or school account**, enter **JoniS@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant suffix ID provided by your lab hosting provider) in the **Email address** field and then select **Next**.
+4. In the **Set up a work or school account**, enter **JoniS@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) in the **Email address** field and then select **Next**.
 
 5. On the **Enter password** window, enter **Pa55w.rd** and select **Sign in**.
 
@@ -82,7 +82,7 @@ In this exercise you will enroll your LON-CL2 device to Azure AD. You will then 
 
 11. Select **File** from the menu bar above the ribbon, select **Save As** on the left menu, and then select **Browse** from the **Save As** menu.
 
-12. In the **File Explorer** window, you should see a **lock symbol** that appears to the left of the **File name** field. Next to this lock symbol is a drop-down arrow. Select this arrow, and in the menu that appears, select **Work (m365xZZZZZZ.onmicrosoft.com).**
+12. In the **File Explorer** window, you should see a **lock symbol** that appears to the left of the **File name** field. Next to this lock symbol is a drop-down arrow. Select this arrow, and in the menu that appears, select **Work (xxxxxZZZZZZ.onmicrosoft.com).**
 
 13. Accept the default file name **Protected business content.docx**, change the file path to your **Documents** folder and select **Save**.
 
