@@ -5,7 +5,7 @@ In this exercise you will configure and test an alert that will notify Lynne Rob
 
 ### Task 1 – Create a Mailbox Permission Alert
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **Admin** account and into Microsoft 365 as Holly Dickson (**holly@M365xZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **Admin** account and into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
 
 2. In the **Microsoft 365 Security &amp; Compliance center**, in the left-hand navigation pane, select **Alerts,** and then under it, select **Alert policies**.
 
@@ -76,7 +76,7 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 11.  Once you’re signed out, enter the following URL in the address bar: **https://outlook.office365.com**
 
-12. In the **Sign in** window, enter **LynneR@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant ID provided by your lab hosting provider) and then select **Next**.
+12. In the **Sign in** window, enter **LynneR@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**.
 
 13. In the **Enter Password** window, enter **Pa55w.rd** as the password and select **Sign in**, and then select **Yes** to stay signed in. 
 
