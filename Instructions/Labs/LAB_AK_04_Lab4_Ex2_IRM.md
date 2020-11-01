@@ -34,7 +34,7 @@ In the prior exercise, you set up Information Rights Management in Exchange Onli
 
 13. In your **Edge** browser enter the following URL in the address bar: **https://outlook.office365.com**. 
 
-14. In the **Pick an Account** window, only Lynne's account appears. Select **Use another account** and log in as **AlexW@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) with a password of **Pa55w.rd**.<br/>
+14. In the **Pick an Account** window, only Lynne's account appears. Select **Use another account** and log in as **AlexW@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with a password of **Pa55w.rd**.<br/>
 
 15. Verify that Alex received the email that you sent from Holly that is IRM protected. IRM protected emails display a lock icon to the right of the message. Select the message to display it in the right-hand pane.
 
@@ -67,7 +67,7 @@ You will begin by having Holly create a new SharePoint site collection. You will
 
 	- Title: **Marketing**  
 
-	- Web Site Address: The web site URL will be **https://m365xZZZZZZ.sharepoint.com/sites/marketing**. As you can see, the address is broken into 3 fields. The first field displays the **https://m365xZZZZZZ.sharepoint.com** portion of the URL, and the second field display the **/sites/** portion. Do not change these fields. In the third field, which is blank, enter **marketing**.
+	- Web Site Address: The web site URL will be **https://xxxxxZZZZZZ.sharepoint.com/sites/marketing**. As you can see, the address is broken into 3 fields. The first field displays the **https://xxxxxZZZZZZ.sharepoint.com** portion of the URL, and the second field display the **/sites/** portion. Do not change these fields. In the third field, which is blank, enter **marketing**.
 
 	- Language: select your language
 
@@ -75,7 +75,7 @@ You will begin by having Holly create a new SharePoint site collection. You will
 
 	- Time zone: select the appropriate time zone in which the team site is located 
 
-	- Administrator: Enter **Holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) and then select the **Check Names** icon to the right of the field; once the username is validated, it will be replaced with **Holly Dickson.**
+	- Administrator: Enter **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select the **Check Names** icon to the right of the field; once the username is validated, it will be replaced with **Holly Dickson.**
 
 	- Server Resource Quota: leave the default value of **300**
 
@@ -83,7 +83,7 @@ You will begin by having Holly create a new SharePoint site collection. You will
 
 8. If the new **Marketing** site collection does not appear in the **Site Collections** list after a couple of minutes, select the **Refresh** icon to the left of the address bar. If it still doesn't appear, wait another minute or two and refresh the list again. Continue until the new site collection appears. 
 
-9. In your web browser, open a new tab and enter the following URL in the address bar: **https://M365xZZZZZZ.sharepoint.com/sites/marketing** (where ZZZZZZ is your tenant ID provided by your lab hosting provider)
+9. In your web browser, open a new tab and enter the following URL in the address bar: **https://xxxxxZZZZZZ.sharepoint.com/sites/marketing** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider)
 
 10. On the **Marketing** site, in the left-hand navigation pane, select **Documents.** 
 
@@ -125,7 +125,7 @@ You will begin by having Holly create a new SharePoint site collection. You will
 
 28. In the **Outlook on the Web** tab, open the email that you just received from Holly that contains the file Holly created earlier. Save the file to the **Documents** folder on your **C** drive.
 
-29. ‎In the browser, open a new tab and enter the following URL in the address bar to navigate directly to the Marketing site: **https://M365xZZZZZZ.sharepoint.com/sites/marketing** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider)
+29. ‎In the browser, open a new tab and enter the following URL in the address bar to navigate directly to the Marketing site: **https://xxxxxZZZZZZ.sharepoint.com/sites/marketing** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider)
 
 30. If a **We've got a new look** window appears, select **NOT NOW**.
 
