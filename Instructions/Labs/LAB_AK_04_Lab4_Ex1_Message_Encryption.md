@@ -27,7 +27,7 @@ In this task you will use Windows PowerShell to access Exchange Online and then,
 	
 	**Connect-MsolService**  ‎
 
-8. A new window will appear requesting your credentials. Sign in as **Holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) with a password of **Pa55w.rd**.   
+8. A new window will appear requesting your credentials. Sign in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with a password of **Pa55w.rd**.   
 	
 9. Running unsigned PowerShell scripts from remote computers requires changing the execution policy for PowerShell. You should run the following command that changes the Execution Policy for this PC to **unrestricted**, which sets access to the external authorization for this PC so that it can connect to Microsoft online and load all configuration files and run all scripts:   <br/>
 
@@ -39,7 +39,7 @@ In this task you will use Windows PowerShell to access Exchange Online and then,
 
 	**&dollar;Cred = Get-Credential** <br/>
 	
-12. A **Windows PowerShell credential request** window will appear. Sign in as **Holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) and a password of **Pa55w.rd**.  
+12. A **Windows PowerShell credential request** window will appear. Sign in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and a password of **Pa55w.rd**.  
 	
 13. You must then run the following command to create a PSSession (titled $Session) that establishes a remote connection to Exchange Online through PowerShell. When you create a PSSession, Windows PowerShell establishes a persistent connection to the remote computer. Without the -Credential parameter that invokes the $Cred macro from the prior step, this command would prompt you for the credentials of the user authorizing this command. In this case, by invoking the $Cred macro, it applies Holly’s username and password.<br/>
 
@@ -65,7 +65,7 @@ In this task you will use Windows PowerShell to access Exchange Online and then,
 
 17. Now that Azure RMS is enabled, you should run the **Test-IRMConfiguration** cmdlet to test Information Rights Management (IRM) configuration and functionality, including availability of an Active Directory RMS server, pre-licensing, and journal report decryption. To perform this test, run the following command to test the IRM configuration for messages sent from Holly Dickson:<br/>
 
-	**Test-IRMConfiguration -Sender Holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) 
+	**Test-IRMConfiguration -Sender Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) 
 
 	**Note:** The results should appear as follows:  
 	
@@ -95,7 +95,7 @@ In this task you will use Windows PowerShell to access Exchange Online and then,
 
 In this task, you will create an encryption rule for messages inside your Exchange Online environment by using the Exchange admin center. In the next task, you will do the same thing but using PowerShell instead. 
 
-1. On the LON-CL1 VM, you should still be logged into the **Microsoft 365 admin center** as **Holly Dickson**. If you closed your Edge browser or the **Microsoft 365 admin center** tab, then in your Edge browser navigate to **https://portal.office.com**, sign in as **Holly@M365xZZZZZZ.onmicrosoft.com**, and select **Admin**. 
+1. On the LON-CL1 VM, you should still be logged into the **Microsoft 365 admin center** as **Holly Dickson**. If you closed your Edge browser or the **Microsoft 365 admin center** tab, then in your Edge browser navigate to **https://portal.office.com**, sign in as **Holly@xxxxxZZZZZZ.onmicrosoft.com**, and select **Admin**. 
 
 2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** (if necessary), and then under **Admin centers**, select **Exchange**. This will open the Exchange admin center.
 
