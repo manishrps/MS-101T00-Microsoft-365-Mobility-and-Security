@@ -8,13 +8,13 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you have Micro
 
 In this task, you will begin by installing the Microsoft Store for Business on your LON-CL1 PC. You will then configure it so that apps from the Microsoft Store for Business will be allowed to run on devices that Windows Defender Device Guard is protecting.
 
-1. Switch to LON-CL1, where you should still be logged in as the **Admin** and into Microsoft 365 as Holly Dickson (**holly@M365xZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
+1. Switch to LON-CL1, where you should still be logged in as the **Admin** and into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
 
 2. In your Edge browser, open a new tab and enter the following URL in the address bar: **https://www.microsoft.com/business-store** 
 
 3. This opens the **Microsoft Store for Business**. In the top-right corner, select **Sign in**. 
 
-4. If you are not signed in automatically, enter **Holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your tenant ID provided by your lab hosting provider) in the **Sign in** window and then select **Next.**
+4. If you are not signed in automatically, enter **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) in the **Sign in** window and then select **Next.**
 
 5. On the **Microsoft Store for Business** page, in the menu bar at the top of the page, select **Shop for my group**. 
 
