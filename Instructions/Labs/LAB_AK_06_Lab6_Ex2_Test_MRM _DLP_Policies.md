@@ -8,7 +8,7 @@ In this exercise, you will send an email from Holly Dickson to one of your test 
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. In **Microsoft Edge**, If you have an **Outlook on the web** tab open for Holly, then select it now; otherwise, open a new tab and navigate to **https://outlook.office365.com** and then if necessary, sign in as **Holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your tenant ID provided by your lab hosting provider) using a password of **Pa55w.rd.** <br/>
+2. In **Microsoft Edge**, If you have an **Outlook on the web** tab open for Holly, then select it now; otherwise, open a new tab and navigate to **https://outlook.office365.com** and then if necessary, sign in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) using a password of **Pa55w.rd.** <br/>
 
 	If **Outlook on the web** was already open, then verify that you are logged in as **Holly** by checking the user icon in the upper right corner (the **HD** circle). If Outlook was open for any other user, then close the tab and repeat the instructions in this step to open Outlook on the Web for Holly.
 
@@ -34,7 +34,7 @@ In this exercise, you will send an email from Holly Dickson to one of your test 
 
 10. You want to sign into **Outlook on the web** as **Lynne Robbins.** If the **Pick an account** window appears, Lynne’s account won’t appear since she hasn’t signed in before. Therefore, select **Use another account**. 
 
-11. In the **Sign in** window, enter **LynneR@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) and then select **Next.**
+11. In the **Sign in** window, enter **LynneR@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next.**
 
 12. In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**.
 
@@ -75,7 +75,7 @@ However, the email will be blocked if two or more IP addresses are discovered in
 
 Therefore, when you send an email with two IP addresses in this task, all you can do is verify that the email message is blocked. The policy tip will not display; therefore, you will be unable to override the blockage and send the email. While we wanted you to experience creating mail transport rules in the earlier lab, we also knew this would not allow you to see policy tips in this lab. But it was felt that learning how to create mail transport rules in the earlier lab was worth this minor inconvenience in this lab. 
 
-1. Switch to LON-CL1, where you should still be logged into Microsoft 365 as Holly Dickson (**holly@M365xZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
+1. Switch to LON-CL1, where you should still be logged into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
 
 2. You will now send an email from Holly to Lynne, and you will include an IP address in the body of the email. In **Microsoft Edge**, the **Outlook on the web** tab should still be open for Holly. If necessary, select the **Outlook on the web** tab.
 
