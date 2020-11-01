@@ -26,7 +26,7 @@ To test archiving and retention in your Adatum pilot project, you will create a 
 
 	- Group email address: **wipusers**
 
-	- Group email address domain: to the right of the group email address alias is the email address domain. **M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) should be displayed here. Select this field so enable the **Next** button but do not change its value.
+	- Group email address domain: to the right of the group email address alias is the email address domain. **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) should be displayed here. Select this field so enable the **Next** button but do not change its value.
 
 7. Select **create group** and then select **Close**. Note the warning on the **New group created** page that indicates it can take up to an hour for the group to appear in the Groups list. Our testing experience has shown that the group normally appears within a few minutes.
 
