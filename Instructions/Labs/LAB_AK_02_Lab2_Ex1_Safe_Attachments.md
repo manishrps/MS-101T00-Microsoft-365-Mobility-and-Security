@@ -10,7 +10,7 @@ In this task, you will turn on Windows Defender for Office 365, which provides a
 
 1. You should still be logged into your Client 1 VM as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 
-2. After finishing the previous task, you should still be in the **Office 365 Security &amp; Compliance center**. If not, in your browser, enter **https://protection.office.com.**
+2. In your Edge browser, select the **Microsoft 365 admin center** tab. In the left-hand navigation pane, under **Admin centers**, select **Security**. This will open a new tab in your browser for the **Office 365 Security &amp; Compliance center**. 
 
 3. In the **Office 365 Security &amp; Compliance center**, in the left-hand navigation pane select **Threat Management** and then select **Policy**.
 
@@ -23,7 +23,7 @@ In this task, you will turn on Windows Defender for Office 365, which provides a
     - **Turn on ATP for SharePoint, OneDrive and Microsoft Teams** - set the toggle switch to **On** (this enables Windows Defender for Office 365, formerly known as Advanced Threat Protection, or ATP)
     - **Turn on Safe Documents for Office clients** - set the toggle switch to **On**
 
-7. On the **Safe attachements** window, select **+Create** on the menu bar to initiate the New Safe Attachments Policy wizard.
+7. On the **Safe attachements** window, select **+Create** on the menu bar to initiate the **New Safe Attachment Policy** wizard.
 
 8. On the **Name your policy** page, enter **AttachmentPolicy1** in the **Name** field and then select **Next**.
 
@@ -47,7 +47,7 @@ In this task, you will turn on Windows Defender for Office 365, which provides a
 
 18. If a **Security & Compliance** dialog box appears with a message about updating your organization settings, select **Yes**.
 
-      It may take a minute or so to update the organization settings. Once the settings are updated, the safe attachment policy that you created will appear in the Safe attachments list. 
+      It may take a minute or so to update the organization settings. Once the settings are updated, the **AttachmentPolicy1** policy that you created will appear in the Safe attachments list. 
 
 17. Leave the Client 1 VM and the Security &amp; Compliance Center tab open for the next lab.
 
