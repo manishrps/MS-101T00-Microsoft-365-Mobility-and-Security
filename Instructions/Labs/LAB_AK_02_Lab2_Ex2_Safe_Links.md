@@ -1,6 +1,6 @@
 # Module 2 - Lab 2 - Exercise 2 - Implement a Safe Links Policy
 
-In this first phase of your pilot project for Adatum, you want to create a Safe Links policy and then validate the policy to ensure that it works properly.
+Now that you have created a Safe Attachments policy for Adatum, you want to create a Safe Links policy and then validate the policy to ensure that it works properly.
 
 
 ### Task 1 – Create a Safe Links Policy
@@ -13,7 +13,7 @@ In this task, you will add the **tailspintoys.com** URL to the company-wide list
 
 3. In the **Security &amp; Compliance center**, in the left-hand navigation pane, the **Threat Management** group should still be expanded from the prior task; if not, expand it now. Under this group, select **Policy**.
 
-4. In the **Policy** window, select the **ATP Safe Links** tile.
+4. In the **Policy** window, double-click the **ATP Safe Links** tile.
 
 5. In the **Safe Links** window, note that there are two sections of policies that can be created: **Policies that apply to the entire organization**, and below that, **Policies that apply to specific users.**
 
