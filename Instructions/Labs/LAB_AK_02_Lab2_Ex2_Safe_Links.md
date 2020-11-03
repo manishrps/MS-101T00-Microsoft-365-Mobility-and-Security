@@ -33,42 +33,17 @@ In this task, you will add the **tailspintoys.com** URL to the company-wide list
 
 9. On the **Applied to** page, select **+Add a condition**. In the drop-down menu that appears, under the **Applied if...** section, select **The recipient domain is**
 
+10. In **The recipient domain is** section, select the **Choose** link to choose a domain. 
 
+11. In **The recipient domain is** window, select the **+Add** button. In the list of domains that appear, select the check box for the **xxxxxZZZZZZ.onmicrosoft.com** domain (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), select **Add**, and then select **Done**.
 
+12. On the **Applied to** page, select **Next**.
 
+13. On the **Review your settings** page, review the options that you selected. If any need to be corrected, select the appropriate **Edit** option and make the correction. If they all appear correct, select **Finish**.
 
+14. Once the **LinkPolicy1** policy is created, it will appear in the Safe links list. 
 
-5. In the **Safe Links** window, note that there are two sections of policies that can be created: **Policies that apply to the entire organization**, and below that, **Policies that apply to specific users.**
-
-6. Under the **Policies that apply to the entire organization** section, there is one policy already defined for this group, which is the **Default** policy. Since this policy is already selected, select the **pencil (edit)** icon on the menu bar above the list.
-
-7. In the **Safe links policy for your organization** window, under the **Settings that apply to content across Office 365** section, you can enter any URLs that you want to have blocked. For Adatum's pilot project, in the **Enter a valid URL** field, enter **http://tailspintoys.com** and then select the **plus (+)** sign to add it to the policy.
-
-8. Select **Save**, and then in the dialog box indicating it was successfully saved, select **OK**.
-
-9. Scroll down to **Policies that apply to specific users** section and select the **plus (+)** sign to add a new user policy.
-
-10. In the **new safe links policy** window, enter the following information:
-
-    - Name: **All company users**
-
-    - Select the action for unknown potentially malicious URLs in messages: Select **On – URLs will be rewritten and checked against a list of known malicious links when user clicks on the link**.
-
-    - Select the action for unknown potentially malicious URLs within Microsoft Teams: Leave set to **Off**
-
-    - Apply real-time URL scanning for suspicious links and links that point to files: Select this check box.
-
-    - Wait for URL scanning to complete before delivering the message: Select this check box.
-
-    - Apply safe links to email messages sent within the organization: Select this check box.
-
-    - In the **Applied To** section, below the **If…** condition, select the drop-down arrow in the **Select one** field and then select **The recipient domain is**.
-
-    - In the pop-up window that appears, the only available domain is **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). Select **add-&gt;** and then select **OK.**
-
-11. Select **Save** to close the window, and then select **OK** in the dialog box once the information is successfully saved.
-
-12. Leave the Office 365 Security &amp; Compliance tab open for use in Task 3.
+15. Leave the Office 365 Security &amp; Compliance tab open for the next task.
 
 ### Task 2 – Validate the Safe Links Policy
 
