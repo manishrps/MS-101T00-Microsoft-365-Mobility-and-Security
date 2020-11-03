@@ -110,17 +110,29 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you have been 
 
 Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user account has not been set up for her, she initially signed into Microsoft 365 as the MOD Administrator account (the default Global admin) in the previous lab (you did this when you began your role as Holly and signed in using the tenant admin account). In this task, you will continue in your role as Holly Dickson where you should still be logged into Microsoft 365 as the MOD Administrator. In this lab, Holly will create a personal Microsoft 365 user account for herself, and she will assign her user account the Microsoft 365 Global Administrator role, which gives her the ability to perform all administrative functions within Microsoft 365. Following this task, you will perform all remaining labs using Holly's persona. 
 
-**Important:** As a best practice in your real-world deployment, you should always write down the first Global admin account’s credentials (in this lab, the MOD Administrator account, whose username is admin@xxxxxZZZZZZ.onmicrosoft.com, where xxxxxZZZZZZ is the tenant prefix assigned by your lab hosting provider) and store it away for security reasons. **This account should be a non-personalized identity** that owns the highest privileges possible in a tenant. It should **not** be MFA activated (because it is not personalized). Because the username and password for this account are typically shared among several users, this first Global admin is a perfect target for attacks; therefore, it is always recommended that organizations create personalized service admin accounts and keep as few Global admins as possible. For those Global admins that you do create in your real-world deployment, they should each be mapped to a single identity (such as Holly Dickson), and they should each have Multi-Factor Authentication (MFA) enforced. That being said, you will not turn on MFA for Holly's account because lab time is limited in this training course and we do not want to take up lab time by making you log in using a second authentication method every time Holly logs in.
+**Important:** As a best practice in your real-world deployment, you should always write down the first Global admin account’s credentials (in this lab, the MOD Administrator account, whose username is admin@xxxxxZZZZZZ.onmicrosoft.com, where xxxxxZZZZZZ is the tenant prefix assigned by your lab hosting provider) and store it away for security reasons. **This account should be a non-personalized identity** that owns the highest privileges possible in a tenant. It should **not** be MFA activated (because it is not personalized). Because the username and password for this account are typically shared among several users, this first Global admin is a perfect target for attacks; therefore, it is always recommended that organizations create personalized service admin accounts and keep as few Global admins as possible. For those Global admins that you do create in your real-world deployment, they should each be mapped to a single identity (such as Holly Dickson), and they should each have Multi-Factor Authentication (MFA) enforced. That being said, you will not turn on MFA for Holly's account because time is limited in this training course and we do not want to take up lab time by making you log in using a second authentication method every time Holly logs in.
+
+**Note:** While your lab hosting provider has created a custom domain for Adatum (xxxUPNxxx.xxxCustomDomainxxx.xxx), they did not finish the setup process for the domain; in a later lab exercise, you will finish provisioning the new domain. That being said, your lab hosting provider should have left your Microsoft 365 tenant's **xxxxxZZZZZ.onmicrosoft.com** domain as the default domain for Adatum. In this task, you will begin by verifying whether this domain is listed as the default domain. If your lab hosting provider set the new custom domain as the default, you will change it to the xxxxxZZZZZZ.onmicrosoft.com domain. This has implications in that when you add a new user account (such as the one for Holly Dickson that you will add in this task) or email addresses for new groups (later in this exercise), you want the xxxxxZZZZZZ.onmicrosoft.com domain to show as the default domain for the user and groups.
 
 1. On the LON-CL1 VM, the **Microsoft 365 admin center** should still be open in your Microsoft Edge browser from the prior lab, and you should be signed into Microsoft 365 as the **MOD Administrator**. 
 
-2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users** and then select **Active users**. 
+2. You will begin by verifying which domain is listed as the default domain for Adatum. In the **Microsoft 365 admin center**, in the left-hand navigation pane, under the **Settings** group select **Domains**.
 
-3. In the **Active users** list, you will see the list of existing user accounts that were created for you by your lab hosting provider. In this task, you are taking on the role of the MOD Administrator, and as such, you must create a user account for Holly Dickson, who is Adatum's new Enterprise Administrator. In doing so, you will assign Holly the Microsoft 365 role of Global Administrator, which gives Holly global access to most management features and data across Microsoft online services. 
+3. On the **Domains** page, you should see the two domains created by your lab hosting provider - the **xxxxxZZZZZZ.onmicrosoft.com** domain and the **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain. <br/>
 
-4. In the **Active Users** window, select **Add a user** that appears on the menu bar above the list of active users. 
+	If the **xxxxxZZZZZZ.onmicrosoft.com*** domain displays **(Default)** next to the domain name, then skip to the next step as no change is needed. <br/>
 
-5. In the **Set up the basics** window, enter the following information:
+	However, if the **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain displays **(Default)** next to the domain name, then select the circle with the check mark to the left of the **xxxxxZZZZZZ.onmicrosoft.com** domain and then select **Set as default** on the menu bar. <br/>
+	
+	In the **Set this domain as default?** dialog box that appears, select **Set as default**. In the list of domains, the **xxxxxZZZZZZ.onmicrosoft.com** domain should now display **(Default)** next to the domain name.
+
+4. You will now create a Microsoft 365 user account for Holly Dickson. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users** and then select **Active users**. 
+
+5. In the **Active users** list, you will see the list of existing user accounts that were created for you by your lab hosting provider. In this task, you are taking on the role of the MOD Administrator, and as such, you must create a user account for Holly Dickson, who is Adatum's new Enterprise Administrator. In doing so, you will assign Holly the Microsoft 365 role of Global Administrator, which gives Holly global access to most management features and data across Microsoft online services. 
+
+6. In the **Active Users** window, select **Add a user** that appears on the menu bar above the list of active users. 
+
+7. In the **Set up the basics** window, enter the following information:
 
 	- First name: **Holly**
 
@@ -130,7 +142,7 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 	- Username: **Holly** <br/>
 	
-		‎**IMPORTANT:** To the right of the **Username** field is the domain field. It should be prefilled with the **xxxxxZZZZZZ.onmicrosoft.com** cloud domain (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). However, if your lab hosting provider set the custom **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain as Adatum's default domain, then that will appear here instead. If that happens, select the drop-down arrow in this domain field and select **xxxxxZZZZZZ.onmicrosoft.com**.<br/>
+		‎**IMPORTANT:** To the right of the **Username** field is the domain field. It should be prefilled with the **xxxxxZZZZZZ.onmicrosoft.com** cloud domain (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). However, if your lab hosting provider set the custom **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain as Adatum's default domain and you did not change the default domain to the **xxxxxZZZZZZ.onmicrosoft.com** domain earlier in this task, then the custonm domain will appear here instead. If that happens, select the drop-down arrow in this domain field and select **xxxxxZZZZZZ.onmicrosoft.com**. You should also perform steps 2-3 to change **xxxxxZZZZZZ.onmicrosoft.com** to the default domain as this is needed in the next task. <br/>
 	
 		After configuring this field, Holly’s username should appear as:<br/>
 
@@ -142,33 +154,33 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 	- Clear (uncheck) the **Require this user to change their password when they first sign in** check box 
 
-6. Select **Next**.
+8. Select **Next**.
 
-7. In the **Assign product licenses** window, enter the following information:
+9. In the **Assign product licenses** window, enter the following information:
 
 	- Select location: **United States**
 
 	- Licenses: The **Assign user a product license** option should be selected by default; under this option, select **Office 365 E5** 
 
-8. Select **Next.**
+10. Select **Next.**
 
-9. In the **Optional settings** window, select the drop-down arrow to the right of **Roles.** 
+11. In the **Optional settings** window, select the drop-down arrow to the right of **Roles.** 
 
-10. In the **Roles** section, the **User (no admin center access)** option is selected by default. Select the **Admin center access** option instead. By doing so, the most commonly used Microsoft 365 administrator roles are displayed below this option. 
+12. In the **Roles** section, the **User (no admin center access)** option is selected by default. Select the **Admin center access** option instead. By doing so, the most commonly used Microsoft 365 administrator roles are displayed below this option. 
 
 	**Note:** If you scroll down past this list of the most commonly used admin roles and select **Show all by category**, the complete list of admin roles will be displayed (sorted by category). For Holly, you do not need to view all the admin roles by category, since Holly will be assigned the Global admin role that appears in the list of most commonly used roles.
 
-11. Select **Global admin** and then select **Next**.
+13. Select **Global admin** and then select **Next**.
 
-12. On the **Review and finish** window, review your selections. If anything needs to be changed, select the appropriate **Edit** link and make the necessary changes. Otherwise, if everything is correct, select **Finish adding**. 
+14. On the **Review and finish** window, review your selections. If anything needs to be changed, select the appropriate **Edit** link and make the necessary changes. Otherwise, if everything is correct, select **Finish adding**. 
 
-13. On the **Holly Dickson added to active users** page, under the **User details** section, select **Show** next to the password to verify Holly's password is **Pa55w.rd** and then select **Close.** 
+15. On the **Holly Dickson added to active users** page, under the **User details** section, select **Show** next to the password to verify Holly's password is **Pa55w.rd** and then select **Close.** 
 
 	**Note:** If you accidentally entered a different password, then once you return to the **Active Users** page, you will need to select the **Reset a password** icon (the key icon that appears when you hover over Holly's account) to change her password to the correct value.
 
-14. If a window appears asking whether you want to respond to a survey on your experience, select **Cancel**.
+16. If a window appears asking whether you want to respond to a survey on your experience, select **Cancel**.
 
-15. Remain logged into LON-CL1 with the Microsoft 365 admin center open in your browser for the next task.
+17. Remain logged into LON-CL1 with the Microsoft 365 admin center open in your browser for the next task.
 
 
 ### Task 4 – Set up Microsoft 365 User Accounts and Groups
@@ -211,29 +223,31 @@ Each user is a key member of your pilot project team. While their user accounts 
 
 13. Repeat steps 10-12 for **Joni Sherman**, **Lynne Robbins**, and **Patti Fernandez**. For these three accounts, paste in the **Pa55w.rd** password that you copied for Alex. You do not need to change the password for the **MOD Administrator** because you must continue using the default password provided by your lab hosting provider for this tenant admin account.
 
-14. In the left-hand navigation pane, select **Groups**, and then under it, select **Groups**.
+14. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Groups**, and then under it, select **Active groups**.
 
-15. In the **Groups** window, select **Active Groups** and finally select **Add a group** that appears on the menu bar.
+15. In the **Active groups** window, select **Add a group** that appears on the menu bar.
 
 16. In the **Choose a group type** pane, select **Microsoft 365 (recommended)** and then select **Next**.
 
-17. In the **Set up the basics** pane, enter **Sales Group** in the **Name** field. You must select into the **Description** field to enable the **Next** button. Leave the **Description** field blank and select **Next**. 
+17. In the **Set up the basics** pane, enter **Sales Group** in the **Name** field. You must select the **Description** field to enable the **Next** button. Leave the **Description** field blank and select **Next**. 
 
 18. In the **Assign owners** pane, enter **Joni** in the **Owners** field. A list of users whose name starts with Joni will appear; select **Joni Sherman** and then select **Next**.
 
-19. In the **Edit settings** pane, enter **salesgroup** in the **Group email address** field (leave the domain as M365xZZZZZZ.onmicrosoft.com). Under the **Privacy** section, select the **Public – Anyone can see group content** option (even if this option is selected by default, select it again to enable the **Next** button), and leave the **Create a team for this group** check box selected. 
+19. In the **Edit settings** pane, enter **salesgroup** in the **Group email address** field (Note: the domain should be the xxxxxZZZZZZ.onmicrosoft.com domain, which you should have verified in a prior task is the default domain for Adatum). <br/>
 
-20. In the **Review and finish adding group** pane, review your selections. If anything needs to be corrected, select the corresponding **Edit** option. Select **Create group**.
+	Under the **Privacy** section, select the **Public – Anyone can see group content** option (even if this option is selected by default, select it again to enable the **Next** button), and leave the **Create a team for this group** check box selected. Select **Next**.
 
-21. Select the **Close** button on the **New group created** window.
+20. In the **Review and finish adding group** pane, review your selections. If anything needs to be corrected, select the corresponding **Edit** option. When everything is correct, select **Create group**.
 
-22. This will return you to the **Groups** window. You may need to select the **Refresh** option on the menu bar the page to see the **Sales Group** appear in the list of groups. In fact, you may have to wait a few minutes for the Sales Group to appear, so you may need to select the **Refresh** option on the menu bar once or twice.
+21. Once the group is created, select the **Close** button on the **New group created** window.
+
+22. This will return you to the **Groups** window. You may need to select the **Refresh** option on the menu bar for the **Sales Group** to appear in the list of groups. In fact, you may have to wait a few minutes for the Sales Group to appear, so you may need to select the **Refresh** option on the menu bar once or twice.
 
 23. Once the **Sales Group** appears in the list of groups, select it.
 
-24. In the **Sales Group** pane, select the **Members** tab.
+24. In the **Sales Group** pane that appears, the **General** tab is displayed by default. Select the **Members** tab.
 
-25. Under the **Members** section, select **View all and manage members**.
+25. In the **Members** tab, under the **Owners** section, Joni Sherman should appear as the only group owner. Under the **Members** section, select **View all and manage members**.
 
 26. In the **View members** window for the Sales Group, select the **+Add members** button.
 
@@ -243,7 +257,7 @@ Each user is a key member of your pilot project team. While their user accounts 
 
 28. The **Sales Group** window now displays the three members of the group. Select **Close**.
 
-29. In the **Sales Group** pane, scroll down and verify the three members appear. Select the **X** in the upper right-hand corner to close the window.
+29. Close the **Sales Group** pane by selecting the **X** in the upper right-hand corner.
 
 30. Leave the **Microsoft 365 admin center** tab open in your browser and proceed to the next task.
 
@@ -260,9 +274,9 @@ In this task, you will turn on Information Rights Management (IRM) for SharePoin
 
 3. In the **SharePoint admin center**, in the left-hand navigation pane, select **Settings**. 
 
-4. At the bottom of the page is a sentence that says **Can’t find the setting you’re looking for? Go to the classic settings page.** In this sentence, select the hyperlinked text: **classic settings page**.
+4. At the bottom of the **Settings** page is a sentence that says **Can’t find the setting you’re looking for? Go to the classic settings page.** In this sentence, select the hyperlinked text: **classic settings page**.
 
-5. On the **Settings** page, scroll down to the **Information Rights Management (IRM)** section, select the **Use the IRM service specified in your configuration** option, and then select the **Refresh IRM Settings** button.
+5. On the classic **Settings** page, scroll down to the **Information Rights Management (IRM)** section, select the **Use the IRM service specified in your configuration** option, and then select the **Refresh IRM Settings** button.
 
 6. This will return you to the top of the **Settings** page. You must scroll to the bottom of the page to select the **OK** button. In doing so, when you get to the **Information Rights Management (IRM)** section, verify the **Use the IRM service specified in your configuration** option is selected and a **We successfully refreshed your settings** message appears below the **Refresh IRM Settings** button. Continue scrolling to the bottom of the page and select **OK**. 
 
@@ -275,22 +289,24 @@ In this task, you will turn on Information Rights Management (IRM) for SharePoin
 
 In Lab 3, you will create Alert Policies using the Security and Compliance Center. However, before you can implement alerts, an admin must first turn on Audit Logging for the organization. Since it can take a couple of hours for audit logging to become fully enabled once you turn it on, you will turn it on in this lab so that it's fully enabled by the time you get to Lab 3.
 
-1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. <br/>
+
+	Select the **Microsoft 365 admin center** tab in your Edge browser. 
 
 2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **Security**. This will open the Office 365 Security and Compliance center.
 
 3. In the **Office 365 Security &amp; Compliance center**, in the left-hand navigation pane, select **Search**, and then under it, select **Audit log search**.
 
-4. In the **Audit log search** window, a warning message is eventually displayed at the top of the page. Select the **Turn on auditing** button that appears on the right-side of this message, and then in the **Security &amp; Compliance** dialog box that appears, select **Yes** to confirm that your organization settings need to be updated. <br/>
+4. In the **Audit log search** window, a warning message is displayed at the top of the page. Select the **Turn on auditing** button that appears on the right-side of this message, and then in the **Security &amp; Compliance** dialog box that appears, select **Yes** to confirm that your organization settings need to be updated. <br/>
 
-	**Note:** It may take a couple of minutes for the setting to be updated, at which time the **Security &amp; Compliance** dialog box will disappear.
+	**Note:** It may take several minutes for the setting to be updated, at which time the **Security &amp; Compliance** dialog box will disappear.
 
 5. Leave the Client 1 VM and the Security and Compliance Center open and proceed to the next lab.
 
 
 ### Task 7 – Prepare Users for Content Searches
 
-In Module 8, you will perform a Content Search lab that requires that Joni Sherman and Holly Dickson be members of the eDiscovery Manager role. In this exercise, you will add Joni and Holly to this role. The reason you are doing this now is that it can take a while for newly assigned permissions to successfully propagate. If you waited and assigned Holly and Joni to this role group at the time you performed the Content Search lab in Module 8, you would have received error messages involving parameter fields because their permissions would not have finished propagating. By adding them to this role group now, enough time will elapse for the propagation to complete by the time you get to the Module 8 lab. 
+In Module 8, you will perform a Content Search lab that requires that Joni Sherman and Holly Dickson be members of the eDiscovery Manager role. In this exercise, you will add Joni and Holly to this role. The reason you are doing this now is that it can take a while for newly assigned permissions to successfully propagate. If you waited and assigned Holly and Joni to this role group at the time you performed the Content Search lab in Module 8, you would receive error messages involving parameter fields because their permissions would not have finished propagating. By adding them to this role group now, enough time will elapse for the propagation to complete by the time you get to the Module 8 lab. 
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
@@ -300,9 +316,9 @@ In Module 8, you will perform a Content Search lab that requires that Joni Sherm
 
 4. In the **Home &gt; Permissions** page, select the **eDiscovery Manager** check box.
 
-5. In the **eDiscovery Manager** role group window, scroll down to the **eDiscovery Manager** section and select **Edit**.
+5. In the **eDiscovery Manager** pane that appears, scroll down to the **eDiscovery Manager** section and select **Edit**.
 
-6. The **Editing Choose eDiscovery Manager** wizard opens. The list should be empty. Select **Choose eDiscovery Manager**.
+6. The **Editing Choose eDiscovery Manager** wizard opens. The list of users who are assigned this role should be empty. Select **Choose eDiscovery Manager**.
 
 7. In the **Choose eDiscovery Manager window**, select **(+) Add**.
 
