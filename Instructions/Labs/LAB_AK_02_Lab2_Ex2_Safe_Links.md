@@ -13,7 +13,30 @@ In this task, you will add the **tailspintoys.com** URL to the company-wide list
 
 3. In the **Security &amp; Compliance center**, in the left-hand navigation pane, the **Threat Management** group should still be expanded from the prior task; if not, expand it now. Under this group, select **Policy**.
 
-4. In the **Policy** window, double-click the **ATP Safe Links** tile.
+4. In the **Policy** window, double-click the **ATP Safe Links** tile. This initiates the **Create Safe Links Policy** wizard.
+
+5. On the **Name your policy** page, enter **LinkPolicy1** in the **Name** field and then select **Next**.
+
+6. On the **Settings** page, enter the following settings: 
+
+    - Select the action for unknown or potentially malicious URLs in messages - **On**
+    - Select the action for unknown or potentially malicious URLs within Microsoft Teams - **Off**
+    - Apply real-time URL scanning for suspicious links and links that point to files - select this check box
+    - Wait for URL scanning to complete before delivering the message - select this check box
+    - Apply safe links to email messages sent within the organization - select this check box
+    - Do not track user clicks - select this check box
+    - Do not allow users to click through to original URL - select this check box
+   
+7. In the **Do not rewrite the following URLs** field, enter the following URL and then select the **plus sign (+)** button: **http://tailspintoys.com**
+
+8. Select **Next**.
+
+9. On the **Applied to** page, select **+Add a condition**. In the drop-down menu that appears, under the **Applied if...** section, select **The recipient domain is**
+
+
+
+
+
 
 5. In the **Safe Links** window, note that there are two sections of policies that can be created: **Policies that apply to the entire organization**, and below that, **Policies that apply to specific users.**
 
