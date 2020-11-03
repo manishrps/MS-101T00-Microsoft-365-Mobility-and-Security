@@ -14,7 +14,7 @@ In this task, you will turn on Windows Defender for Office 365, which provides a
 
 3. In the **Office 365 Security &amp; Compliance center**, in the left-hand navigation pane select **Threat Management** and then select **Policy**.
 
-4. In the **Policy** window, select the **ATP Safe Attachments** tile.
+4. In the **Policy** window, double-click the **ATP Safe Attachments** tile.
 
 5. In the **Safe attachments** window, on the menu bar, select **Global settings**.
 
