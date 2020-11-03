@@ -8,7 +8,7 @@ You now have a Global admin account set up for Holly Dickson, and you're signed 
 
 In this task, you will turn on Windows Defender for Office 365, which provides advanced threat protection (ATP) for SharePoint, OneDrive, and Microsoft Teams. You will also create a Safe Attachments policy that will test email attachments for malware that are sent to recipients within the xxxxxZZZZZZ.onmicrosoft.com domain. You will configure the policy so that if an attachment is blocked, it will be removed from the email that is sent to the recipient, and a copy of the email will be redirected to Joni Sherman for additional review.
 
-1. Switch back to your Client 1 VM (LON-CL1). You should still be logged into your Client 1 VM as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into your Client 1 VM as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 
 2. After finishing the previous task, you should still be in the **Office 365 Security &amp; Compliance center**. If not, in your browser, enter **https://protection.office.com.**
 
