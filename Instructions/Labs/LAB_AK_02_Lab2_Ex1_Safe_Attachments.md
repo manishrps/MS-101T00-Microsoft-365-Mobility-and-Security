@@ -41,7 +41,7 @@ In this task, you will turn on Windows Defender for Office 365, which provides a
 
 15. In **The recipient domain is** window, select the **+Add** button. In the list of domains that appear, select the check box for the **xxxxxZZZZZZ.onmicrosoft.com** domain (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), select **Add**, and then select **Done**.
 
-16. On te **Applied to** page, select **Next**.
+16. On the **Applied to** page, select **Next**.
 
 17. On the **Review your settings** page, review the options that you selected. If any need to be corrected, select the appropriate **Edit** option and make the correction. If they all appear correct, select **Finish**.
 
