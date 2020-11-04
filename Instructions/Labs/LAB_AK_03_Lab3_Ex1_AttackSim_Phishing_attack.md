@@ -126,9 +126,11 @@ In this task, you will verify whether Lynne Robbins received the email that you 
 
 11. Switch back to LON-CL1.
 
-12. In your browser session where you are logged in as Holly Dickson, you should still be on the **Attack details** page. In the **Spear Phishing (Credential Harvest)** section, it should display **Attack Completed**. Select **View Report**.
+12. In your browser session where you are logged in as Holly Dickson, if you are still on the **Attack details** page, then scroll down to the **Attack History** section under **Spear Phishing (Credential Harvest)** section and select the **Refresh** button. It should display details on your phishing attack. Select the right arrow to view the report on the phishing attack. <br/>
 
-13. On the **Attack details** page, view the report for the phishing campaign that you completed. Note the date and time of the report. If you had run a previous simulation, it sometimes takes a few minutes to update this report information with the details from the current simulation that you just ran. If this occurs, refresh the page after a few minutes. Review the information on the page and note the results after having clicked on the spear phishing URL in the email that was sent to Lynne Robbins earlier in this task.
+	 **Note:** If you were instead back on the **Attack simulator** page, then in the **Spear Phishing (Credential Harvest)** section, below the **Attack Completed** message, select **View Report**.
+
+13. On the **Report** page, review the report for the phishing campaign that you completed. Note the date and time of the report. If you had run a previous simulation, it sometimes takes a few minutes to update this report information with the details from the current simulation that you just ran. If this occurs, refresh the page after a few minutes. Review the information on the page and note the results after having selected the spear phishing URL in the email that was sent to Lynne Robbins earlier in this task.
 
 14. Leave your browser open in LON-CL1 and do not close any of the tabs.
     
