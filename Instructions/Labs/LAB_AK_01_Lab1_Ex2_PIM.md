@@ -106,7 +106,7 @@ Now that Patti Fernandez has been made an eligible user for the Global administr
 
 11. In the **Enter password** window, enter **Pa55w.rd** in the Password field and then select **Sign in**.
 
-12. ON the **Keep your account secure** page, select the **I want to set up a different method** option at the bottom of the page. 
+12. On the **Microsoft Authenticator** page, you can download this mobile app or use a different method for MFA verification. For the purposes of this lab, we recommend you use your mobile phone so that you do not have to take time installing the Microsoft Authenticator app that you may not use again after this training class. Select the **I want to set up a different method** option at the bottom of the page. 
 
 13. On the **Choose a different method** dialog box that appears, select the drop-down arrow in the **Which method would you like to use?** field, select **Phone**, and then select **Confirm**. 
 
