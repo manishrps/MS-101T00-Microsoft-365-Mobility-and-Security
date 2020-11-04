@@ -103,7 +103,7 @@ In this task, you will test the Safe Links Policy that you just created that blo
 
 23. A new tab should open in your **Edge** browser that takes you to the URL you just saw in the prior step. This site should display the following warning message: **This website has been blocked per your organization's URL policy.** This not only indicates that opening this website might not be safe, but it also verifies that the Safe Links policy you just created is working properly.
 
-24. Leave the Client 2 VM open and leave Outlook open to the MOD Administrator's Inbox for the next lab.
+24. In LON-CL2, close the Edge browser and close all browser tabs. 
 
 
 # End of Lab 2
