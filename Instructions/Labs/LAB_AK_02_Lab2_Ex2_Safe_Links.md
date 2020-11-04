@@ -5,7 +5,7 @@ Now that you have created a Safe Attachments policy for Adatum, you want to crea
 
 ### Task 1 – Create a Safe Links Policy
 
-In this task, you will add the **tailspintoys.com** URL to the company-wide list of blocked URLs, and you will create a Safe Links policy that applies to all users in your tenant.
+In this task, you will create a Safe Links policy that applies to all users in your tenant, and then you will add the **tailspintoys.com** URL to the company-wide list of blocked URLs.
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **Admin** account, and you should still be logged into Microsoft 365 as **Holly Dickson**.
 
@@ -13,11 +13,13 @@ In this task, you will add the **tailspintoys.com** URL to the company-wide list
 
 3. In the **Security &amp; Compliance center**, in the left-hand navigation pane, the **Threat Management** group should still be expanded from the prior task; if not, expand it now. Under this group, select **Policy**.
 
-4. In the **Policy** window, double-click the **ATP Safe Links** tile. This initiates the **Create Safe Links Policy** wizard.
+4. In the **Policy** window, double-click the **ATP Safe Links** tile. 
+
+5. On the **Safe links** page, selecty **+Create** on the menu bar. This initiates the **Create Safe Links Policy** wizard.
 
 5. On the **Name your policy** page, enter **LinkPolicy1** in the **Name** field and then select **Next**.
 
-6. On the **Settings** page, enter the following settings: 
+6. On the **Settings** page, enter the following settings and then select **Next**: 
 
     - Select the action for unknown or potentially malicious URLs in messages - **On**
     - Select the action for unknown or potentially malicious URLs within Microsoft Teams - **Off**
@@ -27,23 +29,21 @@ In this task, you will add the **tailspintoys.com** URL to the company-wide list
     - Do not track user clicks - select this check box
     - Do not allow users to click through to original URL - select this check box
    
-7. In the **Do not rewrite the following URLs** field, enter the following URL and then select the **plus sign (+)** button: **http://tailspintoys.com**
+7. On the **Applied to** page, select **+Add a condition**. In the drop-down menu that appears, under the **Applied if...** section, select **The recipient domain is**
 
-8. Select **Next**.
+8. In **The recipient domain is** section, select the **Choose** link to choose a domain. 
 
-9. On the **Applied to** page, select **+Add a condition**. In the drop-down menu that appears, under the **Applied if...** section, select **The recipient domain is**
+9. In **The recipient domain is** window, select the **+Add** button. In the list of domains that appear, select the check box for the **xxxxxZZZZZZ.onmicrosoft.com** domain (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), select **Add**, and then select **Done**.
 
-10. In **The recipient domain is** section, select the **Choose** link to choose a domain. 
+10. On the **Applied to** page, select **Next**.
 
-11. In **The recipient domain is** window, select the **+Add** button. In the list of domains that appear, select the check box for the **xxxxxZZZZZZ.onmicrosoft.com** domain (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), select **Add**, and then select **Done**.
+11. On the **Review your settings** page, review the options that you selected. If any need to be corrected, select the appropriate **Edit** option and make the correction. If they all appear correct, select **Finish**. Once the **LinkPolicy1** policy is created, it will appear in the Safe links list. 
 
-12. On the **Applied to** page, select **Next**.
+12. On the **Safe links** page, select **Global settings** on the menu bar.
 
-13. On the **Review your settings** page, review the options that you selected. If any need to be corrected, select the appropriate **Edit** option and make the correction. If they all appear correct, select **Finish**.
+13. In the **Safe Links policy for organization** pane that appears, enter **http://tailspintoys.com** in the **Block the following URLs** field, do NOT change the default settings for any of the other options, and then select **Save**.
 
-14. Once the **LinkPolicy1** policy is created, it will appear in the Safe links list. 
-
-15. Leave the Office 365 Security &amp; Compliance tab open for the next task.
+14. Leave the Office 365 Security &amp; Compliance tab open for the next task.
 
 ### Task 2 – Validate the Safe Links Policy
 
@@ -51,25 +51,13 @@ In this task, you will test the Safe Links Policy that you just created that blo
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 
-2. In your **Microsoft Edge** browser, select the **Microsoft Office Home** tab and then select **Outlook.**
+2. In your **Microsoft Edge** browser, select the **Microsoft Office Home** tab and then in the column of app icons on the left side of the screen, select the **Outlook** icon.
 
-3. In the top right corner of Outlook, verify that the user icon is **HD** (for Holly Dickson). If the user icon is **HD**, then open a new tab in Edge and proceed to the next step. <br/>
+3. **Outlook** will open in a new tab in your browser, and Holly's **Inbox** will be displayed.
 
-    If the user icon is not **HD** (for example, if it's **MA** for the MOD Administrator), then select the user icon circle, and in the **My account** pane that appears, select **Sign out**. After you are signed out of the account, a good best practice that you should follow when signing out as one user before signing in as another is to close all other open tabs in your browser so that you don't confuse those tabs (associated with the previous user) with the new tabs that you will open for the new user. Only the tab with the sign-out message should be open. 
+4. Select the **New Message** button in the upper left part of the screen.
 
-4. Enter the following URL in the address bar: **https://outlook.office365.com**
-
-5. In the **Pick an account** window, select **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**.
-
-6. On the **Stay signed in?** dialog box, select the **Don't show this again** check box and then select **Yes.**
-
-7. On the Outlook sign in page, select your **Language** and **Time zone** and then select **Save**.
-
-8. In **Outlook on the web**, verify that **HD** is displayed in the user icon in the upper right corner of the form.
-
-9. Select **New Message** in the upper left part of the screen.
-
-10. In the email form in the right-hand pane, enter the following information:
+5. In the email form that appears in the right-hand pane, enter the following information:
 
     - To: You will be sending an email to the MOD Administrator, so enter **mod** in the **To** field and then select the **MOD Administrator** email address from the user list.
 
@@ -77,43 +65,45 @@ In this task, you will test the Safe Links Policy that you just created that blo
 
     - body of the message: **Please click on me for free toys from TailSpin Toys.**
 
-11. Select the text that you added in the body of the message.
+6. Select the text that you added in the body of the message.
 
-12. Below the body of the message is a long row of formatting icons. Select the **Insert hyperlink** icon, which depicts two overlapping circles.
+7. Below the body of the message is a long row of formatting icons. Select the **Insert link** icon, which depicts two overlapping circles.
 
-13. In the **Insert link** window, the text that you highlighted in the body of the message should be displayed in the **Display as** field. In the **Web address (URL)** field, enter the following URL: **http://tailspintoys.com/aboutus/freetoys**.
+8. In the **Insert link** window, the text that you highlighted in the body of the message should be displayed in the **Display as** field. In the **Web address (URL)** field, enter the following URL: **http://tailspintoys.com/aboutus/freetoys**.
 
-14. Select **OK**.
+9. Select **OK**.
 
-15. In the body of the email, the message should still be selected. Click anywhere in the body of the message to remove the highlighting. The color of the text should now be blue, and it should be underlined, indicating that this message is hyperlinked to a URL.
+10. In the body of the email, the message should still be selected. Click anywhere in the body of the message to remove the highlighting. The color of the text should now be blue, and it should be underlined, indicating that this message is hyperlinked to a URL.
 
-16. Select either **Send** button (top or bottom of the form).
+11. Select either **Send** button (top or bottom of the form).
 
-17. You now want to go the MOD Administrator&#39;s Inbox in Outlook and validate whether the ATP policy you created in the prior task worked on the email that you just sent from Holly to the MOD Administrator.<br/>
+12. You now want to go the MOD Administrator's Inbox in Outlook and validate whether the Safe Links policy you created in the prior task worked on the email that you just sent from Holly to the MOD Administrator.<br/>
 
     To do this, you must first switch the Client 2 VM (**LON-CL2**). 
 
-18. Log into the LON-CL2 VM as the **Admin** account by entering **Pa55w.rd** in the **Password** field.
+13. Log into the LON-CL2 VM as the **Admin** account by entering **Pa55w.rd** in the **Password** field.
 
-19. Select the **Microsoft Edge** icon in the taskbar, maximize the window and then enter the following URL in the address bar: **https://outlook.office365.com**
+14. Select the **Microsoft Edge** icon in the taskbar, maximize the window and then enter the following URL in the address bar: **https://outlook.office365.com**
 
-20. In the **Sign-in** window, enter **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**.
+15. In the **Sign-in** window, enter **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**.
 
-21. In the **Enter password** window, enter the tenant password provided by your lab hosting provider and select **Sign in**.
+16. In the **Enter password** window, enter the tenant password provided by your lab hosting provider and select **Sign in**.
 
-22. Close the **Let Microsoft Edge save and fill your password for this site next time?** banner by selecting **Never**.
+17. Close the **Let Microsoft Edge save and fill your password for this site next time?** banner by selecting **Never**.
 
-23. On the **Stay signed in?** dialog box, select the **Don't show this again** check box and then select **Yes.**
+18. On the **Stay signed in?** dialog box, select the **Don't show this again** check box and then select **Yes.**
 
-24. You will have to navigate through a series of **Welcome** windows. Continue selecting the right arrow (**>**) until you reach the final window, and then select **Get started**.
+19. In the **Welcome** windows, select the X in the upper right corner to close the window.
 
-25. In the MOD Administrator&#39;s **Inbox**, open the email that was sent by Holly.
+20. In the MOD Administrator's **Inbox**, open the email that was sent by Holly.
 
-26. When you hover over the blue link that appears in the body of the email, you can see a long URL in the bottom of the browser window; this URL starts with **https://namXX.safelinks.protection.outlook.com** (wehre XX is a number assigned to the policy) <br/>
+21. Select the hyperlink in the body of the message to open it. 
 
-27. Select the hyperlink in the body of the message to open it. A new tab should open in your **Edge** browser that takes you to the URL you just saw in the prior step. This site should display the following warning message: **This website has been blocked per your organization's URL policy.** This not only indicates that opening this website might not be safe, but it also verifies that the ATP Safe Links policy you just created is working properly.
+22. If a window opens indicating the new browser recommended by Microsoft is here, select **No thanks**. 
 
-28. Leave the Client 2 VM open and leave Outlook open to the MOD Administrator's Inbox for the next lab.
+23. A new tab should open in your **Edge** browser that takes you to the URL you just saw in the prior step. This site should display the following warning message: **This website has been blocked per your organization's URL policy.** This not only indicates that opening this website might not be safe, but it also verifies that the Safe Links policy you just created is working properly.
+
+24. Leave the Client 2 VM open and leave Outlook open to the MOD Administrator's Inbox for the next lab.
 
 
 # End of Lab 2
