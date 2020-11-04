@@ -1,7 +1,7 @@
 # Module 4 - Lab 4 - Exercise 1 - Configure Office 365 Message Encryption
 
 
-In this lab, you will take on the persona of Holly Dickson, Adatum’s Enterprise Administrator. You have been tasked with piloting the use of Office 365 message encryption in Adatum’s Microsoft 365 deployment. Since message encryption rules can be created using both Exchange Online and Windows PowerShell, you have decided to test each method to determine which you prefer to use once you go live.
+In this lab, you will take on the persona of Holly Dickson, Adatum’s Enterprise Administrator. You have been tasked with piloting the use of Microsoft 365 message encryption in Adatum’s Microsoft 365 deployment. Since message encryption rules can be created using both Exchange Online and Windows PowerShell, you have decided to test each method to determine which you prefer to use once you go live.
 
 In this exercise you will set up Azure Rights Management Services (RMS) for your tenant. You will also learn how to create a mail flow encryption rule using both the Exchange Admin Center and Windows PowerShell.
 
