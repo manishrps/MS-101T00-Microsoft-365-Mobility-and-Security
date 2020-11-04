@@ -112,7 +112,7 @@ Now that Patti Fernandez has been made an eligible user for the Global administr
 
 14. In the **Phone** window that appears, under **What phone number would you like to use?** field, select your country or region, and then in the field next to it, enter your phone number (in the format **nnn-nnn-nnnn**). Verify the **Text me a code** option is selected and then select **Next**.
 
-15. Retrieve the verification code from the text sent to your phone.
+15. Retrieve the verification code from the text message that is sent to your phone.
 
 16. In the **Phone** window, enter the 6 digit verficiation code in the **Enter code** field and then select **Next**.
 
