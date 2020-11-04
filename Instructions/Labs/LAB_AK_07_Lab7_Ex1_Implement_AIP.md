@@ -1,4 +1,4 @@
-# Module 7 - Lab 7 - Exercise 1 - Implement Sensitivity labels with Azure Information Protection  Unfied labels client
+# Module 7 - Lab 7 - Exercise 1 - Implement Sensitivity labels with Azure Information Protection Unified labels client
 
 
 In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Microsoft 365 deployed in a virtualized lab environment. As you proceed with your Microsoft 365 pilot project, your next steps are to implement Sensitivity Labels with Azure Information Protection (AIP) and Windows Information Protection (WIP) at Adatum. You will begin by configuring AIP and then using AIP on a client and verifying an AIP policy. You will then perform similar steps for WIP by configuring it for Adatum and then implementing WIP.
@@ -7,17 +7,23 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Mic
 
 To implement Sensitivity labels as part of your pilot project at Adatum, you must first install the AIP client from the Microsoft Download Center.
 
-1. You should still be logged into LON-CL1 as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Holly Dickson** with a password of **Pa55w.rd**. 
+1. Switch to LON-CL1, where you should still be logged in as the **admin** account, and you should be logged into Microsoft 365 as **Holly Dickson** with a password of **Pa55w.rd**. 
 
-2. In **Microsoft Edge**, open a new tab and enter the following URL in the address bar: **https://www.microsoft.com/en-us/download/confirmation.aspx?id=53018**, this will start the download for the AIP Unified label client.
+2. In **Microsoft Edge**, open a new tab and enter (or copy and paste) the following URL in the address bar: **https://www.microsoft.com/en-us/download/confirmation.aspx?id=53018** <br/>
 
-3. In the Microsoft download center tab, the **AzinfoProtection_UL.exe** will prompt a request to **run, save or cancel**. Select **Run** 
+	This will start the download for the AIP Unified label client.
 
-4. Once the Download has completed. The **AIP Unifed labeling client** interface will open. select the **I agree** button. You will then be prompted by the User **Accont Control notification** that requests if you want to all the app to make changes to this device? Select Yes.
+3. In the Microsoft download center tab, a notification bar will appear at the bottom of the page asking whether you want to Run, Save, or Cancel. Select **Run**.
 
-5. The **AIP Unfied labeling client installer** will finish the installation. Select Close
+4. The Microsoft Azure Information Protection wizard will open. If the wizard does not display on the desktop, select the icon for the wizard on the taskbar to display the wizard.
 
-6. In the **Choose the download you want** window, select **AzInfoProtection.exe** and then select **Next.**
+5. In the wizard, on the **Install the Azure Information Protection client** page, clear (uncheck) the **Help improve Azure Information Protection by send usage statistics to Microsoft** check box and then select the **I agree** button.
+
+6. If a **User Accont Control notification** dialog box appears that asks whether the app is allowed to make changes to this device, select **Yes**.
+
+7. Once the installation is complete, select **Close**.
+
+8. In your Edge browser, close the **Download** tab that you opened in this task to download the Azure Information Protection client.
 
 You have successfully installed the AIP Unfied Label client on Client 1 VM.
 
@@ -28,18 +34,17 @@ In this exercise you will create an Sensitvity label and add it to the default p
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 
-2. In **Microsoft Edge**, open a new tab and enter the following URL in the address bar: **https://protection.office.com/**
+2. In **Microsoft Edge**, select the **Data loss prevention** tab that displays the **Office 365 Security & Complaince Admin center**.
 
-3. In the **Sign in** dialog box, enter **holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix username provided by your lab hosting provider) and then select **Next****.
+5. In the **Office 365 Security & Complaince Admin center**, in the left-hand navigation pane, select **Classification**, and then select **Sensitivity labels.**
 
-	**Important:** Your Microsoft 365 tenant came with a default system administrator account already created. The name of this user account is **MOD Administrator**. The user name that you just entered, **admin@xxxxxZZZZZZ.onmicrosoft.com**, is the user name for the MOD Administrator. 
-4. In the **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting provider for the **admin@xxxxxZZZZZZ.onmicrosoft.com** account and then select **Sign in**.
+6. In the **Home > sebnsitivity** window, three tabs are displayed across the top of the page. The **Labels** tab is displayed by default. <br/>
 
-5. At this point you should be in the **Microsoft 365 Security & Complaince Admin center**. On the **Navigation pane** select **classification**, then select **Sensitivity Labels.**
+	On the **Labels** tab, a warning message is displayed in the middle of the screen indicating **Your organization has not turned on the ability to process content in Office online files that have encrypted sensitivity labels applied and are stored in OneDrive and SharePoint.** <br/>
+	
+	Select the **Turn on now** button that appears on the right side of this message. This will enable Adatum to apply the Sensitivity labels inisde its Micrsoft 365 enviroment.
 
-6. In the **Sensitivity Labels** window, there is a Button that states **Turn on now** select the button. this will enable the ability to apply the Sensitivity labels inisde your Micrsoft 365 enviroment.
-
-7. In the **Microsoft 365 Security & Complaince | Sensitivity Labels** window, select **Create a label**.
+7. On the **Labels** tab, select **+Create a label** that appears on the menu bar.
 
 8. In the **new Senesitivity Label** window, enter the following information:
 
