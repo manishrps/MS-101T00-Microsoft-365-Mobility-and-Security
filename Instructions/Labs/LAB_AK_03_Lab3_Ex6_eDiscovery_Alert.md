@@ -46,15 +46,15 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 
 3. In the **Microsoft 365 Security &amp; Compliance Center**, in the left-hand navigation pane, select **Search**, and then under it, select **Content search**.
 
-4. The **Content search** window has two tabs - a **Searches** tab and an **Exports** tab. The **Searches** tab is displayed by default. Select the **+New search** button. .
+4. The **Content search** window has two tabs - a **Searches** tab and an **Exports** tab. The **Searches** tab is displayed by default. Select the **+New search** button.
 
 5. In the **Search query** pane that appears, enter **Confidential** in the **Enter keywords** field.
 
-6. In the **Locations** section, select the **Specific locations** option and then select **Modify**. This opens the **Modify locations** window. There are three groups of locations. Turn the toggle switch **On** (if necessary) for the first group, but turn the toggle switches **Off** for the other two. At least one group must be set to **On**; otherwise, you will receive an error. Select **Save**. <br/>
+6. In the **Locations** section, select the **Specific locations** option and then select **Modify**. This opens the **Modify locations** window. There are three groups of locations, each of which can be turned On or Off through its respective toggle switch. Turn the toggle switch **On** (if necessary) for the first group, but leave the toggle switches **Off** for the other two. At least one group must be set to **On**; otherwise, you will receive an error. Select **Save**. <br/>
 
 	**Note:** While you could have simply selected the **All locations** option, you were asked to select a specific set of locations just so that you could see all the various locations that can possibly be searched in an eDiscovery search.
 
-7. Select **Save**. In the **Save search** pane that appears, enter **Confidential search** in the **Name** field and then select **Save**.  <br/>
+7. Select **Save & run**. In the **Save search** pane that appears, enter **Confidential search** in the **Name** field and then select **Save**.  <br/>
 
 	**Important:** When you save a new search, the system saves the search and then immediately runs it. By saving this eDiscovery search, the eDiscovery alert should be triggered, thereby creating an email notification that should be sent to the Inbox of all users with tenant admin permissions. You do NOT have to wait for the Search to finish before testing whether the alert sent the email notification. The alert notification system will process the email at the time the search is saved. <br/>
 	
