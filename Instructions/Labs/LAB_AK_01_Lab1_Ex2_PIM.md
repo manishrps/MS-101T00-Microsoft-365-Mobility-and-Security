@@ -122,13 +122,15 @@ Now that Patti Fernandez has been made an eligible user for the Global administr
 
 19. If you receive a dialog box indicating your sign in has timed out, you will have to enter Patti's password of **Pa55w.rd** and then you will be sent another verification code to your phone. On the **Enter code** window, enter this new code and then select **Verify**. 
 
-14. In the **Activate - Global Administrator** pane that appears, enter **Testing PIM** in the **Reason** field, and then select the **Activate** button at the bottom of the pane.
+20. If you take too long to complete this process, the **Enter password** window will appear with a message indicating you took too long to complete the sign in process, so you will be timed-out. If this occurs, you must sign in again with Holly's password of **Pa55w.rd**. Another verification code will be texted to your phone, so enter it in the **Enter code** screen that appears and select **Verify**.
 
-15. On the **My roles | Azure AD roles** window, the **Eligible assignments** tab is displayed on the menu bar. Select the **Active assignments** tab that appears next to it. Note that no roles appear. <br/>
+21. In the **Activate - Global Administrator** pane that appears, enter **Testing PIM** in the **Reason** field, and then select the **Activate** button at the bottom of the pane.
+
+22. On the **My roles | Azure AD roles** window, the **Eligible assignments** tab is displayed on the menu bar. Select the **Active assignments** tab that appears next to it. Note that no roles appear. <br/>
 
      **Note:** If you recall, back in Task 1 Holly set up the Global Administrator role so that activation to a user account will require approval. What Patti just did was request that the Global Admin role be activated for her user account. This will send a request to Holly, who can then either approve or deny Patti's request for role activation. Holly will review this request in the next task.
 
-16. Leave the InPrivate browser session open. You will return to it in the next task once Holly approves Patti's request.
+23. Leave the InPrivate browser session open. You will return to it in the next task once Holly approves Patti's request.
 
 
 ### Task 4 -  Approve the request for the Global Admin role
