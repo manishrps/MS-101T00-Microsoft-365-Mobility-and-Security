@@ -8,7 +8,7 @@ In this next phase of your Adatum pilot project, you will access the Security & 
 
 1. You should still be logged into LON-CL1 as the **Admin** and into **Microsoft 365** as Holly Dickson.
 
-2. In Microsoft Edge, select the **Security and Compliance admin center** tab; if you closed this tab earlier, then open a new tab and go to **https://protection.office.com**.
+2. In Microsoft Edge, in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Security** to open the Office 365 Security and Compliance center.
 
 3. In the **Security and Compliance admin center**, in the left-hand navigation pane, select **Information governance**, and then under it select **Archive**.
 
@@ -16,7 +16,7 @@ In this next phase of your Adatum pilot project, you will access the Security & 
 
 5. To enable Holly’s archive mailbox, select **Holly Dickson** in the user list. 
 
-6. In the details pane on the right, Holly’s archive mailbox is currently listed as **disabled**. Select **Enable**, and then in the **Warning** dialog box that appears, select **Yes** to confirm this action.
+6. In the detail pane that appears on the right, Holly’s archive mailbox is currently listed as **disabled**. Select **Enable**, and then in the **Warning** dialog box that appears, select **Yes** to confirm this action.
 
 7. In your Microsoft Edge browser, leave the Office 365 Security & Compliance Center tab open as you will use it in a later task in this lab. 
  
@@ -25,17 +25,17 @@ In this next phase of your Adatum pilot project, you will access the Security & 
 
 As part of your pilot project for Adatum, you will configure MRM retention through the Exchange Admin Center by creating an MRM retention tag and then adding it to a new MRM retention policy. You will also assign several default tags to the policy as well. You will then assign this retention policy to Joni Sherman and Lynne Robbins’ mailboxes.
 
-1. In **Microsoft Edge**, select the **Microsoft 365 admin center** tab.
+1. On LON-CL1, select the **Microsoft 365 admin center** tab in your Edge browser. 
 
 2. In the **Microsoft 365 admin center**, in the left-hand navigation pane under the **Admin centers** group, select **Exchange**. This will open the Exchange admin center.
 
 3. In the **Exchange admin center**, in the left-hand navigation pane, select **compliance management**.
 
-4. In the **compliance management** window, select the **retention tags** tab that appears at the top of the page.
+4. In the **compliance management** window, in the list of tabs that appear across the top of the page, select **retention tags**.
 
-5. You want to create a retention tag, so select the **plus (+)** **sign** in the toolbar that appears across the list of existing retention tags. In the drop-down menu that appears, select **applied by users to items and folders (personal)**.
+5. You want to create a retention tag, so select the **plus (+) sign** icon in the toolbar that appears above the list of existing retention tags. In the drop-down menu that appears, select **applied by users to items and folders (personal)**.
 
-6. In **new tag applied by users to items and folders (personal)** window, under **Name**, enter **3 Years Move – Archive after three years**.
+6. In **new tag applied by users to items and folders (personal)** window, enter **3 Years Move – Archive after three years** in the **Name** field.
 
 7. Under **Retention Action**, select the **Move to Archive** option.
 
@@ -47,7 +47,7 @@ As part of your pilot project for Adatum, you will configure MRM retention throu
 
 11. On the menu bar on the top of the page, select the **retention policies** tab.
 
-12. In the **retention policies page**, note that there is one default retention policy. Since this policy is selected by default, its corresponding properties are displayed in the detail pane on the right-side of the screen. This information indicates that all the default retention tags that have been assigned to this policy. <br/>
+12. In the **retention policies page**, note that there is one default retention policy. Since this policy is selected by default, its corresponding properties are displayed in the detail pane on the right-side of the screen. This information displays all the default retention tags that have been assigned to this policy. <br/>
 
 	You want to create a custom retention policy, so select the **plus (+) sign** icon in the toolbar that appears across the list of existing retention policies. 
 
@@ -94,9 +94,9 @@ You have created a new retention policy through the Exchange Admin Center. You a
 
 Now that Holly has created a retention policy through the Exchange Admin Center, she wants to do the same in the Security & Compliance Center. For this policy, Holly wants to preserve the content of all Exchange Online mailboxes from deletion for 7 years after the last modification. 
 
-1. In **Microsoft Edge**, select the **Security &amp; Compliance Center** tab if it's still open; otherwise, open a new browser tab and enter the following URL in the address bar: **https://protection.office.com**
+1. In **Microsoft Edge**, select the **Security &amp; Compliance Center** tab if it's still open; otherwise, in the **Microsoft 365 admin center**, under **Admin centers**, select **Security**.
 
-2. In the **Security &amp; Compliance Center**, in the left-hand navigation pane, select **Information governance** and then select **Retention**.
+2. In the **Office 365 Security &amp; Compliance center**, in the left-hand navigation pane, select **Information governance** and then select **Retention**.
 
 3. In the **Retention** window, select the **+Create** button to start the wizard that’s used to create a new retention policy.
 
@@ -112,11 +112,11 @@ Now that Holly has created a retention policy through the Exchange Admin Center,
 
 7. In the **Choose locations** page, select **Let me choose specific locations.** 
 
-8. As you scroll down the page, note that the **Status** of the **Exchange email** location is turned on. Leave this set to On. However, for all the other locations that are turned on, select their toggle switches to turn them off. As you scroll through the locations, **Exchange email** should be the only location turned on.
+8. As you scroll down the page, note that the **Status** of the **Exchange email** location is turned **On**. Leave this set to On. However, for all the other locations that are turned on, select their toggle switches to turn them **Off**. As you scroll through the locations, **Exchange email** should be the only location turned on.
 
 9. Select **Next**.
 
-10. On the **Review your settings** page, review all the settings. If any need to be corrected, select the **Edit** option and make the appropriate correction. Select **Create this policy** to finish the wizard.
+10. On the **Review your settings** page, review all the settings. If any need to be corrected, select the **Edit** option and make the appropriate correction. Once everything looks correct, select **Create this policy** to finish the wizard.
 
 11. Do not close your Client 1 VM or Microsoft Edge. Leave your web browser open as well as all tabs for the next lab.
 
