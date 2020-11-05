@@ -69,7 +69,7 @@ You will begin by having Holly create a new SharePoint site collection. You will
 
 	- Site name: **Marketing**  
 	
-	- Group emal address - **Marketing** is filled in automatically after entering the Site name; leave as is
+	- Group email address - **Marketing** is filled in automatically after entering the Site name; leave as is
 	
 	- Site address - **Marketing** is filled in automatically after entering the Site name; leave as is
 
