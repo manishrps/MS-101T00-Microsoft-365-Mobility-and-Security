@@ -5,7 +5,7 @@ Now that you have created a Safe Attachments policy for Adatum, you want to crea
 
 ### Task 1 – Create a Safe Links Policy
 
-In this task, you will create a Safe Links policy that applies to all users in your tenant. You will then add the **http://tailspintoys.com** URL to the company-wide list of blocked URLs that you will define in the Safe Links global settings. The blocked URLs and other options defined in the Safe Links global settings are only applied to users who are included in active Safe Links policies. There is no built-in or default Safe Links policy, so you must create at least one Safe Links policy in order for these global settings to be active.  
+In this task, you will create a Safe Links policy that applies to all users in your tenant. You will then add the **http://tailspintoys.com** URL to the company-wide list of blocked URLs that you will define in the Safe Links global settings. The blocked URLs and other options defined in the Safe Links global settings are only applied to users who are included in active Safe Links policies. There is no built-in or default Safe Links policy, so you must create at least one Safe Links policy for these global settings to be active.  
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **Admin** account, and you should still be logged into Microsoft 365 as **Holly Dickson**.
 
@@ -15,7 +15,7 @@ In this task, you will create a Safe Links policy that applies to all users in y
 
 4. In the **Policy** window, double-click the **ATP Safe Links** tile. 
 
-5. On the **Safe links** page, selecty **+Create** on the menu bar. This initiates the **Create Safe Links Policy** wizard.
+5. On the **Safe links** page, select **+Create** on the menu bar. This initiates the **Create Safe Links Policy** wizard.
 
 5. On the **Name your policy** page, enter **LinkPolicy1** in the **Name** field and then select **Next**.
 
