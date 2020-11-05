@@ -19,30 +19,30 @@ To implement Sensitivity labels as part of your pilot project at Adatum, you mus
 
 5. In the wizard, on the **Install the Azure Information Protection client** page, clear (uncheck) the **Help improve Azure Information Protection by send usage statistics to Microsoft** check box and then select the **I agree** button.
 
-6. If a **User Accont Control notification** dialog box appears that asks whether the app is allowed to make changes to this device, select **Yes**.
+6. If a **User Account Control notification** dialog box appears that asks whether the app is allowed to make changes to this device, select **Yes**.
 
 7. Once the installation is complete, select **Close**.
 
 8. In your Edge browser, close the **Download** tab that you opened in this task to download the Azure Information Protection client.
 
-You have successfully installed the AIP Unfied Label client on Client 1 VM.
+You have successfully installed the AIP Unified Label client on Client 1 VM.
 
 
 ### Task 2 – Configure Sensitivity Labels
 
-In this exercise you will create an Sensitvity label and add it to the default policy so that it’s valid for all users of the Adatum tenant.
+In this exercise you will create an Sensitivity label and add it to the default policy so that it’s valid for all users of the Adatum tenant.
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 
-2. In **Microsoft Edge**, select the **Data loss prevention** tab that displays the **Office 365 Security & Complaince Admin center**.
+2. In **Microsoft Edge**, select the **Data loss prevention** tab that displays the **Office 365 Security & Compliance** center.
 
-3. In the **Office 365 Security & Complaince Admin center**, in the left-hand navigation pane, select **Classification**, and then select **Sensitivity labels.**
+3. In the **Office 365 Security & Compliance** center, in the left-hand navigation pane, select **Classification**, and then select **Sensitivity labels.**
 
-4. In the **Home > sebnsitivity** window, three tabs are displayed across the top of the page. The **Labels** tab is displayed by default. <br/>
+4. In the **Home > sensitivity** window, three tabs are displayed across the top of the page. The **Labels** tab is displayed by default. <br/>
 
 	On the **Labels** tab, a warning message is displayed in the middle of the screen indicating **Your organization has not turned on the ability to process content in Office online files that have encrypted sensitivity labels applied and are stored in OneDrive and SharePoint.** <br/>
 	
-	Select the **Turn on now** button that appears on the right side of this message. This will enable Adatum to apply the Sensitivity labels inisde its Micrsoft 365 enviroment.
+	Select the **Turn on now** button that appears on the right side of this message. This will enable Adatum to apply the Sensitivity labels inside its Microsoft 365 environment.
 
 5. On the **Labels** tab, select **+Create a label** that appears in the middle of the screen on the menu bar. This initiates the **New sensitivity label** wizard.
 
@@ -50,9 +50,9 @@ In this exercise you will create an Sensitvity label and add it to the default p
 
 	- Name: **PII**
 
-	- Description for users : **Documents, files, and emails with PII**
+	- Description for users: **Documents, files, and emails with PII**
 
-	- Description for admins : **Documents, files, and emails with PII**
+	- Description for admins: **Documents, files, and emails with PII**
 
 7. Select **Next**.
 
@@ -65,38 +65,38 @@ In this exercise you will create an Sensitvity label and add it to the default p
 11. On the **Content Marking** page, set the **Content Marking** toggle switch to **On** and then select all three check boxes. Under each setting, select **Customize text** and then enter the following information for each option (select **Save** after entering the settings for each option): <br/>
 
 	- Add a watermark 
-		- Watermark text - **Sensitive - Do Not Share** (Hint: after entering this value, copy it so that you can paste it in the other two settings)
-		- Font size - **25**
-		- Font Color - **Blue**
-		- Text layout - **Diagonal**
+		- Watermark text: **Sensitive - Do Not Share** (Hint: after entering this value, copy it so that you can paste it in the other two settings)
+		- Font size: **25**
+		- Font color: **Blue**
+		- Text layout: **Diagonal**
 			
 	- Add a header 
-		- Header text - **Sensitive - Do Not Share**
-		- font size - **25**
-		- Font Color - **Red**
-		- Align text - **Center**
+		- Header text: **Sensitive - Do Not Share**
+		- font size: **25**
+		- Font color: **Red**
+		- Align text: **Center**
 			
 	- Add a footer 
-		- Footer text - **Sensitive - Do Not Share**
-		- font size - **25**
-		- Font Color - **Red**
-		- Align text - **Center**
+		- Footer text: **Sensitive - Do Not Share**
+		- font size: **25**
+		- Font color: **Red**
+		- Align text: **Center**
 
 12. On the **Content Marking** page, select **Next**. 
 
-13. On the **Auto-abeling for Office apps** page, set the **Auto-abeling for Office apps** toggle switch to **On**. This enables a series of options that you will update in the next steps.
+13. On the **Auto-labeling for Office apps** page, set the **Auto-labeling for Office apps** toggle switch to **On**. This enables a series of options that you will update in the next steps.
 
 14. Under **Detect content that matches these conditions**, select **+Add condition** and then select **Content contains**.
 
-15. In the **Content contains** window, select the **Add** drop-down arrow and then select **Sensitibve info types**.
+15. In the **Content contains** window, select the **Add** drop-down arrow and then select **Sensitive info types**.
 
 16. In the **Sensitive info types** window, select the **Select all** check box and then select **Add**.
 
 17. All of the sensitive information types will be displayed. Scroll to the bottom on the window and update the following settings:
 
-	- When Contnent Matches these conditions - select **Automatically apply the Label**
+	- When Content Matches these conditions: select **Automatically apply the Label**
 
-	- Display this message to users when the label is applied - enter **Sensitivie content has been dectected and will be encrypted**.
+	- Display this message to users when the label is applied: enter **Sensitive content has been detected and will be encrypted**.
 		
 18. Select **Next**.
 
@@ -104,7 +104,7 @@ In this exercise you will create an Sensitvity label and add it to the default p
 
 20. On the **Review your settings and finish** page, review the information you entered. If any settings need to be corrected, select the corresponding **Edit** option. When all information appears correct, select **Create label**.
 
-21. An **Error** dialog box should appear that states the generated rule blob is too long. This is to show you the maxium amount selections you can make at one time per rule, which is **49152**. <br/>
+21. An **Error** dialog box should appear that states the generated rule blob is too long. Thee maximum amount of sensitive information type selections you can make at one time per rule is **49152**. By selecting all the sensitive information types, you have exceeded this limit.<br/>
 
 	To correct this issue, select **OK**, and then on the **Review your settings and finish** page, scroll down to the **Auto-labeling for Office apps** section and select **Edit**.
 	
@@ -114,7 +114,7 @@ In this exercise you will create an Sensitvity label and add it to the default p
 
 24. On the **Auto-labeling for Office apps** page, under **Detect content that matches these conditions**, select **+Add condition** and then select **Content contains**.
 
-25. In the **Content contains** window, select the **Add** drop-down arrow and then select **Sensitibve info types**.
+25. In the **Content contains** window, select the **Add** drop-down arrow and then select **Sensitive info types**.
 
 26. In the **Sensitive info types** window, in the list of sensitive information types, select the **ABA routing number** and the **U.S. Social security Number (SSN)** check boxes, select **Add**, and then select **Next**.
 
@@ -177,7 +177,7 @@ In this exercise you will use the Sensitivity label that you created in the prev
 
 	- In the **Home** ribbon, locate the **Sensitivity** group. 
 	
-	- Below the **Home** ribbon, locate the **Sensitivity dropdown**tab Congratulations you have successfully added a New custom label name PII, (**Note:** you may not see it if it hasn't been 24 hours) Select **Search**.bar. then type **Sensitivity** the select the arrow to view the newly created a label titled **PII** in the prior task, **PII** will appear in the left side of the Sensitivity label bar. 
+	- Below the **Home** ribbon, locate the **Sensitivity dropdown** tab Congratulations you have successfully added a New custom label name PII, (**Note:** you may not see it if it hasn't been 24 hours) Select **Search**.bar. then type **Sensitivity** the select the arrow to view the newly created a label titled **PII** in the prior task, **PII** will appear in the left side of the Sensitivity label bar. 
 	
 	Select the **PII** button on the **Sensitivity** bar.
 
@@ -187,7 +187,7 @@ In this exercise you will use the Sensitivity label that you created in the prev
 
 10. In the **Justification Required** window appears, select  "Change".
 
-11. Re-apply the Senstivity label by selecting the**Sensitivity** group and then selecting **PII**
+11. Re-apply the Sensitivity label by selecting the **Sensitivity** group and then selecting **PII**.
 
 12. Enter the following text: **111-11-1111**
 
@@ -208,7 +208,7 @@ You have just successfully created an AIP protected Word document that is read-o
 
 ### Task 4 – Verify Sensitivity label policy
 
-In the prior task, you created a Word document and protected it with a Sensitivty label by inserting a watermark and restricted permissions. To verify whether the protection that you assigned to the document works, you will first email the document to Joni Sherman and to your own personal email address. You will then test what functionality is possible for both Joni and Alex Wilber.
+In the prior task, you created a Word document and protected it with a Sensitivity label by inserting a watermark and restricted permissions. To verify whether the protection that you assigned to the document works, you will first email the document to Joni Sherman and to your own personal email address. You will then test what functionality is possible for both Joni and Alex Wilber.
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Alex Wilber**. 
 
