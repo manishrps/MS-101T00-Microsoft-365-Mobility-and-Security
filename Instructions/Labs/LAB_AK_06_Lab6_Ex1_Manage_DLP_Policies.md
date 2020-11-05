@@ -18,7 +18,7 @@ Given that, you will still configure a policy tip for the DLP policy that you cr
 
 2. In **Microsoft Edge**, the Office 365 Security & Compliance Center tab should still be open; if not, then open a new tab and navigate to **https://protection.office.com**.
 
-3. In the **Office 365 Security &amp; Compliance Center**, in the left-hand navigation pane, select **Data loss prevention** and then select **Policy**.
+3. In the **Office 365 Security &amp; Compliance** center, in the left-hand navigation pane, select **Data loss prevention** and then select **Policy**.
 
 4. In the **Policy** window, select **+Create a policy** to start the wizard for creating a new data loss prevention policy.
 
