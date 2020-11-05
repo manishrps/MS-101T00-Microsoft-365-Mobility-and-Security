@@ -10,9 +10,9 @@ In this task, you will verify whether a default Microsoft 365 alert is triggered
 
 1. You should still be logged into the Client 1 VM (LON-CL1) as the **Admin,** and you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. In your **Microsoft Edge** browser, select the **Microsoft 365 Security &amp; Compliance Center** tab.
+2. In your **Microsoft Edge** browser, select the **Office 365 Security &amp; Compliance** center tab.
 
-3. In the **Microsoft 365 Security &amp; Compliance center**, the **Alert policies** window should still be open from the prior task; if not, select **Alerts** and then **Alert Policies** from the left-hand navigation bar. <br/>
+3. In the **Office 365 Security &amp; Compliance** center, the **Alert policies** window should still be open from the prior task; if not, select **Alerts** and then **Alert Policies** from the left-hand navigation bar. <br/>
 
 4. You want to search through the default system policies for a policy named **eDiscovery search started or exported**. Since there are so many pre-existing system policies, the easiest way to locate the policy is to search for it. In the **Search** field at the top of the screen, enter **eDiscovery**. In the policy list, you should see **eDiscovery search started or exported**. Select the check box next to this policy.
 
@@ -42,9 +42,9 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 
 1. You should still be logged into the Client 1 VM (LON-CL1) as the **Admin,** and you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. In your **Microsoft Edge** browser, select the **Microsoft 365 Security &amp; Compliance Center** tab. 
+2. In your **Microsoft Edge** browser, select the **Office 365 Security &amp; Compliance** center tab. 
 
-3. In the **Microsoft 365 Security &amp; Compliance Center**, in the left-hand navigation pane, select **Search**, and then under it, select **Content search**.
+3. In the **Office 365 Security &amp; Compliance** center, in the left-hand navigation pane, select **Search**, and then under it, select **Content search**.
 
 4. The **Content search** window has two tabs - a **Searches** tab and an **Exports** tab. The **Searches** tab is displayed by default. Select the **+New search** button.
 
@@ -70,7 +70,7 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 
 	**Note:** It may take up to 10 minutes or so before the email arrives in Holly's Inbox.
 
-12. In your **Edge** browser, switch back to the **Microsoft 365 Security &amp; Compliance Center** tab and under the **Search** group in the left-hand navigation pane, select **Audit Log Search**. 
+12. In your **Edge** browser, switch back to the **Office 365 Security &amp; Compliance** center tab and under the **Search** group in the left-hand navigation pane, select **Audit Log Search**. 
 
 13. At the bottom of the page, select the **Search** button to display all recent activity. This will display the activity that created this alert. <br/>
 
