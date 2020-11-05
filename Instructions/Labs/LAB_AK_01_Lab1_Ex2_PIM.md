@@ -114,7 +114,7 @@ Now that Patti Fernandez has been made an eligible user for the Global administr
 
 15. Retrieve the verification code from the text message that is sent to your phone.
 
-16. In the **Phone** window, enter the 6 digit verficiation code in the **Enter code** field and then select **Next**.
+16. In the **Phone** window, enter the 6 digit verification code in the **Enter code** field and then select **Next**.
 
 17. Once verification is complete and you receive a message indicating your phone was registered successfully, select **Next**.
 
