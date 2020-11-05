@@ -10,9 +10,9 @@ To use Microsoft's Attack Simulator to simulate a phishing attack, you must firs
 
 1. Switch to the **LON-CL1** VM, where you should still be logged in as the **Admin** account. If necessary, log in as the **Admin** with a password of **Pa55w.rd**. 
 
-2. In your **Edge** browser, you should still be logged into Microsoft 365 as Holly Dickson. Select the tab containing the **Office 365 Security and Compliance center**, which should still be open from the Safe Links lab that you just completed. 
+2. In your **Edge** browser, you should still be logged into Microsoft 365 as Holly Dickson. Select the tab containing the **Office 365 Security and Compliance** center, which should still be open from the Safe Links lab that you just completed. 
 
-3. In the **Office 365 Security and Compliance center**, in the left-hand navigation pane under **Threat management**, select **Attack simulator**. 
+3. In the **Office 365 Security and Compliance** center, in the left-hand navigation pane under **Threat management**, select **Attack simulator**. 
 
 4. On the **Attack Simulator** page, scroll down to see the four types of attacks that you can simulate. Also note the warning message that indicates you must enable multi-factor authentication (MFA) to schedule or terminate attacks. This is required because the system wants to confirm your credentials before you conduct a simulated attack. In the upcoming steps, you will enable MFA for Holly and then perform a phishing attack.
 
@@ -32,7 +32,7 @@ To use Microsoft's Attack Simulator to simulate a phishing attack, you must firs
 
 11. Once you are signed out, close the browser session and all the browser tabs.
 
-12. Select the **Edge** icon on your taskbar to open a new browser session, and then navigate directly to the **Office 365 Security and Compliance center** by entering the following URL in the address bar: **https://protection.office.com**
+12. Select the **Edge** icon on your taskbar to open a new browser session, and then navigate directly to the **Office 365 Security and Compliance** center by entering the following URL in the address bar: **https://protection.office.com**
 
 13. In the **Sign in** window, enter **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**. In the **Enter password** window, enter **Pa55w.rd** and select **Sign in**.
 
@@ -46,7 +46,7 @@ To use Microsoft's Attack Simulator to simulate a phishing attack, you must firs
 
 18. Retrieve the verification code from the text message that is sent to your phone.
 
-19. In the **Phone** window, enter the 6 digit verficiation code in the **Enter code** field and then select **Next**.
+19. In the **Phone** window, enter the 6 digit verification code in the **Enter code** field and then select **Next**.
 
 20. Once verification is complete and you receive a message indicating your phone was registered successfully, select **Next**.
 
@@ -56,9 +56,9 @@ To use Microsoft's Attack Simulator to simulate a phishing attack, you must firs
 
 23. If you take too long to complete this process, the **Enter password** window will appear with a message indicating you took too long to complete the sign in process, so you will be timed-out. If this occurs, you must sign in again with Holly's password of **Pa55w.rd**. Another verification code will be texted to your phone, so enter it in the **Enter code** screen that appears and select **Verify**.
 
-24. The **Office 365 Security and Compliance center** should now be displayed in your browser. You will resume from here in the next task when you launch a spear phishing attack using the Attack Simulator. Leave this tab open in your browser. 
+24. The **Office 365 Security and Compliance** center should now be displayed in your browser. You will resume from here in the next task when you launch a spear phishing attack using the Attack Simulator. Leave this tab open in your browser. 
 
-23. You have now configured MFA, you have signed into the **Security and Compliance center** using MFA, and you are ready to run the Attack Simulator. Leave everything as is in your VM and proceed to the next task.
+23. You have now configured MFA, you have signed into the **Office 365Security and Compliance** center using MFA, and you are ready to run the Attack Simulator. Leave everything as is in your VM and proceed to the next task.
 
 
 ### Task 2: Configure and launch a Spear Phishing attack
@@ -67,11 +67,11 @@ Now that Holly has turned on MFA, she is ready to run the Attack Simulator and l
 
 1. You should still be on **LON-CL1**, and you should still be logged in as the **Admin** account. If necessary, log in as the **Admin** with a password of **Pa55w.rd**.
 
-2. You should still have the **Office 365 Security and Compliance center** open in in your **Edge** browser from the prior task. If not, enter **https://protection.office.com** in the address bar, and then when you receive the dialog box asking for a second form of authentication, proceed through the verification process. 
+2. You should still have the **Office 365 Security and Compliance** center open in in your **Edge** browser from the prior task. If not, enter **https://protection.office.com** in the address bar, and then when you receive the dialog box asking for a second form of authentication, proceed through the verification process. 
 
-3. In the **Office 365 Security and Compliance center**, select **Threat management** in the left-hand navigation pane and then select **Attack simulator**. 
+3. In the **Office 365 Security and Compliance** center, select **Threat management** in the left-hand navigation pane and then select **Attack simulator**. 
 
-4. On the **Attack Simulator** page, you reviewed the four types of simulated attacks that are available in the prior task. For this simulation, Holly has decided to conduct an account breach in which she will use a URL to try and obtain user names and passwords. This is referred to in the Attack Simulator as a **Spear Phishing (Credentials Harvest)** attack. <br/>
+4. On the **Attack Simulator** page, you reviewed the four types of simulated attacks that are available in the prior task. For this simulation, Holly has decided to conduct an account breach in which she will use a URL to try and obtain usernames and passwords. This is referred to in the Attack Simulator as a **Spear Phishing (Credentials Harvest)** attack. <br/>
 
 	You can launch this attack either from this page or the **Attack Details** page. Since the **Attack Details** page has additional information on what this attack will do, it is recommended that you launch it from there so that you can learn about the specifics of this type of attack. <br/>
 	
