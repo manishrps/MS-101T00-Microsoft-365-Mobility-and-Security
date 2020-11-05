@@ -130,59 +130,50 @@ In this exercise you will create an Sensitvity label and add it to the default p
 
 32. In the **Create policy** wizard, on the **Choose sensitivity labels to publish** page, the **PII** label is already listed, so select **Next**.
 
-33. On the **Sensitivity labels to publish** window, the **PII** check box is already selected, so select **Add**.
+33. On the **Publish to users and groups** page, select **Choose users or groups**.
 
+34. On the **Edit Locations** page, select **+Add**. A new window will appear that displays all the Adatum users and groups. Select the top check box to the left of the **Name** field, which will automatically select all the check boxes. Select **Add** and then select **Done**.
 
+35. On the **Publish to users and groups** page, select **Next**.
 
+36. On the **Policy settings** page, select the **Apply this label by default to documents and emails** field, and in the drop-down menu that appears, select **PII**. Select the **Users must provide justification to remove a label or lower classification label** checkbox, and then select **Next**.
 
+37. On the **Name your policy** page, enter **PII Policy** in the **Name** field, and then enter (or copy and paste) the following description for this sensitivity label policy: **The purpose of this policy is to detect sensitive information such as ABA bank routing numbers and US social security numbers in emails and documents, and to encrypt this information when it's discovered. The user must provide an explanation for removing the classification label.** Select **Next**.
 
-select **Publish Labels**.
+38. On the **Review and finish** page, review the information you entered. If anything needs to be corrected, select the corresponding **Edit** option and make the corrections. When all information is correct, select **Submit**.
 
-23. In the **Sensitivity Labels policy** window, under **Choose sensitivty labels to publish** select choose **Choose sensitivty labels to publish**. Then select **PII** and select **Add**.
+39. On the **New policy created** page, select **Done**.
 
-24. In the **Sensitivity Labels policy** window, under **Choose sensitivty labels to publish** select **Next**.
-
-25. In the **Sensitivity Labels policy** window, under **Publish to users and groups** select **Choose users or groups**.
-
-26. In the **Publish to users and groups** window, under **Edit Locations**  select **Add**. A new window will appear select **All company** and then select **Add**.
-
-27. In the **Publish to users and groups** window, under **Edit Locations**  select **Done**
-
-28. In the **Sensitivity Labels policy** window, under **Publish to users and groups** select **Next**.
-
-29. In the **Sensitivity Labels policy** window, under **Policy settings** select **PII** under the **Apply this label by default to documents and emails** section. then select the **Users must provide justification to remove a label or lower classification label** checkbox. Then select **Next**.
-
-30. In the **Sensitivity Labels policy** window, under **Name your policy** enter the following information:
-
-	- Name : **PII Policy**
-
-	- Description : **This policy is to detect and apply an encryption to emails and documents that have sensitive information such as ABA bank routing numbers and US social security numbers. The user must provide an explanation for removing the classification label.**
-
-31. In the **Sensitivity Labels policy** window, under **Name your policy** select **Next**.
-
-32. In the **Sensitivity Labels policy** window, under **Review your policy** select **Finish**.
-
-33. Congratulations you have successfully added a New custom label Policy name PII policy, Select **Done**.
 
 ### Task 3 – Assign an Sensitivity label to a document
 
-In this exercise you will use the Sensitivity label that you created in the previous task to classify a document. For this task, you will sign into Microsoft Apps as Alex Wilber, who is a regular user without any elevated privileges.
+In this exercise you will use the Sensitivity label that you created in the previous task to classify a document. For this task, you will sign into Microsoft 365 as Alex Wilber, who is a regular user without any elevated privileges.
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 
-2. In **Microsoft Edge**, open a new tab and enter the following URL in the address bar: **https://portal.office.com/** 
+2. You must first sign out of Microsoft 365 as Holly and sign back in as Alex Wilber. In your Edge browser, select the **Microsoft 365 admin center** tab, and then select the circle with Holly Dickson's HD initials in the upper right corner of the screen. In the **Holly Dickson** window, select **Sign out**.
 
-3. then sign in as **AlexW@xxxxxZZZZZZ.onmicrosoft** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**.
+3. Once you are signed out, close all the tabs in your Edge browser except for the **Sign out** tab.
 
-4. On the **Enter password** window, enter **Pa55w.rd** and select **Sign in**.
+4. In the **Sign out** tab, enter the following URL in the address bar: **https://portal.office.com/** 
 
-5. Open **Word online,** select **Blank document**.
+5. In the **Pick an account** window, select **Use another account**.
 
-6. If the **Privacy** window appears, close it.
+6. In the **Sign in** window, enter **AlexW@xxxxxZZZZZZ.onmicrosoft** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**.
 
-7. In the **Word** document, type **Testing personally identifiable information (PII).**
+7. On the **Enter password** window, enter **Pa55w.rd** and select **Sign in**.
 
-8. There are two new additions to Word that appear as a result of having Sensitivity labels enabledat the start of this exercise: <br/>
+8. If a **Get your work done with Office 365** window appears, select the X to close it.
+
+9. On the **Microsoft Office Home** tab, select the **Word** icon in the column of app icons on the left-side of the screen. 
+
+10. In **Word Online**, select **New blank document**.
+
+11. If a **Your privacy option** window appears, select **Close**.
+
+12. In the **Word** document, type **Testing personally identifiable information (PII).**
+
+13. There are two new additions to Word that appear as a result of enabling Sensitivity labels at the start of this exercise: <br/>
 
 	- In the **Home** ribbon, locate the **Sensitivity** group. 
 	
