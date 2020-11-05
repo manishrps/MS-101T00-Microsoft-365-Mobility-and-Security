@@ -23,7 +23,7 @@ In this task, you will turn on Windows Defender for Office 365, which provides a
     - **Turn on ATP for SharePoint, OneDrive and Microsoft Teams** - set the toggle switch to **On** (this enables Windows Defender for Office 365, formerly known as Advanced Threat Protection, or ATP)
     - **Turn on Safe Documents for Office clients** - set the toggle switch to **On**
 
-7. On the **Safe attachements** window, select **+Create** on the menu bar to initiate the **New Safe Attachment Policy** wizard.
+7. On the **Safe attachments** window, select **+Create** on the menu bar to initiate the **New Safe Attachment Policy** wizard.
 
 8. On the **Name your policy** page, enter **AttachmentPolicy1** in the **Name** field and then select **Next**.
 
