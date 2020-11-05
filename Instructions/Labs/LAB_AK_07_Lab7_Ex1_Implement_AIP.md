@@ -183,7 +183,7 @@ In this exercise you will use the Sensitivity label that you created in the prev
 
 9. In the **Justification Required** window appears, select the following options:
 
-	- Select Other (explain): **Testing what happens when i remove the label**
+	- Select Other (explain): **Testing what happens when I remove the label**
 
 10. In the **Justification Required** window appears, select  "Change".
 
