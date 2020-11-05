@@ -67,7 +67,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you have been 
 
 16. Select **Save**.
 
-17. Scroll to the top of the **Organization information** pane. Note the message indicating the changes have been saved. Select the **X** in the upper right hand corner to close the pane.
+17. Scroll to the top of the **Organization information** pane. Note the message indicating the changes have been saved. Select the **X** in the upper right-hand corner to close the pane.
 
 18. Back on the **Organization profile** tab, in the list of organization profile data, select **Release preferences**.
 
@@ -90,7 +90,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you have been 
     
 22. Select **Save**.
 
-23. After selecting the users, scroll to the bottom onf the **Release preferences** pane to verify you selected the required users. Close the **Release preferences** pane once you verified these four users were selected. 
+23. After selecting the users, scroll to the bottom of the **Release preferences** pane to verify you selected the required users. Close the **Release preferences** pane once you verified these four users were selected. 
 
 24. Tn the list of organization profile data, select **Custom themes**.
 
@@ -142,7 +142,7 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 	- Username: **Holly** <br/>
 	
-		‎**IMPORTANT:** To the right of the **Username** field is the domain field. It should be prefilled with the **xxxxxZZZZZZ.onmicrosoft.com** cloud domain (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). However, if your lab hosting provider set the custom **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain as Adatum's default domain and you did not change the default domain to the **xxxxxZZZZZZ.onmicrosoft.com** domain earlier in this task, then the custonm domain will appear here instead. If that happens, select the drop-down arrow in this domain field and select **xxxxxZZZZZZ.onmicrosoft.com**. You should also perform steps 2-3 to change **xxxxxZZZZZZ.onmicrosoft.com** to the default domain as this is needed in the next task. <br/>
+		‎**IMPORTANT:** To the right of the **Username** field is the domain field. It should be prefilled with the **xxxxxZZZZZZ.onmicrosoft.com** cloud domain (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). However, if your lab hosting provider set the custom **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain as Adatum's default domain and you did not change the default domain to the **xxxxxZZZZZZ.onmicrosoft.com** domain earlier in this task, then the custom domain will appear here instead. If that happens, select the drop-down arrow in this domain field and select **xxxxxZZZZZZ.onmicrosoft.com**. You should also perform steps 2-3 to change **xxxxxZZZZZZ.onmicrosoft.com** to the default domain as this is needed in the next task. <br/>
 	
 		After configuring this field, Holly’s username should appear as:<br/>
 
@@ -213,7 +213,7 @@ Each user is a key member of your pilot project team. While their user accounts 
 
 9. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users**, and then under it, select **Active users**.
 
-10. In the **Active Users** window, when you hover your mouse over a user's **Display name** (or you select the check mark field to the left of the **Display name**), a **key icon** appears to the right of the user's name. By selecting the key icon, you can reset a user's password. You need to reset Alex, Joni, Lynne, adn Patti's passwords to **Pa55w.rd**.<br/>
+10. In the **Active Users** window, when you hover your mouse over a user's **Display name** (or you select the check mark field to the left of the **Display name**), a **key icon** appears to the right of the user's name. By selecting the key icon, you can reset a user's password. You need to reset Alex, Joni, Lynne, and Patti's passwords to **Pa55w.rd**.<br/>
 
     Select the key icon for **Alex Wilber**.
 
