@@ -10,7 +10,7 @@ In this next phase of your Adatum pilot project, you will access the Security & 
 
 2. In Microsoft Edge, in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Security** to open the Office 365 Security and Compliance center.
 
-3. In the **Security and Compliance admin center**, in the left-hand navigation pane, select **Information governance**, and then under it select **Archive**.
+3. In the **Office 365 Security and Compliance** center, in the left-hand navigation pane, select **Information governance**, and then under it select **Archive**.
 
 4. On the **Archive** window, note that the archive mailboxes for all users other than Holly Dickson are **enabled**. These archive mailboxes were enabled when the VM lab environment was built for this training course and these users were preconfigured in the tenant. However, since Holly's user account was added in Lab 1, her archive mailbox is **disabled** by default.
 
@@ -94,9 +94,9 @@ You have created a new retention policy through the Exchange Admin Center. You a
 
 Now that Holly has created a retention policy through the Exchange Admin Center, she wants to do the same in the Security & Compliance Center. For this policy, Holly wants to preserve the content of all Exchange Online mailboxes from deletion for 7 years after the last modification. 
 
-1. In **Microsoft Edge**, select the **Security &amp; Compliance Center** tab if it's still open; otherwise, in the **Microsoft 365 admin center**, under **Admin centers**, select **Security**.
+1. In **Microsoft Edge**, select the **Office 365 Security &amp; Compliance** center tab if it's still open; otherwise, in the **Microsoft 365 admin center**, under **Admin centers**, select **Security**.
 
-2. In the **Office 365 Security &amp; Compliance center**, in the left-hand navigation pane, select **Information governance** and then select **Retention**.
+2. In the **Office 365 Security &amp; Compliance** center, in the left-hand navigation pane, select **Information governance** and then select **Retention**.
 
 3. In the **Retention** window, select the **+Create** button to start the wizard that’s used to create a new retention policy.
 
