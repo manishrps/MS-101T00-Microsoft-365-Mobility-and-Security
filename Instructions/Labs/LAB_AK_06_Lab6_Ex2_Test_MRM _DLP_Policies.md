@@ -28,7 +28,7 @@ In this exercise, you will send an email from Holly Dickson to one of your pilot
 
 7. If necessary, log in as the **Admin** with a password of **Pa55w.rd**.
 
-8. In the **Edge** browser, you should have one tab open with Outlook on the web for Alex Wilber. Select Alex's user icon in the upper right hand corner of the screen, and in the **My account** window that appears, select **Sign out**.
+8. In the **Edge** browser, you should have one tab open with Outlook on the web for Alex Wilber. Select Alex's user icon in the upper right-hand corner of the screen, and in the **My account** window that appears, select **Sign out**.
 
 9. In the browser tab in which you are signed out, enter the following URL in the address bar: **https://outlook.office365.com**
 
