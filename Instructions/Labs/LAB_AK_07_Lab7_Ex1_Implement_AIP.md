@@ -36,81 +36,107 @@ In this exercise you will create an Sensitvity label and add it to the default p
 
 2. In **Microsoft Edge**, select the **Data loss prevention** tab that displays the **Office 365 Security & Complaince Admin center**.
 
-5. In the **Office 365 Security & Complaince Admin center**, in the left-hand navigation pane, select **Classification**, and then select **Sensitivity labels.**
+3. In the **Office 365 Security & Complaince Admin center**, in the left-hand navigation pane, select **Classification**, and then select **Sensitivity labels.**
 
-6. In the **Home > sebnsitivity** window, three tabs are displayed across the top of the page. The **Labels** tab is displayed by default. <br/>
+4. In the **Home > sebnsitivity** window, three tabs are displayed across the top of the page. The **Labels** tab is displayed by default. <br/>
 
 	On the **Labels** tab, a warning message is displayed in the middle of the screen indicating **Your organization has not turned on the ability to process content in Office online files that have encrypted sensitivity labels applied and are stored in OneDrive and SharePoint.** <br/>
 	
 	Select the **Turn on now** button that appears on the right side of this message. This will enable Adatum to apply the Sensitivity labels inisde its Micrsoft 365 enviroment.
 
-7. On the **Labels** tab, select **+Create a label** that appears on the menu bar.
+5. On the **Labels** tab, select **+Create a label** that appears in the middle of the screen on the menu bar. This initiates the **New sensitivity label** wizard.
 
-8. In the **new Senesitivity Label** window, enter the following information:
+6. In the **New sensitivity label** wizard, on the **Name and create a tooltip for your label** page, enter the following information:
 
-	- Label display name: **PII**
+	- Name: **PII**
 
-	- Description : **Documents, files, and emails with PII**
+	- Description for users : **Documents, files, and emails with PII**
 
 	- Description for admins : **Documents, files, and emails with PII**
 
-9. Select **Next**.
+7. Select **Next**.
 
-10. In the **Scope** Section confirm that the**Files & Emails** box is checked. Then select **Next**.
+8. On the **Define the scope for this label** page, confirm that the **Files & Emails** check box is selected and then select **Next**.
 
-11. In the **Sensitivity Labels** window, under **Files** Select both check boxes for **Encrypt files and emails** and **Mark the content of files**, then select **Next**.
+9. On the **Choose protection settings for files and emails** page, select both check boxes for **Encrypt files and emails** and **Mark the content of files**, then select **Next**.
 
-12. In the **Sensitivity Labels** window, under **Encryption** Select  the **Remove encryption if the file is encrypted**, then select **Next**.
+10. On the **Encryption** page, select the **Remove encryption if the file is encrypted** option and then select **Next**.
 
-13. In the **Sensitivity Labels** window, under **Content Marking** set the switch to the**On** postion, then select all check boxes and enter the folloiwing. :
-	- Add a watermark : Sensitive do not share.
-		- font size : 25
-		- Font Color : Red
-		- Text layout : Diagonal
-			- Select **Save**.
+11. On the **Content Marking** page, set the **Content Marking** toggle switch to **On** and then select all three check boxes. Under each setting, select **Customize text** and then enter the following information for each option (select **Save** after entering the settings for each option): <br/>
 
-	- Add a header : Sensitive do not share.
-		- font size : 25
-		- Font Color : Red
-		- Align text : Center
-			- select **Save**.
-	- Add a footer : Sensitive do not share.
-		- font size : 25
-		- Font Color : Red
-		- Align text :  Center
-			- select **Save**.
+	- Add a watermark 
+		- Watermark text - **Sensitive - Do Not Share** (Hint: after entering this value, copy it so that you can paste it in the other two settings)
+		- Font size - **25**
+		- Font Color - **Blue**
+		- Text layout - **Diagonal**
+			
+	- Add a header 
+		- Header text - **Sensitive - Do Not Share**
+		- font size - **25**
+		- Font Color - **Red**
+		- Align text - **Center**
+			
+	- Add a footer 
+		- Footer text - **Sensitive - Do Not Share**
+		- font size - **25**
+		- Font Color - **Red**
+		- Align text - **Center**
 
-14. In the **Sensitivity Labels** window, under **Content Marking** select **Next**. 
+12. On the **Content Marking** page, select **Next**. 
 
-15. In the **Sensitivity Labels** window, under **Auto-Labeling for Office apps**  set the switch to the**On** postion. then enter the following. :
+13. On the **Auto-abeling for Office apps** page, set the **Auto-abeling for Office apps** toggle switch to **On**. This enables a series of options that you will update in the next steps.
 
-	- Detect content that matches these condistions :
-		- content contains:
-			- Default
-			- All of these
-			- Select the **Add** dropdown then **Sensitve info types**.
-			- a new window will open then select **Select All**. then select **Add**.
-		- When Contnent Matches these conditions :
-			- **Automatically apply the Label**.
+14. Under **Detect content that matches these conditions**, select **+Add condition** and then select **Content contains**.
 
-		- Display this message to users when the label is applied :
-			- **Sensitivie content has been dectected and will be encrypted**.
+15. In the **Content contains** window, select the **Add** drop-down arrow and then select **Sensitibve info types**.
+
+16. In the **Sensitive info types** window, select the **Select all** check box and then select **Add**.
+
+17. All of the sensitive information types will be displayed. Scroll to the bottom on the window and update the following settings:
+
+	- When Contnent Matches these conditions - select **Automatically apply the Label**
+
+	- Display this message to users when the label is applied - enter **Sensitivie content has been dectected and will be encrypted**.
 		
+18. Select **Next**.
 
-16. In the **Sensitivity Labels** window, under **Auto-Labeling for Office apps** select **Next**.
+19. On the **Define protection settings for groups and sites** page, do not select either check box. Select **Next**.
 
-17. In the **Sensitivity Labels** window, under **Define Protection settings for groups and sites** select **Next**.
+20. On the **Review your settings and finish** page, review the information you entered. If any settings need to be corrected, select the corresponding **Edit** option. When all information appears correct, select **Create label**.
 
-18. In the **Sensitivity Labels** window, under **Review your settings and Finish** review and validate the settings that you have implemented and then select **Create label**.
+21. An **Error** dialog box should appear that states the generated rule blob is too long. This is to show you the maxium amount selections you can make at one time per rule, which is **49152**. <br/>
 
-19. There should be an error message the pops up. this message is stating the rule is to long. this is to show you the maxium amount selections you can make at one time per rule which is **49152**. To correct this issue go back to **Auto-labeling for Office apps** under the **Files** section, and select the **Trash can** next to the **Default** action and repeat **step 15** but instead of selecting  **Select all**, just select **ABA routing number** and **U.S. Social security Number.**
+	To correct this issue, select **OK**, and then on the **Review your settings and finish** page, scroll down to the **Auto-labeling for Office apps** section and select **Edit**.
+	
+22. On the **Choose protection settings for files and emails** page, select **Next** on the **Encryption** page, and then select **Next** on the **Content Marking** page. This will take you to the **Auto-labeling for Office apps** page. 
 
-20. In the **Sensitivity Labels** window, under **Review your settings and Finish** review and validate the settings that you have implemented and then select **Create label**. 
+23. On the **Auto-labeling for Office apps** page, to the right of the **Content contains**, select the **trash can icon**. 
 
-21. Congratulations you have successfully added a New custom label name PII,
-Select **Done**.
+24. On the **Auto-labeling for Office apps** page, under **Detect content that matches these conditions**, select **+Add condition** and then select **Content contains**.
 
-22. Now its time to publish the **PII** label. In the **Sensitivity labels** section, select **Publish Labels**.
+25. In the **Content contains** window, select the **Add** drop-down arrow and then select **Sensitibve info types**.
+
+26. In the **Sensitive info types** window, in the list of sensitive information types, select the **ABA routing number** and the **U.S. Social security Number (SSN)** check boxes, select **Add**, and then select **Next**.
+
+27. On the **Define protection settings for groups and sites** page, select **Next**.
+
+28. On the **Review your settings and finish** page, select **Create label**.
+
+29. On the **Your label was created** page, select **Done**.
+
+30. Now its time to publish the **PII** label. On the **Labels** tab, the **PII** label that you just created is the only label in the list. Select **PII** label.
+
+31. In the **PII** window that appears, select the **Publish label** button. This initiates a **Create policy** wizard.
+
+32. In the **Create policy** wizard, on the **Choose sensitivity labels to publish** page, the **PII** label is already listed, so select **Next**.
+
+33. On the **Sensitivity labels to publish** window, the **PII** check box is already selected, so select **Add**.
+
+
+
+
+
+select **Publish Labels**.
 
 23. In the **Sensitivity Labels policy** window, under **Choose sensitivty labels to publish** select choose **Choose sensitivty labels to publish**. Then select **PII** and select **Add**.
 
