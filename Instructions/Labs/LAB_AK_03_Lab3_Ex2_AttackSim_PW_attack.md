@@ -14,7 +14,7 @@ For this lab, you will not include a file of passwords; you will instead enter a
 
 1. You should still be in LON-CL1 and signed in as the **Admin** with a password of **Pa55w.rd**; if not, then sign in now.  
 
-2. After the previous lab exercise, you should still be in the **Office 365 Security and Compliance center**, and you should still be logged in as Holly Dickson; if not, then do so now.
+2. After the previous lab exercise, you should still be in the **Office 365 Security and Compliance** center, and you should still be logged in as Holly Dickson; if not, then do so now.
 
 3. After the previous lab exercise, you should also be in the **Attack Simulator**; if not, then in the left-hand navigation pane, under **Threat Management**, select **Attack simulator**. In the list of 4 attacks, scroll down to the **Brute Force Password (Dictionary Attack)** section and select the **Launch Attack** button.
 
@@ -84,7 +84,7 @@ A password spray attack against an organization is typically done by running a l
 
 You will now review the results of the Password Spray attack.
 
-1. In your browser session where you are logged in as Holly Dickson, you should still be on the **Attack simulator** page. In the **Password Spray Attack** section, it should display **Attack Completed** once the attack is done. Select the **Refresh** icon on the address bar to refresh the results. This may take several minutes to complete, so you may need to refresh your screen several times. Once the attack is complete, select **View Report**.Select **View Report**.
+1. In your browser session where you are logged in as Holly Dickson, you should still be on the **Attack simulator** page. In the **Password Spray Attack** section, it should display **Attack Completed** once the attack is done. Select the **Refresh** icon on the address bar to refresh the results. This may take several minutes to complete, so you may need to refresh your screen several times. Once the attack is complete, select **View Report**.
 
 2. On the **Attack details** page, view the report for the **Password spray test** that you completed. Review the information on the page and note the results after having entered Lynne's actual password among the list of passwords that were entered for the simulation. 
 
