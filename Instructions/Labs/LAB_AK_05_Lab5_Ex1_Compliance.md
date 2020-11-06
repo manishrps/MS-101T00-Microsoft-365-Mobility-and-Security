@@ -12,7 +12,7 @@ To test archiving and retention in your Adatum pilot project, you will create a 
 
 2. In **Microsoft Edge**, select the **Microsoft 365 admin center** tab; if you closed this tab earlier, then open a new tab and go to **https://admin.microsoft.com.** <br/>
 
-	At this point, you probably have quite a few tabs open in your browser. If you wish, you can take this opportunity to close every tab except for the Office 365 home page and the Microsoft 365 admin center.
+	At this point, you probably have quite a few tabs open in your browser. If you wish, you can take this opportunity to close every tab except for the **Office 365 Home** tab and the **Microsoft 365 admin center** tab.
 
 3. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Groups** and then select **Active groups** below it.
 
