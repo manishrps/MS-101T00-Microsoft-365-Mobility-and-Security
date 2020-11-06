@@ -32,7 +32,7 @@ In this task, you will begin by installing the Microsoft Store for Business on y
 
 12. In the left-hand navigation pane, select **Products &amp; services**. 
 
-13. In the **Products &amp; Services** detail pane, scroll down and verify the following labs appear: **Excel Mobile**, **Microsoft Remote Desktop**, **OneNote for Windows 10**, **PowerPoint Mobile**, **Sway**, and **Word Mobile**. <br/>
+13. In the **Products &amp; Services** detail pane, scroll down and verify the following products appear: **Excel Mobile**, **Microsoft Remote Desktop**, **OneNote for Windows 10**, **PowerPoint Mobile**, **Sway**, and **Word Mobile**. <br/>
 
     **Note:** It may take a minute before all the apps appear on the page.
 
