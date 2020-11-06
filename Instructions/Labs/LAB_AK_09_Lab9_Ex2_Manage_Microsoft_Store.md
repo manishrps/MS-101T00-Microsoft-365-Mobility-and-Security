@@ -70,7 +70,7 @@ In this exercise, you will add five apps to Adatum's company store, and you will
 
 	If you had to select **Everyone**, scroll to the top of the page where you can see a **Your changes have been saved** message at the top of the window.
 
-28. Select the back arrow to the left of the address bar to return back to the **Product and Services** page. 
+28. Select the back arrow to the left of the address bar to return to the **Product and Services** page. 
 
 29. Repeat steps 26-28 for both **Microsoft Remote Desktop** and **Translator**.
 
