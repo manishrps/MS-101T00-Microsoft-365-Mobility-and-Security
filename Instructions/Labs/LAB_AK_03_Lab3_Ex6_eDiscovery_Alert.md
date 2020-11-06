@@ -78,8 +78,6 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 
 14. In your browser, leave the Outlook tab (**Mail-Holly Dickson - Outlook**) open as you will use it shortly in another lab exercise. Leave all your other browser tabs open as well.
 
-15. Leave your Client VMs open for the remaining labs in this course.  
-
 You have now successfully tested the Microsoft 365 eDiscovery system alert that monitors the creation of an eDiscovery search or the export of data from a completed search.
 
 
