@@ -22,7 +22,7 @@ In this exercise, you will add five apps to Adatum's company store, and you will
 
 8. In the **Made by Microsoft** window, select **Fresh Paint.**
 
-9. On the **Fresh Paint** window, leave the **License type** on **Online** and select **Get the app.**
+9. On the **Fresh Paint** window, leave the **License type** set to **Online** and select **Get the app.**
 
 10. On the **Thanks for your order** page, select **Close**. 
 
@@ -40,7 +40,7 @@ In this exercise, you will add five apps to Adatum's company store, and you will
 
 17. On the **Products and Services** page, as you scroll down through the apps, note how they all have an **Install** button - except for **Reader**, which you selected with an **Offline** license type. In the **Reader** section, under **Settings and Actions**, select **More actions available on details page.**  <br/>
 
-	‎**Note:** The **More actions available on details page** option may not immediately appear at this time. Because you selected this app for Offline use, it may take some time for this button to appear. If this **More actions available on details** option does not appear, simply proceed to the next step; otherwise, select this option, and on the **Reader** detail page, note the **Download package for offline use** message and that a **Download** button is available (do not select it).
+	‎**Warning:** The **More actions available on details page** option may not immediately appear at this time. Because you selected this app for Offline use, it may take some time for this button to appear. If this **More actions available on details** option does not appear, simply proceed to the next step; otherwise, select this option, and on the **Reader** detail page, note the **Download package for offline use** message and that a **Download** button is available (do not select it).
 
 18. On the menu bar at the top of the page, select **Adatum private store.** 
 
@@ -60,46 +60,44 @@ In this exercise, you will add five apps to Adatum's company store, and you will
 
 23. By default, new apps are only visible to admins; as a result, they must be assigned visibility permissions to be seen by non-admins. So at this point in time, **Collection1** is only visible to admins.   <br/>
 
-	Perform the following steps to assign visibility permissions to other users for the **Fresh Paint**, **Microsoft Remote Desktop,** and **Translator** apps:
+24. In the following steps you will assign visibility permissions to other users for the **Fresh Paint**, **Microsoft Remote Desktop,** and **Translator** apps. On the menu bar at the top of the page, select **Manage.**
 
-	- On the menu bar at the top of the page, select **Manage.**
+25. On the **Overview** page, in the **Products and Services** tile, select **Manage apps**.
 
-	- On the **Overview** page, in the **Products and Services** tile, select **Manage apps**.
+26. On the **Products and Services** page, scroll down through the apps and select **Fresh Paint.**
 
-	- On the **Products and Services** page, scroll down through the apps and select **Fresh Paint.**
+27. On the **Fresh Paint** window, select **Private store availability**. Under **Choose groups of people who can see this app**, select **Everyone** (if it’s not already selected). <br/>
 
-	- On the **Fresh Paint** window, select **Private store availability**. Under **Choose groups of people who can see this app**, select **Everyone** if it’s not already selected.
+	If you had to select **Everyone**, scroll to the top of the page where you can see a **Your changes have been saved** message at the top of the window.
 
-	- If you had to select **Everyone** in the prior step, scroll to the top of the page where you can see a **Your changes have been saved** message at the top of the window.
+28. Select the back arrow to the left of the address bar to return back to the **Product and Services** page. 
 
-	- Select the back arrow to the left of the address bar to return back to the **Product and Services** page. Repeat these steps for **Microsoft Remote Desktop** and **Translator**.
+29. Repeat steps 26-28 for both **Microsoft Remote Desktop** and **Translator**.
 
-24. Leave the **Microsoft Store for Business** tab open in your Edge browser. You will use this in the next task. 
+30. Leave the **Microsoft Store for Business** tab open in your Edge browser. You will use this in the next task. 
 
 
 ### Task 2: View your private store as a company employee 
 
 In this task, you are going to sign into the Microsoft Store for Business as one of Adatum’s employees, Joni Sherman. You’ll then verify that when Joni navigates to Adatum’s private store, she can see the 5 apps that Holly added to the private store, as well as the collection of apps that Holly created in the prior task. 
 
-1. Switch to LON-CL2 where you should be logged in as the **Admin** account, and into Microsoft 365 as Joni Sherman (**jonis@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**.
+1. Switch to LON-CL2 where you should be logged in as the **Admin** account, and into Microsoft 365 as **Joni Sherman**.
 
-2. If you are still logged into Microsoft 365 as another user, select the user ID in the upper right corner, select **Sign out,** and then close the other tabs in the browser. 
+2. In your **Edge** browser, open a new tab and then enter the following URL in the address bar: **https://www.microsoft.com/business-store**
 
-3. In your **Edge** browser, open a new tab and then enter the following URL in the address bar: **https://www.microsoft.com/business-store**
+3. On the **Microsoft Store for Business** page, in the upper-right corner of the page, select **Sign in.** 
 
-4. On the **Microsoft Store for Business** page, in the upper-right corner of the page, select **Sign in.** 
+4. If you are automatically signed in as Joni Sherman, then proceed to the next step; otherwise, enter **JoniS@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) in the **Sign in** window and then select **Next.**
 
-5. If you are not signed in automatically as Joni Sherman, then enter **JoniS@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with a password of **Pa55w.rd**.
+5. In the **Microsoft Store for Business**, on the menu bar at the top of the page, select **Adatum private store.**
 
-7. In the **Microsoft Store for Business**, on the menu bar at the top of the page, select **Adatum private store.**
+6. In the **Adatum private store**, verify that Joni can see the following: 
 
-8. In the **Adatum private store**, verify that Joni can see the following: 
-
-	- The five apps that were automatically added to the private store: **Sway, OneNote, PowerPoint Mobile, Excel Mobile,** and **Word Mobile**.
+	- The five apps that were automatically added to the private store: **Sway, OneNote for Windows 10, PowerPoint Mobile, Excel Mobile,** and **Word Mobile**.
 
 	- The **Collection1** app that you created in the prior task that includes: **Fresh Paint, Microsoft Remote Desktop,** and **Translator**.
 
-9. In your browser, close the **Microsoft Store for Business** tab.
+7. In your browser, close the **Microsoft Store for Business** tab.
 
 
 # End of Lab 9
