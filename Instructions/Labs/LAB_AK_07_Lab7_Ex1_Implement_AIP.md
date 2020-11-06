@@ -176,7 +176,7 @@ In this exercise you will use the Sensitivity label that you created in the prev
 
 6. In the **Sign in** window, enter **AlexW@xxxxxZZZZZZ.onmicrosoft** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**.
 
-7. On the **Enter password** window, enter **Pa55w.rd** and select **Sign in**.
+7. On the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**.
 
 8. If a **Get your work done with Office 365** window appears, select the X to close it.
 
@@ -255,21 +255,33 @@ In the prior task, you created a Word document and protected it with a Sensitivi
 
 9. Switch to LON-CL2. 
 
-10. In LON-CL2, you should be logged into **Outlook on the Web** as **Lynne Robbins** from a previous lab exercise. Sign out as Lynne and then navigate to **https://outlook.office365.com** and sign back in as Joni Sherman (**JoniS@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with a password of **Pa55w.rd**.
+10. In LON-CL2, you should be logged into **Outlook on the Web** as **Lynne Robbins** from a previous lab exercise. Sign out as Lynne.
 
-8. In Joni’s **Inbox** in **Outlook on the web**, select the email that Holly just sent her, and then select **Open** file to open it. 
+11. In your Edge browser, in the **Sign out** tab, enter the following URL in the address bar: **https://outlook.office365.com** 
 
-9. You should receive an notification indicating that the file is protected 
+12. In the **Pick an account** window, select **Use another account**.
 
-10. This will return you to **Outlook on the web** with the email still displayed in the right-hand pane. In the body of the email, the document appears in a tile, with a drop-down arrow in the lower right corner of the tile. Select the drop-down arrow, and in the menu, select **Download**.
+13. In the **Sign in** window, enter **JoniS@xxxxxZZZZZZ.onmicrosoft** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**.
 
-11. In the notification bar that appears at the bottom of the screen, select **Save.** 
+14. On the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**.
 
-12. Once the file has finished downloading, in the notification bar, select **Open.**
+15. If a **Welcome** window appears, select the X to close it.
 
-13. **Microsoft Word** should open along with a **Sign in** window (it may open behind the Outlook window, in which case select the **Word** icon on the taskbar to bring it forward). 
+16. In Joni’s **Inbox** in **Outlook on the web**, open the email that Alex just sent her by selecting the email in the Inbox. Note the **Sensitive - Do Not Share** watermark that appears in the message (these are the header and footer watermarks that you entered in the PII label).
 
-14. Because the file is RMS protected and no AIP unified labeling client is installed on LON-CL2, you need to use the native RMS features of Word Microsoft Apps and register this installation to Joni’s account. <br/>
+17. Select the attached file to open it.
+
+18. In the **Your privacy option** dialog box that appears, select **Close**. Review the document, and note the watermarks in the header, footer, and body of the document. Close the document window. 
+
+19. This will return you to **Outlook on the web** with the email still displayed in the right-hand pane. In the body of the email, the document appears in a tile. You want to download the document. Hover your mouse over the document tile and note the two down arrows that appear. Hover your mouse over each arrow. The first displays **Download**, while the second arrow displays **More actions**. Select the **More actions** arrow, and in the drop-down menu that appears, note that it also has a **Download** option. Since you have this menu open, select the **Download** option from here.  
+
+20. In the notification bar that appears at the bottom of the screen, select **Save.** 
+
+21. Once the file has finished downloading, in the notification bar, select **Open.**
+
+22. **Microsoft Word** should open along with a **Sign in** window (it may open behind the Outlook window, in which case select the **Word** icon on the taskbar to bring it forward). 
+
+23. Because the file is RMS protected and no AIP unified labeling client is installed on LON-CL2, you need to use the native RMS features of Word Microsoft Apps and register this installation to Joni’s account. <br/>
 
 	‎In the **Sign in** window, enter **JoniS@xxxxxZZZZZZ.onmicrosoft.com** and then select **Next.** 
 
