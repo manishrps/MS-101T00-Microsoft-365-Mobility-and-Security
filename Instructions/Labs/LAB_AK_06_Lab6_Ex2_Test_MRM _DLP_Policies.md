@@ -115,7 +115,7 @@ Therefore, when you send an email with two IP addresses in this task, all you ca
 
 12. In Lynne’s **Inbox**, you should see the first message (**DLP policy test**) that you sent, but not the second (**Second DLP policy test**). Remember, when Holly sent the second email, she received a notification that it had been blocked. 
 
-13. Leave both client VMs open for the next lab. Do not close any of the browser tabs.
+13. Leave your Edge browser and all its tabs open on LON-CL2.
 
 
 # End of Lab 6
