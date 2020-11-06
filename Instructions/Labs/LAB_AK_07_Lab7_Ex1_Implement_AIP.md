@@ -8,7 +8,9 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Mic
 
 To implement Sensitivity labels as part of your pilot project at Adatum, you must first install the AIP client from the Microsoft Download Center.
 
-1. Switch to LON-CL1, where you should still be logged in as the **admin** account, and you should be logged into Microsoft 365 as **Holly Dickson** with a password of **Pa55w.rd**. 
+1. At the end of the prior lab, you were on LON-CL2. Switch to **LON-CL1**.  <br/>
+
+	You should still be logged into LON-CL1 as the **admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. In **Microsoft Edge**, open a new tab and enter (or copy and paste) the following URL in the address bar: **https://www.microsoft.com/en-us/download/confirmation.aspx?id=53018** <br/>
 
