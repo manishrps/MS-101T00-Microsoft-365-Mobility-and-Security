@@ -32,7 +32,7 @@ In this exercise, you will log into Microsoft 365 on LON-CL2 as Joni Sherman, an
 
 9. Close the **Content search** tab in your browser.
 
-10. Leave the Security and Compliancce Center tab open and continue with the next task.
+10. Leave the Security and Compliance Center tab open and continue with the next task.
 
 You have successfully performed a content search for a specific key word across all locations of your tenant.
  
@@ -95,7 +95,7 @@ In this task, you will create an eDiscovery case, add an In-Place Hold to the ca
 
 26. Close the **eDiscovery** tab in your browser.
 
-10. Leave LON-CL2 open as well as all other browser tabs and continue with the next task.
+27. Leave LON-CL2 open as well as all other browser tabs and continue with the next task.
 
 
 You have now created an eDiscovery case, added an In-Place Hold to preserve mailbox content, and created a search to discover data from the hold.
