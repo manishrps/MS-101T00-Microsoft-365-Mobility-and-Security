@@ -65,23 +65,25 @@ You have now created an **App protection policy** (which is a Windows Informatio
 
 ### Task 2 – Use Windows Information Protection
 
-In this exercise you will enroll your LON-CL2 device to Azure AD. You will then test the WIP policy that you created in the prior task by creating a work document and then copy and pasting from it to a personal location. This will test the WIP protection feature that prevents copy and pasting between a protected Word document and an untrusted website in your Edge browser. Since the WIP policy that you created was assigned to the WIP Users group, you must switch to LON-CL2 and create the document while signed in as Joni Sherman, who is one of the members of the WIP Users group.
+In this exercise you will enroll your LON-CL2 device to Azure AD. You will then test the WIP policy that you created in the prior task by creating a work document and then copy and pasting from it to a personal location. This will test the WIP protection feature that prevents copy and pasting between a protected Word document and an untrusted website in your Edge browser. Since the WIP policy that you created was assigned to the WIP Users group, you must switch to LON-CL2 and create the document while signed in as Joni Sherman, who is a member of this group.
 
 1. Switch to LON-CL2, where you should still be logged in as the **Admin** account, and you should be logged into **Outlook on the Web** as **Joni Sherman**. 
 
 2. Minimize your **Edge** browser.
 
-2. In the **Search** box on the taskbar at the bottom of the window, type **Work** (not **Word**, but **Work**). In the menu that appears, if **Settings** is not expanded, then select it now. Under **Settings**, select **Access work or school**.
+3. In the **Search** box on the taskbar at the bottom of the window, type **Work** (not **Word**, but **Work**). In the menu that appears, if **Settings** is not expanded, then select it now. Under **Settings**, select **Access work or school**.
 
-3. In the **Access work or school**  window, select **Connect**.
+4. In the **Access work or school** window, select **Connect**.
 
-4. In the **Set up a work or school account**, enter **JoniS@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) in the **Email address** field and then select **Next**.
+5. In the **Set up a work or school account**, enter **JoniS@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) in the **Email address** field and then select **Next**.
 
-5. On the **Enter password** window, enter **Pa55w.rd** and select **Sign in**.
+6. On the **Enter password** window, enter **Pa55w.rd** and select **Sign in**.
 
-6. At this point, the system will register your device with Adatum. On the **You're all set!** window, select **Done**.
+7. If a **More information** is required dialog box appears, select the X in the upper-right corner to close it.
 
-7. Open **Microsoft Word**. 
+8. In the **Access work or school** window, Joni's email address now appears as a work or school account. Close the **Settings** window.
+
+7. Select the **Start** icon in the the bottom left corner of the taskbar, and in the **Start** menu, select **Microsoft Word**. 
 
 8. Select **Blank document**.
 
