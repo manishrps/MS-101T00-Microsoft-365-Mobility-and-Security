@@ -2,7 +2,7 @@
 
 In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Microsoft 365 deployed in a virtualized lab environment. As you proceed with your Microsoft 365 pilot project, your next steps are to implement Sensitivity Labels with Azure Information Protection (AIP) and Windows Information Protection (WIP) at Adatum. You will begin by configuring AIP and then using AIP on a client and verifying an AIP policy. You will then perform similar steps for WIP by configuring it for Adatum and then implementing WIP.
 
-**IMPORTANT:** This lab exercise consits of four tasks. The first two consist of installing the AIP Unified Labeling Client and then creating a sensitivity label and a sensitivity label policy, respectively. The final two tasks consist of validating the sensitivity label and label policy that you created. The problem with this lab is that when you create a sensitivity label, it takes 24 hours for the label to propagate through the system. **This means that you can perform the first two tasks, but then you must wait until the next day before you can perform the final two tasks.**  
+**IMPORTANT:** This lab exercise consists of four tasks. The first task installs the AIP Unified Labeling Client and the second task creates a sensitivity label and a label policy. The final two tasks validate the sensitivity label and label policy that you created. The problem with this lab is that when you create a sensitivity label and label policy, it takes up to 24 hours for the label and label policy to propagate through the system. **This means that you can perform the first two tasks, but then you must wait until the next day before you can perform the final two tasks.**  
 
 ### Task 1 – Install the Azure Information Protection Unified Labeling client
 
@@ -107,7 +107,7 @@ In this exercise you will create an Sensitivity label and add it to the default 
 
 20. On the **Review your settings and finish** page, review the information you entered. If any settings need to be corrected, select the corresponding **Edit** option. When all information appears correct, select **Create label**.
 
-21. An **Error** dialog box should appear that states the generated rule blob for the label you are attempting to create is too long. The maximum size of sensitive information type selections you can make at one time per rule is **49152**. By selecting all the sensitive information types like you did in the **Sensitive info types** window a few steps back, you have exceeded this limit. **We purposely had you select all the information types so that you would receive this error.** We wanted you to experience this error so that if it happens in your production environments, you will know why you received the error and how you can correct it.<br/>
+21. An **Error** dialog box should appear that states the generated rule blob for the label you are attempting to create is too long. The maximum size of sensitive information type selections you can make at one time per rule is **49152**. By selecting all the sensitive information types like you did in the **Sensitive info types** window a few steps back, you have exceeded this limit. **We purposely had you select all the sensitive information types so that you would receive this error.** We wanted you to experience this error so that if it happens in your production environments, you will know why you received the error and how you can correct it.  <br/>
 
 	To correct this issue, select **OK** in the **Error** dialog box, and then on the **Review your settings and finish** page, scroll down to the **Auto-labeling for Office apps** section and select **Edit**.
 	
@@ -149,9 +149,9 @@ In this exercise you will create an Sensitivity label and add it to the default 
 
 39. On the **New policy created** page, select **Done**.
 
-**STOP!!** As mentioned at the start of this lab exercise, now that you have created a new sensitivity label and label policy, you must wait 24 hours for the label and label policy to propagate through the system before you can perform the next two tasks in this exercise. 
+**STOP!!** As mentioned at the start of this lab exercise, now that you have created a sensitivity label and label policy, you must wait 24 hours for the label and label policy to propagate through the system before you can perform the next two tasks in this exercise. 
 
-**Do NOT proceed to the next task!** You can continue with the training course and perform the next series of lab exercises. However, when you reach a good break time tomorrow, you should return to this lab exercise and continue with Task 3. When you get to step 13, if you do NOT see the **Sensitiviy label** group in the Word ribbon, then you must wait until such time that it appears. **The appearance of the Sensitivity label group in the Word ribbon is the indicator as to whether the sensitivity label has completed its behind-the-scenes provisioning,** at which time you can complete tasks 3 and 4 of this lab exercise. 
+**Do NOT proceed to the next task!** You can continue with the training course and perform the next series of lab exercises. However, when you reach a good break time tomorrow, you should return to this lab exercise and continue with Task 3. When you get to step 14, if you do NOT see the **Sensitiviy** group in the Word ribbon, then you must wait until such time that it appears. **The appearance of the Sensitivity group in the Word ribbon is the indicator as to whether the sensitivity label has completed its behind-the-scenes provisioning,** at which time you can complete tasks 3 and 4 of this lab exercise. 
 
 
 ### Task 3 – Assign an Sensitivity label to a document
@@ -160,11 +160,13 @@ In this exercise you will use the Sensitivity label that you created in the prev
 
 **IMPORTANT:** You should not perform this task until you have waited 24 since you completed the prior task. After creating the sensitivity label and label policy in task 2, it takes 24 hours for the label and label policy to propagate through the Microsoft 365 system. 
 
-**You will know when the propagation is complete and that you can continue with this task when you get to step 13 and you see the Sensitivity label group in the Word ribbon.** If this group does not appear, then the label provisioning process has not finished. If this occurs, then wait until your next break time in class and check this again.
+**You will know when the propagation is complete and that you can continue with this task when you get to step 14 and you see the Sensitivity label group in the Word ribbon.** If this group does not appear, then the label provisioning process has not finished. If this occurs, then wait until your next break time in class and check this again.
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 
-2. You must first sign out of Microsoft 365 as Holly and sign back in as Alex Wilber. In your Edge browser, select the **Microsoft 365 admin center** tab, and then select the circle with Holly Dickson's HD initials in the upper right corner of the screen. In the **Holly Dickson** window, select **Sign out**.
+2. To validate the sensitivity label that you created in the prior task, you must first sign out of Microsoft 365 as Holly and sign back in as Alex Wilber. <br/>
+
+	In your Edge browser, select the **Microsoft 365 admin center** tab, and then select the circle with Holly Dickson's HD initials in the upper right corner of the screen. In the **Holly Dickson** window, select **Sign out**.
 
 3. Once you are signed out, close all the tabs in your Edge browser except for the **Sign out** tab.
 
@@ -178,74 +180,82 @@ In this exercise you will use the Sensitivity label that you created in the prev
 
 8. If a **Get your work done with Office 365** window appears, select the X to close it.
 
-9. On the **Microsoft Office Home** tab, select the **Word** icon in the column of app icons on the left-side of the screen. 
+9. On the **Microsoft Office Home** tab, select the **Word** icon in the column of app icons on the left-side of the screen. This will override the **Microsoft Office Home** tab by opening Microsoft Word Online in this same tab. <br/>
 
-10. In **Word Online**, select **New blank document**.
+	**Note:** In the next task, you will return back to the **Microsoft Office Home** tab by selecting the **Back** arrow at the top of this **Word** tab.
+
+10. In the **Word** tab, select **New blank document**.
 
 11. If a **Your privacy option** window appears, select **Close**.
 
-12. In the **Word** document, type **Testing personally identifiable information (PII).**
+12. If the Word ribbon displays icons for each feature but does not break the icons out by group, then select the down-arrow on the far right-side of the ribbon. This will switch the ribbon to the traditional ribbon style that is broken out by feature group (such as Undo, Clipboard, Font, Paragraph, Styles, and so forth).
 
-13. There are two new additions to Word that appear as a result of enabling Sensitivity labels at the start of this exercise: <br/>
+13. In the **Word** document, type **Testing personally identifiable information (PII).**
 
-	- In the **Home** ribbon, locate the **Sensitivity** group. 
+14. Because you enabled Sensitivity labels at the start of this exercise, and assuming it's been 24 hours since you created the sensitivity label in the prior task, Word should display a **Sensitivity** group on the ribbon. <br/>
+
+	**IMPORTANT:** If you do not see this **Sensitivity** group in the ribbon, then Microsoft 365 has not finished provisioning the sensitivity label that you created in the prior task. If this occurs, then you cannot proceed with this task. As mentioned earlier, it takes 24 hours for a new sensitivity label to be fully provisioned throughout the system. If you do not see the Sensitivity group, or if you see the group (from a prior label you created) and you select the drop-down arrow in the group and do not see your new label, then you must stop at this point and not proceed until you see the Sensitiity group and your label in the group.  <br/>
+
+	Assuming you have waited 24 hours and the **Sensitivity** group appears in the Word ribbon, select the down arrow in the **Sensitivity** group. In the drop-down menu that appears, it should display the **PII** label that you created in the prior task. Since the **PII** label is enabled for this document, a check mark is displayed next to **PII**. <br/>
 	
-	- Below the **Home** ribbon, locate the **Sensitivity dropdown** tab Congratulations you have successfully added a New custom label name PII, (**Note:** you may not see it if it hasn't been 24 hours) Select **Search**.bar. then type **Sensitivity** the select the arrow to view the newly created a label titled **PII** in the prior task, **PII** will appear in the left side of the Sensitivity label bar. 
+	In this first validation test, you are going to attempt to remove this sensitivity label from being applied to this document. If you'll recall, when you created the label policy and assigned the PII label to it, you selected the option whereby users must provide justification to remove a label or to select a lower classification label. You will now verify whether this setting is functioning properly. <br/>
 	
-	Select the **PII** button on the **Sensitivity** bar.
+	To remove the label from this document, select the **PII** label that appears in this drop-down menu.
+	
+15. In the **Justification Required** window that appears, select the **Other (explain)** option. In the **Explain why you're changing this label** field, enter **Testing what happens when a label is removed** and then select **Change**.
 
-9. In the **Justification Required** window appears, select the following options:
+16. In the **Sensitivity** group in the Word ribbon, select the down arrow. In the drop-down menu that appears, note that while **PII** is displayed, it no longer has a check mark displayed next to it. This indicates the PII sensitivity label is no longer being applied to this document.  
 
-	- Select Other (explain): **Testing what happens when I remove the label**
+17. To re-apply the sensitivity label to the document, select **PII** in the drop-down menu. Once again select the drop-down arrow in the **Sensitivity** group. The drop-down menu that appears should display the **PII** label, and it should display a check mark next to it that indicates it is being applied to this document.
 
-10. In the **Justification Required** window appears, select  "Change".
+18. In the Word document, enter **111-11-1111** below the previous line of text that you entered. This number is the same format as a U.S. Social Security Number.
 
-11. Re-apply the Sensitivity label by selecting the **Sensitivity** group and then selecting **PII**.
+19. You will now save the document. On the title bar, to the right of Word, select **Document1**.  In the drop-down menu that appears, confirm the file **Location** says **Alex Wilber>Documents**. <br/>
 
-12. Enter the following text: **111-11-1111**
+	In the **File Name** field, rename the file to **ProtectedDocument1** and then select outside of this file name menu (select inside the document). Note the new name assigned to the file in the title bar.
 
-13. Save the file by selecting **Docutment1** from the **Header** tab in the Middle of word online. 
+20. On the right-side of the menu bar, select the **Share** button.
 
-14. Confirm the file **Location** says **Alex Wilber>Documents**. 
+21. In the **Send link** window that appears, select **Anyone with the link can edit**. In the menu that appears, select **Specific people** then select **Apply**.
 
-15. In the **Word Online** rename the file to **ProtectedDocument** as the name of the file and then select out of the **file name** section.
+22. In the **Send link** window, enter **Joni** in the **Enter a name or Email address** field. In the list of users that appears, select **Joni Sherman** and then select **Send**.
 
-16. Select the **Share** option in the top right corner.
+23. Close the **Link sent** window. 
 
-17. Select the Anyone with the link can edit. change this to **Specific people** then select **Apply**.
-
-18. In the **Enter a name or Email address**, Enter **Joni Sherman** and select **Send**.
-
-You have just successfully created an AIP protected Word document that is read-only protected, and is accessible only by its creator, Alex Wilber, and Joni Sherman (with Read-only permission).
+You have just successfully created an AIP protected Word document that is read-only protected. The document is accessible only by its creator, Alex Wilber, and by Joni Sherman (with Read-only permission), to whom the document was shared.
 
 
 ### Task 4 – Verify Sensitivity label policy
 
-In the prior task, you created a Word document and protected it with a Sensitivity label by inserting a watermark and restricted permissions. To verify whether the protection that you assigned to the document works, you will first email the document to Joni Sherman and to your own personal email address. You will then test what functionality is possible for both Joni and Alex Wilber.
+In the prior task, you created a Word document and protected it with a Sensitivity label. The PII label policy should have inserted a watermark in the document, and it should have restricted permissions on the document. To verify whether the protection that you assigned to the document works, you will first email the document to Joni Sherman and to your own personal email address. You will then test what functionality is possible for both Joni and Alex Wilber.
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Alex Wilber**. 
 
-2. If you have **Outlook on the web** open in a tab in your **Edge** browser, then select it now and proceed to the next step; otherwise, if you have a tab with the **Microsoft Office Home** page, then select the tab, select **Outlook**, and then proceed to the next step. If you have neither tab open, then in a new tab enter **https://outlook.office365.com** and sign in as **AlexW@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider).
+2. In your Edge browser, select the **Word** tab and then select the **Back** arrow. This should display the **Microsoft Office Home** tab.  
 
-3. In **Outlook on the web**, select **New Message** in the upper left part of the screen.
+3. In the **Microsoft Office Home** tab, select the **Outlook** icon in the column of app icons on the left-side of the screen. This opens Outlook on the web in a new tab. 
 
-4. In the right-hand pane, enter the following email information:
+4. In **Outlook on the web**, select **New Message** in the upper left part of the screen.
+
+5. In the right-hand pane, enter the following information in the message form:
 
 	- To: Enter **Joni** and then select **Joni Sherman** from the user list. 
 
-	- CC: Enter your own personal email address (not Holly's; in this case, enter your own email address)
+	- CC: Enter your own personal email address (do NOT enter Holly's email address; instead, enter your own personal email address)
 
 	- Add a subject: **Protected Document Test**
 
-	- Add a message or drop a file here: **If you can open the protected and restricted document attached to this email, then try to change it.**
+	- Body of the message: enter **If you can open the protected and restricted document attached to this email, then try to change it.**
 
-	- Select **Attach** from the top menu and under  **Suggested Attachments**.  select **ProtectedDocument.docx** file that you created in the prior task, and then select **Open.**
+6. Select **Attach** from the menu bar at the top of the screen, and in the drop-down menu that appears, under the **Suggested attachments** group, select the **ProtectedDocument1.docx** file that you created in the prior task.
 
-5. Select **Send**.
+7. Once the file has been attached to the email, select the file to open it. Note the watermarks that appear in the header and footer, and in the body of the document.  After reviewing the document, select the **X** in the upper right corner of the document window to close it. 
 
-6. Switch to LON-CL2. 
+8. Select **Send**.
 
-7. In LON-CL2, you should be logged into **Outlook on the Web** as **Lynne Robbins** from a previous lab exercise. Sign out as Lynne and then navigate to **https://outlook.office365.com** and sign back in as Joni Sherman (**JoniS@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with a password of **Pa55w.rd**.
+9. Switch to LON-CL2. 
+
+10. In LON-CL2, you should be logged into **Outlook on the Web** as **Lynne Robbins** from a previous lab exercise. Sign out as Lynne and then navigate to **https://outlook.office365.com** and sign back in as Joni Sherman (**JoniS@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with a password of **Pa55w.rd**.
 
 8. In Joni’s **Inbox** in **Outlook on the web**, select the email that Holly just sent her, and then select **Open** file to open it. 
 
