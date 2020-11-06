@@ -14,7 +14,7 @@ In this task, you will begin by installing the Microsoft Store for Business on y
 
 3. This opens the **Microsoft Store for Business**. In the top-right corner, select **Sign in**. 
 
-4. If you are automatically signed in, then proceed to the next step; otherwise, enter **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) in the **Sign in** window and then select **Next.**
+4. If you are automatically signed in as Holly Dickson, then proceed to the next step; otherwise, enter **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) in the **Sign in** window and then select **Next.**
 
 5. On the **Microsoft Store for Business** page, in the menu bar at the top of the page, select **Shop for my group**. 
 
