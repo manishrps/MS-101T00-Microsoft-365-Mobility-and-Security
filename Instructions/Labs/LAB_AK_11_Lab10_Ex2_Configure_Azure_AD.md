@@ -47,9 +47,9 @@ In this task, you will change the default settings for users to join their devic
 
 6. Scroll down to the bottom of the window. Under **Additional local administrators on all Azure AD joined devices**, no local administrators are displayed. Select the **Manage Additional local administrators on all Azure AD joined devices**. <br/>
 
-   On the **Device Administrators | Assignments** window, note that there are no additional assignements. In the next several steps, you will add a role assignment.
+   On the **Device Administrators | Assignments** window, note that there are no additional assignments. In the next several steps, you will add a role assignment.
 
-7. In the **Device Administrators | Assignments** window, select **+Add assignemnts** on the menu bar.
+7. In the **Device Administrators | Assignments** window, select **+Add assignments** on the menu bar.
 
 8. In the **Add assignments** pane on the right, select **Alex Wilber** in the list of users and then select the **Add** button at the bottom of the screen.
 
