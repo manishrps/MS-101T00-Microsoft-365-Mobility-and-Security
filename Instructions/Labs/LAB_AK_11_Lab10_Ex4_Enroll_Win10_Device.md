@@ -6,33 +6,31 @@ During her pilot project, Holly plans to use certificates with Intune to authent
 
 ### Task 1: Verify the device is not enrolled
 
-You should first verify that the device you want to enroll into Intune is not already enrolled. 
+Holly must begin by verifying that the device she wants to enroll into Intune (LON-CL1) is not already enrolled. 
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
 
-2. In your **Edge** browser, you should have the **Microsoft Endpoint Manger admin center** portal open in a tab that's displaying the **Device configuration | Profiles** window. At the top of the screen is the following navigation thread: **Home > Devices |Configuration Profiles**. <br/>
+2. In your **Edge** browser, in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Endpoint Manager**.
 
-   In this thread, select **Home**.
-
-3. In the **Microsoft Endpoint Manger admin center** page, in the  navigation pane  select **Devices**.
-
-4. On the **Devices** window, in the left-hand pane under **Manage**, select **All Devices** and verify that LON-CL2 is listed in the details pane. <br/>
+3. In the **Microsoft Endpoint Manger admin center**, in the middle pane select **All Devices** and then verify that LON-CL2 is the only device listed in the details pane. You have just verified that LON-CL1 is not enrolled into Intune. <br/>
 
    **Note:** LON-CL2 was enrolled into Intune in an earlier lab when you configured integration between Azure AD and Intune. When you joined LON-CL2 to Azure AD, it was automatically enrolled to Intune.  
 
-5. You now want to start the **Certificates** MMC for the local machine. In the Search field on the taskbar, enter **run**, and then on the menu, select **Run**.
+4. You now want to start the **Certificates** MMC for LON-CL1. In the Search field on the taskbar, enter **run**, and then in the list of search results, select **Run**.
 
-6. In the **Run** window, enter **certlm.msc** in the **Open** field and then select **OK**.
+5. In the **Run** window, enter **certlm.msc** in the **Open** field and then select **OK**. If a **Do you want to allow this app to make changes to your device?** dialog box appears, select **Yes**.
 
-7. Maximize the **certlm – [Certificates – Local Computer]** window, and then drag the pane divider to the right so that you can see the entirety of the left-hand pane. 
+6. Maximize the **certlm – [Certificates – Local Computer]** window that appears and then drag the pane divider to the right so that you can see the entirety of the left-hand pane. 
 
-8. In the left-hand pane, select **Personal** and verify that no certificate is listed in the details pane on the right.
+7. In the left-hand pane, select **Personal** and then select the **Certificates** child folder under the **Personal** folder. Verify that only the localhost certificate appears. 
 
-9. Minimize the **certlm – [Certificates – Local Computer]** window as you will use it in a later task.
+8. Minimize the **certlm – [Certificates – Local Computer]** window as you will use it in a later task.
 
 ### Task 2: Enroll the device to Azure AD and Intune
 
-1. In **LON-CL1**, in the Search field on the taskbar enter **access work**, and then in the menu, select **Access work or school**.
+In this task, you want to enroll LON-CL1 to Azure AD and Intune.
+
+1. In **LON-CL1**, enter **access work** in the Search field on the taskbar, and then in the list of search results, select **Access work or school**.
 
 2. In the **Settings** app, in the **Access work or school** section, select **+Connect**.
 
@@ -46,38 +44,39 @@ You should first verify that the device you want to enroll into Intune is not al
 
 7. On the **You're all set!** page, select **Done**.
 
-8. In the **Settings** app, in the **Access work or school** section, verify that the device is connected to Azure AD and then close the **Settings** app by selecting the **X** in the upper right-hand corner.
+8. In the **Settings** app, close the **Access work or school** page by selecting the **X** in the upper right-hand corner.
 
-9. On the **Devices | All devices** page in the Microsoft Endpoint Manger admin center, in the Navigation pane under select **Devices**. You should see both **LON-CL1** and **LON-CL2**.
+9. In your Edge browser, in your **Microsoft Endpoint Manager admin center**, the **Devices | All devices** page should still be displayed. Currently it displays only LON-CL2. Select **Refresh** on the menu bar at the top of the detail pane. Verify that **LON-CL1** appears in the list of devices along with **LON-CL2**. <br/>
+
+   You should also note that in the list of devices, LON-CL1 was identified as Corporate-owned device, whereas LON-CL2 was identified as a Personal device. Since LON-CL1 was enrolled by Holly, an administrator, LON-CL1 is classified as a Corporate device. Conversely, since Joni Sherman, a non-administrator, enrolled LON-CL2, device ownership is classified as a Personal device. <br/>D
 
 10. Leave all browser tabs open for the next task.
 
 ### Task 3: Verify the device is enrolled to Azure AD and Intune
+
 In an earlier lab you configured integration between Azure AD and Intune. Because of that, any device that is joined to Azure AD is automatically enrolled to Intune. In this task you will join LON-CL2 to Azure AD, which will automatically enroll it into Intune.
 
 1. You should still be logged into **LON-CL1** as the **Admin** account, and you should still be logged into Microsoft 365 as **Holly Dickson**.
 
 2. In **LON-CL1**, select the **certlm – [Certificates – Local Computer]** icon on the taskbar.
 
-3. In the **certlm – [Certificates – Local Computer]** console, in the left-hand navigation pane, the **Personal** folder should already be selected from the prior task. In the menu bar, select **Action** and then select **Refresh**.
+3. In the **certlm – [Certificates – Local Computer]** console, in the left-hand navigation pane, the **Personal > Certificates** folder should already be selected from the earlier task. In the menu bar, select **Action** and then select **Refresh**. In the details pane, verify that several certificates appear along with the **localhost** certificate, which was the only certificate originally in this folder.<br/>
 
-4. In the left-hand pane, under the **Personal** folder, select **Certificates**. In the details pane, verify that several certificates are listed.<br/>
+    **Note**: These certificates were added when you joined the LON-CL1 device to Azure AD, which in turn enrolled it to Intune.
 
-    **Note**: Those certificates were added when you joined the LON-CL1 device to Azure AD, which in turn enrolled it to Intune.
+4. Close the **certlm – [Certificates – Local Computer]** window. 
 
-5. Close the **certlm – [Certificates – Local Computer]** window. 
+5. In your **Edge** browser, select the **Azure Active Directory** tab.
 
-6. In your **Edge** browser, in the **Azure portal**, the **Devices | Azure AD devices** window should be displayed from the prior task.
+6. In the **Azure Active Directory admin center**, in the left-hand navigation pane, select **Azure Active Directory**. 
 
-7. In the details pane on the right, both **LON-CL1** and **LON-CL2** are displayed. In the **MDM** column, note that both are enrolled to **Microsoft Intune**.  <br/>
+7. In the **Adatum Corporation | Overview** page, in the middle pane under the **Manage** section, select **Devices**.
+
+8. In the **Devices | All devices** page, both **LON-CL1** and **LON-CL2** should be displayed. Drag the horizontal scroll bar to the right until the **MDM** column is visible. Note that both devices are enrolled to **Microsoft Intune**.  <br/>
 
     **Note:** This view lists devices that are joined to Azure AD. Remember that you configured integration between Azure AD and Intune, and because of that, any device that is joined to Azure AD is automatically enrolled to Intune.
 
-8. In the **Devices** window, in the lef-hand pane under **Overview**, select **All devices**.
-
-9. In the **Devices | All devices** window, verify that both devices are listed. Note the value displayed in the **Ownership** column for each device. Since LON-CL1 was enrolled by Holly, an administrator, LON-CL1 is classified as a corporate device. Conversely, since Joni Sherman, a non-admin, enrolled LON-CL2, device ownership is classified as a personal device. <br/>
-
-10. Leave all browser tabs open for the next task.
+9. Leave all browser tabs open for the next task.
 
 
 # Proceed to Lab 4 - Exercise 5
