@@ -1,6 +1,6 @@
 # Module 11 - Lab 10 - Exercise 2 - Configure Azure AD for Intune 
 
-In this exercise you will activate the automatic client enrollment to Intune for Mobile Device Management (MDM). This will allow you to manage mobile device access and set policies for restricting access to devices unless certain actions are adopted, such as strong passwords and screen timeouts.
+In this exercise you will activate automatic client enrollment to Intune for Mobile Device Management (MDM). This will enable you to manage mobile device access and set policies for restricting access to devices unless certain actions are adopted, such as strong passwords and screen timeouts.
 
 ### Task 1: Integrate Azure AD with Intune
 
@@ -8,7 +8,7 @@ In this exercise you will activate the automatic client enrollment to Intune for
 
 2. In your browser, select the **Microsoft 365 admin center** tab, which should still be open; if not, navigate to **https://admin.microsoft.com.** 
 
-3. In the previous exercise, you accessed the Azure portal, which is still open in your browser. In this exercise, you will use the Azure Active Directory admin center (these are separate sites). In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** (if necessary), and then under **Admin centers**, select **Azure Active Directory**.
+3. In the **Microsoft 365 admin center**, in the left-hand navigation pane under **Admin centers**, select **Azure Active Directory**.
 
 4. In the **Azure Active Directory admin center**, in the left-hand navigation pane, select **Azure Active Directory**.
 
@@ -41,19 +41,21 @@ In this task, you will change the default settings for users to join their devic
 
    **Note:** Back in Lab 5, you performed a task that configured Mobile Device Management (MDM) auto-enrollment; this was a prerequisite to performing a later Windows Information Protection lab. When you performed this MDM configuration lab, it automatically enrolled the devices belonging to members of the WIP Users group. At the time, Joni Sherman was logged into Microsoft 365 on LON-CL2, and since she was a member of the WIP Users group, LON-CL2 was automatically enrolled into Intune as its MDM authority.
 
-4. In the **Devices | All devices** window, in the middle pane under **Manage** , select **Device settings**.
+4. In the **Devices | All devices** window, in the middle pane, select **Device settings**.
 
-5. In the details pane that appears on the right, in the **Users may join devices to Azure AD** row, verify that **All** is selected. This means that all Azure AD users can join their devices to Azure Active Directory.
+5. In the **Devices | Device settings** window, in the details pane on the right, in the **Users may join devices to Azure AD** option, verify that **All** is selected. This means that all Azure AD users can join their devices to Azure Active Directory.
 
-6. The **Additional local administrator on Azure AD joined devices** is not present however select the **highled text** then review that there is no additional assignements.
+6. Scroll down to the bottom of the window. Under **Additional local administrators on all Azure AD joined devices**, no local administrators are displayed. Select the **Manage Additional local administrators on all Azure AD joined devices**. <br/>
 
-7. In the **Device Addministrators|Assignments** window, select **+Add Assignemnts**.
+   On the **Device Administrators | Assignments** window, note that there are no additional assignements. In the next several steps, you will add a role assignment.
 
-8. In the **Add Assignments** pane on the right, select **Alex Wilber**, select the **Select** button at the bottom of the screen, and then select **Add**.
+7. In the **Device Administrators | Assignments** window, select **+Add assignemnts** on the menu bar.
 
-9. Back in the **Devices | Device settings** detail pane, scroll down and verify that **Require Multi-Factor Auth to join devices** is set to **No**. The **Maximum number of devices per user** is currently set to **50.** Select this field and in the menu that appears, select **10.**
+8. In the **Add assignments** pane on the right, select **Alex Wilber** in the list of users and then select the **Add** button at the bottom of the screen.
 
-10. Scroll back to the top of the page, and in the menu bar, select **Save**.
+9. Select the **Back arrow** on the address bar to return to the **Devices | Device settings** page. Verify the **Require Multi-Factor Auth to join devices** toggle switch is set to **No**. The **Maximum number of devices per user** is currently set to **50**; select this field and in the drop-down menu that appears, select **10**.
+
+10. On the menu bar at the top of the page, select **Save**.
 
 11. Leave all browser tabs open for the next task.
 
@@ -61,7 +63,8 @@ You have changed the default settings for users to join their devices to your Az
 
 
 ### Task 3: Create dynamic Azure AD device group
-In Azure Active Directory, you can use rules to determine group membership based on user or device properties. Dynamic membership is supported for security groups or Office 365 groups. When a group membership rule is applied, user and device attributes are evaluated for matches with the membership rule. When an attribute changes for a user or device, all dynamic group rules in the organization are processed for membership changes. Users and devices are added or removed if they meet the conditions for a group. Devices can only be used in Security groups.
+
+In Azure Active Directory, you can use rules to determine group membership based on user or device properties. Dynamic membership is supported for security groups or Microsoft 365 groups. When a group membership rule is applied, user and device attributes are evaluated for matches with the membership rule. When an attribute changes for a user or device, all dynamic group rules in the organization are processed for membership changes. Users and devices are added or removed if they meet the conditions for a group. Devices can only be used in Security groups.
 
 In this task, Holly wants to create a new Security group for enrolled devices within Adatum. This group will support dynamic membership when a device's management type is set to MDM.
 
@@ -92,7 +95,7 @@ In this task, Holly wants to create a new Security group for enrolled devices wi
 
 8. Select **Save** in the menu bar at the top of the window.
 
-9. In the **New Group** window, scroll to the bottom of the window and select the **Create** button.
+9. In the **New Group** window, select the **Create** button at the bottom of the window.
 
 10. In the **Groups | All groups** window, the **Enrolled Devices** group should now appear in the list of groups.
 
