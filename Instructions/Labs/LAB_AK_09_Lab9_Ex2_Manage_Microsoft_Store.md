@@ -74,7 +74,7 @@ In this exercise, you will add five apps to Adatum's company store, and you will
 
 29. Repeat steps 26-28 for both **Microsoft Remote Desktop** and **Translator**.
 
-30. Leave the **Microsoft Store for Business** tab open in your Edge browser. You will use this in the next task. 
+30. Close the **Microsoft Store for Business** tab in your Edge browser. Leave the **Microsoft Office Home** tab and the **Microsoft 365 admin center** tab open for the next lab. 
 
 
 ### Task 2: View your private store as a company employee 
