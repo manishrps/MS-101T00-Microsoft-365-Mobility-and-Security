@@ -2,11 +2,11 @@
 
 Many mobile device management (MDM) solutions help protect organizational data by requiring users and devices to meet certain requirements. In Intune, these requirements are referred to as compliance policies. Compliance policies define the rules and settings that users and devices must meet to be compliant. When combined with Conditional Access requirements, administrators can block users and devices that do not meet the rules.
 
-In this exercise, you will begin by creating a noncompliance notification message template. Then when you create a compliance policy, if a device becomes noncompliant, Holly wants to select this noncompliance notification message template to send an email to the end user and to the MOD Administrator account.
+In this exercise, you will begin by creating a noncompliance notification message template. Then when you create a compliance policy that checks the Windows 10 and later devices to ensure they are running a minimum OS version of Windows, you will assign this email notification template to the policy. If a device is running a noncompliant version of Windows, the policy will be triggered, the device will be marked as noncompliant, an an email will be sent to the end user notifying them of the situation. 
 
 ### Task 1: Create a noncompliant email message template
 
-In your role as Holly Dickson, Adatum's Enterprise Administrator, want to send an email message to any end user whose device becomes noncompliant. The email will also be sent to the MOD Administrator. Before you create a compliance policy in task 2, you must first create the noncompliant email message template that you will assign to the policy.
+In your role as Holly Dickson, Adatum's Enterprise Administrator, want to send an email message to any end user whose Windows 10 or later device becomes noncompliant. Before you create a compliance policy in task 2, you must first create the noncompliance email message template that you will assign to the policy.
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
 
@@ -20,9 +20,9 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, want to send a
 
 6. On the **Compliance policies | Notificationis** page, in the details pane on the right select **+Create notification** on the menu bar. 
 
-7. On the **Create notification** page, note the three steps that appear at the top of the page. You are currently on the step **1 - Basics** page. In the **Name** field, enter **Retire device template**. Leave all the other options set to their default settings and select **Next**.
+7. On the **Create notification** page, note the three steps that appear at the top of the page. You are currently on the step **1 - Basics** page. In the **Name** field, enter **Noncompliant OS version**. Leave all the other options set to their default settings and select **Next**.
 
-8. On the step **2 - Notification message templates** page, enter **WARNING: Noncompliant device** in the **Subject** field. Then enter **Your device became noncompliant and has been retired.** Select **Next**.
+8. On the step **2 - Notification message templates** page, enter **WARNING: Noncompliant device** in the **Subject** field. Then enter **Your Windows 10 or later device is not running a compliant version of the OS. The device has been marked as noncompliant and is now locked.** Select **Next**.
 
 9. On the step **3 - Review + create** page, review your template settings. If any need to be corrected, select **Previous** to return to the appropriate page and make the necessary edits. If everything looks OK, select **Create**.
 
@@ -31,7 +31,9 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, want to send a
 
 ### Task 2: Create and apply a compliance policy
 
-In your role as Holly Dickson, Adatum's Enterprise Administrator, you will create a compliance policy that governs Windows 10 devices at Adatum Corporation. This policy will dictate what the minimum requirements are for accessing Adatum's environment. It will also control how long a device can stay out of compliance before it's locked out from use, thereby, requiring administrator assistance to make it operational again. The policy will also control who it's assigned to, which in this case will be all devices enrolled in Microsoft Intune.
+In your role as Holly Dickson, Adatum's Enterprise Administrator, you will create a compliance policy that governs Windows 10 devices at Adatum Corporation. This policy will dictate what the minimum OS version that must be installed on a device in order for it to access Adatum's environment. It will also control how long a device can stay out of compliance before it's locked out from use, thereby, requiring administrator assistance to make it operational again. The policy will also control who it's assigned to, which in this case will be all devices enrolled in Microsoft Intune.
+
+Given the problems caused at Adatum by devices that are running old versions of Windows, Holly wants to mark any device as noncompliant that is running a version of the OS that is older than version 10.0.17763.1192. Marking a device as noncompliant will lock the device. In the policy that Holly wants to create, any device running a version of Windows that is older than this version will be marked as noncompliant, and an email will be sent to the end-user notifying them of the situation.
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
 
@@ -53,52 +55,50 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you will creat
 
 10. On the step **2 - Compliance settings** page, expand the remaining sections and review them, and then when you are done, select **Next**.
 
-11. On the step **3 - Actions for noncompliance** page, you can create a list of actions that you want taken when a device becomes noncompliant. One default action is already defined (**Mark device noncompliant**); this action cannot be changed or deleted. This action is scheduled to be performed **Immediately** (which means, on the day the device becomes noncompliant). <br/>
+11. On the step **3 - Actions for noncompliance** page, you can create a list of actions that you want taken when a device becomes noncompliant. One default action is already defined (**Mark device noncompliant**); this action cannot be changed or deleted. This action is scheduled to be performed **Immediately** (which means, on the day the device becomes noncompliant, which is 0 days after noncompliance). <br/>
 
-    Given the problems caused at Adatum by users with noncompliant devices, Holly also wants to retire any device that becomes noncompliant. To create this action, select the field under **Mark device noncompliant**, and then select **Retire the noncompliant device** in the drop-down menu that appears. The **Schedule (days after noncompliance)** field is set to 0 by default, which means this action will be performed immediately on the day the device is flagged as noncompliant. Leave this field set to 0. <br/>
-    
-    **Note:** To the right of this action is an ellipsis icon, which provides the option to delete this action. Do not delete this action; the point of indicating this is to let you know that you can delete any actions that you manually create. Note also that a **Delete** option is not available for the default action that marks the device as noncompliant. <br/>
-    
-12. Repeat the previous step, time time selecting the **Send email to end user** action. <br/>
+    In addition to marking the device as noncompliant, Holly also wants to notify the end user with an email. In the **Action** colum, under the **Mark device compliant** action, selecty the action field. In the drop-down arrow that appears, select **Send email to end user**. <br/>
 
     Leave the **Schedule (days after noncompliance)** field set to 0. <br/>
     
-    Under the **Message template** column, select **None selected**. 
+    Under the **Message template** column, select **None selected**. In the **Notification message templates** pane that appears, select **Noncompliant OS version** and then select the **Select** button. 
+    
+    **Note:** You will not send the email to any additional recipients. If you select **None selected** under the **Additional recipients** column, you will have to select an Azure AD group to send the email to (you cannot select an individual user). Other than the end user who owns the device, Holly does not want to notify any other group, so you will not define any additional recipients.
+    
+    **Note:** To the far right of the **Send email to end user** row is an ellipsis icon. If you select this icon, you can select the option to Delete this action if you decide you no longer want to include it in this policy. You want to send the email notification, so do not select this Delete option.
     
 12. Select **Next**.
 
-13. On the step **4 - Scope tags** page, no scope tags will be assigned to the policy, so select **Next**.
-
-12. On the **Step 5 - Assignments** page, you want to assign this policy to all the devices in the **Enrolled devices** group, which you created in the prior exercise. <br/>
+13. On the step **4 - Assignments** page, you want to assign this policy to all the devices in the **Enrolled devices** group, which you created in the prior exercise. <br/>
 
     The **Assign to** field is already set to **Selected groups** be default, so under the **Selected groups** section, select **+Select groups to include**. In the **Select groups to include** pane that appears, select **Enrolled devices** and then select the **Select** button at the bottom of the pane. Select **Next**.
 
-13. On the **Step 6 - Review + create** page, review the policy settings. If anything needs to be fixed, select **Previous** and make the necessary corrections. However, if everything looks correct, select **Create**.
+14. On the step **5 - Review + create** page, review the policy settings. If anything needs to be fixed, select **Previous** and make the necessary corrections. However, if everything looks correct, select **Create**.
 
-14. In your **Edge** browser, select the **Azure Active Directory admin center** tab. 
+15. In your **Edge** browser, select the **Azure Active Directory admin center** tab. If you closed this tab at the end of the prior exercise, then in the **Microsoft 365 admin center**, in the left-hand pane under **Admin centers**, select **Azure Active Directory**.
 
-15. In the the **Microsoft Endpoint manager Admin center**, in the left-hand navigation pane, select **Azure Active Directory.**
+16. In the **Azure Active Directory admin center**, in the left-hand navigation pane, select **Azure Active Directory**.
 
-16. In the **Adatum Corporation | Overview** window, in the middle pane under **Manage**, select **Mobility (MDM and MAM).**
+17. In the **Adatum Corporation | Overview** window, in the middle pane under **Manage**, scroll down and select **Mobility (MDM and MAM).**
 
-17. In the **Adatum Corporation | Mobility (MDM and MAM)** window, in the pane on the right, select **Microsoft Intune.**
+18. In the **Adatum Corporation | Mobility (MDM and MAM)** window, in the pane on the right, select **Microsoft Intune.**
 
-18. In the **Configure** window, in the **MAM User scope** setting, select **All**.
+19. In the **Configure** window, in the **MAM User scope** setting, select **All**.
 
-19. Select **Save** in the menu bar at the top of the window, and then select the **X** in the upper right corner to close the **Configure** window.
+20. Select **Save** in the menu bar at the top of the window, and then select the **X** in the upper right corner to close the **Configure** window.
 
-20. Leave all browser tabs open for the next task.
+21. Leave all browser tabs open for the next task.
 
 
 ### Task 3: Manually create an EFS DRA Certificate
 
-EFS is the Encrypted File System that is built into Windows. It allows anyone to encrypt a file. The encryption is done using digital certificates, and as part of that process, Windows assigns something called a Data Recovery Agent (DRA). A data recovery agent is a Microsoft Windows user who has been granted the right to decrypt data that was encrypted by other users. The assignment of DRA rights to an approved individual provides an IT department with a way to unlock encrypted data in case of an emergency. Data Recovery Agents can be defined at the domain, site, organizational unit, or local machine level. In a small to mid-sized business, the network administrator is often the designated DRA.
+EFS, which is the Encrypted File System that is built into Windows, allows anyone to encrypt a file. The encryption is done using digital certificates, and as part of that process, Windows assigns a Data Recovery Agent (DRA). A data recovery agent is a Microsoft Windows user who has been granted the right to decrypt data that was encrypted by other users. The assignment of DRA rights to an approved individual provides an IT department with a way to unlock encrypted data in case of an emergency. Data Recovery Agents can be defined at the domain, site, organizational unit, or local machine level. In a small to mid-sized business, the network administrator is often the designated DRA.
 
 In very simple terms, the network administrator uses Microsoft Windows Group Policy in Active Directory to assign everyone a public key for encryption and their own personal private key for decryption. This ensures that users can only decrypt the content they have created. The data recovery agent, however, is assigned a private key capable of unlocking all content encrypted with the public key.
 
 The administrator must generate a Data Recovery Agent certificate which grants the user permission to access the encrypted resources. However, if the DRA certificate is created after the encryption of the resource, the resource cannot be decrypted by the DRA certificate. If you don't already have an EFS DRA certificate, you'll need to create and extract one from your system before you can use Windows Information Protection (WIP).
 
-In this task, you're going to run a command prompt in which you enter the cipher command with a /R parameter. By default, /R creates a 2048 bit RSA recovery key and DRA certificate and writes them both to a .PFX file, and it writes the DRA certificate to a .CER file. An administrator can then add the contents of the .CER file to the EFS recovery policy to create the recovery key for users and import the .PFX file to recover individual files.
+In this task, you're going to run a command prompt in which you enter the cipher command with a /R parameter. By default, /R creates a 2048 bit RSA recovery key and a DRA certificate; the recovery key is then written to a .PFX file, and the DRA certificate is written to a .CER file. An administrator can then add the contents of the .CER file to the EFS recovery policy to create the recovery key for users and import the .PFX file to recover individual files. The files will be stored in the C:\Users\Admin folder.
 
 The purpose of this task is to create this RSA recovery key so that if the device on which they reside becomes compromised, you can recover the files with this DRA certificate from Intune.
 
@@ -106,7 +106,7 @@ The purpose of this task is to create this RSA recovery key so that if the devic
 
 2. In the Search field on the taskbar at the bottom of the screen, enter **cmd,** and in the menu that appears, select **Command Prompt**.
 
-3. In the **Command Prompt** window, you are going to enter a **cipher** command, which displays or alters the encryption of file directories on NTFS partitions. The /R parameter generate an EFS recovery key and DRA certificate and writes them to a .pfx file, which, for the purpose of this lab, you're going to name **DRAcert** (in the real-world, you can name it anything).<br/>
+3. In the **Command Prompt** window, you are going to enter a **cipher** command, which displays or alters the encryption of file directories on NTFS partitions. The **/R** parameter generate an EFS recovery key and a DRA certificate and then stores them in two respective files (for the purpose of this lab, you're going to name each file **DRAcert**; in the real-world, you can name it anything). The EFS recovery key will be written to a **DRAcert.PFX** file, and the certificate to a **DRAcert.CER** file. <br/>
 
     At the command prompt, enter the following command and press Enter: <br/>
   
@@ -116,9 +116,11 @@ The purpose of this task is to create this RSA recovery key so that if the devic
 
     **Note:** The cursor will NOT move when you type in the password, so you will not see what you're typing. You should also write down the password for future use; you will need this in a later task when you try to recover an encrypted file.
 
-5. You will be prompted to type in the password again to confirm it. Press Enter when done.
+5. You will be prompted to type in the password again to confirm it. Press Enter when done. <br/>
 
-6. You should receive messages indicating that your .CER and .PFX files were created successfully.
+    **Note:** If the password and confirmation password did not match, you must repeat the prior two steps.
+
+6. If the password and confirmation password match, you will receive messages indicating that your .CER and .PFX files were created successfully.
 
 7. Close the Command Prompt window.
 
