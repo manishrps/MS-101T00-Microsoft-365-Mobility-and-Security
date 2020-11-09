@@ -87,7 +87,7 @@ In this task, you're going to manage the Category property of the two devices th
 
 9. Repeat steps 2-8 to create a group for desktop devices. The **Group Name** should be set to **Desktop Devices**, and in the **Dynamic membership rules** window, enter **Desktop** in the **Value** field.
 
-10. In the **Groups | All groups** window, both new groups should appear at the top of the group list 
+10. In the **Groups | All groups** window, both new groups should appear at the top of the group list.
 
 11. Leave all browser tabs open for the next task.
 
@@ -120,7 +120,7 @@ In this task, you will create a conditional access policy that Holly plans to im
 
 10. On the **Conditions** pane, select the **Device platforms** section.
 
-11. On the **Device platforms** pane that appears, in the **Configure** field, select **Yes**. In the **Include** tab, select the **Select device platforms** option and then select the **Windows** check box.** Select **Done**.
+11. On the **Device platforms** pane that appears, in the **Configure** field, select **Yes**. In the **Include** tab, select the **Select device platforms** option and then select the **Windows** check box. Select **Done**.
 
 12. On the **New** pane, under **Access Controls**, select the **Grant** section.
 
@@ -130,11 +130,11 @@ In this task, you will create a conditional access policy that Holly plans to im
 
 15. In the **Session** pane that appears, review the explanation but do not select any option. Select the **X** in upper right corner to close the pane.
 
-16. On the **New** pane, select the **Create** button at the bottom of pane. The **Conditional1** policy now appears in the policy list.<br/>
+16. On the **New** pane, select the **Create** button at the bottom of the pane. The **Conditional1** policy now appears in the policy list.<br/>
 
 17. You created a conditional access policy to become familiar with the available options; however, the policy is not effective because you didn't enable it. To enable the policy, select the **Conditional1** policy in the policy list.  
 
-18. In the **Conditional1** pane, the **Enable policy** setting appears at the bottom of the pane. By default it's set to **Report-only**. Select **On** and then select **Save**.
+18. In the **Conditional1** pane, the **Enable policy** setting appears at the bottom of the pane. By default, it's set to **Report-only**. Select **On** and then select **Save**.
 
 You have now created a conditional access policy and enabled it for Adatum's pilot project.
 
