@@ -2,37 +2,72 @@
 
 Many mobile device management (MDM) solutions help protect organizational data by requiring users and devices to meet certain requirements. In Intune, these requirements are referred to as compliance policies. Compliance policies define the rules and settings that users and devices must meet to be compliant. When combined with Conditional Access requirements, administrators can block users and devices that do not meet the rules.
 
-### Task 1: Create and apply a compliance policy
+In this exercise, you will begin by creating a noncompliance notification message template. Then when you create a compliance policy, if a device becomes noncompliant, Holly wants to select this noncompliance notification message template to send an email to the end user and to the MOD Administrator account.
 
-In your role as Holly Dickson, Adatum's Enterprise Administrator, you will create a compliance policy that governs Windows 10 devices at Adatum Corporation. This policy will dictate what the minimum requirements are for accessing Adatum's environment. It will also control how long a device can stay out of compliance before it's locked out from use; thereby, requiring administrator assistance to make it operational again. The policy will also control who it's assigned to, which in this case will be all devices enrolled in Microsoft Intune.
+### Task 1: Create a noncompliant email message template
+
+In your role as Holly Dickson, Adatum's Enterprise Administrator, want to send an email message to any end user whose device becomes noncompliant. The email will also be sent to the MOD Administrator. Before you create a compliance policy in task 2, you must first create the noncompliant email message template that you will assign to the policy.
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
 
-2. In your **Edge** browser, enter the following URL in the address bar to open the Microsoft Endpoint Manager admin center: **https://Endpoint.microsoft.com**. 
+2. In your **Edge** browser, you should still have the **Microsoft Endpoint Manager admin center** open from the first exercise in this lab; if so, then select it now. If you closed it, then in **Microsoft 365 admin center**, under the **Admin centers** group in the left-hand navigation pane, select **Endpoint Manager**.. 
 
-3. On the **Microsoft Endpoint Manager admin center**, in the left-hand navigation pane under the **Devices** section, select **Compliance policies** under **Policy**.
+3. In the **Microsoft Endpoint Manager admin center**, in the left-hand navigation pane select **Endpoint security**.
 
-4. On the **Compliance policies | Policies** window, in the details pane on the right, select **+Create Policy**.
+4. On the **Endpoint security | Overview** page, in the middle pane under the **Manage** section, select **Device compliance**.
 
-5. On the **Create a policy** pane that appears, select the **Platform** field, and in the drop-down menu that appears, select **Windows 10 and later**. Select **Create**.
+5. On the **Compliance policies | Policies** page, in the middle pane, select **Notifications**. 
 
-6. On the **Windows 10 compliance policy** window, note the six steps that appear at the top of the page. You are currently in the **Step 1 - Basics** page. Enter **Compliance1** in the **Name** field and then select **Next**.
+6. On the **Compliance policies | Notificationis** page, in the details pane on the right select **+Create notification** on the menu bar. 
 
-7. On the **Step 2 - Compliance settings** page, select **Device Health** to expand it. Review the available settings and then select **Device Health** again to collapse it. 
+7. On the **Create notification** page, note the three steps that appear at the top of the page. You are currently on the step **1 - Basics** page. In the **Name** field, enter **Retire device template**. Leave all the other options set to their default settings and select **Next**.
 
-8. On the **Step 2 - Compliance settings** page, select **Device Properties** to expand it. In the **Minimum OS version** field, enter **10.0.17763.1192** and then note the check mark that appears on the right side of the field. Select **Device Properties** again to collapse it. 
+8. On the step **2 - Notification message templates** page, enter **WARNING: Noncompliant device** in the **Subject** field. Then enter **Your device became noncompliant and has been retired.** Select **Next**.
 
-9. On the **Step 2 - Compliance settings** page, review the other available options and then select **Next**.
+9. On the step **3 - Review + create** page, review your template settings. If any need to be corrected, select **Previous** to return to the appropriate page and make the necessary edits. If everything looks OK, select **Create**.
 
-10. On the **Step 3 - Actions for noncompliance** page, you can create a list of actions that you want taken when a device becomes noncompliant. One default action is already defined (**Mark device noncompliant**); this action cannot be changed or deleted. This action is scheduled to be performed **Immediately** (which means, on the day the device becomes noncompliant). <br/>
+10. In your browser session, leave all the tabs open for the next task.
 
-    Given the problems caused at Adatum by users with noncompliant devices, Holly also wants to remotely lock any device that becomes noncompliant. To create this action, select the field under the **Action** column, and then select **Remotely lock the noncompliant device** in the menu that appears. The **Schedule (days after noncompliance)** field is set to 0 by default, which means this action will be performed immediately on the day the device is flagged as noncompliant. Leave this field set to 0. <br/>
+
+### Task 2: Create and apply a compliance policy
+
+In your role as Holly Dickson, Adatum's Enterprise Administrator, you will create a compliance policy that governs Windows 10 devices at Adatum Corporation. This policy will dictate what the minimum requirements are for accessing Adatum's environment. It will also control how long a device can stay out of compliance before it's locked out from use, thereby, requiring administrator assistance to make it operational again. The policy will also control who it's assigned to, which in this case will be all devices enrolled in Microsoft Intune.
+
+1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+
+2. In your **Edge** browser, you should still have the **Microsoft Endpoint Manager admin center** open from the first exercise in this lab; if so, then select it now. If you closed it, then in **Microsoft 365 admin center**, under the **Admin centers** group in the left-hand navigation pane, select **Endpoint Manager**.. 
+
+3. In the **Microsoft Endpoint Manager admin center**, in the left-hand navigation pane select **Devices**. 
+
+4. In the **Devices | Overview** window, in the middle pane under the **Policy** section, select **Compliance policies**.
+
+5. On the **Compliance policies | Policies** window, in the details pane on the right, select **+Create Policy** on the menu bar.
+
+6. On the **Create a policy** pane that appears, select the **Platform** field, and in the drop-down menu that appears, select **Windows 10 and later**. Select **Create**.
+
+7. On the **Windows 10 compliance policy** window, note the five steps that appear at the top of the page. You are currently on the step **1 - Basics** page. Enter **Compliance1** in the **Name** field and then select **Next**.
+
+8. On the step **2 - Compliance settings** page, select **Device Health** to expand it. Review the available settings and then select **Device Health** again to collapse it. 
+
+9. On the step **2 - Compliance settings** page, select **Device Properties** to expand it. In the **Minimum OS version** field, enter **10.0.17763.1192** and then note the check mark that appears on the right side of the field. Select **Device Properties** again to collapse the section. 
+
+10. On the step **2 - Compliance settings** page, expand the remaining sections and review them, and then when you are done, select **Next**.
+
+11. On the step **3 - Actions for noncompliance** page, you can create a list of actions that you want taken when a device becomes noncompliant. One default action is already defined (**Mark device noncompliant**); this action cannot be changed or deleted. This action is scheduled to be performed **Immediately** (which means, on the day the device becomes noncompliant). <br/>
+
+    Given the problems caused at Adatum by users with noncompliant devices, Holly also wants to retire any device that becomes noncompliant. To create this action, select the field under **Mark device noncompliant**, and then select **Retire the noncompliant device** in the drop-down menu that appears. The **Schedule (days after noncompliance)** field is set to 0 by default, which means this action will be performed immediately on the day the device is flagged as noncompliant. Leave this field set to 0. <br/>
     
     **Note:** To the right of this action is an ellipsis icon, which provides the option to delete this action. Do not delete this action; the point of indicating this is to let you know that you can delete any actions that you manually create. Note also that a **Delete** option is not available for the default action that marks the device as noncompliant. <br/>
     
-    Select **Next**.
+12. Repeat the previous step, time time selecting the **Send email to end user** action. <br/>
 
-11. On the **Step 4 - Scope tags** page, no scope tags will be assigned to the policy, so select **Next**.
+    Leave the **Schedule (days after noncompliance)** field set to 0. <br/>
+    
+    Under the **Message template** column, select **None selected**. 
+    
+12. Select **Next**.
+
+13. On the step **4 - Scope tags** page, no scope tags will be assigned to the policy, so select **Next**.
 
 12. On the **Step 5 - Assignments** page, you want to assign this policy to all the devices in the **Enrolled devices** group, which you created in the prior exercise. <br/>
 
@@ -55,7 +90,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you will creat
 20. Leave all browser tabs open for the next task.
 
 
-### Task 2: Manually create an EFS DRA Certificate
+### Task 3: Manually create an EFS DRA Certificate
 
 EFS is the Encrypted File System that is built into Windows. It allows anyone to encrypt a file. The encryption is done using digital certificates, and as part of that process, Windows assigns something called a Data Recovery Agent (DRA). A data recovery agent is a Microsoft Windows user who has been granted the right to decrypt data that was encrypted by other users. The assignment of DRA rights to an approved individual provides an IT department with a way to unlock encrypted data in case of an emergency. Data Recovery Agents can be defined at the domain, site, organizational unit, or local machine level. In a small to mid-sized business, the network administrator is often the designated DRA.
 
@@ -90,7 +125,7 @@ The purpose of this task is to create this RSA recovery key so that if the devic
 8. Leave all browser tabs open for the next task.
 
 
-### Task 3: Create an App Protection Policy
+### Task 4: Create an App Protection Policy
 
 In your role as Holly Dickson, Adatum's Enterprise Administrator, you are now going to create an app protection policy that will protect selected applications from intrusion. In other words, the apps will be protected so that they can only be accessed by individuals who are authorized to do so, such as Adatum employees and other users from your Microsoft 365 tenant. This enables you to use Windows Information Protection (WIP) policies with Windows 10 apps to protect apps without device enrollment.
 
@@ -160,7 +195,7 @@ In this task, you will create a WIP policy that protects an entire collection of
 You have just created a new App Protection Policy (APP), which is also referred to as a Windows Information Protection (WIP) policy.
 
 
-### Task 4: Create a packaged App rule for the store apps
+### Task 5: Create a packaged App rule for the store apps
 
 Packaged apps, also known as Universal Windows apps, are based on an app model that ensures that all the files within an app package share the same identity. Therefore, it is possible to control the entire app using a single AppLocker rule as opposed to the non-packaged apps where each file within the app could have a unique identity. An AppLocker rule for a packaged app controls both the installation as well as the running of the app.
 
@@ -220,7 +255,7 @@ Packaged apps, also known as Universal Windows apps, are based on an app model t
 26. After you've created your XML files, you will import one of them by using **Microsoft Intune**, which you will do in the next task. 
 
 
-### Task 5: Import a list of protected apps using Endpoint Manager
+### Task 6: Import a list of protected apps using Endpoint Manager
 
 The purpose of this task is to show you how to use Intune to push an app to a device just like a Group Policy Object (GPO). In this task, you will use Notepad. In a previous task, Notepad was included as one of the recommended apps in the App protection policy that you created. In this task you will import the App protection policy (**apprule1.xml**) into Intune that you exported in the prior task.
 
@@ -259,7 +294,7 @@ The purpose of this task is to show you how to use Intune to push an app to a de
 15. Leave the Command Prompt window open for the next task.
 
 
-### Task 6: Recover data using the EFS DRA certificate
+### Task 7: Recover data using the EFS DRA certificate
 
 The purpose of this task is to show you how to recover a file that has been encrypted using WIP if the Windows 10 device on which it resides has been recovered after having been misplaced or stolen. In this case, you will decrypt the apptest1.txt file that you earlier encrypted. In a real-world scenario, you would start out by copying your WIP-encrypted file to a location where you have admin access; however, in this lab, we're simply going to point to the apptest1.txt file to keep things simple.
 
@@ -294,7 +329,7 @@ The purpose of this task is to show you how to recover a file that has been encr
 14. Leave all browser tabs open for the next task.
 
 
-### Task 7: Configure enrollment restrictions
+### Task 8: Configure enrollment restrictions
 When enrolling devices to Microsoft Intune, you have the option to Allow or Block personally owned devices from being enrolled. This is done by restricting what device type platforms you want to allow when devices are enrolled. For example, if you configured Intune to only allow iOS devices to be enrolled and a user attempts to enroll an Android device, the operation would be blocked from enrolling.
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
@@ -328,7 +363,7 @@ When enrolling devices to Microsoft Intune, you have the option to Allow or Bloc
 14. Leave all browser tabs open for the next task.
 
 
-### Task 8: Review device configuration profiles
+### Task 9: Review device configuration profiles
 The purpose of this task is to simply review the different platforms that are available to be assigned to a device configuration profile. You will not create a profile; you will simply review the platforms that are available to assign to a profile.
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
