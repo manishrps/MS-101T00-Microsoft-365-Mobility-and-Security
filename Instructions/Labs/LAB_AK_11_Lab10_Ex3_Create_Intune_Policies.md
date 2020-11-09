@@ -106,7 +106,7 @@ The purpose of this task is to create this RSA recovery key so that if the devic
 
 2. In the Search field on the taskbar at the bottom of the screen, enter **cmd,** and in the menu that appears, select **Command Prompt**.
 
-3. In the **Command Prompt** window, you are going to enter a **cipher** command, which displays or alters the encryption of file directories on NTFS partitions. The **/R** parameter generate an EFS recovery key and a DRA certificate and then stores them in two respective files (for the purpose of this lab, you're going to name each file **DRAcert**; in the real-world, you can name it anything). The EFS recovery key will be written to a **DRAcert.PFX** file, and the certificate to a **DRAcert.CER** file. <br/>
+3. In the **Command Prompt** window, you are going to enter a **cipher** command, which displays or alters the encryption of file directories on NTFS partitions. The **/R** parameter generate an EFS recovery key and a DRA certificate and then stores them in two respective files (for the purpose of this lab, you're going to name each file **DRAcert**; in the real-world, you can name them whatever you wish). The EFS recovery key will be written to a **DRAcert.PFX** file, and the certificate to a **DRAcert.CER** file. <br/>
 
     At the command prompt, enter the following command and press Enter: <br/>
   
@@ -135,14 +135,15 @@ In this task, you will create a WIP policy that protects an entire collection of
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
 
-2. In your Edge browser, you should have a tab open for the **Microsoft Azure** portal that is displaying the **Compliance1** data compliance policy that you created in a prior lab. At the top of the screen is the following navigation thread: **Microsoft Endpoint manager Admin center > Device|Compliance Policies| Policies > Compliance1**. <br/>
+2. In your Edge browser, you should have a tab open in the **Microsoft Endpoint Manager admin center** that is displaying the **Compliance1** data compliance policy that you created in the earlier task. <br/>
 
-    In this thread, select **Apps**.
+    In the left-hand navigation pane, select **Apps**.
+    
 3. In the **Apps | Overview** window, in the left-hand pane under the **Policy** group, select **App Protection policies**.
 
-4. In the **Apps | App protection policies** window, in the menu bar that appears above the list of policies, select **+Create Policy.** In the menu that appears, select **Windows 10**.
+4. In the **Apps | App protection policies** window, in the menu bar that appears above the list of policies, select **+Create policy.** In the drop-down menu that appears, select **Windows 10**.
 
-5. On the **Create policy** window, note the six steps that appear at the top of the page. You are currently in the **Step 1 - Basics** page. Enter the following information:
+5. On the **Create policy** window, note the six steps that appear at the top of the page. You are currently in the step **1 - Basics** page. Enter the following information:
 
     - Name: **Win10Policy**
     - Description: **Windows Information Protection policy for Windows 10 computers**
@@ -150,13 +151,13 @@ In this task, you will create a WIP policy that protects an entire collection of
 
 6. Select **Next**.
 
-7. On the **Step 2 - Targeted apps** page, under the **Protected apps** group, select **+Add**. 
+7. On the step **2 - Targeted apps** page, under the **Protected apps** group, select **+Add**. 
 
-8. In the **Add apps** pane that appears on the right, select the drop-down arrow in the field that currently displays **Recommended apps**. The menu that appears displays the available app options that you can add to this policy - **Recommended apps, Store apps**, and **Desktop apps**. Since you're first going to add all the recommended apps, select **Recommended apps**. <br/>
+8. In the **Add apps** pane that appears on the right, select the drop-down arrow in the field that currently displays **Recommended apps**. The drop-down menu that appears displays the available app options that you can add to this policy - **Recommended apps, Store apps**, and **Desktop apps**. Since you're first going to add all the recommended apps, select **Recommended apps**. <br/>
 
     The quickest way to add all the recommended apps is to select the check box to the left of the **Name** column heading; this will select the check boxes for all the apps in the list. Select the **OK** button at the bottom of the window.
 
-9. This returns you to the **Step 2 - Targeted apps** page. Scroll down past all the recommended apps that you just added and then select **+Add** again.
+9. This returns you to the step **2 - Targeted apps** page. Scroll down past all the recommended apps that you just added and then select **+Add** again.
 
 10. In the **Add apps** pane, you're going to add **Microsoft Power BI**, which is an app from the Microsoft Store. Select the drop-down arrow in the field that currently displays **Recommended apps**, and in the menu that appears, select **Store apps**.
 
@@ -166,13 +167,13 @@ In this task, you will create a WIP policy that protects an entire collection of
     - Publisher: **CN=Microsoft Corporation, o=Microsoft Corporation, L=Redmond, S=Washington, C=US**
     - Product Name: **Microsoft.microsoftpowerBIforWindows**
 
-12. Select **Next**.
+12. Select **OK** to close the **Add apps** pane, and then select **Next**.
 
-13. On the **Step 3 - Required settings** page, in the **Windows Information Protection mode** setting, select **Block**, and then select **Next**. <br/>
+13. On the step **3 - Required settings** page, in the **Windows Information Protection mode** setting, select **Block**, and then select **Next**. <br/>
 
     **Note:** By choosing the **Block** setting, WIP will look for inappropriate data sharing practices and stop the user from completing the action. Blocked actions can include sharing information across non-corporate-protected apps and sharing corporate data between other people and devices outside the organization. Holly has decided to select this option given her concern over the Microsoft Power BI app, which can produce reports and queries of company trends that may be confidential.
 
-14. On the **Step 4 - Advanced settings** page, scroll down to the **Data protection** section. You will upload the DRA certificate that you created in the prior task, which will allow recovery of encrypted data. <br/>
+14. On the step **4 - Advanced settings** page, scroll down to the **Data protection** section. You will upload the DRA certificate that you created in the prior task, which will allow recovery of encrypted data. <br/>
 
     To the right of the **Select a file** field, select the **file** icon. In the **File Explorer** window that appears, expand **Local Disk (C:)**, expand **Users**, and then select the **Admin** folder. Scroll down through the files in the **Admin** folder, select **DRAcert.CER**, and then select **Open**.<br/>
 
@@ -182,13 +183,13 @@ In this task, you will create a WIP policy that protects an entire collection of
 
 15. Select **Next**.
 
-16. On the **Step 5 - Assignments** page, under **Included groups**, select **+Select groups to include**. Holly wants to limit this policy to the members of the **WIP Users** group, which is the group of users selected to participate in compliance testing for Adatum's pilot project. <br/>
+16. On the step **5 - Assignments** page, under **Included groups**, select **+Select groups to include**. Holly wants to limit this policy to the members of the **WIP Users** group, which is the group of users selected to participate in compliance testing for Adatum's pilot project. <br/>
 
     In the **Select groups to include** pane, select **WIP users**, and then select the **Select** button at the bottom of the pane.
 
 17. Select **Next**.
 
-18. On the **Step 6 - Review + create** page, review the policy settings. If anything needs to be fixed, select **Previous** and make the necessary corrections. However, if everything looks correct, select **Create**.
+18. On the step **6 - Review + create** page, review the policy settings. If anything needs to be fixed, select **Previous** and make the necessary corrections. However, if everything looks correct, select **Create**.
 
 19. On the **Apps | App protection policies** window, **Win10Policy** should appear in the list of policies. However, note that its **Deployed** status is **No**. It only takes a few seconds for the policy to be deployed, so select **Refresh** on the menu bar and the **Deployed** status should change to **Yes**.
 
@@ -205,7 +206,7 @@ Packaged apps, also known as Universal Windows apps, are based on an app model t
 
 2. In the Search field on the taskbar at the bottom of the screen, enter **SecPol** and in the menu that appears, select **Local Security Policy**.
 
-3. In the **Local Security Policy** window, in the left-hand pane, expand **Application Control Policies**, expand **Applocker**, select **Packaged app Rules**, and then right-click on **Packaged app Rules**. In the menu that appears, select **Create New Rule.**
+3. In the **Local Security Policy** window, in the left-hand pane, expand **Application Control Policies**, expand **Applocker**, and then select **Packaged app Rules**. In the menu bar at the top of the window, select **Action** and then in the drop-down menu that appears, select **Create New Rule.**
 
 4. This starts the **Create Packaged app Rules** wizard. On the **Before You Begin** page, select **Next.**
 
@@ -213,12 +214,11 @@ Packaged apps, also known as Universal Windows apps, are based on an app model t
 
 6. On the **Publisher** page, under the **Use an installed packaged app as a reference** option, select the **Select...** button.<br/>
 
-    **Note:** It may take up to 20 seconds or more for the **Select applications** window to appear.
+    **Note:** It may take around 30 seconds for the **Select applications** window to appear.
 
+7. In the **Select applications** window, pick the app that you want to use as the reference for your rule. For this lab, enter **one** in the **Search** field, and then in the list of results, select the check box to the left of **OneNote**. Select **OK**.
 
-7. In the **Select applications** window, pick the app that you want to use as the reference for your rule. For this lab, scroll to the bottom of the window and select the check box to the left of **OneNote for Windows10** (it's the ninth app from the bottom) and then select **OK**.
-
-8. On the **Publisher** page, select **Create**.
+8. On the **Publisher** page, select the **Create** button at the bottom of the page.
 
 9. If a dialog box appears asking whether you want to create default rules, select **No**. You must not create default rules for your WIP policy.
 
@@ -236,9 +236,9 @@ Packaged apps, also known as Universal Windows apps, are based on an app model t
 
 16. On the **Conditions** page, select the **Path** option and then select **Next**.
 
-17. On the **Path** page, select **Browse Folders....**.
+17. On the **Path** page, select the **Browse Folders....** button (do not confuse this with the **Browse Files** button).
 
-18. In the **Browse for Folder** window, scroll down and under **Local Disk (C:)**, select **Program Files**, and then select **OK**. Select **Next**.
+18. In the **Browse For Folder** window, select **Local Disk (C:)**, select **Program Files**, and then select **OK**. Select **Next**.
 
 19. On the **Exceptions** page, you are not adding any exceptions, so select **Next**.
 
@@ -259,19 +259,19 @@ Packaged apps, also known as Universal Windows apps, are based on an app model t
 
 ### Task 6: Import a list of protected apps using Endpoint Manager
 
-The purpose of this task is to show you how to use Intune to push an app to a device just like a Group Policy Object (GPO). In this task, you will use Notepad. In a previous task, Notepad was included as one of the recommended apps in the App protection policy that you created. In this task you will import the App protection policy (**apprule1.xml**) into Intune that you exported in the prior task.
+The purpose of this task is to show you how to use Intune to push an app to a device just like a Group Policy Object (GPO). In this task, you will use Notepad. In a previous task, Notepad was included as one of the recommended apps in the App protection policy that you created. In this task you will import into Intune the App protection policy (**apprule1.xml**) that you exported in the prior task.
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
 
-2. In your **Edge** browser, you should have the **Microsoft Endpoint Manager admin center** portal open in a tab titled **Apps | App protection policies - Microsoft Azure**. Select this tab.
+2. In your **Edge** browser, you should have the **Microsoft Endpoint Manager admin center** portal open in a tab titled **Apps - Microsoft Endpoint Manager admin center**. Select this tab.
 
-3. In the **Client apps – App protection policies** window, it displays the list of app protection policies. In this list, select **Win10Policy**.
+3. In the **Apps – App protection policies** window, it displays the list of app protection policies. In this list, select **Win10Policy**.
 
-4. In the **Apps |App Protection Policies** window for **Win10Policy**, in the left-hand pane under **Manage**, select **Properties**.
+4. In the **Intune App Protection** window, in the middle pane under **Manage**, select **Properties**.
 
-5. In the **Intune App Protection | Properties** window, select **Edit** that appears next to **Targeted apps**.
+5. In the **Intune App Protection | Properties** window, the detail pane displays the Intune App Protection properties by group (for example, Basics, Targeted apps, Required settings, and so on). Select **Edit** that appears next to the **Targeted apps** group.
 
-6. In the **edit policy** window, scroll down past the list of Protected apps and then select **+Import**.
+6. In the **Edit policy** window, scroll down past the list of Protected apps and then select **+Import**.
 
 7. In the **Import apps** pane that appears, select the folder icon that appears to the right of the **Select a file** field.
 
@@ -283,7 +283,7 @@ The purpose of this task is to show you how to use Intune to push an app to a de
 
 10. You now want to create a file that you're going to encrypt using Windows Information Protection. In the search field on your taskbar, enter **Notepad**, and then in the menu, select **Notepad**.
 
-11. In the **Notepad** window, enter some text and then select **File**, select **Save as,** select the **Documents** folder, enter **apptest1** as the **File name**, and then select **Save.**
+11. In the **Notepad** window, enter **This is a WIP encryption test** and then select **File**, select **Save as,** select the **Documents** folder, enter **apptest1** as the **File name**, and then select **Save.**
 
 12. Close Notepad.
 
@@ -293,7 +293,7 @@ The purpose of this task is to show you how to use Intune to push an app to a de
 
     **cipher /e   C:\Users\Admin\Documents\apptest1.txt**
 
-15. Leave the Command Prompt window open for the next task.
+15. Leave the Command Prompt window open for the next task, but minimize it for now.
 
 
 ### Task 7: Recover data using the EFS DRA certificate
@@ -302,17 +302,17 @@ The purpose of this task is to show you how to recover a file that has been encr
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
 
-2. You must then install the **DRAcert.PFX** file. To do so, select the **File Explorer** icon on the taskbar at the bottom of the screen. Maximize the **File Explorer** window.
+2. You must now install the **DRAcert.PFX** file. To do so, select the **File Explorer** icon on the taskbar at the bottom of the screen. Maximize the **File Explorer** window.
 
 3. In **File Explorer**, expand **Local Disk (C:)**, expand **Users**, and select **Admin**.
 
 4. In the list of files in the **Admin** folder, double-click on the **DRAcert.PFX** file. This initiates the **Certificate Import Wizard**.
 
-5. On the **Welcome to the Certificate Import Wizard** page, keep the selection **Current User** and select **Next**.
+5. On the **Welcome to the Certificate Import Wizard** page, select the **Current User** option and then select **Next**.
 
 6. On the **File to import** page, select **Next.**
 
-7. On the **Private key protection** page, in the **Password** field, enter the password that you assigned to the DRAcert file that you created in Task 2 (in a real-world scenario, you were instructed to write this down for future use). For this lab, enter **Pa55w.rd**, which was the password that you assigned to the DRAcert file, and then select **Next**.
+7. On the **Private key protection** page, in the **Password** field, enter the password that you assigned to the DRAcert file that you created in Task 2 (in a real-world scenario, you were instructed to write this down for future use). For this lab, enter **Pa55w.rd**, which was the password that you assigned to the DRAcert file. To verify what you typed, select the **Display Password** check box. Select **Next**.
 
 8. On the **Certificate store** page, select **Next.**
 
@@ -324,7 +324,9 @@ The purpose of this task is to show you how to recover a file that has been encr
 
 12. In the Command Prompt window, run the following command to decrypt the apptest1.txt file (the /d parameter directs the cipher command to decrypt the file):<br/>
 
-    **cipher /d  C:\Users\Admin\Documents\apptest1.txt**
+    **cipher /d  C:\Users\Admin\Documents\apptest1.txt** <br/>
+    
+    A message should be displayed in the Command Prompt window indicating one file was decrypted.
 
 13.	Close the Command Prompt and File Explorer windows.
 
@@ -336,27 +338,25 @@ When enrolling devices to Microsoft Intune, you have the option to Allow or Bloc
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
 
-2. In your Edge browser, you should have a tab open for the **Microsoft Enpoint Manager admin center** portal that's displaying the properties for the **Win10Policy** App protection policy that you created in a prior lab. At the top of the screen is the following navigation thread: **Microsoft Enpoint Manager admin center >  Apps | App protection policies > Intune App Protection | Properties**. <br/>
+2. In your Edge browser, you should have a tab open for the **Microsoft Enpoint Manager admin center** that's displaying the **Intune App Protection | Properties** window. In the left-hand navigation pane, select **Devices**. <br/>
 
-    In this thread, select **Devices**.
+3. In the **Devices| Overview** window, in the middle pane under the **Device enrollment** section, select **Enroll devices.**
 
-3. In the **Devices| Overview** window, in the left-hand pane under the **Device enrollment** section, select **enroll devices.**
-
-4. In the **Windows Enrollment** window, review the available options. select **Enrollment restrictions**.
+4. In the **Enroll devices | Windows enrollment** window, in the middle pane, select **Enrollment restrictions**.
 
 5. In the **Enroll devices | Enrollment restrictions** window, in the details pane on the right, in the **Device type restrictions** section, on the **Default** restriction type, select **All users**.
 
-6. In the **All Users** window, in the left-hand pane under the **Manage** section, select **Properties.**
+6. In the **All Users** window, in the middle pane under the **Manage** section, select **Properties.**
 
-7. In the detail pane, select **Edit** which appears next to **Platform settings**.
+7. In the **All Users | Properties** window, select **Edit** that appears next to **Platform settings**.
 
 8. In the **Edit restriction** window, under the **Platform** column, select **Block** for the **iOS/iPadOS** and **macOS** types, select the **Review + save** button at the bottom of the screen, and then review your changes. Both platform settings should display **Block (edited)** under the **Platform** column. All other device types should be allowed. Select **Save.**
 
-9. In the navigation thread at the top of the page, select **Enroll devices | Enrollment restrictions**. 
+9. In the navigation thread at the top of the page (**Home > Devices > Enroll devices > All users**), select **Enroll devices**. 
 
 10. In the **Enroll devices | Enrollment restrictions** window, in the **Device limit restrictions** section, on the **Default** row, select **All users**.
 
-11. In the **All Users** window, in the left-hand pane under the **Manage** section, select **Properties.**
+11. In the **All Users** window, in the middle pane under the **Manage** section, select **Properties.**
 
 12. In the **All Users | Properties** window, select **Edit** that appears next to **Device limit**.
 
@@ -366,21 +366,18 @@ When enrolling devices to Microsoft Intune, you have the option to Allow or Bloc
 
 
 ### Task 9: Review device configuration profiles
+
 The purpose of this task is to simply review the different platforms that are available to be assigned to a device configuration profile. You will not create a profile; you will simply review the platforms that are available to assign to a profile.
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
 
-2. In your **Edge** browser, you should have a tab open for the **Microsoft Azure** portal that's displaying all users with enrollment restrictions. At the top of the screen is the following navigation thread: **All services > Microsoft Endpoint Manager admin center > Enroll devices | Enrollment restrictions**. <br/>
+2. In your **Edge** browser, you should have a tab open for the **Microsoft Enpoint Manager admin center** that's displaying the **All Users | Properties** window. In the left-hand navigation pane, select **Devices**.
 
-    In this thread, select **Microsoft Endpoint Manager admin center**.
+4. On the **Devices | Overview** window, in the middle pane under **Policy,** select **Configuration profiles**.
 
-3. In the **Microsoft Endpoint Manager admin center – Overview** page, in the left-hand pane under **Favorites,** select **Devices**.
+5. On the **Devices |Configuration profiles** page, select **+Create profile** that appears on the menu bar above the list of profiles.
 
-4. On the **Devices** pane, in the left-hand pane under **Manage,** select **Configuration Profiles**.
-
-5. On the **Devices |Configuration Profiles** page, select **+Create profile** that appears on the menu bar above the list of profiles.
-
-6. On the **Create a profile** pane, select the **Platform** field to see the different platforms that are available. **Do not configure any option.** The purpose of this task is to simply see what platforms are available that can be assigned to a new device profile, should you want to ever create one.
+6. On the **Create a profile** pane, select the **Platform** field to see the different platforms that are available. **Do not select any option.** The purpose of this task is to simply see what platforms are available that can be assigned to a new device profile, should you want to ever create one.
 
 7. Close the **Create a profile** pane.
 
