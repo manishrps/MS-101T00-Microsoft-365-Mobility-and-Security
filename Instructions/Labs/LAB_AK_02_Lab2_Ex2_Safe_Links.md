@@ -2,6 +2,7 @@
 
 Now that you have created a Safe Attachments policy for Adatum, you want to create a Safe Links policy and then validate the policy to ensure that it works properly.
 
+**IMPORTANT:** This lab exercise consists of two tasks. The first task creates a Safe Links policy, and then second task validates the policy. The problem with this lab is that when you create a safe links policy, it takes at least 30 minutes for the policy to propagate through the system. **This means that you can perform the first task, but then you must wait at least 30 minutes before you can perform the final task.** You should continue with the training class and your instructor will provide guidance on when you can perform Task 2 depending on the next break that occurs in the class schedule. 
 
 ### Task 1 – Create a Safe Links Policy
 
@@ -44,6 +45,10 @@ In this task, you will create a Safe Links policy that applies to all users in y
 13. In the **Safe Links policy for organization** pane that appears, enter **http://tailspintoys.com** in the **Block the following URLs** field, do NOT change the default settings for any of the other options, and then select **Save**.
 
 14. Leave the Office 365 Security &amp; Compliance tab open for the next task.
+
+**STOP!!** As mentioned at the start of this lab exercise, now that you have created a Safe Links policy, you must wait at least 30 minutes for the policy to propagate through the system before you can perform the next task in this exercise. 
+
+**Do NOT proceed to the next task!** You can continue with the training course and perform the next task when your instructor feels it's appropriate given the class training schedule. 
 
 ### Task 2 – Validate the Safe Links Policy
 
