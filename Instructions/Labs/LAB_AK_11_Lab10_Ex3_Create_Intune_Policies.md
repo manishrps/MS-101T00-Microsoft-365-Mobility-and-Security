@@ -2,7 +2,7 @@
 
 Many mobile device management (MDM) solutions help protect organizational data by requiring users and devices to meet certain requirements. In Intune, these requirements are referred to as compliance policies. Compliance policies define the rules and settings that users and devices must meet to be compliant. When combined with Conditional Access requirements, administrators can block users and devices that do not meet the rules.
 
-In this exercise, you will begin by creating a noncompliance notification message template. Then when you create a compliance policy that checks the Windows 10 and later devices to ensure they are running a minimum OS version of Windows, you will assign this email notification template to the policy. If a device is running a noncompliant version of Windows, the policy will be triggered, the device will be marked as noncompliant, an an email will be sent to the end user notifying them of the situation. 
+In this exercise, you will begin by creating a noncompliance notification message template. Then when you create a compliance policy that checks the Windows 10 and later devices to ensure they are running a minimum OS version of Windows, you will assign this email notification template to the policy. If a device is running a noncompliant version of Windows, the policy will be triggered, the device will be marked as noncompliant, an email will be sent to the end user notifying them of the situation. 
 
 ### Task 1: Create a noncompliant email message template
 
@@ -10,7 +10,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, want to send a
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
 
-2. In your **Edge** browser, you should still have the **Microsoft Endpoint Manager admin center** open from the first exercise in this lab; if so, then select it now. If you closed it, then in **Microsoft 365 admin center**, under the **Admin centers** group in the left-hand navigation pane, select **Endpoint Manager**.. 
+2. In your **Edge** browser, you should still have the **Microsoft Endpoint Manager admin center** open from the first exercise in this lab; if so, then select it now. If you closed it, then in **Microsoft 365 admin center**, under the **Admin centers** group in the left-hand navigation pane, select **Endpoint Manager**. 
 
 3. In the **Microsoft Endpoint Manager admin center**, in the left-hand navigation pane select **Endpoint security**.
 
@@ -18,7 +18,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, want to send a
 
 5. On the **Compliance policies | Policies** page, in the middle pane, select **Notifications**. 
 
-6. On the **Compliance policies | Notificationis** page, in the details pane on the right select **+Create notification** on the menu bar. 
+6. On the **Compliance policies | Notifications** page, in the details pane on the right select **+Create notification** on the menu bar. 
 
 7. On the **Create notification** page, note the three steps that appear at the top of the page. You are currently on the step **1 - Basics** page. In the **Name** field, enter **Noncompliant OS version**. Leave all the other options set to their default settings and select **Next**.
 
@@ -37,7 +37,7 @@ Given the problems caused at Adatum by devices that are running old versions of 
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
 
-2. In your **Edge** browser, you should still have the **Microsoft Endpoint Manager admin center** open from the first exercise in this lab; if so, then select it now. If you closed it, then in **Microsoft 365 admin center**, under the **Admin centers** group in the left-hand navigation pane, select **Endpoint Manager**.. 
+2. In your **Edge** browser, you should still have the **Microsoft Endpoint Manager admin center** open from the first exercise in this lab; if so, then select it now. If you closed it, then in **Microsoft 365 admin center**, under the **Admin centers** group in the left-hand navigation pane, select **Endpoint Manager**. 
 
 3. In the **Microsoft Endpoint Manager admin center**, in the left-hand navigation pane select **Devices**. 
 
@@ -57,7 +57,7 @@ Given the problems caused at Adatum by devices that are running old versions of 
 
 11. On the step **3 - Actions for noncompliance** page, you can create a list of actions that you want taken when a device becomes noncompliant. One default action is already defined (**Mark device noncompliant**); this action cannot be changed or deleted. This action is scheduled to be performed **Immediately** (which means, on the day the device becomes noncompliant, which is 0 days after noncompliance). <br/>
 
-    In addition to marking the device as noncompliant, Holly also wants to notify the end user with an email. In the **Action** colum, under the **Mark device compliant** action, selecty the action field. In the drop-down arrow that appears, select **Send email to end user**. <br/>
+    In addition to marking the device as noncompliant, Holly also wants to notify the end user with an email. In the **Action** column, under the **Mark device compliant** action, selecty the action field. In the drop-down arrow that appears, select **Send email to end user**. <br/>
 
     Leave the **Schedule (days after noncompliance)** field set to 0. <br/>
     
@@ -338,7 +338,7 @@ When enrolling devices to Microsoft Intune, you have the option to Allow or Bloc
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
 
-2. In your Edge browser, you should have a tab open for the **Microsoft Enpoint Manager admin center** that's displaying the **Intune App Protection | Properties** window. In the left-hand navigation pane, select **Devices**. <br/>
+2. In your Edge browser, you should have a tab open for the **Microsoft Endpoint Manager admin center** that's displaying the **Intune App Protection | Properties** window. In the left-hand navigation pane, select **Devices**. <br/>
 
 3. In the **Devices| Overview** window, in the middle pane under the **Device enrollment** section, select **Enroll devices.**
 
@@ -371,7 +371,7 @@ The purpose of this task is to simply review the different platforms that are av
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
 
-2. In your **Edge** browser, you should have a tab open for the **Microsoft Enpoint Manager admin center** that's displaying the **All Users | Properties** window. In the left-hand navigation pane, select **Devices**.
+2. In your **Edge** browser, you should have a tab open for the **Microsoft Endpoint Manager admin center** that's displaying the **All Users | Properties** window. In the left-hand navigation pane, select **Devices**.
 
 4. On the **Devices | Overview** window, in the middle pane under **Policy,** select **Configuration profiles**.
 
@@ -381,7 +381,7 @@ The purpose of this task is to simply review the different platforms that are av
 
 7. Close the **Create a profile** pane.
 
-8. Leave all browser tabs open for the next task.
+8. Leave all browser tabs open for the next lab exercise.
 
 
 # Proceed to Lab 10 - Exercise 4
