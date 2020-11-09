@@ -10,21 +10,25 @@ Holly must begin by verifying that the device she wants to enroll into Intune (L
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
 
-2. In your **Edge** browser, in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Endpoint Manager**.
+2. In your **Edge** browser, the **Microsoft Endpoint Manger admin center** should still be open in the **Devices - Microsoft Endpoint Manager admin center** tab. Select this tab.
 
-3. In the **Microsoft Endpoint Manger admin center**, in the middle pane select **All Devices** and then verify that LON-CL2 is the only device listed in the details pane. You have just verified that LON-CL1 is not enrolled into Intune. <br/>
+3. In the **Microsoft Endpoint Manger admin center**, in the left-hand navigation pane, select **Devices**.
+
+4. In the **Devices | Overview** window, in the middle pane, select **All devices**.
+
+5. In the **Devices | All devices** window, verify that LON-CL2 is the only device listed in the details pane. You have just verified that LON-CL1 is not enrolled into Intune. <br/>
 
    **Note:** LON-CL2 was enrolled into Intune in an earlier lab when you configured integration between Azure AD and Intune. When you joined LON-CL2 to Azure AD, it was automatically enrolled to Intune.  
 
-4. You now want to start the **Certificates** MMC for LON-CL1. In the Search field on the taskbar, enter **run**, and then in the list of search results, select **Run**.
+6. You now want to start the **Certificates** MMC for LON-CL1. In the Search field on the taskbar, enter **run**, and then in the list of search results, select **Run**.
 
-5. In the **Run** window, enter **certlm.msc** in the **Open** field and then select **OK**. If a **Do you want to allow this app to make changes to your device?** dialog box appears, select **Yes**.
+7. In the **Run** window, enter **certlm.msc** in the **Open** field and then select **OK**. If a **Do you want to allow this app to make changes to your device?** dialog box appears, select **Yes**.
 
-6. Maximize the **certlm – [Certificates – Local Computer]** window that appears and then drag the pane divider to the right so that you can see the entirety of the left-hand pane. 
+8. Maximize the **certlm – [Certificates – Local Computer]** window that appears and then drag the pane divider to the right so that you can see the entirety of the left-hand pane. 
 
-7. In the left-hand pane, select **Personal** and then select the **Certificates** child folder under the **Personal** folder. Verify that only the localhost certificate appears. 
+9. In the left-hand pane, select **Personal** and then select the **Certificates** child folder under the **Personal** folder. Verify that only the localhost certificate appears. 
 
-8. Minimize the **certlm – [Certificates – Local Computer]** window as you will use it in a later task.
+10. Minimize the **certlm – [Certificates – Local Computer]** window as you will use it in a later task.
 
 ### Task 2: Enroll the device to Azure AD and Intune
 
