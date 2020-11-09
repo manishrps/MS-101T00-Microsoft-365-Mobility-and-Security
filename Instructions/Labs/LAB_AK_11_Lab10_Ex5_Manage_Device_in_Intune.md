@@ -10,23 +10,21 @@ In this task, you're going to create two device categories, one for mobile devic
 
 1. In the LON-CL1 VM, you should still be logged in as the **Admin** account, and you should still be logged into Microsoft 365 as **Holly Dickson**.
 
-2. In your Edge browser, the **Microsoft Endpoint Manager admin center** should still be open in the **Devices - Microsoft Endpoint Manager admin center** tab. Select this tab.
+2. In your Edge browser, the **Microsoft Endpoint Manager admin center** should still be open. In the left-hand navigation pane, select **Devices**. 
 
-3. In the **Microsoft Endpoint Manger admin center**, in the left-hand navigation pane, select **Devices**. 
+3. In the **Devices | Overview** window, in the middle pane under the **Other** section, select **Device categories.**
 
-4. In the **Devices | Overview** window, in the middle pane under the **Other** section, select **Device categories.**
+4. In the **Devices | Device categories** window, select **+Create device category**.
 
-5. In the **Devices | Device categories** window, select **+Create device category**.
+5. On the **Create device category** window, the top of the page shows the 3 steps involved in creating a device category. In step **1 - Basics**, enter **Mobile Device** in the **Name** field and then select **Next**.
 
-6. On the **Create device category** window, the top of the page shows the 3 steps involved in creating a device category. In step **1 - Basics**, enter **Mobile Device** in the **Name** field and then select **Next**.
+6. On the step **2 - Scope tags** window, you will not define any scope tags, so select **Next**. 
 
-7. On the step **2 - Scope tags** window, you will not define any scope tags, so select **Next**. 
+7. On the step **3 - Review + create** window, select **Create**.
 
-8. On the step **3 - Review + create** window, select **Create**.
+8. Repeat steps 4-7 to create a second device category, this one titled **Desktop**.
 
-9. Repeat steps 5-8 to create a second device category, this one titled **Desktop**.
-
-10. Leave all browser tabs open for the next task.
+9. Leave all browser tabs open for the next task.
 
 ### Task 2: Manage the enrolled devices
 
@@ -63,37 +61,35 @@ In this task, you're going to manage the Category property of the two devices th
 
 ### Task 3: Create dynamic groups for the device categories
 
-1. In your Edge browser, the **Microsoft Endpoint Manager admin center** should still be open in the **LON-CL2 - Microsoft Endpoint Manager admin center** tab. Select this tab.
+1. In your Edge browser, the **Microsoft Endpoint Manager admin center** should still be open. In the left-hand navigation pane, select **Groups**. 
 
-2. In the **Microsoft Endpoint Manger admin center**, in the left-hand navigation pane, select **Groups**. 
+2. In the **Groups** window, select **+New group** on the menu bar.
 
-3. In the **Groups** window, select **+New group** on the menu bar.
-
-4. In the **New Group** window, enter the following information:
+3. In the **New Group** window, enter the following information:
 
     - Group type: **Security**
     - Group name: **Mobile Devices**
     - Membership type: **Dynamic Device**
 
-5. Under the **Dynamic device members** section, select **Add dynamic query**.
+4. Under the **Dynamic device members** section, select **Add dynamic query**.
 
-6. On the **Dynamic membership rules** window, hover your mouse over the row to display the rule fields, and then enter the following values:
+5. On the **Dynamic membership rules** window, hover your mouse over the row to display the rule fields, and then enter the following values:
 
     - Property:   **deviceCategory**
     - Operator: **Equals**
     - Value: enter **Mobile Device** (Note: This must match the spelling of the corresponding category that you created, which in this case is Mobile Device)
 
-7. Select in the **Rule syntax** field and the query syntax will appear.
+6. Select in the **Rule syntax** field and the query syntax will appear.
 
-8. Select **Save** on the menu bar at the top of the page.
+7. Select **Save** on the menu bar at the top of the page.
 
-9. On the **New Group** window, select the **Create** button at the bottom of the page. The **Mobile Devices** group should now appear in the list of groups.
+8. On the **New Group** window, select the **Create** button at the bottom of the page. The **Mobile Devices** group should now appear in the list of groups.
 
-10. Repeat steps 3-9 to create a group for desktop devices. The **Group Name** should be set to **Desktop Devices**, and in the **Dynamic membership rules** window, enter **Desktop** in the **Value** field.
+9. Repeat steps 2-8 to create a group for desktop devices. The **Group Name** should be set to **Desktop Devices**, and in the **Dynamic membership rules** window, enter **Desktop** in the **Value** field.
 
-11. In the **Groups | All groups** window, both new groups should appear at the top of the group list 
+10. In the **Groups | All groups** window, both new groups should appear at the top of the group list 
 
-12. Leave all browser tabs open for the next task.
+11. Leave all browser tabs open for the next task.
 
 
 ### Task 4: Create a conditional access policy
@@ -104,45 +100,41 @@ Conditional Access is the tool used by Azure Active Directory to bring signals t
 
 In this task, you will create a conditional access policy that Holly plans to implement in her pilot project. 
 
-1. In the **Azure portal**, in the navigation thread at the top of the screen (**Home > Microsoft Intune > Groups | All groups**), select **Microsoft Intune**.
+1. In your Edge browser, the **Microsoft Endpoint Manager admin center** should still be open. In the left-hand navigation pane, select **Endpoint Security**. 
 
-2. In the **Microsoft Intune | Overview** page, in the left-hand pane under the **Manage** section, select **Conditional access**.
+2. In the **Endpoint security | Overview** window, in the middle pane under the **Manage** section, select **Conditional access**.
 
 3. In the **Conditional Access | Policies** window, select **+New policy** on the menu bar.
 
-4. On the **New** pane, in the **Name** text box, enter **Conditional1** and then select the **Users and groups** section.
+4. On the **New** pane, in the **Name** field, enter **Conditional1** and then select the **Users and groups** section.
 
-5. On the **Users and groups** pane, select the **All users** option and then select **Done**.
+5. On the **Users and groups** pane, select the **All users** option.
 
 6. On the **New** pane, select the **Cloud apps or actions** section.
 
-7. On the **Cloud apps or actions** pane, select the **Select apps** option and then select the **Select** section.
+7. On the **Cloud apps or actions** pane, select the **Select apps** option.
 
-8. In the **Select** pane, select the check box for **Office 365 Exchange Online**, select the **Select** button at the bottom of the page, and then select **Done**.
+8. In the **Select** pane that appears, enter **Exchange** in the Search field. In the list of search results, select the check box for **Office 365 Exchange Online**, and then select the **Select** button at the bottom of the pane.
 
 9. On the **New** pane, select the **Conditions** section.
 
 10. On the **Conditions** pane, select the **Device platforms** section.
 
-11. On the **Device platforms** pane, in the **Configure** field, select **Yes**. In the **Include** tab, select the **Select device platforms** option, select the **Windows** check box, and then select **Done.**
+11. On the **Device platforms** pane that appears, in the **Configure** field, select **Yes**. In the **Include** tab, select the **Select device platforms** option and then select the **Windows** check box.** Select **Done**.
 
-12. On the **Conditions** pane, select **Done**.
+12. On the **New** pane, under **Access Controls**, select the **Grant** section.
 
-13. On the **New** pane, under **Access Controls**, select the **Grant** section.
+13.  On the **Grant** pane that appears, select the **Require device to be marked as compliant** check box, and then select the **Select** button.
 
-14.  On the **Grant** pane, select the **Require device to be marked as compliant** check box, and then select the **Select** button.
+14. On the **New** pane, under **Access Controls**, select the **Session** section.
 
-15. On the **New** pane, under **Access Controls**, select the **Session** section.
+15. In the **Session** pane that appears, review the explanation but do not select any option. Select the **X** in upper right corner to close the pane.
 
-16. In the **Session** pane, review the explanation but do not select any option. Select the **X** in upper right corner to close the pane.
+16. On the **New** pane, select the **Create** button at the bottom of pane. The **Conditional1** policy now appears in the policy list.<br/>
 
-17. On the **New** pane, select the **Create** button at the bottom of pane. The **Conditional1** policy now appears in the policy list.<br/>
+17. You created a conditional access policy to become familiar with the available options; however, the policy is not effective because you didn't enable it. To enable the policy, select the **Conditional1** policy in the policy list.  
 
-    **Note:** You created a conditional access policy to become familiar with the available options; however, the policy is not effective because you didn't enable it.
-
-18. To enable the policy, select the **Conditional1** policy in the policy list.  
-
-19. In the **Conditional1** pane, scroll to the bottom and in the **Enable policy** field, select **On**, and then select **Save**.
+18. In the **Conditional1** pane, the **Enable policy** setting appears at the bottom of the pane. By default it's set to **Report-only**. Select **On** and then select **Save**.
 
 You have now created a conditional access policy and enabled it for Adatum's pilot project.
 
