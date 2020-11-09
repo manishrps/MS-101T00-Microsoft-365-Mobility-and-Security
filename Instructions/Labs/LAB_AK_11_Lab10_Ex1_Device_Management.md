@@ -57,7 +57,7 @@ Devices must be managed before you can give users access to company resources or
 
 8. Select the **Back arrow** on the address bar to return to the **Devices | Overview** page. 
 
-9. In your Edge browser, close the **Microsoft Endpoint Manager admin center** tab. Leave the **Microsoft Office Home** tab and the **Microsoft 365 admin center** tab open for the next lab exercise. 
+9. In your Edge browser, leave all the tabs open for the next lab exercise. 
 
 You have now verified that Intune is the default MDM solution for your tenant.
 
