@@ -170,7 +170,7 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 	**Note:** If you scroll down past this list of the most commonly used admin roles and select **Show all by category**, the complete list of admin roles will be displayed (sorted by category). For Holly, you do not need to view all the admin roles by category, since Holly will be assigned the Global admin role that appears in the list of most commonly used roles.
 
-13. Select **Global admin** and then select **Next**.
+13. Select the **Global admin** check box and then select **Next**.
 
 14. On the **Review and finish** window, review your selections. If anything needs to be changed, select the appropriate **Edit** link and make the necessary changes. Otherwise, if everything is correct, select **Finish adding**. 
 
@@ -178,9 +178,7 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 	**Note:** If you accidentally entered a different password, then once you return to the **Active Users** page, you will need to select the **Reset a password** icon (the key icon that appears when you hover over Holly's account) to change her password to the correct value.
 
-16. If a window appears asking whether you want to respond to a survey on your experience, select **Cancel**.
-
-17. Remain logged into LON-CL1 with the Microsoft 365 admin center open in your browser for the next task.
+16. Remain logged into LON-CL1 with the Microsoft 365 admin center open in your browser for the next task.
 
 
 ### Task 4 – Set up Microsoft 365 User Accounts and Groups
