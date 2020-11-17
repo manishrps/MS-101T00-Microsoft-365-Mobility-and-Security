@@ -154,7 +154,7 @@ In this exercise you will create an Sensitivity label and add it to the default 
 **Do NOT proceed to the next task!** You can continue with the training course and perform the next series of lab exercises. However, when you reach a good break time tomorrow, you should return to this lab exercise and continue with Task 3. When you get to step 14, if you do NOT see the **Sensitiviy** group in the Word ribbon, then you must wait until such time that it appears. **The appearance of the Sensitivity group in the Word ribbon is the indicator as to whether the sensitivity label has completed its behind-the-scenes provisioning,** at which time you can complete tasks 3 and 4 of this lab exercise. 
 
 
-### Task 3 – Assign an Sensitivity label to a document
+### Task 3 – Assign a Sensitivity Label to a document
 
 In this exercise you will use the Sensitivity label that you created in the previous task to classify a document. For this task, you will sign into Microsoft 365 as Alex Wilber, who is a regular user without any elevated privileges.
 
@@ -225,7 +225,7 @@ In this exercise you will use the Sensitivity label that you created in the prev
 You have just successfully created an AIP protected Word document that is read-only protected. The document is accessible only by its creator, Alex Wilber, and by Joni Sherman (with Read-only permission), to whom the document was shared.
 
 
-### Task 4 – Verify Sensitivity label policy
+### Task 4 – Verify your Sensitivity Label policy
 
 In the prior task, you created a Word document and protected it with a Sensitivity label. The PII label policy should have inserted a watermark in the document, and it should have restricted permissions on the document. To verify whether the protection that you assigned to the document works, you will first email the document to Joni Sherman and to your own personal email address. You will then test what functionality is possible for both Joni and Alex Wilber.
 
