@@ -25,11 +25,11 @@ The three alerts that you will create in this lab are assigned to two Alert cate
 
 Perform the following steps to assign Lynne Robbins the Compliance Data Administrator role group, which includes the Compliance Administrator role.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **Admin** account and into Microsoft 365 as Holly Dickson (**holly@M365xZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **Admin** account and into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
 
-2. After finishing the previous lab, you should still be in the **Microsoft 365 Security and Compliance** center in your browser. If not, enter the following URL in the address bar: **https://protection.office.com**
+2. After finishing the previous lab, you should still be in the **Microsoft 365 admin center** in your browser. In the left-hand navigation pane, select **Show all**, and then under the **Admin centers** group, select **Security**.
 
-3. In the **Microsoft 365 Security &amp; Compliance center**, in the left-hand navigation pane, select **Permissions**.
+3. In the **Office 365 Security &amp; Compliance center**, in the left-hand navigation pane, select **Permissions**.
 
 4. On the **Permissions** page, select the **Compliance Data Administrator** role group. 
 

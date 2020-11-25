@@ -6,31 +6,33 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Mic
 
 To test archiving and retention in your Adatum pilot project, you will create a new mail-enabled security group and assign two users to the group – Joni Sherman and Lynne Robbins. These will be your two test users involved in the Windows Information Protection (WIP) pilot program. This group will then be used in the next task when you configure MDM auto-enrollment for new devices in your tenant. 
 
-1. At the end of the prior lab, you were using the LON-CL2 VM. Switch to the LON-CL1 VM. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
+1. At the end of the prior lab, you were using the LON-CL2 VM. Switch to the **LON-CL1** VM. <br/>
+
+	You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. In **Microsoft Edge**, select the **Microsoft 365 admin center** tab; if you closed this tab earlier, then open a new tab and go to **https://admin.microsoft.com.** <br/>
 
-	At this point, you probably have quite a few tabs open in your browser. If you wish, you can take this opportunity to close every tab except for the Office 365 home page and the Microsoft 365 admin center.
+	At this point, you probably have quite a few tabs open in your browser. If you wish, you can take this opportunity to close every tab except for the **Office 365 Home** tab and the **Microsoft 365 admin center** tab.
 
-3. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Groups** and then select **Groups** below it.
+3. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Groups** and then select **Active groups** below it.
 
-4. Select **Add a group** to create a new group for compliance testing. 
+4. On the **Active groups** window, select **Add a group** to create a new group for compliance testing. 
 
-5. In the **Add a group** window, enter the following information:
-
-6. In the **Add a group** window, adding a group is a four-step process, as depicted in the flow diagram on the left-hand side of the window. As you progress through the steps, enter the following information to create a new group:
+5. In the **Add a group** window, adding a group is a multi-step process, as depicted in the flow diagram on the left-hand side of the window. As you progress through the steps, enter the following information to create a new group:
 
 	- Type: **Mail-enabled security**
 
 	- Name: **WIP Users** (tab into the **Description** field to enable the **Next** button)
 
-	- Group email address: **wipusers**
+	- Group email address: **wipusers** 
 
-	- Group email address domain: to the right of the group email address alias is the email address domain. **M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) should be displayed here. Select this field so enable the **Next** button but do not change its value.
+	- Group email address domain: to the right of the group email address alias is the email address domain. **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) should be displayed here. Select this field so enable the **Next** button but do not change its value.
 
-7. Select **create group** and then select **Close**. Note the warning on the **New group created** page that indicates it can take up to an hour for the group to appear in the Groups list. Our testing experience has shown that the group normally appears within a few minutes.
+6. On the **Review and finish adding group** window, select **Create group**. Once the group is created, note the warning at the top of the **New group created** window that indicates it can take up to an hour for the group to appear in the Groups list. Our testing experience has shown that the group normally appears within a few minutes.
 
-8. This will return you to the **Groups** list in the **Microsoft 365 admin center**. Select the **Refresh** icon on the menu bar to refresh the list of groups. You cannot proceed until the WIP Users group appears in the list; therefore, keep refreshing the list every minute or so.
+7. On the **New group created** window, select **Close**. 
+
+8. This will return you to the **Active groups** list in the **Microsoft 365 admin center**. Select the **Refresh** icon on the menu bar to refresh the list of groups. You cannot proceed until the WIP Users group appears in the list; therefore, keep refreshing the list every minute or so.
 
 9. Once **WIP Users** appears In the **Groups** list, select it.
 
@@ -59,7 +61,7 @@ In this task you will activate MDM auto-enrollment for new devices in your Adatu
 
 3. In the **Azure Active Directory admin center**, select **Azure Active Directory** in the left-hand navigation pane.
 
-4. This returns the **Adatum Corporation | Overview** page. Under the **Manage** section in the middle of the page, scroll down and select **Mobility (MDM and MAM)**.
+4. This returns the **Adatum Corporation | Overview** page. Under the **Manage** section in the middle pane, scroll down and select **Mobility (MDM and MAM)**.
 
 5. In the right-hand pane, select **Microsoft Intune**.
 
@@ -71,7 +73,7 @@ In this task you will activate MDM auto-enrollment for new devices in your Adatu
 
 	**Note:** You configured the **MDM user scope** to automatically enroll devices that belong to members of the **WIP Users** group into MDM management with Microsoft Intune. Once Holly tests this feature in Adatum's pilot project, and assuming she is satisfied with the results, she will then set the **MDM user scope** to **All**.
 	
-9. This returns the **Configure** window. Select **Restore default MDM URLs** to ensure the correct URLs are set. This simply displays a dashed rectangle around **Restore default MDM URLs**.
+9. This returns the **Configure** window. In the middle pane, select **Restore default MDM URLs** to ensure the correct URLs are set. 
 
 10. Select **Save** on the menu bar at the top of the page.
 
@@ -81,7 +83,7 @@ In this task you will activate MDM auto-enrollment for new devices in your Adatu
 
 13. In the **Tenant admin | Tenant status** page, verify the **MDM authority** is set to **Microsoft Intune**.
 
-14. In your Microsoft Edge browser, you can close the Endpoint Manager admin center tab and the Azure Active Directory admin center tab. Leave the Office 365 home page and Microsoft 365 admin center tabs open.
+14. In your Microsoft Edge browser, you can close the Endpoint Manager admin center tab and the Azure Active Directory admin center tab. Leave the Microsoft Office Home tab and the Microsoft 365 admin center tab open.
 
 You have configured automatic enrollment in Intune for devices of users in the WIP Users group, and you have verified the MDM authority for Adatum's tenant is set to Microsoft Intune.
 

@@ -8,7 +8,7 @@ In this lesson you will create a Data Loss Prevention policy in the Security & C
 
 The policy will contain two actions, each of which is dependent on the number of IP addresses in the message. If the message contains one IP address, the policy will notify people with a policy tip and still email the message. However, if the content contains at least 2 IP addresses, then the message will be blocked, an incident email with a high sensitivity level will be sent to the sender, and a policy tip will be displayed that allow the sender to override the email blockage if the sender provides a business justification within the policy tip.
 
-**Important:** Unfortunately, you will be unable to test the policy tips in this DLP Policy. When you use the Security and Compliance Center to create a DLP policy that contains a policy tip, the policy tip will NOT be displayed if you also created mail flow rules in the Exchange admin center. If you will recall, back in Module 4, Lab 4, Exercise 1, you created two mail flow transport rules in Exchange, one using the Exchange admin center and the other using PowerShell. 
+**IMPORTANT:** Unfortunately, you will be unable to test the policy tips in this DLP Policy. When you use the Security and Compliance Center to create a DLP policy that contains a policy tip, the policy tip will NOT be displayed if you also created mail flow rules in the Exchange admin center. If you will recall, back in Module 4, Lab 4, Exercise 1, you created two mail flow transport rules in Exchange, one using the Exchange admin center and the other using PowerShell. 
 
 Because you created mail transport rules in the Exchange admin center in the prior lab, policy tips that you configure for DLP policies in the Security and Compliance Center will NOT work. The DLP policy will work, but the policy tip action will not. Even if you delete the mail transport rules, the policy tips will still not function. 
 
@@ -18,13 +18,13 @@ Given that, you will still configure a policy tip for the DLP policy that you cr
 
 2. In **Microsoft Edge**, the Office 365 Security & Compliance Center tab should still be open; if not, then open a new tab and navigate to **https://protection.office.com**.
 
-3. In the **Security &amp; Compliance Center**, in the left-hand navigation pane, select **Data loss prevention** and then select **Policy**.
+3. In the **Office 365 Security &amp; Compliance** center, in the left-hand navigation pane, select **Data loss prevention** and then select **Policy**.
 
 4. In the **Policy** window, select **+Create a policy** to start the wizard for creating a new data loss prevention policy.
 
 5. On the **Start with a template or create a custom policy** page, there are four types of policies listed in the left-hand pane - Financial, Medical and health, Privacy, and Custom. The first three (Financial, Medical and health, and Privacy) provide templates that can be used to create a policy. The **Custom** type is not based on a template. The column in the left-hand pane displays the policy type, while the middle pane displays the available templates to choose from for that policy type. When you select a template in the middle pane, the right-hand pane displays the type of information that is protected in that template. <br/> 
 
-    Select **Financial** in the left-hand pane and note the various templates that you can choose from in the middle pane. Select one or two of the templates to see what type of information it protects. Do the same for the **Medical and health** and **Privacy** policy types.  <br/>
+    For example, select **Financial** in the left-hand pane and then scroll through the various templates that you can choose from in the middle pane. Select one or two of the templates to see what type of information it protects. Do the same for the **Medical and health** and **Privacy** policy types.  <br/>
   
     Select **Custom** in the left-hand pane, which automatically selects **Custom policy** in the middle pane (since there are no templates to choose from for this policy type). Select **Next**.
 
@@ -56,11 +56,13 @@ Given that, you will still configure a policy tip for the DLP policy that you cr
 
 19. Select **Next**.
 
-20. On **What do you want to do if we detect sensitive info?** page, there are two groups of settings that you must configure: <br/>
+20. On the **What do you want to do if we detect sensitive info?** page, there are two groups of settings that you must configure: <br/>
 
     - Under the **Notify users when content matches the policy settings** section, verify the **Show policy tips to users and send them an email notification** check box is selected. Select **Customize the tip and email**. <br/>
     
-        In the **Customize policy tips and email notifications** window, the email notification option is selected by default. However, sending policy tips is not selected by default, so select the **Customize the policy tip text** check box (otherwise, a policy tip will not be displayed). In the policy tip field that appears, enter **Warning: The email contains sensitive info (IP Address).** Select **OK**.
+        In the **Customize policy tips and email notifications** window, the email notification option to **Notify the user who sent, shared, or last modified the content** option is selected by default; leave this as is. <br/>
+
+        However, sending policy tips is not selected by default, so select the **Customize the policy tip text** check box (otherwise, a policy tip will not be displayed). In the policy tip field that appears, enter **Warning: The email contains sensitive info (IP Address).** Select **OK**.
 
     - Under the **Detect when a specific amount of sensitive info is being shared at one time** section, verify the **Detect when content that's being shared contains** option is selected. In the field below this, **10** is entered. Change this to **2** and then select **Next.**
 
