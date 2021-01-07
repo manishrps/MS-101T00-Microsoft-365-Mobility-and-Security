@@ -34,7 +34,7 @@ In this lesson you will create a WIP policy and assign to it the **WIP Users** g
 
 	- Description: leave blank
 
-	- Enrollment state: **With enrollment****
+	- Enrollment state: **With enrollment**
 
 12. In the **Create policy** window, you are now in step **2 - Targeted apps**. Enter the following information and then select **Next**:
 
