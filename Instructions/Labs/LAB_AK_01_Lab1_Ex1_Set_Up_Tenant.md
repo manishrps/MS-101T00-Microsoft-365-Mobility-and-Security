@@ -125,12 +125,14 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 	However, if the **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain displays **(Default)** next to the domain name, then select the circle with the check mark to the left of the **xxxxxZZZZZZ.onmicrosoft.com** domain and then select **Set as default** on the menu bar. <br/>
 	
 	In the **Set this domain as default?** dialog box that appears, select **Set as default**. In the list of domains, the **xxxxxZZZZZZ.onmicrosoft.com** domain should now display **(Default)** next to the domain name.
+	
+	**Note:** If there is no **xxxUPNxxx.xxxCustomDomainxxx.xxx**, do not worry.  It is not needed for any of the labs in this course.
 
 4. You will now create a Microsoft 365 user account for Holly Dickson. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users** and then select **Active users**. 
 
 5. In the **Active users** list, you will see the list of existing user accounts that were created for you by your lab hosting provider. In this task, you are taking on the role of the MOD Administrator, and as such, you must create a user account for Holly Dickson, who is Adatum's new Enterprise Administrator. In doing so, you will assign Holly the Microsoft 365 role of Global Administrator, which gives Holly global access to most management features and data across Microsoft online services. 
 
-6. In the **Active Users** window, select **Add a user** that appears on the menu bar above the list of active users. 
+6. In the **Active Users** window, select **Add a user** that appears on the menu bar above the list of active users, then select **Single User** from the submenu that appears.
 
 7. In the **Set up the basics** window, enter the following information:
 
@@ -148,9 +150,9 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 		**Holly@xxxxxZZZZZZ.onmicrosoft.com**  
 	
-	- Password settings: select the **Let me create the password** option
+	- Clear (uncheck) the **Automatically create a password** checkbox which will enable a new box for entering an administrator defined password.
 
-	- Password: **Pa55w.rd** (Hint: Select the eye icon at the right side of the field to verify the password that you entered)
+	- In the new Password box that appears, enter: **Pa55w.rd** (Hint: Select the eye icon at the right side of the field to verify the password that you entered)
 
 	- Clear (uncheck) the **Require this user to change their password when they first sign in** check box 
 
