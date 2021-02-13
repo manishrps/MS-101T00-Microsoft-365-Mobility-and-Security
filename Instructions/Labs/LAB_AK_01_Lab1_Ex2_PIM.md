@@ -75,6 +75,8 @@ For Adatum's PIM pilot project, Holly has selected Patti Fernandez as the sole u
 
 11. In the **Global Administrator | Assignments** window, note that Patti Fernandez is now an eligible user who can be assigned the Global Administrator role.
 
+    **Note:** It can take 30 minutes for the **Pending Request** to be implemented.  Wait at least 10 minutes, then refresh the **Global Administrator | Assignments** window until you see Patti listed under the **Eligible assignments** tab.
+
 12. Leave all browser tabs open for the next task.
 
 
