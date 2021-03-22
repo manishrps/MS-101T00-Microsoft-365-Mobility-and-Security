@@ -10,11 +10,11 @@ To use Microsoft's Attack Simulator to simulate a phishing attack, you must firs
 
 1. Switch to the **LON-CL1** VM, where you should still be logged in as the **Admin** account. If necessary, log in as the **Admin** with a password of **Pa55w.rd**. 
 
-2. In your **Edge** browser, you should still be logged into Microsoft 365 as Holly Dickson. Select the tab containing the **Office 365 Security and Compliance** center, which should still be open from the Safe Links lab that you just completed. 
+2. In your **Edge** browser, you should still be logged into Microsoft 365 as Holly Dickson. Select the tab containing the **Microsoft 365 Security** center, which should still be open from the Safe Links lab that you just completed. 
 
-3. In the **Office 365 Security and Compliance** center, in the left-hand navigation pane under **Threat management**, select **Attack simulator**. 
+3. In the **Microsoft 365 Security** center, in the left-hand navigation pane under **Email and collaboration**, select **Attack simulation training**. 
 
-4. On the **Attack Simulator** page, scroll down to see the four types of attacks that you can simulate. Also note the warning message that indicates you must enable multi-factor authentication (MFA) to schedule or terminate attacks. This is required because the system wants to confirm your credentials before you conduct a simulated attack. In the upcoming steps, you will enable MFA for Holly and then perform a phishing attack.
+4. On the **Attack Simulation taining** page, scroll down to see the four types of attacks that you can simulate. Also note the warning message that indicates you must enable multi-factor authentication (MFA) to schedule or terminate attacks. This is required because the system wants to confirm your credentials before you conduct a simulated attack. In the upcoming steps, you will enable MFA for Holly and then perform a phishing attack.
 
 5. To enable MFA for Holly Dickson's user account, select the **Microsoft 365 admin center** tab in your browser, and then in the left hand-navigation pane, select **Users** and then select **Active users**.
 
@@ -32,7 +32,7 @@ To use Microsoft's Attack Simulator to simulate a phishing attack, you must firs
 
 11. Once you are signed out, close the browser session and all the browser tabs.
 
-12. Select the **Edge** icon on your taskbar to open a new browser session, and then navigate directly to the **Office 365 Security and Compliance** center by entering the following URL in the address bar: **https://protection.office.com**
+12. Select the **Edge** icon on your taskbar to open a new browser session, and then navigate directly to the **Microsoft 365 Security** center by entering the following URL in the address bar: **https://Security.Microsoft.com**
 
 13. In the **Sign in** window, enter **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**. In the **Enter password** window, enter **Pa55w.rd** and select **Sign in**.
 
@@ -64,9 +64,9 @@ To use Microsoft's Attack Simulator to simulate a phishing attack, you must firs
 
 27. If you take too long to complete this process, the **Enter password** window will appear with a message indicating you took too long to complete the sign in process, so you will be timed-out. If this occurs, you must sign in again with Holly's password of **Pa55w.rd**. Another verification code will be texted to your phone, so enter it in the **Enter code** screen that appears and select **Verify**.
 
-28. The **Office 365 Security and Compliance** center should now be displayed in your browser. You will resume from here in the next task when you launch a spear phishing attack using the Attack Simulator. Leave this tab open in your browser. 
+28. The **Microsoft 365 Security** center should now be displayed in your browser. You will resume from here in the next task when you launch a spear phishing attack using the Attack Simulator. Leave this tab open in your browser. 
 
-29. You have now configured MFA, you have signed into the **Office 365Security and Compliance** center using MFA, and you are ready to run the Attack Simulator. Leave everything as is in your VM and proceed to the next task.
+29. You have now configured MFA, you have signed into the **Micosoft 365 Security** center using MFA, and you are ready to run the Attack Simulator. Leave everything as is in your VM and proceed to the next task.
 
 
 ### Task 2: Configure and launch a Spear Phishing attack
@@ -75,51 +75,45 @@ Now that Holly has turned on MFA, she is ready to run the Attack Simulator and l
 
 1. You should still be on **LON-CL1**, and you should still be logged in as the **Admin** account. If necessary, log in as the **Admin** with a password of **Pa55w.rd**.
 
-2. You should still have the **Office 365 Security and Compliance** center open in in your **Edge** browser from the prior task. If not, enter **https://protection.office.com** in the address bar, and then when you receive the dialog box asking for a second form of authentication, proceed through the verification process. 
+2. You should still have the **Microsoft 365 Security** center open in in your **Edge** browser from the prior task. If not, enter **https://Security.Microsoft.com** in the address bar, and then when you receive the dialog box asking for a second form of authentication, proceed through the verification process. 
 
-3. In the **Office 365 Security and Compliance** center, select **Threat management** in the left-hand navigation pane and then select **Attack simulator**. 
+3. In the **Microsoft 365 Security** center, under **Email & collaboration** in the left-hand navigation pane and then select **Attack simulation training**. 
 
-4. On the **Attack Simulator** page, you reviewed the four types of simulated attacks that are available in the prior task. For this simulation, Holly has decided to conduct an account breach in which she will use a URL to try and obtain usernames and passwords. This is referred to in the Attack Simulator as a **Spear Phishing (Credentials Harvest)** attack. <br/>
+4. On the **Attack Simulation training** page, you reviewed the four types of simulated attacks that are available in the prior task. For this simulation, Holly has decided to conduct an account breach in which she will use a URL to try and obtain usernames and passwords. This is referred to in the Attack Simulator as a **Credentials Harvest** attack. <br/>
 
-	You can launch this attack either from this page or the **Attack Details** page. Since the **Attack Details** page has additional information on what this attack will do, it is recommended that you launch it from there so that you can learn about the specifics of this type of attack. <br/>
+	You can launch this attack either from **Simulations** tab or selecting the **Launch a simulation** link on the **Overview** page.. Since the **Overview** tab has additional information and is the default page when selecting the **Attack simulation training** service, it is recommended that you launch it from there so that you can learn about the specifics of this type of attack. <br/>
 	
-	To the right of the **Spear Phishing (Credentials Harvest)** section, select **Attack Details**.
+	To the right of the **Credentials Harvest** section, select **Launch a simulation**.
 
-5. On the **Attack details** page, review the specific information related to the **Spear Phishing (Credentials Harvest)** attack type.
+5. On the **Launch a simulation** page, review the specific information related to the **Credentials Harvest** attack type.
 
-6. In the **Launch attack** section for the **Spear Phishing (Credentials Harvest)** attack type, select **Launch attack**. This initiates the **Configure Phishing Attack** wizard.
+6. In the **Select Technique** section for the **Credentials Harvest** attack type, select **Next**.
 
-7. In the **Configure Phishing Attack** wizard, the steps involved in the simulation are displayed in the left-hand pane. While you can manually create a phishing campaign, it is recommended that you take advantage of the available templates that will prefill most of the information for you. The key to a successful phishing attack is to create a very intriguing, real-world looking email, and the templates provide very creative solutions. <br/>
+7. In the **Simulation** wizard, the steps involved in the simulation are displayed in the left-hand pane. While you can manually create a phishing campaign, it is recommended that you take advantage of the available templates that will prefill most of the information for you. The key to a successful phishing attack is to create a very intriguing, real-world looking email, and the templates provide very creative solutions. <br/>
 
-	On the **Provide a name to the campaign** page, select the **Use Template** button. 
+	On the **Name Simulation** page, provide the following information the **** button. 
+	- Simulation Name : **PhishingTest1**
+	- Description : **This simulation is to provide insight on targeted email threats agianst users inside the company.**
 
-8. Select **Launch a simulation**.
+8. Select **Next**.
 
-9. **Credential Harvest** should be select be default, if not choose it, then select **Next**.
+9. on the **Select Payload** screen.  Select **2 failed Messages** from the **applied filters** menu. when you select this option a window should open on the left hand side to give you a view of the email that will be sent to the users, then select **Next**.
 
-10. Enter a name for the simulation and select **Next**.
+10. From the **Target Users** screen. Select **include all users in my organization**. this will give you a view of every user inside your orgainzation. Select **Next**.
 
-11. On the **Select Payload** screen, choose a payload you would like to simulate, then select **Next**.
+11. On the **Assign Training** screen. Leave **Preferences** as reccommend and leave **Assign training for me** as the selection option. Change **Due Date** to **7 days after Simulation ends** then select **Next**.
 
-12. In the next step, you will select the users that will receive the phishing email. You can select users from the company address book (the Active Users), or for large-scale attacks, you can import users from a .csv file. For this simple simulation, you will only send the email to one user, so select **Add Users**. <br/>
+12. On the **Launch Details**screen. Select **Launch this simulation as soon as I'm done.**Then select **Next**.
 
-	Enter **Lynne** in the **Search for users or groups within your organization** field. In the list of users that appears, select **Lynne Robbins**. Lynne's user account record will display in the list of **Recipients**. Select **Next**. 
+13. On the **Review Simulation** screen. Review the entered information and select **submit**. A few moments will pass and you will recieve a confirmations stating **Simulation has been scheduled for launch**. Select **Done**
 
-13. In the **Assign Training** page, accept the defaults you.  and elect **Next**.
 
-14. On the **Training landing page** page, accept the defaults and select **Next**.
-
-15. On the **Launch Details** page, review the options available, the select **Next**
-
-16. On the **Review Simulation** page, confirm all of the settings are correct and select **Submit**. This will launch the phishing attack!
-
-17. Leave your browser and the Security and Compliance Center open for the next task.
 
 
 
 ### Task 3: Review the attack simulation results
 
-In this task, you will verify whether Lynne Robbins received the email that you configured in the Attack Simulator, and then you will review the report associated with the Spear Phishing attack that you simulated.
+In this task, you will verify whether your orgainization has received the email that you configured in the Attack simulation training, and then you will review the report associated with the Spear Phishing attack that you simulated.
 
 1. Switch to the **LON-CL2** VM and log in as the **Admin** with a password of **Pa55w.rd**.
 
@@ -139,17 +133,17 @@ In this task, you will verify whether Lynne Robbins received the email that you 
 
 8. Select the link that is included in the email. Even though you know this is a spear phishing attack, this will enable you to see the effect of doing so in the Attack Simulator report that tracks the results of the spear phishing campaign.
 
-9. In the **Sign in** dialog box that appears, enter **LynnR@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix ID provided by your lab hosting provider), and then in the **Enter password** window, enter **Pa55w.rd** and select **Sign in**. 
+9. In the **Sign in** dialog box that appears, enter **LynnR@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix ID provided by your lab hosting provider), and then in the **Enter password** window, and select **Sign in**. 
 
 10. This displays a web page that explains how you have redirected to it as part of a Phishing awareness test being run by your organization. Read through the contents of this page. 
 
 11. Switch back to LON-CL1.
 
-12. In your browser session where you are logged in as Holly Dickson, if you are still on the **Attack details** page, then scroll down to the **Attack History** section under **Spear Phishing (Credential Harvest)** section and select the **Refresh** button. It should display details on your phishing attack. Select the right arrow to view the report on the phishing attack. <br/>
+12. In your browser session where you are logged in as Holly Dickson, if you are still on the **Attack details** page, then scroll down to the **Attack History** section under **Credential Harvest** section and select the **Refresh** button. It should display details on your phishing attack. Select the right arrow to view the report on the phishing attack. <br/>
 
-	 **Note:** If you were instead back on the **Attack simulator** page, then in the **Spear Phishing (Credential Harvest)** section, below the **Attack Completed** message, select **View Report**.
+	 **Note:** If you were instead back on the **Attack simulator** page, then in the **Credential Harvest** section, below the **Attack Completed** message, select **View Report**.
 
-13. On the **Report** page, review the report for the phishing campaign that you completed. Note the date and time of the report. If you had run a previous simulation, it sometimes takes a few minutes to update this report information with the details from the current simulation that you just ran. If this occurs, refresh the page after a few minutes. Review the information on the page and note the results after having selected the spear phishing URL in the email that was sent to Lynne Robbins earlier in this task.
+13. On the **Report** page, review the report for the phishing campaign that you completed. Note the date and time of the report. If you had run a previous simulation, it sometimes take 60 minutes to update this report information with the details from the current simulation that you just ran. If this occurs, refresh the page after a few minutes. Review the information on the page and note the results after having selected the spear phishing URL in the email that was sent to Lynne Robbins earlier in this task.
 
 14. Leave your browser open in LON-CL1 and do not close any of the tabs.
     
