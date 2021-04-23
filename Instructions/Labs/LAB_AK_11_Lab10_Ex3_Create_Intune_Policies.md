@@ -22,7 +22,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, want to send a
 
 7. On the **Create notification** page, note the three steps that appear at the top of the page. You are currently on the step **1 - Basics** page. In the **Name** field, enter **Noncompliant OS version**. Leave all the other options set to their default settings and select **Next**.
 
-8. On the step **2 - Notification message templates** page, enter **WARNING: Noncompliant device** in the **Subject** field. Then enter **Your Windows 10 or later device is not running a compliant version of the OS. The device has been marked as noncompliant and is now locked.** Select **Next**.
+8. On the step **2 - Notification message templates** page, select an appropriate locale for you, enter **WARNING: Noncompliant device** in the **Subject** field. Then enter **Your Windows 10 or later device is not running a compliant version of the OS. The device has been marked as noncompliant and is now locked.**, select the checkbox for **IsDefault**. Select **Next**.
 
 9. On the step **3 - Review + create** page, review your template settings. If any need to be corrected, select **Previous** to return to the appropriate page and make the necessary edits. If everything looks OK, select **Create**.
 
@@ -71,7 +71,7 @@ Given the problems caused at Adatum by devices that are running old versions of 
 
 13. On the step **4 - Assignments** page, you want to assign this policy to all the devices in the **Enrolled devices** group, which you created in the prior exercise. <br/>
 
-    The **Assign to** field is already set to **Selected groups** be default, so under the **Selected groups** section, select **+Select groups to include**. In the **Select groups to include** pane that appears, select **Enrolled devices** and then select the **Select** button at the bottom of the pane. Select **Next**.
+    In the **Assignments** tab under the **Included groups** section, select **Add groups**. In the **Select groups to include** pane that appears, select **Enrolled devices** and then select the **Select** button at the bottom of the pane. Select **Next**.
 
 14. On the step **5 - Review + create** page, review the policy settings. If anything needs to be fixed, select **Previous** and make the necessary corrections. However, if everything looks correct, select **Create**.
 
@@ -183,7 +183,7 @@ In this task, you will create a WIP policy that protects an entire collection of
 
 15. Select **Next**.
 
-16. On the step **5 - Assignments** page, under **Included groups**, select **+Select groups to include**. Holly wants to limit this policy to the members of the **WIP Users** group, which is the group of users selected to participate in compliance testing for Adatum's pilot project. <br/>
+16. On the step **5 - Assignments** page, under **Included groups**, select **Add groups**. Holly wants to limit this policy to the members of the **WIP Users** group, which is the group of users selected to participate in compliance testing for Adatum's pilot project. <br/>
 
     In the **Select groups to include** pane, select **WIP users**, and then select the **Select** button at the bottom of the pane.
 
