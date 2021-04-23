@@ -289,6 +289,8 @@ In this task, you will turn on Information Rights Management (IRM) for SharePoin
 
 In Lab 3, you will create Alert Policies using the Security and Compliance Center. However, before you can implement alerts, an admin must first turn on Audit Logging for the organization. Since it can take a couple of hours for audit logging to become fully enabled once you turn it on, you will turn it on in this lab so that it's fully enabled by the time you get to Lab 3.
 
+**Note:** If you see an error message, "Fail to opt in, please refresh", Audit Logging is being enabled in the background and the message can safely be ignored.
+
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. <br/>
 
 	Select the **Microsoft 365 admin center** tab in your Edge browser. 
