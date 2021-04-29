@@ -10,13 +10,13 @@ In this exercise, you will add five apps to Adatum's company store, and you will
 
 3. In the next several steps, you are going to get five apps, all of which you will add to Adatum's company store. You will make them available in the store for other Adatum employees, but you will NOT install them yourself. <br/>
 
-	Begin by scrolling down to the **Made by Microsoft** section and select **Translator.**
+	Begin by scrolling down to the **Made by Microsoft** section and select **3D Builder.**
 
-4. On the **Translator** window, select the drop-down arrow in the **License type** field and note the two options - **Online** and **Offline**. Select the **Online** option, and then select **Get the app**. 
+4. On the **3D Builder** window, select the drop-down arrow in the **License type** field and note the two options - **Online** and **Offline**. Select the **Online** option, and then select **Get the app**. 
 
 5. On the **Thanks for your order** page, select **Close**. 
 
-6. This returns you to the **Translator** page. Select the **ellipsis (…)** button that appears to the right of the **Install** button to view the additional actions that are available besides Install. Notice that only the **Manage** option is available. 
+6. This returns you to the **3D Builder** page. Select the **ellipsis (…)** button that appears to the right of the **Install** button to view the additional actions that are available besides Install. Notice that only the **Manage** option is available. 
 
 7. Select **Shop for my group** on the menu bar, then scroll down to the **Made by Microsoft** section and select **Show all**.
 
@@ -38,9 +38,7 @@ In this exercise, you will add five apps to Adatum's company store, and you will
 
 16. On the **Overview** page, in the **Products and Services** tile, select **Manage apps.**
 
-17. On the **Products and Services** page, as you scroll down through the apps, note how they all have an **Install** button - except for **Reader**, which you selected with an **Offline** license type. In the **Reader** section, under **Settings and Actions**, select **More actions available on details page.**  <br/>
-
-	‎**Warning:** The **More actions available on details page** option may not immediately appear at this time. Because you selected this app for Offline use, it may take some time for this button to appear. If this **More actions available on details** option does not appear, simply proceed to the next step; otherwise, select this option, and on the **Reader** detail page, note the **Download package for offline use** message and that a **Download** button is available (do not select it).
+17. On the **Products and Services** page, as you scroll down through the apps, note how they all have an **Assign to People** option in their **Actions** menu - except for **Reader**, which you selected with an **Offline** license type. In the **Reader** action menu, note the **Download package for offline use** option.
 
 18. On the menu bar at the top of the page, select **Adatum private store.** 
 
@@ -54,13 +52,13 @@ In this exercise, you will add five apps to Adatum's company store, and you will
 
 	- **Microsoft Remote Desktop**
 
-	- **Translator** 
+	- **3D Builder** 
 
 22. At the bottom of the page, select **Done**. 
 
 23. By default, new apps are only visible to admins; as a result, they must be assigned visibility permissions to be seen by non-admins. So at this point in time, **Collection1** is only visible to admins.   <br/>
 
-24. In the following steps you will assign visibility permissions to other users for the **Fresh Paint**, **Microsoft Remote Desktop,** and **Translator** apps. On the menu bar at the top of the page, select **Manage.**
+24. In the following steps you will assign visibility permissions to other users for the **Fresh Paint**, **Microsoft Remote Desktop,** and **3D Builder** apps. On the menu bar at the top of the page, select **Manage.**
 
 25. On the **Overview** page, in the **Products and Services** tile, select **Manage apps**.
 
@@ -72,7 +70,7 @@ In this exercise, you will add five apps to Adatum's company store, and you will
 
 28. Select the back arrow to the left of the address bar to return to the **Product and Services** page. 
 
-29. Repeat steps 26-28 for both **Microsoft Remote Desktop** and **Translator**.
+29. Repeat steps 26-28 for both **Microsoft Remote Desktop** and **3D Builder**.
 
 30. Close the **Microsoft Store for Business** tab in your Edge browser. Leave the **Microsoft Office Home** tab and the **Microsoft 365 admin center** tab open for the next lab. 
 
@@ -95,7 +93,7 @@ In this task, you are going to sign into the Microsoft Store for Business as one
 
 	- The five apps that were automatically added to the private store: **Sway, OneNote for Windows 10, PowerPoint Mobile, Excel Mobile,** and **Word Mobile**.
 
-	- The **Collection1** app that you created in the prior task that includes: **Fresh Paint, Microsoft Remote Desktop,** and **Translator**.
+	- The **Collection1** app that you created in the prior task that includes: **Fresh Paint, Microsoft Remote Desktop,** and **3D Builder**.
 
 7. In your browser, close the **Microsoft Store for Business** tab.
 
