@@ -8,17 +8,17 @@ In this next phase of your Adatum pilot project, you will access the Security & 
 
 1. You should still be logged into LON-CL1 as the **Admin** and into **Microsoft 365** as Holly Dickson.
 
-2. In Microsoft Edge, in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Security** to open the Office 365 Security and Compliance center.
+2. In Microsoft Edge, in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Compliance** to open the Office 365 Security and Compliance center.
 
-3. In the **Office 365 Security and Compliance** center, in the left-hand navigation pane, select **Information governance**, and then under it select **Archive**.
+3. In the **Microsoft 365 Compliance** center, in the left-hand navigation pane, select **Information governance**, and then under it select **Archive**.
 
 4. On the **Archive** window, note that the archive mailboxes for all users other than Holly Dickson are **enabled**. These archive mailboxes were enabled when the VM lab environment was built for this training course and these users were preconfigured in the tenant. However, since Holly's user account was added in Lab 1, her archive mailbox is **disabled** by default.
 
-5. To enable Holly’s archive mailbox, select **Holly Dickson** in the user list. 
+5. To enable Holly’s archive mailbox, click on the checkbox near **Holly Dickson** in the user list and select **Enable Archive** in the tools line.
 
-6. In the detail pane that appears on the right, Holly’s archive mailbox is currently listed as **disabled**. Select **Enable**, and then in the **Warning** dialog box that appears, select **Yes** to confirm this action.
+6. In the **Warning** dialog box that appears, select **Enable** to confirm this action.
 
-7. In your Microsoft Edge browser, leave the Office 365 Security & Compliance Center tab open as you will use it in a later task in this lab. 
+7. In your Microsoft Edge browser, leave the Office 365 Compliance Center tab open as you will use it in a later task in this lab. 
  
 
 ### Task 2 – Create an MRM retention tag and policy in the Exchange Admin Center
@@ -90,37 +90,39 @@ As part of your pilot project for Adatum, you will configure MRM retention throu
 You have created a new retention policy through the Exchange Admin Center. You assigned several retention tags to this policy, including a custom retention tag, and you assigned the retention policy to Lynne and Joni’s mailboxes.
 
 
-### Task 3 – Create a Retention Policy in the Security and Compliance Center
+### Task 3 – Create a Retention Policy in the Compliance Center
 
-Now that Holly has created a retention policy through the Exchange Admin Center, she wants to do the same in the Security & Compliance Center. For this policy, Holly wants to preserve the content of all Exchange Online mailboxes from deletion for 7 years after the last modification. 
+Now that Holly has created a retention policy through the Exchange Admin Center, she wants to do the same in the Compliance Center. For this policy, Holly wants to preserve the content of all Exchange Online mailboxes from deletion for 7 years after the last modification. 
 
-1. In **Microsoft Edge**, select the **Office 365 Security &amp; Compliance** center tab if it's still open; otherwise, in the **Microsoft 365 admin center**, under **Admin centers**, select **Security**.
+1. In **Microsoft Edge**, select the **Office 365 Compliance** center tab if it's still open; otherwise, in the **Microsoft 365 admin center**, under **Admin centers**, select **Compliance**.
 
-2. In the **Office 365 Security &amp; Compliance** center, in the left-hand navigation pane, select **Information governance** and then select **Retention**.
+2. In the **Office 365 Compliance** center, in the left-hand navigation pane, select **Information governance** and then select **Retention**.
 
-3. In the **Retention** window, select the **+Create** button to start the wizard that’s used to create a new retention policy.
+3. In the **Retention** window, select the **+ New Retention Policy** button to start the wizard that’s used to create a new retention policy.
 
-4. On the **Name your policy** page, enter **Exchange preservation** in the **Name** field and select **Next**.
+4. On the **Name your retention policy** page, enter **Exchange preservation** in the **Name** field and select **Next**.
 
-5. On the **Decide if you want to retain content, delete it, or both** page, leave the **Yes, I want to retain it** option selected, as well as the **For this long** and **7 years**. Do not change these fields.<br/>
+5. In the **Choose locations to apply the policy** page, as you scroll down the page, note that the **Status** of the **Exchange email** location is turned **On**. Leave this set to On. However, for all the other locations that are turned on, select their toggle switches to turn them **Off**.
 
-	However, in the **Retain the content based on** field, it currently indicates **when it was created**. Select the drop-down arrow for this field and select **when it was last modified**. <br/>
+6. As you scroll through the locations, **Exchange email** should be the only location turned on.
+
+7. Select **Next**.
+
+8. On the **Decide if you want to retain content, delete it, or both** page, leave the **Retain items for a specific period** option selected, as well as the **7 years**. Do not change these fields.<br/>
+
+	However, in the **Start the retention period based on** field, it currently indicates **when items were created**. Select the drop-down arrow for this field and select **when items were last modified**. <br/>
 	
-	In the **Do you want us to delete it after this time?** option, select **Yes**.
-
-6. Select **Next**.
-
-7. In the **Choose locations** page, select **Let me choose specific locations.** 
-
-8. As you scroll down the page, note that the **Status** of the **Exchange email** location is turned **On**. Leave this set to On. However, for all the other locations that are turned on, select their toggle switches to turn them **Off**. As you scroll through the locations, **Exchange email** should be the only location turned on.
+	In the **At the end of the retention period** option, select **Delete items automatically**.
 
 9. Select **Next**.
 
-10. On the **Review your settings** page, review all the settings. If any need to be corrected, select the **Edit** option and make the appropriate correction. Once everything looks correct, select **Create this policy** to finish the wizard.
+10. On the **Review and finish** page, review all the settings. If any need to be corrected, select the **Edit** option and make the appropriate correction. Once everything looks correct, select **Submit** to finish the wizard.
+
+12. Select **Done**.
 
 11. Do not close your Client 1 VM or Microsoft Edge. Leave your web browser open as well as all tabs for the next lab.
 
-You have now created a new retention policy in the Security & Compliance Center that retains all Exchange emails from all mailboxes for 7 years after the last modification.
+You have now created a new retention policy in the Compliance Center that retains all Exchange emails from all mailboxes for 7 years after the last modification.
 
  # End of Lab 5
  
