@@ -132,7 +132,7 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 5. In the **Active users** list, you will see the list of existing user accounts that were created for you by your lab hosting provider. In this task, you are taking on the role of the MOD Administrator, and as such, you must create a user account for Holly Dickson, who is Adatum's new Enterprise Administrator. In doing so, you will assign Holly the Microsoft 365 role of Global Administrator, which gives Holly global access to most management features and data across Microsoft online services. 
 
-6. In the **Active Users** window, select **Add a user** that appears on the menu bar above the list of active users, then select **Single User** from the submenu that appears.
+6. In the **Active Users** window, select **Add a user** that appears on the menu bar above the list of active users.
 
 7. In the **Set up the basics** window, enter the following information:
 
@@ -231,7 +231,7 @@ Each user is a key member of your pilot project team. While their user accounts 
 
 17. In the **Set up the basics** pane, enter **Sales Group** in the **Name** field. You must select the **Description** field to enable the **Next** button. Leave the **Description** field blank and select **Next**. 
 
-18. In the **Assign owners** pane, enter **Joni** in the **Owners** field. A list of users whose name starts with Joni will appear; select **Joni Sherman** and then select **Next**.
+18. In the **Assign owners** pane, enter **Joni** in the **Owners** field. A list of users whose name starts with Joni will appear; select **Joni Sherman** and then select **Add**.
 
 19. In the **Edit settings** pane, enter **salesgroup** in the **Group email address** field (Note: the domain should be the xxxxxZZZZZZ.onmicrosoft.com domain, which you should have verified in a prior task is the default domain for Adatum). <br/>
 
@@ -272,7 +272,7 @@ In this task, you will turn on Information Rights Management (IRM) for SharePoin
 
 2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **SharePoint**. This will open the SharePoint admin center.
 
-3. In the **SharePoint admin center**, in the left-hand navigation pane, select **Settings**. 
+3. In the **SharePoint admin center**, in the left-hand navigation pane, and under the new page select **Settings**. 
 
 4. At the bottom of the **Settings** page is a sentence that says **Can’t find the setting you’re looking for? Go to the classic settings page.** In this sentence, select the hyperlinked text: **classic settings page**.
 
