@@ -35,19 +35,17 @@ You have successfully installed the AIP Unified Label client on Client 1 VM.
 
 In this exercise you will create an Sensitivity Label and add it to the default policy so that it’s valid for all users of the Adatum tenant.
 
-1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
+1. On LON-CL1, open Edge and navigate to www.office.com, signing in as Holly Dickson.
 
-2. In **Microsoft Edge**, select the **Data loss prevention** tab that displays the **Office 365 Security & Compliance** center.
+2. Click the **Admin** Icon near the bottom of the left sidebar.
 
-3. In the **Office 365 Security & Compliance** center, in the left-hand navigation pane, select **Classification**, and then select **Sensitivity labels.**
+3.  On the Microsoft 365 admin center page, click **... Show all**. Click **Compliance** under the **Admin centers** group.
 
-4. In the **Home > sensitivity** window, three tabs are displayed across the top of the page. The **Labels** tab is displayed by default. <br/>
+4. On **Microsoft 365 compliance**, click **Information protection** under the **Solutions** group. In the middle of this page, a warning message is displayed in the middle of the screen indicating **Your organization has not turned on the ability to process content in Office online files that have encrypted sensitivity labels applied and are stored in OneDrive and SharePoint.** 
 
-	On the **Labels** tab, a warning message is displayed in the middle of the screen indicating **Your organization has not turned on the ability to process content in Office online files that have encrypted sensitivity labels applied and are stored in OneDrive and SharePoint.** <br/>
-	
-	Select the **Turn on now** button that appears on the right side of this message. This will enable Adatum to apply the Sensitivity labels inside its Microsoft 365 environment.
+    Select the **Turn on now** button that appears on the right side of this message. This will enable Adatum to apply the Sensitivity labels inside its Microsoft 365 environment.
 
-5. On the **Labels** tab, select **+Create a label** that appears in the middle of the screen on the menu bar. This initiates the **New sensitivity label** wizard.
+5. Still on the Information protection page, select **+Create a label** that appears in the middle of the screen on the menu bar. This initiates the New sensitivity label wizard.
 
 6. In the **New sensitivity label** wizard, on the **Name and create a tooltip for your label** page, enter the following information:
 
