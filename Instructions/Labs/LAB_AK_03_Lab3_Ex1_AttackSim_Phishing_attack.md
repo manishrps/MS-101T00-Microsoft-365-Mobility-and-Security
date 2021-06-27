@@ -91,7 +91,7 @@ Now that Holly has turned on MFA, she is ready to run the Attack Simulator and l
 
 7. In the **Simulation** wizard, the steps involved in the simulation are displayed in the left-hand pane. While you can manually create a phishing campaign, it is recommended that you take advantage of the available templates that will prefill most of the information for you. The key to a successful phishing attack is to create a very intriguing, real-world looking email, and the templates provide very creative solutions. <br/>
 
-	On the **Name Simulation** page, provide the following information the **** button. 
+	On the **Name Simulation** page, provide the following information the ***** button. 
 	- Simulation Name : **PhishingTest1**
 	- Description : **This simulation is to provide insight on targeted email threats agianst users inside the company.**
 
