@@ -24,11 +24,11 @@ In this task, you will create a Safe Links policy that applies to all users in y
 
     - Select the action for unknown or potentially malicious URLs in messages - **On**
     - Select the action for unknown or potentially malicious URLs within Microsoft Teams - **Off**
-    - Apply real-time URL scanning for suspicious links and links that point to files - select this check box
-    - Wait for URL scanning to complete before delivering the message - select this check box
-    - Apply safe links to email messages sent within the organization - select this check box
-    - Do not track user clicks - select this check box
-    - Do not allow users to click through to original URL - select this check box
+    - Apply real-time URL scanning for suspicious links and links that point to files - **select this check box**
+    - Wait for URL scanning to complete before delivering the message - **select this check box**
+    - Apply safe links to email messages sent within the organization - **select this check box**
+    - Do not track user clicks - **select this check box**
+    - Do not allow users to click through to original URL - **select this check box**
    
 7. On the **Applied to** page, select **+Add a condition**. In the drop-down menu that appears, under the **Applied if...** section, select **The recipient domain is**
 
