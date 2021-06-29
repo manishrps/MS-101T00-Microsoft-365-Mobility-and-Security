@@ -21,7 +21,7 @@ In this task you will use Windows PowerShell to access Exchange Online and then,
 	
 5. If you are prompted to install the **NuGet provider**, enter **Y** to select **[Y] Yes**. 
 
-6. If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery),** enter **A** to select **[A] Yes to All.** 
+6. If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery), enter **A** to select **[A] Yes to All.** 
 
 7. Once the installation is complete, the screen will return to the command prompt. You must then run the following command to initiate a connection to Azure Active Directory: <br/>
 	
