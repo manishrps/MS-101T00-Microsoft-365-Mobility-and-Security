@@ -14,17 +14,17 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, want to send a
 
 3. In the **Microsoft Endpoint Manager admin center**, in the left-hand navigation pane select **Endpoint security**.
 
-4. On the **Endpoint security | Overview** page, in the middle pane under the **Manage** section, select **Device compliance**.
+4. On the **Endpoint security | Overview** page, the **Manage** section appears in the middle of the page's navigation pane. Under this section, select **Device compliance**.
 
-5. On the **Compliance policies | Policies** page, in the middle pane, select **Notifications**. 
+5. On the **Compliance policies | Policies** page, in the navigation pane for this page, select **Notifications**. 
 
-6. On the **Compliance policies | Notifications** page, in the details pane on the right select **+Create notification** on the menu bar. 
+6. On the **Compliance policies | Notifications** page, select **+Create notification** on the menu bar. 
 
 7. On the **Create notification** page, note the three steps that appear at the top of the page. You are currently on the step **1 - Basics** page. In the **Name** field, enter **Noncompliant OS version**. Leave all the other options set to their default settings and select **Next**.
 
-8. On the step **2 - Notification message templates** page, select an appropriate locale for you, enter **WARNING: Noncompliant device** in the **Subject** field. Then enter **Your Windows 10 or later device is not running a compliant version of the OS. The device has been marked as noncompliant and is now locked.**, select the checkbox for **IsDefault**. Select **Next**.
+8. On the step **2 - Notification message templates** page, select your appropriate locale, and then enter **WARNING: Noncompliant device** in the **Subject** field. Then enter **Your Windows 10 or later device is not running a compliant version of the OS. The device has been marked as noncompliant and is now locked.**, select the check box for **IsDefault**. Select **Next**.
 
-9. On the step **3 - Review + create** page, review your template settings. If any need to be corrected, select **Previous** to return to the appropriate page and make the necessary edits. If everything looks OK, select **Create**.
+9. On the step **3 - Review + create** page, review your template settings. If any need to be corrected, select **Previous** to return to the appropriate page and make the necessary edits. If everything looks correct, select **Create**.
 
 10. In your browser session, leave all the tabs open for the next task.
 
@@ -41,9 +41,9 @@ Given the problems caused at Adatum by devices that are running old versions of 
 
 3. In the **Microsoft Endpoint Manager admin center**, in the left-hand navigation pane select **Devices**. 
 
-4. In the **Devices | Overview** window, in the middle pane under the **Policy** section, select **Compliance policies**.
+4. In the **Devices | Overview** page, the **Policy** section appears in the middle of the page's navigation pane. Under this section, select **Compliance policies**.
 
-5. On the **Compliance policies | Policies** window, in the details pane on the right, select **+Create Policy** on the menu bar.
+5. On the **Compliance policies | Policies** page, select **+Create Policy** on the menu bar.
 
 6. On the **Create a policy** pane that appears, select the **Platform** field, and in the drop-down menu that appears, select **Windows 10 and later**. Select **Create**.
 
@@ -79,9 +79,9 @@ Given the problems caused at Adatum by devices that are running old versions of 
 
 16. In the **Azure Active Directory admin center**, in the left-hand navigation pane, select **Azure Active Directory**.
 
-17. In the **Adatum Corporation | Overview** window, in the middle pane under **Manage**, scroll down and select **Mobility (MDM and MAM).**
+17. In the **Adatum Corporation | Overview** window, the **Manage** section appears in the middle of the page's navigation pane. Under this section, select **Mobility (MDM and MAM).**
 
-18. In the **Adatum Corporation | Mobility (MDM and MAM)** window, in the pane on the right, select **Microsoft Intune.**
+18. In the **Adatum Corporation | Mobility (MDM and MAM)** window, select **Microsoft Intune.**
 
 19. In the **Configure** window, in the **MAM User scope** setting, select **All**.
 
@@ -340,13 +340,13 @@ When enrolling devices to Microsoft Intune, you have the option to Allow or Bloc
 
 2. In your Edge browser, you should have a tab open for the **Microsoft Endpoint Manager admin center** that's displaying the **Intune App Protection | Properties** window. In the left-hand navigation pane, select **Devices**. <br/>
 
-3. In the **Devices| Overview** window, in the middle pane under the **Device enrollment** section, select **Enroll devices.**
+3. In the **Devices| Overview** window, the **Device enrollment** section appears in the middle of the page's navigation pane. Under this section, select **Enroll devices.**
 
-4. In the **Enroll devices | Windows enrollment** window, in the middle pane, select **Enrollment restrictions**.
+4. In the **Enroll devices | Windows enrollment** window, in the navigation pane for this page, select **Enrollment restrictions**.
 
-5. In the **Enroll devices | Enrollment restrictions** window, in the details pane on the right, in the **Device type restrictions** section, on the **Default** restriction type, select **All users**.
+5. In the **Enroll devices | Enrollment restrictions** window, in the **Device type restrictions** section, on the **Default** restriction type, select **All users**.
 
-6. In the **All Users** window, in the middle pane under the **Manage** section, select **Properties.**
+6. In the **All Users** window, the **Manage** section appears towards the top of the page's navigation pane. Under this section,  select **Properties.**
 
 7. In the **All Users | Properties** window, select **Edit** that appears next to **Platform settings**.
 
@@ -373,7 +373,7 @@ The purpose of this task is to simply review the different platforms that are av
 
 2. In your **Edge** browser, you should have a tab open for the **Microsoft Endpoint Manager admin center** that's displaying the **All Users | Properties** window. In the left-hand navigation pane, select **Devices**.
 
-4. On the **Devices | Overview** window, in the middle pane under **Policy,** select **Configuration profiles**.
+4. On the **Devices | Overview** window, the **Policy** section appears in the middle of the page's navigation pane. Under this section, select **Configuration profiles**.
 
 5. On the **Devices |Configuration profiles** page, select **+Create profile** that appears on the menu bar above the list of profiles.
 
