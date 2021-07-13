@@ -272,7 +272,7 @@ In this task, you will turn on Information Rights Management (IRM) for SharePoin
 
 2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **SharePoint**. This will open the SharePoint admin center.
 
-3. In the **SharePoint admin center**, in the left-hand navigation pane, and under the new page select **Settings**. 
+3. In the **SharePoint admin center**, in the left-hand navigation pane, select **Settings**. 
 
 4. At the bottom of the **Settings** page is a sentence that says **Can’t find the setting you’re looking for? Go to the classic settings page.** In this sentence, select the hyperlinked text: **classic settings page**.
 
