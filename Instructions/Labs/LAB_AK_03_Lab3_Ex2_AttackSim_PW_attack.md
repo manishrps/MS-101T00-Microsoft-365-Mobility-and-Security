@@ -1,13 +1,15 @@
-# Module 3 - Lab 3 - Exercise 2 - Conduct Password attacks using the Attack Simulator
+# Module 3 - Lab 3 - Exercise 2 - Conduct a Drive-by URL attack using Attack Simulation training
 
-Holly Dickson is concerned that some users at Adatum may require education about secure password strategies. In this lab she will use the Microsoft 365 Attack Simulator to determine her users' susceptibility to password attacks.
+Holly Dickson is concerned that some users at Adatum may require education about selecting URL links to familiar websites that are either fake or have been hacked. This type of attack is known by multiple names, such as a Drive-by URL attack or a watering hole attack. With this type of attack, a targe receives an email containing a URL link, and when the target selects the link, they are taken to a website that runs background code whose sole purpose is to gather information about the target or deploy arbitrary code to their device. As part of her pilot project, Holly has decided to use the Microsoft 365 Attack simulation training feature to determine her users' susceptibility to Drive-by URL attacks.
 
 **Note:** At the end of this exercise, you will disable MFA for Holly's account. This will save you from having to enter the second form of authentication when signing in as Holly in any of the remaining labs in this course.
 
 
-### Task 3: Configure and launch a Password Spray attack 
+### Task 1: Configure and launch a Drive-by URL attack 
 
-A password spray attack against an organization is typically done by running a list of commonly used passwords against a list of valid Microsoft 365 user accounts. Typically, the attacker crafts one password to try against all the known user accounts. If the attack is not successful, the attacker will try again using another carefully crafted password, usually with a waiting period between attempts to avoid policy-based account lockout triggers. For her pilot project, Holly is once again going to use Lynne Robbins as her test case. 
+In a Drive-by URL attack, the website attempting to lure the target will typically be a well-known website that has been compromised in some fashion, or a clone of a well-known web-site itself. This familiarity with the website builds trust in the target that it's safe to select the URL link. Holly wants to create a Drive-by URL attack using a rip-off of the Tailspin Toys website. Tailspin Toys is a nationally known toy store that is constantly offering promotions on TV. Holly wants to use this familiarity with the Tailspin Toys namebrand to offer an enticing promotion for free toys as part of her attack simulation training. This will enable her to see how many Adatum employees will fall for this attack. 
+
+In the prior lab, you created a simulation that was sent to all Adatum users. For this simulation, Holly wants to use Lynne Robbins as her test case before rolling out this attack training company-wide. 
 
 1. You should still be in LON-CL1 and signed in as the **Admin** with a password of **Pa55w.rd**; if not, then sign in now.  
 
@@ -15,27 +17,101 @@ A password spray attack against an organization is typically done by running a l
 
 3. In the **Microsoft 365 Defender** portal, you should still be in the **Attack simulation training** page; if not, then in the left-hand navigation pane, under **Email & collaboration**, select **Attack simulation trainng**.
 
-3. In the list of 4 attacks, scroll down to the **Password Spray Attack** section and select the **Launch Attack** button.
+4. On the **Attack Simulation training** page, Holly wants to conduct a **Drive-by URL** attack in which she will use a URL to gather information about the target and Adatum itself.  <br/>
 
-4. In the **Provide a name for the password attack** page, enter **Password Spray Test** in the **Name** field and select **Next**.
+	In the prior lab exercise, you selected an existing payload template (2 Failed Messages). In this lab, you will create a custom payload. On the menu at the top of the page, select **Payloads**. On the **Payloads** tab, select **+ Create a payload**. This initiates a Payload wizard.
 
-5. In the **Select user accounts which to attempt the password attack** page, select the **Address Book** button, enter **Lynne** in the **Search** field, select **Lynne Robbins** from the resulting list of users, and then select **Next**.
+5. On the **Select type** page of the Payload wizard, the **Email** option should be selected by default (if not, select it now). Select **Next**. 
 
-6. In the **Choose attack settings** page, enter the following list of passwords. Unlike the Brute Force password test, this Spray test allows you to enter all passwords in the field at one time; simply include a space in between each one. Enter the following passwords in the **Password** field: **P@ssw0rd Pa$$w0rd Pa55w.rd**
-	
-	**Note:** You will enter Lynne's actual password on purpose to check the results when a password match occurs. Once you have added all the passwords, select **Next**.
+6. On the **Select Technique** page, under the **Drive-by URL** option, select the **View details of Drive-by URL** link. This opens a **Drive-by URL** pane on the right. Review the **Description** and the **Simulation steps** for this type of attack. When you're done, close the **Drive-by URL** pane.
 
-7. In the **Confirmation** page, select **Finish** to run the simulation.
+7. On the **Select Technique** page, select the **Drive-by URL** attack type and then select **Next**.
 
-8. Once the attack is complete, you will be returned to the **Attack simulator** page. 
+8. On the **Payload name** page, enter the following information: <br/>
 
-9. Leave your browser and the Security and Compliance Center open for the next task.   
+	- Email payload name: **Free gift offer**
+	- Description: **This payload is for Drive-by URL threats offering free prizes and gifts that are too good to be true**
+
+9. Select **Next**.
+
+10. On the **Configure Payload** page, enter the following information: <br/>
+
+	- Enter name: **Klemen Sic**
+	- From email: **klemens@tailspintoys.com**
+	- Email subject: **Free toy giveaway promotion from Tailspin Toys**
+	- Select a URL you want to be your phishing link: select the drop-down arrow and select **https://www.prizegives.com** from the list of fictitious URLs 
+	- Theme: **Personalized Offer**
+	- Industry: **Retail**
+	- Current Event: **Yes**
+	- Email message: Enter the following text that will be displayed in the body of the email message: **Tailspin Toys is offering you a FREE, one-time only giveaway of a toy of your choice as part of our 25th anniversary celebration! Please click on the following link to select the toy of your choice:** 
+	- After entering the prior message, select the **Phishing link** option at the top of the text form (to the right of **Dynamic tag**). In the **Name Phishing Url** dialog box that appears, enter **Free25thAnniversaryGift@tailspintoys.com** in the **Name** field and then select **Confirm**.
+
+	The message should now appear as: 
+
+	Tailspin Toys is offering you a FREE, one-time only gift of the toy of your choice as part of our 25th anniversary celebration! Please click on the following link to select the toy of your choice: **Free25thAnniversaryGift@tailspintoys.com** 
+
+11. Select **Next**.	
+
+12. On the **Add Indicators** page, select the **Add Indicator** button.
+
+13. On the **Add Indicator** pane that appears on the right, enter the following information: <br/>
+
+	- Indicator Name: **Too good to be true offers**
+	- Indicator Location: **From the Body of the email**
+
+14. A **Select Text** button will appear. Select this button.
+
+15. In the **Select the required text** pane that appears on the right, drag your cursor from the start of the code block to the end, so that the entire code block is highlighted. This will enable the **Select** button. Select this button. 
+
+16. In the **Indicator Description** field, enter the following text: **Free gifts or other one-time only promotional give-aways**
+
+17. Select inside the **Indicator Preview** to see a preview of the indicator message. Then select outside the **Indicator Preview** field to exit the preview. 
+
+18. Select **Add**.
+
+19. On the **Add Indicators** page, the indicator that you just created should be displayed. Select **Next**.
+
+20. On the **Review Payload** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change, or select **Back** to enter any of the information in the Configure section. Once everything is correct, select **Submit**. A few moments will pass and you will recieve a confirmation stating **New payload created**. Select **Done**. 
+
+21. On the **Attack simulation training** page, you should still be viewing the **Payloads** tab. Scroll down through the list of payloads to the **Free gift offer** payload that you just created. Review the informmation. Note that no **Compromised rate (%)** has been determined yet, since the payload hasn't been used in simulation. Once you're done, select the **Overview** tab.
+
+22. On the **Overview** tab of the **Attack simulation training** page, at the bottom of the **Recent Simulations** section, select **Launch a simulation**. This initiates the **Simulation** wizard.
+
+5. On the **Select Technique** page, select the **Drive-by URL** attack type and then select **Next**.
+
+7. On the **Name Simulation** page, provide the following information: <br/>
+
+	- Simulation Name: **Drive by URL - Free offer**
+	- Description: **This simulation tests whether users are susceptible to free gift offers from malicious web sites**
+
+8. Select **Next**.
+
+9. On the **Select Payload** page, hover your mouse over **Free gift offer** in the list of payloads and then select the circle that appears to the left of it. Select **Next**. 
+
+10. On the **Target Users** page, select **Include only specific users and groups**, and then select **+Add Users**. 
+
+11. In the **Add Users** pane that appears, in the **Search for Users or Groups** field at the top of the pane, enter **Lynne** and then hit Enter. In the list of users that appears whose name starts with Lynne, select **Lynne Robbins** and then select **Add 1 User(s)**.
+
+12. On the **Target Users** page, Lynne Robbins should be displayed as the targeted user. Select **Next**. 
+
+11. On the **Assign Training** page, under the **Preferences** section, the **Assign training for me (Recommended)** option should be selected by default (if not, select it now). Select the **Due Date** field. In the drop-down menu that appears, select **7 days after Simulation ends** and then select **Next**.
+
+12. On the **Training landing page**, the **Select the landing page option to be used** field should be prefilled with the **Microsoft landing page** option (if not, select it now). Select the **Preview page** button that appears below this field. 
+
+13. The **Microsoft landing page** appears in the pane on the right. This provides an example of what the landing page will look like when someone experiences a phishing attack. Review the features of this landing page, and then close **Microsoft landing page** pane.
+
+14. On the On the **Training landing page**, note the text that appears in the **Header** and **Body** fields. This is the text that you saw when you previewed the Microsoft landing page. Change the values of these fields to something different, and then select the **Preview page** button again. In the **Microsoft landing page** that appears in the pane on the right, you should see the changes that you made to the header and body text fields. Close the **Microsoft landing page** pane when you're done reviewing.
+
+15. Select **Next**.
+
+12. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
+
+13. On the **Review Simulation** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change. Once everything is correct, select **Submit**. A few moments will pass and you will recieve a confirmation stating **Simulation has been scheduled for launch**. Select **Done**.
 
 
+### Task 2: Review the Drive-by URL attack results
 
-### Task 4: Review the Password Spray results
-
-You will now review the results of the Password Spray attack.
+You will now review the results of the Drive-by URL simulation attack that you just launched.
 
 1. In your browser session where you are logged in as Holly Dickson, you should still be on the **Attack simulator** page. In the **Password Spray Attack** section, it should display **Attack Completed** once the attack is done. Select the **Refresh** icon on the address bar to refresh the results. This may take several minutes to complete, so you may need to refresh your screen several times. Once the attack is complete, select **View Report**.
 
