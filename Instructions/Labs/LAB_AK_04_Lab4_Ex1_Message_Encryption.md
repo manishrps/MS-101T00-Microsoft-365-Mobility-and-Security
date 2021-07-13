@@ -1,4 +1,4 @@
-# Module 4 - Lab 4 - Exercise 1 - Configure Office 365 Message Encryption
+# Module 4 - Lab 4 - Exercise 1 - Configure Microsoft 365 Message Encryption
 
 
 In this lab, you will take on the persona of Holly Dickson, Adatum’s Enterprise Administrator. You have been tasked with piloting the use of Microsoft 365 message encryption in Adatum’s Microsoft 365 deployment. Since message encryption rules can be created using both Exchange Online and Windows PowerShell, you have decided to test each method to determine which you prefer to use once you go live.
@@ -97,7 +97,7 @@ In this task, you will create an encryption rule for messages inside your Exchan
 
 1. On the LON-CL1 VM, you should still be logged into the **Microsoft 365 admin center** as **Holly Dickson**. If you closed your Edge browser or the **Microsoft 365 admin center** tab, then in your Edge browser navigate to **https://portal.office.com**, sign in as **Holly@xxxxxZZZZZZ.onmicrosoft.com**, and select **Admin**. 
 
-2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** (if necessary), and then under **Admin centers**, select **Exchange**. This will open the Exchange admin center.
+2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** (if necessary), and then under **Admin centers**, select **Exchange**. This will open the Exchange Online admin center.
 
 3. In the **Exchange admin center**, in the left-hand navigation pane select **mail flow.**
 
