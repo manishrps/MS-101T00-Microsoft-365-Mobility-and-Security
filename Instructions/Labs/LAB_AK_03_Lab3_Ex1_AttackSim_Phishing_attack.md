@@ -142,11 +142,9 @@ In this task, you will verify whether your orgainization has received the email 
 
 11. Switch back to LON-CL1.
 
-12. In your browser session where you are logged in as Holly Dickson, if you are still on the **Attack details** page, then scroll down to the **Attack History** section under **Credential Harvest** section and select the **Refresh** button. It should display details on your phishing attack. Select the right arrow to view the report on the phishing attack. <br/>
+12. In your browser session where you are logged in as Holly Dickson, you should still be on the **Attack simulation training** page. If the **PhishingTest1** simulation does not appear in the **Recent Simulations** list, select the **Refresh** icon to the left of the URL on the address bar. The **PhishingTest1** simulation should now appear. Select the **PhishingTest1** simulation to view the details on this simulation.
 
-	 **Note:** If you were instead back on the **Attack simulator** page, then in the **Credential Harvest** section, below the **Attack Completed** message, select **View Report**.
-
-13. On the **Report** page, review the report for the phishing campaign that you completed. Note the date and time of the report. If you had run a previous simulation, it sometimes take 60 minutes to update this report information with the details from the current simulation that you just ran. If this occurs, refresh the page after a few minutes. Review the information on the page and note the results after having selected the spear phishing URL in the email that was sent to Lynne Robbins earlier in this task.
+13. A **PhishingTest1** page should appear. Review all the information collected for this simulated attack. When you're finished, select the **X** in the upper right hand corner of the window to close it. 
 
 14. Leave your browser open in LON-CL1 and do not close any of the tabs.
     
