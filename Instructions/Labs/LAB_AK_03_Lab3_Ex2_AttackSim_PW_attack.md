@@ -77,54 +77,76 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Fo
 
 22. On the **Overview** tab of the **Attack simulation training** page, at the bottom of the **Recent Simulations** section, select **Launch a simulation**. This initiates the **Simulation** wizard.
 
-5. On the **Select Technique** page, select the **Drive-by URL** attack type and then select **Next**.
+23. On the **Select Technique** page, select the **Drive-by URL** attack type and then select **Next**.
 
-7. On the **Name Simulation** page, provide the following information: <br/>
+24. On the **Name Simulation** page, provide the following information: <br/>
 
 	- Simulation Name: **Drive by URL - Free offer**
 	- Description: **This simulation tests whether users are susceptible to free gift offers from malicious web sites**
 
-8. Select **Next**.
+25. Select **Next**.
 
-9. On the **Select Payload** page, hover your mouse over **Free gift offer** in the list of payloads and then select the circle that appears to the left of it. Select **Next**. 
+26. On the **Select Payload** page, hover your mouse over **Free gift offer** in the list of payloads and then select the circle that appears to the left of it. Select **Next**. 
 
-10. On the **Target Users** page, select **Include only specific users and groups**, and then select **+Add Users**. 
+27. On the **Target Users** page, select **Include only specific users and groups**, and then select **+Add Users**. 
 
-11. In the **Add Users** pane that appears, in the **Search for Users or Groups** field at the top of the pane, enter **Lynne** and then hit Enter. In the list of users that appears whose name starts with Lynne, select **Lynne Robbins** and then select **Add 1 User(s)**.
+28. In the **Add Users** pane that appears, in the **Search for Users or Groups** field at the top of the pane, enter **Lynne** and then hit Enter. In the list of users that appears whose name starts with Lynne, select **Lynne Robbins** and then select **Add 1 User(s)**.
 
-12. On the **Target Users** page, Lynne Robbins should be displayed as the targeted user. Select **Next**. 
+29. On the **Target Users** page, Lynne Robbins should be displayed as the targeted user. Select **Next**. 
 
-11. On the **Assign Training** page, under the **Preferences** section, the **Assign training for me (Recommended)** option should be selected by default (if not, select it now). Select the **Due Date** field. In the drop-down menu that appears, select **7 days after Simulation ends** and then select **Next**.
+30. On the **Assign Training** page, under the **Preferences** section, the **Assign training for me (Recommended)** option should be selected by default (if not, select it now). Select the **Due Date** field. In the drop-down menu that appears, select **7 days after Simulation ends** and then select **Next**.
 
-12. On the **Training landing page**, the **Select the landing page option to be used** field should be prefilled with the **Microsoft landing page** option (if not, select it now). Select the **Preview page** button that appears below this field. 
+31. On the **Training landing page**, the **Select the landing page option to be used** field should be prefilled with the **Microsoft landing page** option (if not, select it now). Select the **Preview page** button that appears below this field. 
 
-13. The **Microsoft landing page** appears in the pane on the right. This provides an example of what the landing page will look like when someone experiences a phishing attack. Review the features of this landing page, and then close **Microsoft landing page** pane.
+32. The **Microsoft landing page** appears in the pane on the right. This provides an example of what the landing page will look like when someone experiences a phishing attack. Review the features of this landing page, and then close **Microsoft landing page** pane.
 
-14. On the On the **Training landing page**, note the text that appears in the **Header** and **Body** fields. This is the text that you saw when you previewed the Microsoft landing page. Change the values of these fields to something different, and then select the **Preview page** button again. In the **Microsoft landing page** that appears in the pane on the right, you should see the changes that you made to the header and body text fields. Close the **Microsoft landing page** pane when you're done reviewing.
+33. On the On the **Training landing page**, note the text that appears in the **Header** and **Body** fields. This is the text that you saw when you previewed the Microsoft landing page. Change the values of these fields to something different, and then select the **Preview page** button again. In the **Microsoft landing page** that appears in the pane on the right, you should see the changes that you made to the header and body text fields. Close the **Microsoft landing page** pane when you're done reviewing.
 
-15. Select **Next**.
+34. Select **Next**.
 
-12. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
+35. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
 
-13. On the **Review Simulation** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change. Once everything is correct, select **Submit**. A few moments will pass and you will recieve a confirmation stating **Simulation has been scheduled for launch**. Select **Done**.
+36. On the **Review Simulation** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change. Once everything is correct, select **Submit**. A few moments will pass and you will recieve a confirmation stating **Simulation has been scheduled for launch**. Select **Done**.
 
 
 ### Task 2: Review the Drive-by URL attack results
 
-You will now review the results of the Drive-by URL simulation attack that you just launched.
+You will now review the results of the Drive-by URL simulation attack that you just launched. In this task, you will verify whether your orgainization has received the email that you configured in the Attack simulation training, and then you will review the report associated with the Drive-by URL attack that you simulated.
 
-1. In your browser session where you are logged in as Holly Dickson, you should still be on the **Attack simulator** page. In the **Password Spray Attack** section, it should display **Attack Completed** once the attack is done. Select the **Refresh** icon on the address bar to refresh the results. This may take several minutes to complete, so you may need to refresh your screen several times. Once the attack is complete, select **View Report**.
+1. Switch to the **LON-CL2** VM and log in as the **Admin** with a password of **Pa55w.rd**.
 
-2. On the **Attack details** page, view the report for the **Password spray test** that you completed. Review the information on the page and note the results after having entered Lynne's actual password among the list of passwords that were entered for the simulation. 
+2. In the Edge browser, in the **Outlook** tab in which you are signed in as the MOD Administrator, select the **MA** initials in the upper right hand corner of the screen. In the **MOD Administrator** window that appears, select **Sign out**.
 
-3. In the **Attack details** page, select **Attack simulator** in the navigation thread at the top of the page (**Home > Attack simulator > Report**).
+3. Close all browser tabs except for the **Sign out** tab. In the **Sign out** tab, enter the following URL in the address bar to navigate directly to Outlook on the web: **https://outlook.office365.com**.
+ 
+4. In the **Pick an account** window, select **Use another account**. 
 
-4. Leave your browser open in LON-CL1 and do not close any of the tabs.
+5. In the **Sign in** window, enter **LynnR@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix ID provided by your lab hosting provider), and then in the **Enter password** window, enter **Pa55w.rd** and select **Sign in**. 
+
+6. Close the **Welcome** window.
+
+7. In Lynne's Outlook Inbox, you should see the email that was sent by the Attack Simulator that's from **klemens@tailspintoys.com**. Select the email to open it and review the details in the body of the message. 
+
+	**NOTE!** It can take up to 15 minutes for the email to arrive.  Wait for the email before proceeding.
+
+8. Select the link that is included in the email. Even though you know this is a Drive-by URL attack, this will enable you to see the effect of doing so in the Attack Simulator report that tracks the results of the spear phishing campaign.
+
+9. In the **Sign in** dialog box that appears, enter **LynnR@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix ID provided by your lab hosting provider), and then enter **Pa55w.rd** in the **Enter password** window. Select **Sign in**. 
+
+10. This displays a web page that explains how you have redirected to it as part of a Phishing awareness test being run by your organization. Read through the contents of this page. 
+
+11. Switch back to **LON-CL1**.
+
+12. In your browser session where you are logged in as Holly Dickson, you should still be on the **Attack simulation training** page. If the **Drive by URL - Free offer** simulation does not appear in the **Recent Simulations** list, select the **Refresh** icon to the left of the URL on the address bar. The **Drive by URL - Free offer** simulation should now appear. Select the **Drive by URL - Free offer** simulation to view the details on this simulation.
+
+13. A **Drive by URL - Free offer** page should appear. Review all the information collected for this simulated attack. When you're finished, select the **X** in the upper right hand corner of the window to close it. 
+
+14. Leave your browser open in LON-CL1 and do not close any of the tabs.
 
 
-### Task 5: Disable Multi-factor Authentication for the Global Admin
+### Task 3: Disable Multi-factor Authentication for the Global Admin
 
-To use Microsoft's Attack Simulator to simulate phishing and password attacks, Holly enabled Multi-Factor Authentication (MFA) for her user account. Now that she has completed the Attack Simulator tests, she wants to disable MFA for her account so that she doesn't have to deal with MFA for the remainder of the pilot project.
+To use Microsoft's Attack simulation training to simulate phishing attacks, Holly enabled Multi-Factor Authentication (MFA) for her user account. Now that she has completed the Attack simulation training test, she wants to disable MFA for her account so that she doesn't have to deal with MFA for the remainder of the pilot project.
 
 1. You should still be logged into **LON-CL1** as the **Admin** account and into Microsoft 365 as Holly Dickson.
 
