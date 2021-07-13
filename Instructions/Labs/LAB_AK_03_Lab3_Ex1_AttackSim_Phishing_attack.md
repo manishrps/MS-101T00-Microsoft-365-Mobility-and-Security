@@ -1,6 +1,6 @@
-# Module 3 - Lab 3 - Exercise 1 - Conduct a Spear Phishing attack using the Attack Simulator
+# Module 3 - Lab 3 - Exercise 1 - Conduct a Spear Phishing attack using Attack Simulation training
 
-Holly Dickson is concerned that some users at Adatum may require education about phishing attacks. As part of her pilot project, Holly has decided to use the Microsoft 365 Attack Simulator to determine her users' susceptibility to phishing attacks.
+Holly Dickson is concerned that some users at Adatum may require education about phishing attacks. As part of her pilot project, Holly has decided to use the Microsoft 365 Attack simulation training feature to determine her users' susceptibility to phishing attacks.
 
 
 ### Task 1: Enable Multifactor Authentication for the Global Admin
