@@ -8,17 +8,19 @@ In this next phase of your Adatum pilot project, you will access the Security & 
 
 1. You should still be logged into LON-CL1 as the **Admin** and into **Microsoft 365** as Holly Dickson.
 
-2. In Microsoft Edge, in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Compliance** to open the Office 365 Security and Compliance center.
+2. In Microsoft Edge, in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Compliance** to open the Microsoft 365 Compliance center.
 
-3. In the **Microsoft 365 Compliance** center, in the left-hand navigation pane, select **Information governance**, and then under it select **Archive**.
+3. In the **Microsoft 365 Compliance** center, in the left-hand navigation pane, select **Information governance**. 
 
-4. On the **Archive** window, note that the archive mailboxes for all users other than Holly Dickson are **enabled**. These archive mailboxes were enabled when the VM lab environment was built for this training course and these users were preconfigured in the tenant. However, since Holly's user account was added in Lab 1, her archive mailbox is **disabled** by default.
+4. On the **Information governance** page, the **Labels** tab appears by default. In the list of tabs along the top of the page, select **Archive**.
 
-5. To enable Holly’s archive mailbox, click on the checkbox near **Holly Dickson** in the user list and select **Enable Archive** in the tools line.
+4. On the **Archive** page, note that the archive mailboxes for all users other than Holly Dickson have a status of **Enabled**. These archive mailboxes were enabled when the VM lab environment was built for this training course and these users were preconfigured in the tenant. However, since you added Holly's user account in one of the first labs at the start of this course, her archive mailbox is **Disabled** by default.
+
+5. To enable Holly’s archive mailbox, select the check box next to **Holly Dickson** in the user list and then select **Enable Archive** in the menu bar that appears above the list of users.
 
 6. In the **Warning** dialog box that appears, select **Enable** to confirm this action.
 
-7. In your Microsoft Edge browser, leave the Office 365 Compliance Center tab open as you will use it in a later task in this lab. 
+7. In your Microsoft Edge browser, leave the Microsoft 365 Compliance Center tab open as you will use it in a later task in this lab. 
  
 
 ### Task 2 – Create an MRM retention tag and policy in the Exchange Admin Center
@@ -27,7 +29,7 @@ As part of your pilot project for Adatum, you will configure MRM retention throu
 
 1. On LON-CL1, select the **Microsoft 365 admin center** tab in your Edge browser. 
 
-2. In the **Microsoft 365 admin center**, in the left-hand navigation pane under the **Admin centers** group, select **Exchange**. This will open the Exchange admin center.
+2. In the **Microsoft 365 admin center**, in the left-hand navigation pane under the **Admin centers** group, select **Exchange**. This will open the Exchange Online admin center.
 
 3. In the **Exchange admin center**, in the left-hand navigation pane, select **compliance management**.
 
@@ -94,9 +96,9 @@ You have created a new retention policy through the Exchange Admin Center. You a
 
 Now that Holly has created a retention policy through the Exchange Admin Center, she wants to do the same in the Compliance Center. For this policy, Holly wants to preserve the content of all Exchange Online mailboxes from deletion for 7 years after the last modification. 
 
-1. In **Microsoft Edge**, select the **Office 365 Compliance** center tab if it's still open; otherwise, in the **Microsoft 365 admin center**, under **Admin centers**, select **Compliance**.
+1. In **Microsoft Edge**, select the **Microsoft 365 Compliance** center tab if it's still open; otherwise, in the **Microsoft 365 admin center**, under **Admin centers**, select **Compliance**.
 
-2. In the **Office 365 Compliance** center, in the left-hand navigation pane, select **Information governance** and then select **Retention**.
+2. In the **Microsoft 365 Compliance** center, in the left-hand navigation pane, select **Information governance** and then select **Retention**.
 
 3. In the **Retention** window, select the **+ New Retention Policy** button to start the wizard that’s used to create a new retention policy.
 
