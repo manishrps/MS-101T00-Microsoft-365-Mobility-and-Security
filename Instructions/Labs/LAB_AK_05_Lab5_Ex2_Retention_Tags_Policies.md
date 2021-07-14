@@ -23,43 +23,41 @@ In this next phase of your Adatum pilot project, you will access the Microsoft 3
 7. In your Microsoft Edge browser, leave the Microsoft 365 Compliance Center tab open as you will use it in a later task in this lab. 
  
 
-### Task 2 – Create an MRM retention tag and policy in the Exchange Admin Center
+### Task 2 – Create an MRM retention tag and policy in the Classic Exchange Admin Center
 
 As part of your pilot project for Adatum, you will configure MRM retention through the Exchange Admin Center by creating an MRM retention tag and then adding it to a new MRM retention policy. You will also assign several default tags to the policy as well. You will then assign this retention policy to Joni Sherman and Lynne Robbins’ mailboxes.
 
-1. On LON-CL1, select the **Microsoft 365 admin center** tab in your Edge browser. 
+1. On LON-CL1, open a new tab on your Edge browser and go to **https://outlook.office365.com/ecp/**. 
 
-2. In the **Microsoft 365 admin center**, in the left-hand navigation pane under the **Admin centers** group, select **Exchange**. This will open the Exchange Online admin center.
+2. In the **Classic Exchange admin center**, in the left-hand navigation pane, select **compliance management**.
 
-3. In the **Exchange admin center**, in the left-hand navigation pane, select **compliance management**.
+3. In the **compliance management** window, in the list of tabs that appear across the top of the page, select **retention tags**.
 
-4. In the **compliance management** window, in the list of tabs that appear across the top of the page, select **retention tags**.
+4. You want to create a retention tag, so select the **plus (+) sign** icon in the toolbar that appears above the list of existing retention tags. In the drop-down menu that appears, select **applied by users to items and folders (personal)**.
 
-5. You want to create a retention tag, so select the **plus (+) sign** icon in the toolbar that appears above the list of existing retention tags. In the drop-down menu that appears, select **applied by users to items and folders (personal)**.
+5. In **new tag applied by users to items and folders (personal)** window, enter **3 Years Move – Archive after three years** in the **Name** field.
 
-6. In **new tag applied by users to items and folders (personal)** window, enter **3 Years Move – Archive after three years** in the **Name** field.
+6. Under **Retention Action**, select the **Move to Archive** option.
 
-7. Under **Retention Action**, select the **Move to Archive** option.
+7. Under **Retention period**, select the **When the item reaches the following age (in days)** option and enter **1095** in the retention period field that appears below this option (1095 days = 3 years).
 
-8. Under **Retention period**, select the **When the item reaches the following age (in days)** option and enter **1095** in the retention period field that appears below this option (1095 days = 3 years).
+8. In the **Comment** field, enter **Personal tag to archive email three years after being received**.
 
-9. In the **Comment** field, enter **Personal tag to archive email three years after being received**.
+9. Select **Save** to save the retention tag, and then select **OK** once the tag is successfully saved.
 
-10. Select **Save** to save the retention tag, and then select **OK** once the tag is successfully saved.
+10. On the menu bar on the top of the page, select the **retention policies** tab.
 
-11. On the menu bar on the top of the page, select the **retention policies** tab.
-
-12. In the **retention policies page**, note that there is one default retention policy. Since this policy is selected by default, its corresponding properties are displayed in the detail pane on the right-side of the screen. This information displays all the default retention tags that have been assigned to this policy. <br/>
+11. In the **retention policies page**, note that there is one default retention policy. Since this policy is selected by default, its corresponding properties are displayed in the detail pane on the right-side of the screen. This information displays all the default retention tags that have been assigned to this policy. <br/>
 
 	You want to create a custom retention policy, so select the **plus (+) sign** icon in the toolbar that appears across the list of existing retention policies. 
 
-13. In **new retention policy** window, enter **Office Retention Policy** in the **Name** field.
+12. In **new retention policy** window, enter **Office Retention Policy** in the **Name** field.
 
-14. You now want to assign one or more retention tags to this new policy. Below **Retention tags**, select the **plus (+) sign** icon.
+13. You now want to assign one or more retention tags to this new policy. Below **Retention tags**, select the **plus (+) sign** icon.
 
-15. In the **select retention tags** window, select the **3 Years Move** tag that you just created, select the **add -&gt;** button, and then select **OK**.
+14. In the **select retention tags** window, select the **3 Years Move** tag that you just created, select the **add -&gt;** button, and then select **OK**.
 
-16. In addition to the personal retention tag that you just added to the retention policy, you also want to add the following default tags as well:
+15. In addition to the personal retention tag that you just added to the retention policy, you also want to add the following default tags as well:
 
 	- Default 2 year move to archive
 
@@ -71,23 +69,23 @@ As part of your pilot project for Adatum, you will configure MRM retention throu
 
 	Repeat the prior two steps to add these tags to this policy. **Hint:** Hold down the **Ctrl** key as you select each tag in the list; this will enable you to select all four default tags at one time before selecting the **add-&gt;** button.
 
-17. On the **new retention policy** window, select **Save** and then select **OK**.
+16. On the **new retention policy** window, select **Save** and then select **OK**.
 
-18. You are now going to apply this retention policy to the mailboxes for your two test users, Joni Sherman and Lynne Robbins. In the **Exchange Admin Center**, in the left-hand navigation pane, select **recipients**. In the **recipients** page, the **mailboxes** tab is displayed by default. 
+17. You are now going to apply this retention policy to the mailboxes for your two test users, Joni Sherman and Lynne Robbins. In the **Exchange Admin Center**, in the left-hand navigation pane, select **recipients**. In the **recipients** page, the **mailboxes** tab is displayed by default. 
 
-19. In the list of recipient mailboxes, select **Joni Sherman** and then select the **pencil (edit) icon** in the toolbar to edit the properties of Joni’s mailbox.
+18. In the list of recipient mailboxes, select **Joni Sherman** and then select the **pencil (edit) icon** in the toolbar to edit the properties of Joni’s mailbox.
 
-20. In the **Edit User Mailbox** for Joni Sherman, select **mailbox features** in the left-hand navigation pane.
+19. In the **Edit User Mailbox** for Joni Sherman, select **mailbox features** in the left-hand navigation pane.
 
-21. If a **Warning** dialog box appears, select **OK**.
+20. If a **Warning** dialog box appears, select **OK**.
 
-22. Select the drop-down arrow in the **Retention policy** field and select **Office Retention Policy**.
+21. Select the drop-down arrow in the **Retention policy** field and select **Office Retention Policy**.
 
-23. Select **Save** and then select **OK**.
+22. Select **Save** and then select **OK**.
 
-24. Repeat steps 19-23 for **Lynne Robbins**.
+23. Repeat steps 19-23 for **Lynne Robbins**.
 
-25. Leave your web browser open and proceed to the next task.
+24. Leave your web browser open and proceed to the next task.
 
 You have created a new retention policy through the Exchange Admin Center. You assigned several retention tags to this policy, including a custom retention tag, and you assigned the retention policy to Lynne and Joni’s mailboxes.
 
