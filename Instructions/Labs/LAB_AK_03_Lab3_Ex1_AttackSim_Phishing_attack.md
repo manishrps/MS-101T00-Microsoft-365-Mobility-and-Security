@@ -40,7 +40,7 @@ To use Microsoft's Attack simulation training feature to simulate a phishing att
 
 15. Retrieve the verification code from the text message that is sent to your phone.
 
-16. In the **Phone** window, enter the 6 digit verification code in the **Enter code** field and then select **Next**.
+16. In the **Phone** window, enter the 6-digit verification code in the **Enter code** field and then select **Next**.
 
 17. This takes you back to the **Microsoft Authenticator** window. Select the **I want to set up a different method** option at the bottom of the page. 
 
@@ -54,7 +54,7 @@ To use Microsoft's Attack simulation training feature to simulate a phishing att
 
 22. On the **Success!** page, select **Done**.
 
-23. If you take too long to complete this process, the **Enter password** window will appear with a message indicating you took too long to complete the sign in process, so you will be timed-out. If this occurs, you must sign in again with Holly's password of **Pa55w.rd**. Another verification code will be texted to your phone, so enter it in the **Enter code** screen that appears and select **Verify**.
+23. If you take too long to complete this process, the **Enter password** window will appear with a message indicating you took too long to complete the sign in process, so you will be timed out. If this occurs, you must sign in again with Holly's password of **Pa55w.rd**. Another verification code will be texted to your phone, so enter it in the **Enter code** screen that appears and select **Verify**.
 
 24. In the **Sign in** dialog box, copy and paste in the **Tenant Username** provided by your lab hosting provider (**admin@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix assigned by your lab hosting provider) and then select **Next**.
 
@@ -68,7 +68,7 @@ To use Microsoft's Attack simulation training feature to simulate a phishing att
 
 29. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** and then select **Security**. The **Microsoft 365 Defender** portal should now be displayed in your browser. You will resume from here in the next task when you launch a spear phishing attack using the Attack Simulator.  
 
-30. You have now configured MFA, you have signed into the **Micosoft 365 Defender** portal using MFA, and you are ready to run the Attack simulator training. Leave everything as is in your VM and proceed to the next task.
+30. You have now configured MFA, you have signed into the **Microsoft 365 Defender** portal using MFA, and you are ready to run the Attack simulator training. Leave everything as is in your VM and proceed to the next task.
 
 
 ### Task 2: Configure and launch a Spear Phishing attack
@@ -85,7 +85,7 @@ Now that Holly has turned on MFA, she is ready to run Microsoft 365's Attack sim
 
 	You can launch this attack either from **Simulations** tab or selecting the **Launch a simulation** link on the **Overview** page. Since the **Overview** tab has additional information and is the default page when selecting the **Attack simulation training** service, it is recommended that you launch it from there so that you can learn about the specifics of this type of attack. <br/>
 	
-	At the bottom of the **Recent Simulations** section, select **Launch a simulation**. This initiates a **Simulation** wizard.
+	On the **Overview** tab, at the bottom of the **Recent Simulations** section, select **Launch a simulation**. This initiates a **Simulation** wizard.
 
 5. On the **Select Technique** page, review the specific information related to the **Credentials Harvest** attack type. Select the **View details of credential harvest** link. This opens a **Credential Harvest** pane on the right. Review the **Description** and the **Simulation steps** for this type of attack. When you're done, close the **Credential Harvest** pane.
 
@@ -113,14 +113,14 @@ Now that Holly has turned on MFA, she is ready to run Microsoft 365's Attack sim
 
 15. Select **Next**.
 
-12. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
+16. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
 
-13. On the **Review Simulation** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change. Once everything is correct, select **Submit**. A few moments will pass and you will recieve a confirmation stating **Simulation has been scheduled for launch**. Select **Done**.
+17. On the **Review Simulation** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change. Once everything is correct, select **Submit**. After a few minutes you will receive a confirmation stating **Simulation has been scheduled for launch**. Select **Done**.
 
 
 ### Task 3: Review the attack simulation results
 
-In this task, you will verify whether your orgainization has received the email that you configured in the Attack simulation training. You will then review the diagnostic feedback associated with the Spear Phishing attack that you simulated.
+In this task, you will verify whether Adatum has received the email that you configured in the Attack simulation training. You will then review the diagnostic feedback associated with the Spear Phishing attack that you simulated.
 
 1. Switch to the **LON-CL2** VM and log in as the **Admin** with a password of **Pa55w.rd**.
 
@@ -148,7 +148,7 @@ In this task, you will verify whether your orgainization has received the email 
 
 12. In your browser session where you are logged in as Holly Dickson, you should still be on the **Attack simulation training** page. If the **PhishingTest1** simulation does not appear in the **Recent Simulations** list, select the **Refresh** icon to the left of the URL on the address bar. The **PhishingTest1** simulation should now appear. Select the **PhishingTest1** simulation to view the diagnostic results that were captured for this simulation.
 
-13. A **PhishingTest1** page should appear. Review all the information collected for this simulated attack. When you're finished, select the **X** in the upper right hand corner of the window to close it. 
+13. A **PhishingTest1** page should appear. Review all the information collected for this simulated attack. When you're finished, select the **X** in the upper right-hand corner of the window to close it. 
 
 14. Leave your browser open in LON-CL1 and do not close any of the tabs.
     
