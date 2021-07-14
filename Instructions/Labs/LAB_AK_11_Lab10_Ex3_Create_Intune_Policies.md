@@ -147,7 +147,7 @@ In this task, you will create a WIP policy that protects an entire collection of
 
     - Name: **Win10Policy**
     - Description: **Windows Information Protection policy for Windows 10 computers**
-    - Enrollment state. **With Enrollment**
+    - Enrollment state. **Without Enrollment**
 
 6. Select **Next**.
 
