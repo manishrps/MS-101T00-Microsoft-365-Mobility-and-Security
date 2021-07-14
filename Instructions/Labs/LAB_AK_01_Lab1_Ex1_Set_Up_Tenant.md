@@ -182,8 +182,40 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 16. Remain logged into LON-CL1 with the Microsoft 365 admin center open in your browser for the next task.
 
+### Task 4 - Assign RBAC to a Microsoft 365 user account in the Security and Compliance center
 
-### Task 4 – Set up Microsoft 365 User Accounts and Groups
+In the prior task, you successfully added the Global administrator role to Holly Dickson's account. The global administrator role will give you the majoriety of privileges needed to manage your Microsoft 365 tenant. however, there are some additional privileges that you will need to manage certain services. In the security and compliance center Holly will need to be added to the Organization Management role. By adding Holly to the Organization Management role, Holly's account will have all the nessisary privileges to complete all of the future exercises during this course.
+
+1. In your **Edge** browser, you should still have a tab open for the
+    **Microsoft 365 admin center**. If so, then select this tab and proceed to
+    the next step; otherwise, navigate to the **Office 365 home** page, log in
+    as your tenant admin account, navigate to the **Microsoft 365 admin
+    center**, and then in the left-hand navigation pane, select **Show all**.
+
+2. In the **Microsoft 365 admin center**, in the left-hand navigation pane
+    under **Admin centers**, select **Security**.
+3. In the **Office 365 Security & Compliance center**, select **Threat Management** in the left-hand
+    navigation pane, and then in the expanded group select **Permissions**.
+    
+4. In the **Home \> Permissions** page in the **Search** field, type **Org** then select the search glass.
+    
+5. On the **Home \> Permissions** page list, select the **Organization Management** role.
+
+6. On the **Organization Management**page under the **Members**section, select the **Edit** icon.
+
+7. On the **Editing choose members** page, select **Choose Members**.
+
+8. On the **Choose Members** page, select the **Add** icon.
+
+9. On the **Choose Members** list, select the **Holly Dickson** account.Then select the **Add** icon.
+
+10. On the **Choose Members** page, select the**Done** icon.
+
+11. On the **Editing choose members** page, select the **Save** icon.
+
+12. Remain logged into LON-CL1 with the Microsoft 365 admin center open in your browser for the next task.
+
+### Task 5 – Set up Microsoft 365 User Accounts and Groups
 
 After completing the previous task, you should still be signed into the **Microsoft 365 admin center** as the **MOD Administrator** account. In this task, you will begin implementing Adatum’s Microsoft 365 pilot project as Holly Dickson, Adatum’s new Enterprise Administrator. Therefore, you will begin this task by logging out of Microsoft 365 as the MOD Administrator and you will log back in as Holly.
 
@@ -262,7 +294,7 @@ Each user is a key member of your pilot project team. While their user accounts 
 30. Leave the **Microsoft 365 admin center** tab open in your browser and proceed to the next task.
 
 
-### ‎Task 5 - Enable IRM for SharePoint Online 
+### ‎Task 6 - Enable IRM for SharePoint Online 
 
 In this task, you will turn on Information Rights Management (IRM) for SharePoint Online. 
 
@@ -285,7 +317,7 @@ In this task, you will turn on Information Rights Management (IRM) for SharePoin
 8. Do **NOT** close the **SharePoint admin center** tab in your Edge browser. Leave your browser open for the next task.
 
 
-### Task 6 – Turn on Audit Logging to enable Alert Policies
+### Task 7 – Turn on Audit Logging to enable Alert Policies
 
 In Lab 3, you will create Alert Policies using the Security and Compliance Center. However, before you can implement alerts, an admin must first turn on Audit Logging for the organization. Since it can take a couple of hours for audit logging to become fully enabled once you turn it on, you will turn it on in this lab so that it's fully enabled by the time you get to Lab 3.
 
@@ -306,7 +338,7 @@ In Lab 3, you will create Alert Policies using the Security and Compliance Cente
 5. Leave the Client 1 VM and the Security and Compliance Center open and proceed to the next lab.
 
 
-### Task 7 – Prepare Users for Content Searches
+### Task 8 – Prepare Users for Content Searches
 
 In Module 8, you will perform a Content Search lab that requires that Joni Sherman and Holly Dickson be members of the eDiscovery Manager role. In this exercise, you will add Joni and Holly to this role. The reason you are doing this now is that it can sometimes take up to an hour or more for newly assigned permissions to successfully propagate. If you waited and assigned Holly and Joni to this role group at the time you performed the Content Search lab in Module 8, you would receive error messages involving parameter fields because their permissions would not have finished propagating. By adding them to this role group now, enough time will elapse for the propagation to complete by the time you get to the Module 8 lab. 
 
