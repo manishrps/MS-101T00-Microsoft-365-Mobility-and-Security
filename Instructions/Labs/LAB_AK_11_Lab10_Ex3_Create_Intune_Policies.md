@@ -57,7 +57,7 @@ Given the problems caused at Adatum by devices that are running old versions of 
 
 11. On the step **3 - Actions for noncompliance** page, you can create a list of actions that you want taken when a device becomes noncompliant. One default action is already defined (**Mark device noncompliant**); this action cannot be changed or deleted. This action is scheduled to be performed **Immediately** (which means, on the day the device becomes noncompliant, which is 0 days after noncompliance). <br/>
 
-    In addition to marking the device as noncompliant, Holly also wants to notify the end user with an email. In the **Action** column, under the **Mark device compliant** action, selecty the action field. In the drop-down arrow that appears, select **Send email to end user**. <br/>
+    In addition to marking the device as noncompliant, Holly also wants to notify the end user with an email. In the **Action** column, under the **Mark device compliant** action, select the action field. In the drop-down arrow that appears, select **Send email to end user**. <br/>
 
     Leave the **Schedule (days after noncompliance)** field set to 0. <br/>
     
