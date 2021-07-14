@@ -1,15 +1,15 @@
 # Module 3 - Lab 3 - Exercise 2 - Conduct a Drive-by URL attack using Attack Simulation training
 
-Holly Dickson is concerned that some users at Adatum may require education about selecting URL links to familiar websites that are either fake or have been hacked. This type of attack is known by multiple names, such as a Drive-by URL attack or a watering hole attack. With this type of attack, a targe receives an email containing a URL link, and when the target selects the link, they are taken to a website that runs background code whose sole purpose is to gather information about the target or deploy arbitrary code to their device. As part of her pilot project, Holly has decided to use the Microsoft 365 Attack simulation training feature to determine her users' susceptibility to Drive-by URL attacks.
+Holly Dickson is concerned that some users at Adatum may require education about selecting URL links to familiar websites that are either fake or have been hacked. This type of attack is known as a Drive-by URL attack. With this type of attack, a target receives an email containing a URL link, and when the target selects the link, they are taken to a website that runs background code whose sole purpose is to gather information about the target or deploy arbitrary code to their device. As part of her pilot project, Holly has decided to use the Microsoft 365 Attack simulation training feature to determine her users' susceptibility to Drive-by URL attacks.
 
 **Note:** At the end of this exercise, you will disable MFA for Holly's account. This will save you from having to enter the second form of authentication when signing in as Holly in any of the remaining labs in this course.
 
 
 ### Task 1: Configure and launch a Drive-by URL attack 
 
-In a Drive-by URL attack, the website attempting to lure the target will typically be a well-known website that has been compromised in some fashion, or a clone of a well-known web-site itself. This familiarity with the website builds trust in the target that it's safe to select the URL link. Holly wants to create a Drive-by URL attack using a rip-off of the Tailspin Toys website. Tailspin Toys is a nationally known toy store that is constantly offering promotions on TV. Holly wants to use this familiarity with the Tailspin Toys namebrand to offer an enticing promotion for free toys as part of her attack simulation training. This will enable her to see how many Adatum employees will fall for this attack. 
+In a Drive-by URL attack, the website attempting to lure the target will typically be a well-known website that has been compromised in some fashion, or a clone of a well-known website itself. The hacker hopes that familiarity with the website builds trust in the target, to the point where the target feels that it's safe to select the URL link. Holly wants to create a Drive-by URL attack using a rip-off of the Tailspin Toys website. Tailspin Toys is a nationally known toy store that is constantly offering promotions on TV and throuhout social media. Holly wants to use this familiarity with the Tailspin Toys namebrand to offer an enticing promotion for free toys as part of her attack simulation training. This will enable her to see how many Adatum employees are susceptible to this type of attack. 
 
-In the prior lab, you created a simulation that was sent to all Adatum users. For this simulation, Holly wants to use Lynne Robbins as her test case before rolling out this attack training company-wide. 
+In the prior lab, you created a simulation that was sent to all Adatum users. You also used an existing payload template for the simulation. In this lab exercise, you will only roll out the simulation to Lynne Robbins, and you will create your own custom payload.  
 
 1. You should still be in LON-CL1 and signed in as the **Admin** with a password of **Pa55w.rd**; if not, then sign in now.  
 
@@ -137,7 +137,7 @@ You will now review the results of the Drive-by URL simulation attack that you j
 
 11. Switch back to **LON-CL1**.
 
-12. In your browser session where you are logged in as Holly Dickson, you should still be on the **Attack simulation training** page. If the **Drive by URL - Free offer** simulation does not appear in the **Recent Simulations** list, select the **Refresh** icon to the left of the URL on the address bar. The **Drive by URL - Free offer** simulation should now appear. Select the **Drive by URL - Free offer** simulation to view the details on this simulation.
+12. In your browser session where you are logged in as Holly Dickson, you should still be on the **Attack simulation training** page. If the **Drive by URL - Free offer** simulation does not appear in the **Recent Simulations** list, select the **Refresh** icon to the left of the URL on the address bar. The **Drive by URL - Free offer** simulation should now appear. Select the **Drive by URL - Free offer** simulation to view the diagnostic results that were captured for this simulation.
 
 13. A **Drive by URL - Free offer** page should appear. Review all the information collected for this simulated attack. When you're finished, select the **X** in the upper right hand corner of the window to close it. 
 
@@ -164,11 +164,11 @@ To use Microsoft's Attack simulation training to simulate phishing attacks, Holl
 
 8. You must now sign out of Microsoft 365 as Holly and then sign back in as Holly (without MFA). To do so, perform the following steps: <br/>
 
-	- Close your browser session and all browser tabs (to clear your cache)
-	- Open a new Edge browser session
-	- Enter the **https://portal.office.com** URL
+	- Close your browser session and all browser tabs (to clear your cache).
+	- Open a new Edge browser session.
+	- Enter the **https://portal.office.com** URL.
 	- Sign in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with a password of **Pa55w.rd**
-	- From the **Microsoft Office Home** page, select the **Admin** icon to navigate to the **Microsoft 365 admin center**
+	- From the **Microsoft Office Home** page, select the **Admin** icon to navigate to the **Microsoft 365 admin center**.
 	
 	You are now ready to proceed to the next lab exercise.
 
