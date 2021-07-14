@@ -27,29 +27,21 @@ In this task, you will turn on Windows Defender for Office 365, which provides a
 
 8. On the **Name your policy** page, enter **AttachmentPolicy1** in the **Name** field and then select **Next**.
 
-9. On the **Settings** page, select the **Dynamic Delivery** option. This option will still send the email but will hold the attachment until it has been scanned and marked acceptable.
+9. On the **Users and domains** page, in the **domians** field type **onmicrosoft.com**. Then select the **onmicrosoft.com domain**. Select **Next**.
 
-10. Scroll to the bottom of the **Settings** page and select the **Enable redirect** check box. 
+10. On the **Settings** page, select the **Dynamic Delivery** option. This option will still send the email but will hold the attachment until it has been scanned and marked acceptable.
 
-11. In the **Send the attachment to the following email address** field, enter **JoniS@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), and then select **Next**.
+11. Scroll to the bottom of the **Settings** page and select the **Enable redirect** check box. 
 
-12. If a **Security & Compliance** dialog box appears with a WARNING message about the Enable Redirect option, select **OK**.
+12. In the **Send the attachment to the following email address** field, enter **JoniS@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), and then select **Next**.
 
-13. On the **Applied to** page, select the **+Add a condition** button. In the drop-down menu that appears, under the **Applied if...** section, select **The recipient domain is...**
+18. On the **Review your settings** page, review the options that you selected. If any need to be corrected, select the appropriate **Edit** option and make the correction. If they all appear correct, select **submit**.
 
-14. In **The recipient domain is** section, select the **Choose** link to choose a domain. 
-
-15. In **The recipient domain is** window, select the **+Add** button. In the list of domains that appear, select the check box for the **xxxxxZZZZZZ.onmicrosoft.com** domain (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), select **Add**, and then select **Done**.
-
-16. On the **Applied to** page, select **Next**.
-
-17. On the **Review your settings** page, review the options that you selected. If any need to be corrected, select the appropriate **Edit** option and make the correction. If they all appear correct, select **Finish**.
-
-18. If a **Security & Compliance** dialog box appears with a message about updating your organization settings, select **Yes**.
+19. If a **Security & Compliance** dialog box appears with a message about updating your organization settings, select **Yes**.
 
       It may take a minute or so to update the organization settings. Once the settings are updated, the **AttachmentPolicy1** policy that you created will appear in the Safe attachments list. 
 
-17. Leave the Client 1 VM and the Security &amp; Compliance Center tab open for the next lab.
+20. Leave the Client 1 VM and the Security &amp; Compliance Center tab open for the next lab.
 
 **NOTE:** Unfortunately, we are unable to create a training lab in which you can validate the Safe Attachments policy that you just created. To do so, you must send an email that contains a malicious attachment. There are some common test viruses that are available, such as the EICAR test virus; however, with well-known test viruses such as EICAR, the messages in which they are attached get quarantined before they can be processed by Windows Defender for Office 365. Since the Safe Attachments functionality is meant to protect against unknown and zero-day viruses and malware, it is very difficult, and not recommended, to create such an attachment.
 
