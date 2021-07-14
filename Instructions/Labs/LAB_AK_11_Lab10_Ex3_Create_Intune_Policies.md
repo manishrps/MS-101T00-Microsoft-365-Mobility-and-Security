@@ -252,9 +252,19 @@ Packaged apps, also known as Universal Windows apps, are based on an app model t
 
 24. An **AppLocker** dialog box appears displaying a message that **2 rules were exported from the policy**. Select **OK.**
 
-25. Close the Local Security Policy window.
+25. In the **Executable Rules** folder right click on **exerule1**, then select **Delete**.
 
-26. After you've created your XML files, you will import one of them by using **Microsoft Intune**, which you will do in the next task. 
+26. An **Applocker** warning window will appear asking if your are sure that you want to delete the selected rule. Select **Yes**.
+
+27. Under the **Applocker**section, select **Package app Rules**.
+
+28. In the **Package app Rules** window, right click on the **Microsoft.OneConnect** rule, then select **Delete**.
+
+29. An **Applocker** warning window will appear asking if your are sure that you want to delete the selected rule. Select **Yes**.
+
+30. Close the Local Security Policy window.
+
+31. After you've created your XML files, you will import one of them by using **Microsoft Intune**, which you will do in the next task. 
 
 
 ### Task 6: Import a list of protected apps using Endpoint Manager
