@@ -15,7 +15,7 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 
 2. After the previous lab exercise, you should still be in the **Microsoft 365 Defender** portal, and you should still be logged in as Holly Dickson; if not, then do so now.
 
-3. In the **Microsoft 365 Defender** portal, you should still be in the **Attack simulation training** page; if not, then in the left-hand navigation pane, under **Email & collaboration**, select **Attack simulation trainng**.
+3. In the **Microsoft 365 Defender** portal, you should still be in the **Attack simulation training** page; if not, then in the left-hand navigation pane, under **Email & collaboration**, select **Attack simulation training**.
 
 4. On the **Attack Simulation training** page, Holly wants to conduct a **Drive-by URL** attack in which she will use a URL to gather information about the target and Adatum itself.  <br/>
 
@@ -39,7 +39,7 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 	- Enter name: **Klemen Sic**
 	- From email: **klemens@tailspintoys.com**
 	- Email subject: **Free toy giveaway promotion from Tailspin Toys**
-	- Select a URL you want to be your phishing link: select the drop-down arrow and select **https://www.prizegives.com** from the list of fictitious URLs 
+	- Select a URL you want to be your phishing link: select the drop-down arrow and select **https://www.prizegives.com** from the list of fictitious URLs. 
 	- Theme: **Personalized Offer**
 	- Industry: **Retail**
 	- Current Event: **Yes**
@@ -71,9 +71,9 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 
 19. On the **Add Indicators** page, the indicator that you just created should be displayed. Select **Next**.
 
-20. On the **Review Payload** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change, or select **Back** to enter any of the information in the Configure section. Once everything is correct, select **Submit**. A few moments will pass and you will recieve a confirmation stating **New payload created**. Select **Done**. 
+20. On the **Review Payload** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change, or select **Back** to enter any of the information in the Configure section. Once everything is correct, select **Submit**. A few moments will pass and you will receive a confirmation stating **New payload created**. Select **Done**. 
 
-21. On the **Attack simulation training** page, you should still be viewing the **Payloads** tab. Scroll down through the list of payloads to the **Free gift offer** payload that you just created. Review the informmation. Note that no **Compromised rate (%)** has been determined yet, since the payload hasn't been used in simulation. Once you're done, select the **Overview** tab.
+21. On the **Attack simulation training** page, you should still be viewing the **Payloads** tab. Scroll down through the list of payloads to the **Free gift offer** payload that you just created. Review the information. Note that no **Compromised rate (%)** has been determined yet, since the payload hasn't been used in simulation. Once you're done, select the **Overview** tab.
 
 22. On the **Overview** tab of the **Attack simulation training** page, at the bottom of the **Recent Simulations** section, select **Launch a simulation**. This initiates the **Simulation** wizard.
 
@@ -106,16 +106,16 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 
 35. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
 
-36. On the **Review Simulation** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change. Once everything is correct, select **Submit**. A few moments will pass and you will recieve a confirmation stating **Simulation has been scheduled for launch**. Select **Done**.
+36. On the **Review Simulation** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change. Once everything is correct, select **Submit**. A few moments will pass and you will receive a confirmation stating **Simulation has been scheduled for launch**. Select **Done**.
 
 
 ### Task 2: Review the Drive-by URL attack results
 
-You will now review the results of the Drive-by URL simulation attack that you just launched. In this task, you will verify whether your orgainization has received the email that you configured in the Attack simulation training, and then you will review the report associated with the Drive-by URL attack that you simulated.
+You will now review the results of the Drive-by URL simulation attack that you just launched. In this task, you will verify whether your organization has received the email that you configured in the Attack simulation training. You will then review the results associated with the Drive-by URL attack that you simulated.
 
 1. Switch to the **LON-CL2** VM and log in as the **Admin** with a password of **Pa55w.rd**.
 
-2. In the Edge browser, in the **Outlook** tab in which you are signed in as the MOD Administrator, select the **MA** initials in the upper right hand corner of the screen. In the **MOD Administrator** window that appears, select **Sign out**.
+2. In the Edge browser, in the **Outlook** tab in which you are signed in as the MOD Administrator, select the **MA** initials in the upper right-hand corner of the screen. In the **MOD Administrator** window that appears, select **Sign out**.
 
 3. Close all browser tabs except for the **Sign out** tab. In the **Sign out** tab, enter the following URL in the address bar to navigate directly to Outlook on the web: **https://outlook.office365.com**.
  
@@ -139,7 +139,7 @@ You will now review the results of the Drive-by URL simulation attack that you j
 
 12. In your browser session where you are logged in as Holly Dickson, you should still be on the **Attack simulation training** page. If the **Drive by URL - Free offer** simulation does not appear in the **Recent Simulations** list, select the **Refresh** icon to the left of the URL on the address bar. The **Drive by URL - Free offer** simulation should now appear. Select the **Drive by URL - Free offer** simulation to view the diagnostic results that were captured for this simulation.
 
-13. A **Drive by URL - Free offer** page should appear. Review all the information collected for this simulated attack. When you're finished, select the **X** in the upper right hand corner of the window to close it. 
+13. A **Drive by URL - Free offer** page should appear. Review all the information collected for this simulated attack. When you're finished, select the **X** in the upper right-hand corner of the window to close it. 
 
 14. Leave your browser open in LON-CL1 and do not close any of the tabs.
 
