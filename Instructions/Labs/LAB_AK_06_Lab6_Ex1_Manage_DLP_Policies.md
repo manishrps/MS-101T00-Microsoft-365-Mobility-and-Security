@@ -32,51 +32,36 @@ Given that, you will still configure a policy tip for the DLP policy that you cr
 
 7. On the **Choose locations** page, select the **Protect content in Exchange email, Teams chats, and channel messages and OneDrive and SharePoint documents** option (if it isn't already selected by default) and then select **Next**.
 
-8. On the **Customize the type of content you want to protect** page, select the **Find content that contains:** option (if it isn't already selected by default). 
+8. On the **Define Policy settings** page, select the **Create or customize advanced DLP rules** option, (if it isn't already selected by default) then select **Next**. 
 
-9. Under **You must select at least one classification type**, select **Edit.**
+9. On the **Customize advanced DLP rules** page, select the **Create rule** button.
 
-10. In the **Choose the types of content to protect** page, select the **Add** drop-down field, and in the drop-down menu, select **Sensitive info types**.
-
-11. In the **Sensitive info types** window, select **(+) Add**.
-
-12. In the search field type **Address** and wait until the search results are displayed.
-
-13. In the list of search results, select the **IP Address** check box and then select **Add.**
-
-14. Once you receive the message indicating **1 sensitive info type added,** select **Done**.
-
-15. On the **Choose the types of content to protect** window, under the **Content contains** bar, select **Any of these** in the drop-down field (this should be selected by default), and then select **Save**.
-
-16. On the **Customize the type of content you want to protect** page, **IP Address** should now appear under the **Find content that contains** option.
-
-17. Verify that the **Detect when this content is shared:** check box is selected.
-
-18. In the field below this, select the drop-down arrow and select **only with people inside my organization**.
-
-19. Select **Next**.
-
-20. On the **What do you want to do if we detect sensitive info?** page, there are two groups of settings that you must configure: <br/>
-
-    - Under the **Notify users when content matches the policy settings** section, verify the **Show policy tips to users and send them an email notification** check box is selected. Select **Customize the tip and email**. <br/>
+10. On the **Create rule** page, enter the following information then select **Save**.
     
-        In the **Customize policy tips and email notifications** window, the email notification option to **Notify the user who sent, shared, or last modified the content** option is selected by default; leave this as is. <br/>
-
-        However, sending policy tips is not selected by default, so select the **Customize the policy tip text** check box (otherwise, a policy tip will not be displayed). In the policy tip field that appears, enter **Warning: The email contains sensitive info (IP Address).** Select **OK**.
-
-    - Under the **Detect when a specific amount of sensitive info is being shared at one time** section, verify the **Detect when content that's being shared contains** option is selected. In the field below this, **10** is entered. Change this to **2** and then select **Next.**
-
-21. On the **Customize access and override permissions** page, the **Let people who see the tip override the policy** option is turned On by default. Leave this option **On**, but also select the **Require a business justification to override** check box, and then select **Next**.
-
-22. On the **Do you want to turn on the policy or test things out first?** page, select **Yes, turn it on right away** and then select **Next**.
-
-23. Check the configuration on the **Review your settings** page. Two actions should be displayed (these are dependent on the number of IP addresses in the message): <br/>
-
-    - If the content contains an IP address, then notify people with a policy tip and email the message.
-
-    - If there are at least 2 instances IP addresses, then block access to the content and send an incident report with a high sensitivity level but allow people to override it if they provide a business justification. 
+      - Name: **IP Address DLP**.
+    
+     - Description: **leave blank**.
+    
+      - In the Conditions section select the **Add condtion** then select content contains.
+    
+        - In the **Content contains** field select the **Add** drop-down menu, then select **Sensitive info types**.
         
-    Select **Back** if you need to correct any settings, and then select **Create** once you’re satisfied with the settings.
+        - In the **Sensitive info types** pane, type Ip address inside the **Search** field.
+        
+        - Select **Ip Address**, then select **Add**.
+    
+     - In the **Actions** section, select the **Add an action** drop-down menu. Then select **Restrict access or encrypt the content in Microsoft locations**.
+    
+     - In the **User notifications** section, set the **Use notifications to inform your users and help educate them on the proper use of sensitive info** to the **On** position.
+    
+    - In the **Incident reports** section, set the **Sent an alert to admins when a rul match occurs** to the **On** position.
+
+11. On the **Customize advanced DLP rules** page, select **Next**.
+
+12. On the **Test or turn on the policy** page, select the **Turn it on right away** option, then select **Next**.
+
+13. Check the configuration on the **Review your settings** page. Then select **Submit**.
+
 
 You have now created a DLP policy that scans for IP addresses in emails and documents that are sent or shared in your organization.
 
