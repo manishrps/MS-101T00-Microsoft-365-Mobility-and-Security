@@ -64,11 +64,11 @@ To use Microsoft's Attack simulation training feature to simulate a phishing att
 
 27. If a **Get your work done with Office 365** window appears, then close it now. 
 
-28. On the **Microsoft Office Home** tab, in the column of Microsoft 365 app icons that appears on the left side of the screen, select the **Admin** icon, which is the last icon in the list. This opens the **Microsoft 365 admin center** in a new browser tab. 
+28. On the **Microsoft Office Home** tab, in the column of Microsoft 365 app icons that appears on the left side of the screen, select the **Admin** icon, which is the last icon in the list. This opens the **Microsoft 365 admin center** in a new browser tab. This will prepare you for future lab exercises that require the Microsoft 365 admin center.
 
-29. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** and then select **Security**. The **Microsoft 365 Defender** portal should now be displayed in your browser. You will resume from here in the next task when you launch a spear phishing attack using the Attack Simulator.  
+29. Select a new tab in your **Edge** browser and enter the following URL in the address bar: **https://security.microsoft.com**. This will open the **Microsoft 365 Defender** portal. You will resume from here in the next task when you launch a spear phishing attack using Attack simulation training.  
 
-30. You have now configured MFA, you have signed into the **Microsoft 365 Defender** portal using MFA, and you are ready to run the Attack simulator training. Leave everything as is in your VM and proceed to the next task.
+30. You have now configured MFA for Holly Dickson, you have signed into the **Office 365** portal as Holly using MFA, you have opened the Microsoft 365 admin center for future labs, and and you are ready to run the Attack simulator training in the Microsoft 365 Defender portal. Leave everything as is in your VM and proceed to the next task.
 
 
 ### Task 2: Configure and launch a Spear Phishing attack
@@ -77,7 +77,7 @@ Now that Holly has turned on MFA, she is ready to run Microsoft 365's Attack sim
 
 1. You should still be on **LON-CL1**, and you should still be logged in as the **Admin** account. If necessary, log in as the **Admin** with a password of **Pa55w.rd**.
 
-2. You should still have the **Microsoft 365 Defender** portal open in in your **Edge** browser from the prior task. If not, enter **https://security.microsoft.com** in the address bar, and then when you receive the dialog box asking for a second form of authentication, proceed through the verification process. 
+2. You should still have the **Microsoft 365 Defender** portal open in in your **Edge** browser from the prior task. If not, enter **https://security.microsoft.com** in the address bar, and then if you receive the dialog box asking for a second form of authentication, proceed through the verification process. 
 
 3. In the **Microsoft 365 Defender** portal, under **Email & collaboration** in the left-hand navigation pane, select **Attack simulation training**. 
 
