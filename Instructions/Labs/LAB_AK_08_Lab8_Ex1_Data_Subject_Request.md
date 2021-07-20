@@ -6,7 +6,7 @@ Data subject requests (DSRs) are used to search for and extract all known inform
 
 ### Task 1 – Create a GDPR Data Subject Request
 
-Holly Dickson is Adatum’s Enterprise Administrator. In her role as the company’s Microsoft 365 Enterprise Administrator, she is responsible for implementing Adatum’s Microsoft 365 pilot project. Since Adatum has several European subsidiaries, properly managing GDPR data subject requests is a key task that must be tested so the company can successfully implement this feature in accordance with EU law. In this task, Holly will create a DSR for herself on behalf of a request made by Adatum's Human Resources department.
+Holly Dickson is Adatum’s Enterprise Administrator. In her role as the company’s Microsoft 365 Enterprise Administrator, she is responsible for implementing Adatum’s Microsoft 365 pilot project. Holly wants to use this project to test Microsoft 365 search functionality; specifically, by creating a search request for her own personal data. 
 
 **Note:** To perform this task, Holly must be assigned to the eDiscovery Manager role group so that she has the necessary permissions. You added Holly to this role group in Lab 1 at the same time that you added Joni Sherman to the role group. The reason why you were instructed to add Holly to the eDiscovery Manager role group in Lab 1 rather than at the start of this lab is that it can sometimes take up to an hour or more for permissions to successfully propagate. If you had assigned Holly to this role group just prior to this query, you would have received error messages involving parameter fields because her permissions would not have completed propagating. By adding Holly to this role group at the start of this course, enough time will have elapsed between then and now for the propagation to complete. 
 
@@ -16,7 +16,7 @@ Holly Dickson is Adatum’s Enterprise Administrator. In her role as the company
 
 3. In the **Office 365 Security and Compliance** center, in the left-hand navigation pane select **Data privacy**, and then under it select **Data subject requests**. 
 
-4. In the **Data subject requests** window, select the **+New DSR case** button on the menu bar. This initiates the **New DSR case** wizard.
+4. In the **Data subject requests** window, select **+Create a case** on the menu bar. This initiates the **New DSR case** wizard.
 
 5. In the **Name your case** page, enter the following information and then select **Next**:
 
