@@ -1,4 +1,4 @@
-# Module 5 - Lab 5 - Exercise 2 - Configure Retention Tags and Policies  
+# Learning Path 4 - Lab 4 - Exercise 4 - Configure Retention Tags and Policies  
 
 In this exercise, you will implement archiving with MRM retention tags. You will then configure retention tags and policies through two different ways - first, through the Exchange Admin Center, and second, through the Microsoft 365 Compliance Center. 
 
