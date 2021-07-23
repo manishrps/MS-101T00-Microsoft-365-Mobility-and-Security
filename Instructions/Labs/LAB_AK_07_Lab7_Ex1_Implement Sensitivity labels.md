@@ -155,7 +155,9 @@ In this exercise you will create an Sensitivity Label and add it to the default 
 
 **STOP!!** As mentioned at the start of this lab exercise, now that you have created a sensitivity label and assigned it to the default policy, you must wait 24 hours for the label and label policy to propagate through the system before you can perform the next two tasks in this exercise. 
 
-**Do NOT proceed to the next task!** You can continue with the training course and perform the next series of lab exercises. However, when you reach a good break time tomorrow, you should return to this lab exercise and continue with Task 3. When you get to step 14, if you do NOT see the **Sensitiviy** group in the Word ribbon, then you must wait until such time that it appears. **The appearance of the Sensitivity group in the Word ribbon is the indicator as to whether the sensitivity label has completed its behind-the-scenes provisioning,** at which time you can complete tasks 3 and 4 of this lab exercise. 
+**Do NOT proceed to the next task!** You can continue with the training course and perform the next series of lab exercises. However, when you reach a good break time tomorrow, you should return to this lab exercise and complete Tasks 3 adn 4. In Task 3, when you get to step 14, if you do NOT see the **Sensitiviy** group in the Word ribbon, then you must wait until such time that it appears. 
+
+**IMPORTANT: The appearance of the Sensitivity group in the Word ribbon is the indicator as to whether the sensitivity label has completed its behind-the-scenes provisioning,** at which time you can complete tasks 3 and 4 of this lab exercise. 
 
 
 ### Task 3 – Assign your Sensitivity Label to a document
