@@ -37,11 +37,39 @@ In this task, you will turn on Windows Defender for Office 365, which provides a
 
 18. On the **Review your settings** page, review the options that you selected. If any need to be corrected, select the appropriate **Edit** option and make the correction. If they all appear correct, select **submit**.
 
+**Note:** If you receive a Client Error dialog box that indicates an error occurred when creating the policy, then the permissions assigned to Holly through the Organization Management role haven’t fully propagated through the system. For this lab, instead of waiting an hour or so for this permission replication to occur, select OK in this dialog box and then perform the following PowerShell commands that will enable you to customize organization management objects. Once you’ve completed these steps, you will resubmit the Review page to save the malware policy that you just created.
+
+- On LabVM, you must open an elevated instance of Windows PowerShell. Select the magnifying glass (Search) icon on the taskbar at the bottom of the screen ad type powershell in the Search box that appears. In the list of search results, right-click on Windows PowerShell (do NOT select Windows PowerShell ISE) and select Run as administrator in the drop-down menu.
+
+- Maximize your PowerShell window. In Windows PowerShell, at the command prompt, type the following command and press Enter:
+```
+Install-Module -name Exchangeonlinemanagement
+```
+- If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery), enter A to select [A] Yes to All.
+
+- At the command prompt, type the following command and press Enter:
+```
+Connect-exchangeonline
+```
+- A Microsoft 365 Sign in window will appear. Enter in the username for **Holly Dickson** and then select Next.
+
+- In the Enter password window, enter the password **Pa55.wd**, and then select Sign in. It may take a moment to sign in before it returns a command prompt.
+
+- At the command prompt, type the following command and press Enter (Note: This command may fail the first time. If it fails, re-run this step until it returns a successful result (the command prompt appears with no errors); testing shows that it sometimes takes two attempts):
+```
+Enable-OrganizationCustomization
+```
+- Close the PowerShell window.
+
+- Return to your Edge browser and the Review page for your new policy. Select Submit to resubmit your policy. This time the policy should be successfully saved.
+
 19. If a **Security & Compliance** dialog box appears with a message about updating your organization settings, select **Yes**.
 
       It may take a minute or so to update the organization settings. Once the settings are updated, the **AttachmentPolicy1** policy that you created will appear in the Safe attachments list. 
 
 20. Leave the Client 1 VM and the Security &amp; Compliance Center tab open for the next lab.
+
+
 
 **NOTE:** Unfortunately, we are unable to create a training lab in which you can validate the Safe Attachments policy that you just created. To do so, you must send an email that contains a malicious attachment. There are some common test viruses that are available, such as the EICAR test virus; however, with well-known test viruses such as EICAR, the messages in which they are attached get quarantined before they can be processed by Windows Defender for Office 365. Since the Safe Attachments functionality is meant to protect against unknown and zero-day viruses and malware, it is very difficult, and not recommended, to create such an attachment.
 
