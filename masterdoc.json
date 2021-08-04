@@ -1,0 +1,117 @@
+[
+  {
+    "Name": "MS-101 : Microsoft 365 Mobility and Security",
+    "Language": "English",
+    "BaseURL": "https://github.com/MicrosoftLearning/MS-101T00-Microsoft-365-Mobility-and-Security",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_01_Lab1_Ex1_Set_Up_Tenant.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_01_Lab1_Ex2_PIM.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_02_Lab2_Ex1_Safe_Attachments.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_02_Lab2_Ex2_Safe_Links.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_03_Lab3_Ex1_AttackSim_Phishing_attack.md",
+        "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_03_Lab3_Ex2_AttackSim_PW_attack.md",
+        "Order": 6
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_03_Lab3_Ex3_Prepare_Alert_Policies.md",
+        "Order": 7
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_03_Lab3_Ex4_Mailbox_Permission_Alert.md",
+        "Order": 8
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_03_Lab3_Ex5_SharePoint_Permission_Alert.md",
+        "Order": 9
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_03_Lab3_Ex6_eDiscovery_Alert.md",
+        "Order": 10
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_04_Lab4_Ex1_Message_Encryption.md",
+        "Order": 11
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_04_Lab4_Ex2_IRM.md",
+        "Order": 12
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_05_Lab5_Ex1_Compliance.md",
+        "Order": 13
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_05_Lab5_Ex2_Retention_Tags_Policies.md",
+        "Order": 14
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_06_Lab6_Ex1_Manage_DLP_Policies.md",
+        "Order": 15
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_06_Lab6_Ex2_Test_MRM%20_DLP_Policies.md",
+        "Order": 16
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_07_Lab7_Ex1_Implement_AIP.md",
+        "Order": 17
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_07_Lab7_Ex2_Implement_WIP.md",
+        "Order": 18
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_08_Lab8_Ex1_Data_Subject_Request.md",
+        "Order": 19
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_08_Lab8_Ex2_Microsoft_365_Data.md",
+        "Order": 20
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_09_Lab9_Ex1_Configure_Microsoft_Store.md",
+        "Order": 21
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_09_Lab9_Ex2_Manage_Microsoft_Store.md",
+        "Order": 22
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_11_Lab10_Ex1_Device_Management.md",
+        "Order": 23
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_11_Lab10_Ex2_Configure_Azure_AD.md",
+        "Order": 24
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_11_Lab10_Ex3_Create_Intune_Policies.md",
+        "Order": 25
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_11_Lab10_Ex4_Enroll_Win10_Device.md",
+        "Order": 26
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-101T00-Microsoft-365-Mobility-and-Security/master/Instructions/Labs/LAB_AK_11_Lab10_Ex5_Manage_Device_in_Intune.md",
+        "Order": 27
+      }
+    ]
+  }
+]
