@@ -16,7 +16,10 @@ Once you launch the lab, you can obtain your **Office 365 credentials** from the
 
    ![](images/select-edge.png) 
 
-2. In your browser go to the **Microsoft Office Home** page by entering the following URL in the address bar: ```https://portal.office.com/```. 
+2. In your browser go to the **Microsoft Office Home** page by entering the following URL in the address bar: 
+	```
+	https://portal.office.com/
+	``` 
 
 3. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (**odl_user_DID@xxxxx.onmicrosoft.com**) and then select **Next**.
 
@@ -92,9 +95,12 @@ Once you launch the lab, you can obtain your **Office 365 credentials** from the
 
 In your role as Holly Dickson, Adatum's Enterprise Administrator, you have been tasked with setting up the company's profile for its Microsoft 365 trial tenant. In this task, you will configure the required options for Adatum's tenant. Holly will initially sign into Microsoft 365 as the default Microsoft 365 ODL_user Administrator account using the **username** and **password** that you copied in **Task 1**.
 
-1. If not already open from your browser go to the **Microsoft Office Home** page by entering the following URL in the address bar: ```https://portal.office.com/```. 
+1. If not already open from your browser go to the **Microsoft Office Home** page by entering the following URL in the address bar: 
+	```
+	https://portal.office.com/
+	``` 
 
-2. On the **Microsoft Office Home** tab, in the column of **Microsoft 365 app** icons that appear on the left side of the screen, scroll down and select the **Admin** icon; this opens the **Microsoft 365 admin center** in a new browser tab.
+3. On the **Microsoft Office Home** tab, in the column of **Microsoft 365 app** icons that appear on the left side of the screen, scroll down and select the **Admin** icon; this opens the **Microsoft 365 admin center** in a new browser tab.
 
    ![](images/select-admin.png)
 
@@ -229,7 +235,12 @@ In the prior task, you successfully added the Global administrator role to Holly
 
 2. In the **Microsoft 365 admin center**, in the left-hand navigation pane under **Admin centers**, select **Security**.
 
-**Note:** If you are redicted to the **Microsoft 365 Defender** page instead of **Office 365 Security & Compliance center**, Navigate to the  ```https://protection.office.com/```.
+**Note:** If you are redirected to the **Microsoft 365 Defender** page instead of **Office 365 Security & Compliance center**, Navigate to the  
+
+	```
+	https://protection.office.com/
+	
+	```
 
 3. In the **Office 365 Security & Compliance center**, select **Permissions** in the left-hand navigation pane.
     
@@ -371,7 +382,11 @@ In Lab 3, you will create Alert Policies using the Security and Compliance Cente
 
 2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **Security**. This will open the Office 365 Security and Compliance center.
 
-**Note:** If you are redicted to the **Microsoft 365 Defender** page instead of **Office 365 Security & Compliance center**, Navigate to the  ```https://protection.office.com/```.
+**Note:** If you are redirected to the **Microsoft 365 Defender** page instead of **Office 365 Security & Compliance center**, Navigate to the 
+	```
+	https://protection.office.com/
+	
+	```
 
 3. In the **Office 365 Security &amp; Compliance center**, in the left-hand navigation pane, select **Search**, and then under it, select **Audit log search**.
 
@@ -389,7 +404,11 @@ In Module 8, you will perform a Content Search lab that requires that Joni Sherm
 
 2. In your **Microsoft Edge** browser, you should still have the **Office 365 Security and Compliance Center** open in a tab from the prior task. If you closed that tab, then in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Security**.
 
-**Note:** If you are redicted to the **Microsoft 365 Defender** page instead of **Office 365 Security & Compliance center**, Navigate to the  ```https://protection.office.com/```.
+**Note:** If you are redirected to the **Microsoft 365 Defender** page instead of **Office 365 Security & Compliance center**, Navigate to the 
+	```
+	https://protection.office.com/
+	
+	```
 
 3. In the **Office 365 Security and Compliance Center**, in the left-hand navigation pane, select **Permissions.**
 
