@@ -47,7 +47,7 @@ Holly Dickson, Adatum's Enterprise Administrator, wants to limit access to this 
 
 9. In the **Edit role setting - Global Administrator** window, select the **Require Approval to activate** check box. 
 
-    ![](images/require-approval-to activate.png)
+   ![](images/require-approval-to activate.png)
 
 10. In the **Select approver(s)** section, no specific approver has been selected. Holly wants to assign herself as the approver for this role, so select this section. In the **Select a member** pane that opens on the right, scroll down through the list of users and select **Holly Dickson**, and then select the **Select** button.
 
