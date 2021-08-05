@@ -123,11 +123,11 @@ Now that Patti Fernandez has been made an eligible user for the Global administr
 
 9. In the **My roles | Azure AD roles** window, the **Eligible assignments** tab is displayed by default. Since Holly assigned Patti as an eligible user for the Global Administrator role, this role appears in the list. Under the **Action** column for the Global Administrator role, select **Activate**.
 
-   ![](images/activate-global.png)
+      ![](images/activate-global.png)
 
 10. In the **Activate - Global Administrator** pane, a warning message is displayed at the top of the pane indicating additional verification is required. Select this message, which is hyperlinked.
 
-   ![](images/click-to-continue.png)
+      ![](images/click-to-continue.png)
 
 11. In the **More information required** window that appears, select **Next**. 
 
