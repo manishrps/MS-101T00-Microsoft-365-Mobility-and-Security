@@ -13,50 +13,84 @@ In this lab, you will perform the basic steps involved in implementing PIM for a
 
 In this exercise, you will perform these tasks for the Global administrator role. Holly will take on the role of the approver, and Patti Fernandez will be the user requesting access to the role.
 
-**IMPORTANT:** In Task 3, Patti Fernandez will submit a request to be assigned the Global administrator role. The activation request process is set up to require Multi-Factor Authentication (MFA). If you do not have a phone to complete this process, notify your instructor. You can still complete Tasks 1 and 2, and you may be able to partner up with another student to watch them complete the remaining tasks.
+**IMPORTANT:** In Task 4, Patti Fernandez will submit a request to be assigned the Global administrator role. The activation request process is set up to require Multi-Factor Authentication (MFA). If you do not have a phone to complete this process, notify your instructor. You can still complete Tasks 1 and 2, and you may be able to partner up with another student to watch them complete the remaining tasks.
 
+### Task 1 - Disable Security Defaults
 
-### Task 1 - Configure the Global Administrator role to require approval
+Before moving on to the tasks of this lab we will first **disable security defaults** from **Azure Active Directory**.
+
+1. In your Edge browser go to the **Microsoft Office Home** page by entering the following URL in the address bar: 
+   ```
+   https://portal.office.com/
+   ``` 
+2. You should be logged into Microsoft 365 as the **ODL_user Administrator**.
+  
+3. In your browser, select the **Microsoft 365 admin center** tab. In the left-hand navigation pane under the **Admin centers** section, select **Azure Active Directory**
+
+   ![](images/azure-ad-pim.png)
+
+4. In the **Azure Active Directory admin center**, in the left-hand navigation pane, select **All services**.
+
+5. On the **All services** page, scroll down and select **Tenant Properties**. 
+
+   ![](images/tenant-properties.png)
+
+6. On the **Tenant Properties** scroll down and select **(1) Manage Security defaults**, On the **Enable Security defaults** pane select **(2) No**. Check the **(3) Other** box and enter **(4) NA** as the comment and finally select **(5) Save**.
+
+   ![](images/disable-default.png)
+
+7. You must now sign out of Microsoft 365 as the **ODL_user Administrator**, After signing out close your browser session (to clear cache) for the next task.
+
+### Task 2 - Configure the Global Administrator role to require approval
 
 Since the Microsoft 365 Global Administrator role provides a user with basically unlimited access to all Microsoft 365 resources, the number of users assigned to this role should obviously be kept to a minimum for security purposes. 
 Holly Dickson, Adatum's Enterprise Administrator, wants to limit access to this role using Privileged Identity Management. To do so, she must first configure the role to require approval before it can be assigned as an eligible role for a user, and then she wants to assign herself as the approver whenever an eligible user requests activating the role.
 
-1. You should be logged into Microsoft 365 as **Holly Dickson** from the previous lab exercise.
+1. On your Edge browser go to the **Microsoft Office Home** page by entering the following URL in the address bar: 
+   ```
+   https://portal.office.com/
+   ``` 
 
-2. In your browser, select the **Microsoft 365 admin center** tab. In the left-hand navigation pane under the **Admin centers** section, select **Azure Active Directory**
+2. Sign in as **Holly Dickson**, You can fetch the username from the **environment details tab**.
 
-3. In the **Azure Active Directory admin center**, in the left-hand navigation pane, select **All services**.
+   ![](images/holly-username.png)
 
-4. In the **All services** window, the services are separated into three sections - General, Identity, and Services. Under the **Identity** section, select **Azure AD Privileged Identity Management**.
+**Note:** Do not copy the password from the environment details page as we have already reset the password to **Pa55w.rd** in exercise 1.
+
+3. In your browser, select the **Microsoft 365 admin center** tab. In the left-hand navigation pane under the **Admin centers** section, select **Azure Active Directory**
+
+4. In the **Azure Active Directory admin center**, in the left-hand navigation pane, select **All services**.
+
+5. In the **All services** window, the services are separated into three sections - General, Identity, and Services. Under the **Identity** section, select **Azure AD Privileged Identity Management**.
 
    ![](images/services-adpim.png)
 
-5. In the **Privileged Identity Management | Quick start** window, note how the window is divided into three parts - the navigation pane on the left, the middle pane (which provides navigation options for this page), and the detail pane on the right. <br/>
+6. In the **Privileged Identity Management | Quick start** window, note how the window is divided into three parts - the navigation pane on the left, the middle pane (which provides navigation options for this page), and the detail pane on the right. <br/>
 
     In the middle pane under the **Manage** section, select **Azure AD roles**.
 
     ![](images/azure-ad-roles.png)
 
-6. In the **Adatum Corporation | Quick start** window, in the middle pane under the **Manage** section, select **Settings**. 
+7. In the **Adatum Corporation | Quick start** window, in the middle pane under the **Manage** section, select **Settings**. 
 
-7. In the **Adatum Corporation | Settings** window, select the **Global Administrator** role.
+8. In the **Adatum Corporation | Settings** window, select the **Global Administrator** role.
 
    ![](images/Global-admin-setting.png)
 
-8. In the **Role setting details -  Global Administrator** window, select **Edit** on the menu bar at the top of the page.
+9. In the **Role setting details -  Global Administrator** window, select **Edit** on the menu bar at the top of the page.
 
-9. In the **Edit role setting - Global Administrator** window, select the **Require Approval to activate** check box. 
+10. In the **Edit role setting - Global Administrator** window, select the **Require Approval to activate** check box. 
 
-   ![](images/require-approval-to-activate.png)
+      ![](images/require-approval-to-activate.png)
 
-10. In the **Select approver(s)** section, no specific approver has been selected. Holly wants to assign herself as the approver for this role, so select this section. In the **Select a member** pane that opens on the right, scroll down through the list of users and select **Holly Dickson**, and then select the **Select** button.
+11. In the **Select approver(s)** section, no specific approver has been selected. Holly wants to assign herself as the approver for this role, so select this section. In the **Select a member** pane that opens on the right, scroll down through the list of users and select **Holly Dickson**, and then select the **Select** button.
 
-11. In the **Edit role setting - Global Administrator** window, select **Update**.
+12. In the **Edit role setting - Global Administrator** window, select **Update**.
 
-12. Leave all browser tabs open for the next task.
+13. Leave all browser tabs open for the next task.
 
 
-### Task 2 - Assign an eligible user to the Global Admin role
+### Task 3 - Assign an eligible user to the Global Admin role
 
 For Adatum's PIM pilot project, Holly has selected Patti Fernandez as the sole user who will be eligible to be assigned the Global admin role. In this task, Holly will enable Patti to be eligible for the Global admin role.
 
@@ -93,7 +127,7 @@ For Adatum's PIM pilot project, Holly has selected Patti Fernandez as the sole u
 12. Leave all browser tabs open for the next task.
 
 
-### Task 3 - Submit a request for the Global Admin role
+### Task 4 - Submit a request for the Global Admin role
 
 Now that Patti Fernandez has been made an eligible user for the Global administrator role, Holly wants to test out the PIM process in her pilot project. In this task, Patti will submit a request to be assigned Global administrator role privileges. In the next task, Holly will review her request and approve it.
 
@@ -164,7 +198,7 @@ Now that Patti Fernandez has been made an eligible user for the Global administr
 19. Leave the InPrivate browser session open. You will return to it in the next task once Holly approves Patti's request.
 
 
-### Task 4 -  Approve the request for the Global Admin role
+### Task 5 -  Approve the request for the Global Admin role
 
 Back in Task 1, Holly set herself up as the approver for the Global Administrator role. Since Patti has submitted a request to be assigned this role, Holly must review the request and determine whether to accept or deny it. 
 
