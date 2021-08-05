@@ -19,7 +19,6 @@ In this exercise, you will perform these tasks for the Global administrator role
 ### Task 1 - Configure the Global Administrator role to require approval
 
 Since the Microsoft 365 Global Administrator role provides a user with basically unlimited access to all Microsoft 365 resources, the number of users assigned to this role should obviously be kept to a minimum for security purposes. 
-
 Holly Dickson, Adatum's Enterprise Administrator, wants to limit access to this role using Privileged Identity Management. To do so, she must first configure the role to require approval before it can be assigned as an eligible role for a user, and then she wants to assign herself as the approver whenever an eligible user requests activating the role.
 
 1. You should be logged into Microsoft 365 as **Holly Dickson** from the previous lab exercise.
@@ -30,17 +29,25 @@ Holly Dickson, Adatum's Enterprise Administrator, wants to limit access to this 
 
 4. In the **All services** window, the services are separated into three sections - General, Identity, and Services. Under the **Identity** section, select **Azure AD Privileged Identity Management**.
 
+   ![](images/services-adpim.png)
+
 5. In the **Privileged Identity Management | Quick start** window, note how the window is divided into three parts - the navigation pane on the left, the middle pane (which provides navigation options for this page), and the detail pane on the right. <br/>
 
     In the middle pane under the **Manage** section, select **Azure AD roles**.
+
+    ![](images/azure-ad-roles.png)
 
 6. In the **Adatum Corporation | Quick start** window, in the middle pane under the **Manage** section, select **Settings**. 
 
 7. In the **Adatum Corporation | Settings** window, select the **Global Administrator** role.
 
+   ![](images/Global-admin-setting.png)
+
 8. In the **Role setting details -  Global Administrator** window, select **Edit** on the menu bar at the top of the page.
 
 9. In the **Edit role setting - Global Administrator** window, select the **Require Approval to activate** check box. 
+
+    ![](images/require-approval-to activate.png)
 
 10. In the **Select approver(s)** section, no specific approver has been selected. Holly wants to assign herself as the approver for this role, so select this section. In the **Select a member** pane that opens on the right, scroll down through the list of users and select **Holly Dickson**, and then select the **Select** button.
 
@@ -61,7 +68,11 @@ For Adatum's PIM pilot project, Holly has selected Patti Fernandez as the sole u
 
 4. In the **Adatum Corporation | Quick start** window, the detail pane on the right displays the **Privileged Identity Management** window. This displays three groups - Assign, Activate, and Approve. Under the **Assign** group, select **Assign Eligibility**.
 
+   ![](images/assigneligibility.png)
+
 5. In the **Adatum Corporation | Roles** window, scroll down through the list of roles and select **Global Administrator**.
+
+   ![](images/Ga-roles.png)
 
 6. In the **Global Administrator | Assignments** window, select **+Add assignments** on the menu bar. 
 
@@ -74,6 +85,8 @@ For Adatum's PIM pilot project, Holly has selected Patti Fernandez as the sole u
 10. In the **Add assignments** window, under the **Settings** tab, verify the **Assignment type** option is set to **Eligible**, and then select **Assign**. 
 
 11. In the **Global Administrator | Assignments** window, note that Patti Fernandez is now an eligible user who can be assigned the Global Administrator role.
+
+    ![](images/patti-ga.png)
 
     **Note:** It can take 30 minutes for the **Pending Request** to be implemented.  Wait at least 10 minutes, then refresh the **Global Administrator | Assignments** window until you see Patti listed under the **Eligible assignments** tab.
 
@@ -106,7 +119,11 @@ Now that Patti Fernandez has been made an eligible user for the Global administr
 
 8. In the **Privileged Identity Management | Quick start** window, in the **Tasks** section in the left-hand navigation pane, select **My Roles**.
 
+   ![](images/my-roles-pim.png)
+
 9. In the **My roles | Azure AD roles** window, the **Eligible assignments** tab is displayed by default. Since Holly assigned Patti as an eligible user for the Global Administrator role, this role appears in the list. Under the **Action** column for the Global Administrator role, select **Activate**.
+
+   ![](images/activate-global.png)
 
 10. In the **Activate - Global Administrator** pane, a warning message is displayed at the top of the pane indicating additional verification is required. Select this message, which is hyperlinked.
 
@@ -134,6 +151,8 @@ Now that Patti Fernandez has been made an eligible user for the Global administr
 
 22. In the **Activate - Global Administrator** pane that appears, enter **Testing PIM** in the **Reason** field, and then select the **Activate** button at the bottom of the pane.
 
+   ![](images/activate-testing-pim.png)
+
 23. On the **My roles | Azure AD roles** window, the **Eligible assignments** tab is displayed on the menu bar. Select the **Active assignments** tab that appears next to it. Note that no roles appear. <br/>
 
      **Note:** If you recall, back in Task 1 Holly set up the Global Administrator role so that activation to a user account will require approval. What Patti just did was request that the Global Admin role be activated for her user account. This will send a request to Holly, who can then either approve or deny Patti's request for role activation. Holly will review this request in the next task.
@@ -145,7 +164,7 @@ Now that Patti Fernandez has been made an eligible user for the Global administr
 
 Back in Task 1, Holly set herself up as the approver for the Global Administrator role. Since Patti has submitted a request to be assigned this role, Holly must review the request and determine whether to accept or deny it. 
 
-1.  In LON-CL1, you currently have the InPrivate Browser session open. Select the Edge icon on your taskbar to see windows for the two Edge sessions that you have open - the window on the left is the original Edge browser session in which you are signed into **Microsoft 365** as **Holly Dickson**, and the window on the right is the InPrivate Browser session in which you are signed into **Azure AD** as **Patti Fernandez**. Select the window on the left to go back to the original Edge browser session in which you are signed in as **Holly Dickson**. 
+1.  In LabVM, you currently have the InPrivate Browser session open. Select the Edge icon on your taskbar to see windows for the two Edge sessions that you have open - the window on the left is the original Edge browser session in which you are signed into **Microsoft 365** as **Holly Dickson**, and the window on the right is the InPrivate Browser session in which you are signed into **Azure AD** as **Patti Fernandez**. Select the window on the left to go back to the original Edge browser session in which you are signed in as **Holly Dickson**. 
 
 2.  In your browser, select the **Global Administrator | Assignments** tab. This should display the **Global Administrator | Assignments** window in the **Azure Active Directory admin center**. <br/>
 
