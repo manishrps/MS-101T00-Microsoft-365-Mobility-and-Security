@@ -8,19 +8,26 @@ Now that you have created a Safe Attachments policy for Adatum, you want to crea
 
 In this task, you will create a Safe Links policy that applies to all users in your tenant. You will then add the **http://tailspintoys.com** URL to the company-wide list of blocked URLs that you will define in the Safe Links global settings. The blocked URLs and other options defined in the Safe Links global settings are only applied to users who are included in active Safe Links policies. There is no built-in or default Safe Links policy, so you must create at least one Safe Links policy for these global settings to be active.  
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **Admin** account, and you should still be logged into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into Microsoft 365 as **Holly Dickson**.
 
-2. After finishing the previous task, you should still be in the **Microsoft 365 Security and Compliance center**. If not, in your browser, enter **https://protection.office.com.**
-
+2. After finishing the previous task, you should still be in the **Microsoft 365 Security and Compliance center**. If not, in your browser, enter 
+   ```
+   https://protection.office.com
+   ```
+   
 3. In the **Security &amp; Compliance center**, in the left-hand navigation pane, the **Threat Management** group should still be expanded from the prior task; if not, expand it now. Under this group, select **Policy**.
 
 4. In the **Policy** window, double-click the **Safe Links** tile. 
 
 5. On the **Safe links** page, select **+Create** on the menu bar. This initiates the **Create Safe Links Policy** wizard.
 
-5. On the **Name your policy** page, enter **LinkPolicy1** in the **Name** field and then select **Next**.
+    ![](images/safe-links-policy-create.png)
 
-6. On the **Settings** page, enter the following settings and then select **Next**: 
+6. On the **Name your policy** page, enter **LinkPolicy1** in the **Name** field and then select **Next**.
+
+7. On the **Users and domains** page, in the **domians** field type **onmicrosoft.com**. Then select the **onmicrosoft.com** domain. Select **Next**.
+
+8. On the **Protection settings** select the following settings and then select **Next**:
 
     - Select the action for unknown or potentially malicious URLs in messages - **On**
     - Select the action for unknown or potentially malicious URLs within Microsoft Teams - **Off**
@@ -28,23 +35,23 @@ In this task, you will create a Safe Links policy that applies to all users in y
     - Wait for URL scanning to complete before delivering the message - **select this check box**
     - Apply safe links to email messages sent within the organization - **select this check box**
     - Do not track user clicks - **select this check box**
-    - Do not allow users to click through to original URL - **select this check box**
-   
-7. On the **Applied to** page, select **+Add a condition**. In the drop-down menu that appears, under the **Applied if...** section, select **The recipient domain is**
+    - Do not let users to click through to original URL - **select this check box**
 
-8. In **The recipient domain is** section, select the **Choose** link to choose a domain. 
+    ![](images/safe-links-policy-create-2.png)
 
-9. In **The recipient domain is** window, select the **+Add** button. In the list of domains that appear, select the check box for the **xxxxxZZZZZZ.onmicrosoft.com** domain (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), select **Add**, and then select **Done**.
+9. On the **Notification** page, select **Use the default notification text** and select **next**.
 
-10. On the **Applied to** page, select **Next**.
+10. On the **Review your settings** page, review the options that you selected. If any need to be corrected, select the appropriate **Edit** option and make the correction. If they all appear correct, select **Submit**. Once the **LinkPolicy1** policy is created, select **Close**.
 
-11. On the **Review your settings** page, review the options that you selected. If any need to be corrected, select the appropriate **Edit** option and make the correction. If they all appear correct, select **Finish**. Once the **LinkPolicy1** policy is created, it will appear in the Safe links list. 
+11. On the **Safe links** page, select **Global settings** on the menu bar.
 
-12. On the **Safe links** page, select **Global settings** on the menu bar.
+    ![](images/safe-links-global-settings.png)
 
-13. In the **Safe Links policy for organization** pane that appears, enter **http://tailspintoys.com** in the **Block the following URLs** field, do NOT change the default settings for any of the other options, and then select **Save**.
+12. In the **Safe Links policy for organization** pane that appears, enter **http://tailspintoys.com** in the **Block the following URLs** field, do NOT change the default settings for any of the other options, and then select **Save**.
 
-14. Leave the Office 365 Security &amp; Compliance tab open for the next task.
+    ![](images/tailspin-link.png)
+
+13. Leave the Office 365 Security &amp; Compliance tab open for the next task.
 
 **STOP!!** As mentioned at the start of this lab exercise, now that you have created a Safe Links policy, you must wait at least 30 minutes for the policy to propagate through the system before you can perform the next task in this exercise. 
 
@@ -54,7 +61,7 @@ In this task, you will create a Safe Links policy that applies to all users in y
 
 In this task, you will test the Safe Links Policy that you just created that blocks links to the http://tailspintoys.com URL.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
+1. You should be logged into Microsoft 365 as **Holly Dickson**.
 
 2. In your **Microsoft Edge** browser, select the **Microsoft Office Home** tab and then in the column of app icons on the left side of the screen, select the **Outlook** icon.
 
@@ -64,7 +71,7 @@ In this task, you will test the Safe Links Policy that you just created that blo
 
 5. In the email form that appears in the right-hand pane, enter the following information:
 
-    - To: You will be sending an email to the MOD Administrator, so enter **mod** in the **To** field and then select the **MOD Administrator** email address from the user list.
+    - To: You will be sending an email to the ODL_user Administrator, so enter **ODL** in the **To** field and then select the **ODL_user Administrator** email address from the user list.
 
     - Add a subject: **Free stuff for Adatum users**
 
@@ -74,7 +81,11 @@ In this task, you will test the Safe Links Policy that you just created that blo
 
 7. Below the body of the message is a long row of formatting icons. Select the **Insert link** icon, which depicts two overlapping circles.
 
+    ![](images/send-message-odl.png)
+
 8. In the **Insert link** window, the text that you highlighted in the body of the message should be displayed in the **Display as** field. In the **Web address (URL)** field, enter the following URL: **http://tailspintoys.com/aboutus/freetoys**.
+
+    ![](images/insert-link.png)
 
 9. Select **OK**.
 
@@ -82,34 +93,39 @@ In this task, you will test the Safe Links Policy that you just created that blo
 
 11. Select either **Send** button (top or bottom of the form).
 
-12. You now want to go the MOD Administrator's Inbox in Outlook and validate whether the Safe Links policy you created in the prior task worked on the email that you just sent from Holly to the MOD Administrator.<br/>
+    ![](images/send-message.png)
 
-    To do this, you must first switch the Client 2 VM (**LON-CL2**). 
+12. You now want to go the **ODL_user** Administrator's Inbox in Outlook and validate whether the Safe Links policy you created in the prior task worked on the email that you just sent from Holly to the ODL_user Administrator.<br/>
 
-13. Log into the LON-CL2 VM as the **Admin** account by entering **Pa55w.rd** in the **Password** field.
+    To do this, you must first switch to another web broswer. 
 
-14. Select the **Microsoft Edge** icon in the taskbar, maximize the window and then enter the following URL in the address bar: **https://outlook.office365.com**
+13. Select the **Google Chrome** icon in the taskbar, maximize the window and then enter the following URL in the address bar: 
+    ```
+    https://outlook.office365.com
+    ```
+14. In the **Sign-in** window, enter **ODL_userDID@xxxxxZZZZZZ.onmicrosoft.com** and then select **Next**.
 
-15. In the **Sign-in** window, enter **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**.
+15. In the **Enter password** window, enter the tenant password provided in the **environment details tab** and select **Sign in**.
 
-16. In the **Enter password** window, enter the tenant password provided by your lab hosting provider and select **Sign in**.
+16. Close the **Let Microsoft Edge save and fill your password for this site next time?** banner by selecting **Never**.
 
-17. Close the **Let Microsoft Edge save and fill your password for this site next time?** banner by selecting **Never**.
+17. On the **Stay signed in?** dialog box, select the **Don't show this again** check box and then select **Yes.**
 
-18. On the **Stay signed in?** dialog box, select the **Don't show this again** check box and then select **Yes.**
+18. In the **Welcome** windows, select the X in the upper right corner to close the window.
 
-19. In the **Welcome** windows, select the X in the upper right corner to close the window.
+19. In the **ODL_user** Administrator's **Inbox**, open the email that was sent by Holly.
 
-20. In the MOD Administrator's **Inbox**, open the email that was sent by Holly.
+    ![](images/ODL-user-inbox.png)
 
-21. Select the hyperlink in the body of the message to open it. 
+20. Select the hyperlink in the body of the message to open it. 
 
-22. If a window opens indicating the new browser recommended by Microsoft is here, select **No thanks**. 
+21. If a window opens indicating the new browser recommended by Microsoft is here, select **No thanks**. 
 
-23. A new tab should open in your **Edge** browser that takes you to the URL you just saw in the prior step. This site should display the following warning message: **This website has been blocked per your organization's URL policy.** This not only indicates that opening this website might not be safe, but it also verifies that the Safe Links policy you just created is working properly.
+22. A new tab should open in your **Chrome** browser that takes you to the URL you just saw in the prior step. This site should display the following warning message: **This website has been blocked per your organization's URL policy.** This not only indicates that opening this website might not be safe, but it also verifies that the Safe Links policy you just created is working properly.
 
-24. In LON-CL2, leave the Edge browser and all its tabs open for the next lab. 
+    ![](images/blocked-website.png)
+
+23. Leave the Chrome browser and all its tabs open for the next lab. 
 
 
 # End of Lab 2
-
