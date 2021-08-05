@@ -37,11 +37,15 @@ In this task, you will turn on Windows Defender for Office 365, which provides a
 
 12. In the **Send the attachment to the following email address** field, enter **JoniS@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), and then select **Next**.
 
+    ![](images/policy-attachments.png)
+
 18. On the **Review your settings** page, review the options that you selected. If any need to be corrected, select the appropriate **Edit** option and make the correction. If they all appear correct, select **submit**.
 
 **Note:** If you receive a Client Error dialog box that indicates an error occurred when creating the policy, then the permissions assigned to Holly through the Organization Management role haven’t fully propagated through the system. For this lab, instead of waiting an hour or so for this permission replication to occur, select OK in this dialog box and then perform the following PowerShell commands that will enable you to customize organization management objects. Once you’ve completed these steps, you will resubmit the Review page to save the malware policy that you just created.
 
 - On LabVM, you must open an elevated instance of Windows PowerShell. Select the magnifying glass (Search) icon on the taskbar at the bottom of the screen ad type powershell in the Search box that appears. In the list of search results, right-click on Windows PowerShell (do NOT select Windows PowerShell ISE) and select Run as administrator in the drop-down menu.
+
+    ![](images/powershell-open.png)
 
 - Maximize your PowerShell window. In Windows PowerShell, at the command prompt, type the following command and press Enter:
 ```
