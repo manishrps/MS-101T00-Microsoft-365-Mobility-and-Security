@@ -105,7 +105,7 @@ Now that Patti Fernandez has been made an eligible user for the Global administr
 
 3. Copy the username of **Patti Fernandez** from the **environment details page**. 
 
-    ![](images/Patti-username.png)
+   ![](images/Patti-username.png)
 
 **Note:** Do not copy the password from the environment details page as we have already reset the password to **Pa55w.rd** in exercise 1.
 
@@ -131,33 +131,47 @@ Now that Patti Fernandez has been made an eligible user for the Global administr
 
 12. In the **Enter password** window, enter **Pa55w.rd** in the Password field and then select **Sign in**.
 
-13. On the **Microsoft Authenticator** page, you can download this mobile app or use a different method for MFA verification. For the purposes of this lab, we recommend you use your mobile phone so that you do not have to take time installing the Microsoft Authenticator app that you may not use again after this training class. Select the **I want to set up a different method** option at the bottom of the page. 
+13. On the **Help us protect your account** window appears. Select **Next**.
 
-14. On the **Choose a different method** dialog box that appears, select the drop-down arrow in the **Which method would you like to use?** field, select **Phone**, and then select **Confirm**. 
+   ![](images/help-holly-protect.png)
 
-15. In the **Phone** window that appears, under **What phone number would you like to use?** field, select your country or region, and then in the field next to it, enter your phone number (in the format **nnn-nnn-nnnn**). Verify the **Text me a code** option is selected and then select **Next**.
+14. On the **Microsoft Authenticator** page, you can download this mobile app or use a different method for MFA verification. Install the **Microsoft authenticator app** on your phone. Select **Next**.
 
-16. Retrieve the verification code from the text message that is sent to your phone.
+   ![](images/microsoft-auth-select.png)
 
-17. In the **Phone** window, enter the 6 digit verification code in the **Enter code** field and then select **Next**.
+15. On the **Authenticator App** dialog box that appears, Open your **Microsoft authenticator app** and select **+ Add account** followed by **Personal account** and select **Scan a QR code**. Select **Next** once you have scanned the QR code.
 
-18. Once verification is complete and you receive a message indicating your phone was registered successfully, select **Next**.
+   ![](images/scan-qr-code.png)
 
-19. On the **Success!** page, select **Done**.
+16. On the **Keep your account secure**, Under **Enter code** enter the code shown in the **Authenticator app** and select **Next**.
 
-20. If you receive a dialog box indicating your sign in has timed out, you will have to enter Patti's password of **Pa55w.rd** and then you will be sent another verification code to your phone. On the **Enter code** window, enter this new code and then select **Verify**. 
+   ![](images/enter-code-mfa.png)
 
-21. If you take too long to complete this process, the **Enter password** window will appear with a message indicating you took too long to complete the sign in process, so you will be timed-out. If this occurs, you must sign in again with Holly's password of **Pa55w.rd**. Another verification code will be texted to your phone, so enter it in the **Enter code** screen that appears and select **Verify**.
+17. In the **Phone** window that appears, under **What phone number would you like to use?** field, select your country or region, and then in the field next to it, enter your phone number (in the format **nnn-nnn-nnnn**). Verify the **Text me a code** option is selected and then select **Next**.
 
-22. In the **Activate - Global Administrator** pane that appears, enter **Testing PIM** in the **Reason** field, and then select the **Activate** button at the bottom of the pane.
+   ![](images/phone-code-mfa.png)
+
+18. Retrieve the verification code from the text message that is sent to your phone.
+
+19. In the **Phone** window, enter the 6-digit verification code in the **Enter code** field and then select **Next**.
+
+   ![](images/phone-code-mfa-2.png)
+
+20. On the **Success!** page, select **Done**.
+
+21. If you receive a dialog box indicating your sign in has timed out, you will have to enter Patti's password of **Pa55w.rd** and then you will be sent another verification code/approval notification to your phone. On the **Enter code** window, enter this new code and then select **Verify**. 
+
+22. If you take too long to complete this process, the **Enter password** window will appear with a message indicating you took too long to complete the sign in process, so you will be timed-out. If this occurs, you must sign in again with Patti's password of **Pa55w.rd**. Another verification code/approval notification will be sent to your phone, so enter it in the **Enter code** screen that appears and select **Verify**.
+
+23. In the **Activate - Global Administrator** pane that appears, enter **Testing PIM** in the **Reason** field, and then select the **Activate** button at the bottom of the pane.
 
    ![](images/activate-testing-pim.png)
 
-23. On the **My roles | Azure AD roles** window, the **Eligible assignments** tab is displayed on the menu bar. Select the **Active assignments** tab that appears next to it. Note that no roles appear. <br/>
+24. On the **My roles | Azure AD roles** window, the **Eligible assignments** tab is displayed on the menu bar. Select the **Active assignments** tab that appears next to it. Note that no roles appear. <br/>
 
      **Note:** If you recall, back in Task 1 Holly set up the Global Administrator role so that activation to a user account will require approval. What Patti just did was request that the Global Admin role be activated for her user account. This will send a request to Holly, who can then either approve or deny Patti's request for role activation. Holly will review this request in the next task.
 
-24. Leave the InPrivate browser session open. You will return to it in the next task once Holly approves Patti's request.
+25. Leave the InPrivate browser session open. You will return to it in the next task once Holly approves Patti's request.
 
 
 ### Task 4 -  Approve the request for the Global Admin role
