@@ -294,9 +294,11 @@ Each user is a key member of your pilot project team. While their user accounts 
 
 9. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users**, and then under it, select **Active users**.
 
-10. In the **Active Users** window, when you hover your mouse over a user's **Display name** (or you select the check mark field to the left of the **Display name**), a **key icon** appears to the right of the user's name. By selecting the key icon, you can reset a user's password. You need to reset Alex, Joni, Lynne, and Patti's passwords to **Pa55w.rd**.<br/>
+10. In the **Active Users** window, when you hover your mouse over a user's **Display name** (or you select the check mark field to the left of the **Display name**), a **key icon** appears to the right of the user's name. By selecting the key icon, you can reset a user's password. You need to reset **Alex, Joni, Lynne, and Patti's** passwords to **Pa55w.rd**.<br/>
 
     Select the key icon for **Alex Wilber**.
+
+    ![](images/alex-reset.png)
 
 11. In the **Reset password** pane for Alex, select **Let me create the password**, enter **Pa55w.rd** in the **Password** field, select and copy this value so that you can paste it in for Joni and Lynne's accounts, and then unselect the **Require this user to change their password when they first sign in** check box.
 
@@ -305,6 +307,8 @@ Each user is a key member of your pilot project team. While their user accounts 
 13. Repeat steps 10-12 for **Joni Sherman**, **Lynne Robbins**, and **Patti Fernandez**. For these three accounts, paste in the **Pa55w.rd** password that you copied for Alex. You do not need to change the password for the **ODL_user Administrator** because you must continue using the default password provided by your lab hosting provider for this tenant admin account.
 
 14. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Groups**, and then under it, select **Active groups**.
+
+    ![](images/active-users-group.png)
 
 15. In the **Active groups** window, select **Add a group** that appears on the menu bar.
 
@@ -359,7 +363,11 @@ In this task, you will turn on Information Rights Management (IRM) for SharePoin
 
 4. At the bottom of the **Settings** page is a sentence that says **Can’t find the setting you’re looking for? Go to the classic settings page.** In this sentence, select the hyperlinked text: **classic settings page**.
 
+   ![](images/sharepoint-setting.png)
+
 5. On the classic **Settings** page, scroll down to the **Information Rights Management (IRM)** section, select the **Use the IRM service specified in your configuration** option, and then select the **Refresh IRM Settings** button.
+
+   ![](images/irm-setting.png)
 
 6. This will return you to the top of the **Settings** page. You must scroll to the bottom of the page to select the **OK** button. In doing so, when you get to the **Information Rights Management (IRM)** section, verify the **Use the IRM service specified in your configuration** option is selected and a **We successfully refreshed your settings** message appears below the **Refresh IRM Settings** button. Continue scrolling to the bottom of the page and select **OK**. 
 
@@ -387,6 +395,8 @@ https://protection.office.com/
 
 3. In the **Office 365 Security &amp; Compliance center**, in the left-hand navigation pane, select **Search**, and then under it, select **Audit log search**.
 
+   ![](images/audit-log-search.png)
+
 4. In the **Audit log search** window, a warning message is displayed at the top of the page. Select the **Turn on auditing** button that appears on the right-side of this message, and then in the **Security &amp; Compliance** dialog box that appears, select **Yes** to confirm that your organization settings need to be updated. <br/>
 
 	**Note:** It may take several minutes for the setting to be updated, at which time the **Security &amp; Compliance** dialog box will disappear.
@@ -409,6 +419,8 @@ https://protection.office.com/
 3. In the **Office 365 Security and Compliance Center**, in the left-hand navigation pane, select **Permissions.**
 
 4. In the **Home &gt; Permissions** page, select the **eDiscovery Manager** check box.
+
+   ![](images/ediscovery.png)
 
 5. In the **eDiscovery Manager** pane that appears, scroll down to the **eDiscovery Manager** section and select **Edit**.
 
