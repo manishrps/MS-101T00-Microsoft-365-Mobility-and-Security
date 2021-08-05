@@ -363,7 +363,7 @@ In this task, you will turn on Information Rights Management (IRM) for SharePoin
 
 4. At the bottom of the **Settings** page is a sentence that says **Can’t find the setting you’re looking for? Go to the classic settings page.** In this sentence, select the hyperlinked text: **classic settings page**.
 
-   ![](images/sharepoint-setting.png)
+   ![](images/Sharepoint-setting.png)
 
 5. On the classic **Settings** page, scroll down to the **Information Rights Management (IRM)** section, select the **Use the IRM service specified in your configuration** option, and then select the **Refresh IRM Settings** button.
 
