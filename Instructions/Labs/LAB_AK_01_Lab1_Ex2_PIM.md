@@ -133,29 +133,29 @@ Now that Patti Fernandez has been made an eligible user for the Global administr
 
 13. On the **Help us protect your account** window appears. Select **Next**.
 
-   ![](images/help-holly-protect.png)
+      ![](images/help-holly-protect.png)
 
 14. On the **Microsoft Authenticator** page, you can download this mobile app or use a different method for MFA verification. Install the **Microsoft authenticator app** on your phone. Select **Next**.
 
-   ![](images/microsoft-auth-select.png)
+      ![](images/microsoft-auth-select.png)
 
 15. On the **Authenticator App** dialog box that appears, Open your **Microsoft authenticator app** and select **+ Add account** followed by **Personal account** and select **Scan a QR code**. Select **Next** once you have scanned the QR code.
 
-   ![](images/scan-qr-code.png)
+      ![](images/scan-qr-code.png)
 
 16. On the **Keep your account secure**, Under **Enter code** enter the code shown in the **Authenticator app** and select **Next**.
 
-   ![](images/enter-code-mfa.png)
+      ![](images/enter-code-mfa.png)
 
 17. In the **Phone** window that appears, under **What phone number would you like to use?** field, select your country or region, and then in the field next to it, enter your phone number (in the format **nnn-nnn-nnnn**). Verify the **Text me a code** option is selected and then select **Next**.
 
-   ![](images/phone-code-mfa.png)
+      ![](images/phone-code-mfa.png)
 
 18. Retrieve the verification code from the text message that is sent to your phone.
 
 19. In the **Phone** window, enter the 6-digit verification code in the **Enter code** field and then select **Next**.
 
-   ![](images/phone-code-mfa-2.png)
+      ![](images/phone-code-mfa-2.png)
 
 20. On the **Success!** page, select **Done**.
 
@@ -165,7 +165,7 @@ Now that Patti Fernandez has been made an eligible user for the Global administr
 
 23. In the **Activate - Global Administrator** pane that appears, enter **Testing PIM** in the **Reason** field, and then select the **Activate** button at the bottom of the pane.
 
-   ![](images/activate-testing-pim.png)
+      ![](images/activate-testing-pim.png)
 
 24. On the **My roles | Azure AD roles** window, the **Eligible assignments** tab is displayed on the menu bar. Select the **Active assignments** tab that appears next to it. Note that no roles appear. <br/>
 
