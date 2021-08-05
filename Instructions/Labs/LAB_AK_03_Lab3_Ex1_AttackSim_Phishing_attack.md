@@ -8,17 +8,22 @@ To use Microsoft's Attack simulation training feature to simulate a phishing att
 
 **Important:** To implement MFA, you will need to use your mobile phone to receive a verification code so that you can enter it into your tenant as a second form of authentication. If you do not have a phone, you will have to skip this lab. If this is the case, notify your instructor, who can potentially partner you with another student to follow along through this lab.
 
-1. Switch to the **LON-CL1** VM, where you should still be logged in as the **Admin** account. If necessary, log in as the **Admin** with a password of **Pa55w.rd**. 
 
-2. In your **Edge** browser, you should still be logged into Microsoft 365 as Holly Dickson. To enable MFA for Holly Dickson's user account, select the **Microsoft 365 admin center** tab in your browser, and then in the left hand-navigation pane, select **Users** and then select **Active users**.
+1. In your **Edge** browser, you should still be logged into Microsoft 365 as Holly Dickson. To enable MFA for Holly Dickson's user account, select the **Microsoft 365 admin center** tab in your browser, and then in the left hand-navigation pane, select **Users** and then select **Active users**.
 
-3. In the **Active users** window, on the menu bar at the top of the user list, select **Multi-factor authentication**. If it does not appear, select the **ellipsis (More actions)** icon. In the drop-down menu that appears, select  **Multi-factor authentication**.
+2. In the **Active users** window, on the menu bar at the top of the user list, select **Multi-factor authentication**. If it does not appear, select the **ellipsis (More actions)** icon. In the drop-down menu that appears, select  **Multi-factor authentication**.
 
-4. In the **multi-factor authentication** window, the **users** tab is displayed by default. Note the MFA status for all existing user accounts, which is **Disabled**. Select the check box for **Holly Dickson**, and in Holly's properties pane that appears on the right, select **Enable**.
+   ![](images/mfa-select-active-users.png)
 
-5. On the **About enabling multi-factor auth** dialog box that appears, select **enable multi-factor auth**. 
+3. In the **multi-factor authentication** window, the **users** tab is displayed by default. Note the MFA status for all existing user accounts, which is **Disabled**. Select the check box for **Holly Dickson**, and in Holly's properties pane that appears on the right, select **Enable**.
 
-6. When the **Updates successful** dialog box appears, select **close**. In the **multi-factor authentication** window, verify Holly's MFA Status has changed to **Enabled**. 
+   ![](images/holly-enable.png)
+
+4. On the **About enabling multi-factor auth** dialog box that appears, select **enable multi-factor auth**. 
+
+   ![](images/enable-mfa-select.png)
+
+5. When the **Updates successful** dialog box appears, select **close**. In the **multi-factor authentication** window, verify Holly's MFA Status has changed to **Enabled**. 
 
 7. You must now sign out of Microsoft 365 as Holly, close your browser session (to clear cache), open a new session, and then log back in as Holly using MFA. The first time you sign back in after having MFA enabled for your user account, you will be asked for the authentication information needed for MFA, such as your phone number and authentication options. You will then be texted a verification code to validate the authentication process works. You will perform these steps in the remaining portion of this task.<br/>
 
@@ -30,41 +35,41 @@ To use Microsoft's Attack simulation training feature to simulate a phishing att
 
 10. In the **Sign in** window, enter **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**. In the **Enter password** window, enter **Pa55w.rd** and select **Sign in**.
 
-11. Because MFA is enabled for Holly, a **More information required** window appears. Select **Next**.
+11. Because MFA is enabled for Holly, a **Help us protect your account** window appears. Select **Next**.
 
-12. On the **Microsoft Authenticator** page, you can download this mobile app or use a different method for MFA verification. For the purposes of this lab, we recommend you use your mobile phone so that you do not have to take time installing the Microsoft Authenticator app that you may not use again after this training class. Select the **I want to set up a different method** option at the bottom of the page. 
+	![](images/help-holly-protect.png)
 
-13. On the **Choose a different method** dialog box that appears, select the drop-down arrow in the **Which method would you like to use?** field, select **Phone**, and then select **Confirm**. 
+12. On the **Microsoft Authenticator** page, you can download this mobile app or use a different method for MFA verification. Install the **Microsoft authenticator app** on your phone. Select **Next**.
 
-14. In the **Phone** window that appears, under **What phone number would you like to use?** field, select your country or region, and then in the field next to it, enter your phone number (in the format **nnn-nnn-nnnn**). Verify the **Text me a code** option is selected and then select **Next**.
+	![](images/microsoft-auth-select.png)
+
+13. On the **Authenticator App** dialog box that appears, Open your **Microsoft authenticator app** and select **+ Add account** followed by **Personal account** and select **Scan a QR code**. Select **Next** once you have scanned the QR code.
+
+   	![](images/scan-qr-code.png)
+
+14. On the **Keep your account secure**, Under **Enter code** enter the code shown in the **Authenticator app** and select **Next**.
+
+   	![](images/enter-code-mfa.png)
+
+15. In the **Phone** window that appears, under **What phone number would you like to use?** field, select your country or region, and then in the field next to it, enter your phone number (in the format **nnn-nnn-nnnn**). Verify the **Text me a code** option is selected and then select **Next**.
+
+   	![](images/phone-code-mfa.png)
 
 15. Retrieve the verification code from the text message that is sent to your phone.
 
 16. In the **Phone** window, enter the 6-digit verification code in the **Enter code** field and then select **Next**.
 
-17. This takes you back to the **Microsoft Authenticator** window. Select the **I want to set up a different method** option at the bottom of the page. 
+   	![](images/phone-code-mfa-2.png)
 
-18. On the **Choose a different method** dialog box that appears, select the drop-down arrow in the **Which method would you like to use?** field, select **Email**, and then select **Confirm**. 
+17. On the **Success!** page, select **Done**.
 
-19. Enter your personal email address and select **Enter**.
+18. If you take too long to complete the above process, the **Enter password** window will appear with a message indicating you took too long to complete the sign in process, so you will be timed out. If this occurs, you must sign in again with Holly's password of **Pa55w.rd**. Another verification code/approval notification will be texted to your phone, so enter it in the **Enter code** screen that appears and select **Verify**.
 
-20. Open your personal email address and the email from Adatum corporation.  Note the verification code.
+19. On the **Stay signed in?** dialog box, select the **Don’t show this again** check box and then select **Yes.** 
 
-21. Enter the verification code from the Adatum email to your personal email address then select **Next**.
+20. If a **Get your work done with Office 365** window appears, then close it now. 
 
-22. On the **Success!** page, select **Done**.
-
-23. If you take too long to complete this process, the **Enter password** window will appear with a message indicating you took too long to complete the sign in process, so you will be timed out. If this occurs, you must sign in again with Holly's password of **Pa55w.rd**. Another verification code will be texted to your phone, so enter it in the **Enter code** screen that appears and select **Verify**.
-
-24. In the **Sign in** dialog box, copy and paste in the **Tenant Username** provided by your lab hosting provider (**admin@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix assigned by your lab hosting provider) and then select **Next**.
-
-25. In the **Enter password** dialog box, copy and paste in the unique **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
-
-26. On the **Stay signed in?** dialog box, select the **Don’t show this again** check box and then select **Yes.** 
-
-27. If a **Get your work done with Office 365** window appears, then close it now. 
-
-28. On the **Microsoft Office Home** tab, in the column of Microsoft 365 app icons that appears on the left side of the screen, select the **Admin** icon, which is the last icon in the list. This opens the **Microsoft 365 admin center** in a new browser tab. This will prepare you for the next lab exercise when you disable MFA for Holly Dickson after completing the Attack simulation training.
+21. On the **Microsoft Office Home** tab, in the column of Microsoft 365 app icons that appears on the left side of the screen, select the **Admin** icon, which is the last icon in the list. This opens the **Microsoft 365 admin center** in a new browser tab. This will prepare you for the next lab exercise when you disable MFA for Holly Dickson after completing the Attack simulation training.
 
 29. Select a new tab in your **Edge** browser and enter the following URL in the address bar: **https://security.microsoft.com**. This will open the **Microsoft 365 Defender** portal. You will resume from here in the next task when you launch a spear phishing attack using Attack simulation training.  
 
