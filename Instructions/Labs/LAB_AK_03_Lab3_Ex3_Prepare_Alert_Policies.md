@@ -39,7 +39,7 @@ https://protection.office.com
 
 4. On the **Permissions** page, select the **Compliance Data Administrator** role group. 
 
-  ![](images/permissions-cda.png)
+    ![](images/permissions-cda.png)
 
 5. In the **Compliance Data Administrator** pane, scroll to the bottom and in the **Members** section, select **Edit**. 
 
