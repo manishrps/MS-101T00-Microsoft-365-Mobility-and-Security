@@ -9,11 +9,13 @@ In this exercise you will set up Azure Rights Management Services (RMS) for your
 
 In this task you will use Windows PowerShell to access Exchange Online and then, through a string of commands, you will confirm that Azure RMS is active.  
 
-1. You should still be logged into LON-CL1 as **Admin**, and you should still be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should still be logged into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
 
 2. To open Windows PowerShell, enter **powershell** in the **Search** box on the taskbar. 
 
 3. In the menu that appears, right-click on **Windows PowerShell** and select **Run as administrator** in the drop-down menu. 
+
+	![](images/message1.png)
 
 4. In **Windows PowerShell**, you must begin by installing the **Microsoft Azure Active Directory Module for Windows PowerShell** by running the following command at the command prompt:<br/>
 
@@ -23,41 +25,59 @@ In this task you will use Windows PowerShell to access Exchange Online and then,
 
 6. If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery), enter **A** to select **[A] Yes to All.** 
 
+	![](images/message2.png)
+
 7. Once the installation is complete, the screen will return to the command prompt. You must then run the following command to initiate a connection to Azure Active Directory: <br/>
 	
 	**Connect-MsolService**  ‎
 
 8. A new window will appear requesting your credentials. Sign in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with a password of **Pa55w.rd**.   
-	
+
+	![](images/message3.png)
+
+	If **Windows Security Warning** window is prompted click in **Yes**
+
+	![](images/message4.png)	
+
 9. Running unsigned PowerShell scripts from remote computers requires changing the execution policy for PowerShell. You should run the following command that changes the Execution Policy for this PC to **unrestricted**, which sets access to the external authorization for this PC so that it can connect to Microsoft online and load all configuration files and run all scripts:   <br/>
 
 	**Set-ExecutionPolicy unrestricted**  <br/>
 	
 10. If you are prompted whether you want to change the execution policy, enter **A** to select **[A] Yes to All**.
+
+	![](images/message5.png)
 	‎
 11. You must then run the following command to prompt for the username and password of the user who will be running any subsequent commands; this set of credentials will be stored in the $Cred macro: <br/>
 
 	**&dollar;Cred = Get-Credential** <br/>
 	
 12. A **Windows PowerShell credential request** window will appear. Sign in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and a password of **Pa55w.rd**.  
-	
+
+	![](images/message6.png)
+
 13. You must then run the following command to create a PSSession (titled $Session) that establishes a remote connection to Exchange Online through PowerShell. When you create a PSSession, Windows PowerShell establishes a persistent connection to the remote computer. Without the -Credential parameter that invokes the $Cred macro from the prior step, this command would prompt you for the credentials of the user authorizing this command. In this case, by invoking the $Cred macro, it applies Holly’s username and password.<br/>
 
 	**&dollar;Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $Cred -Authentication Basic -AllowRedirection**<br/>
-	
+
+	![](images/message7.png)
+
 	**Note:** It’s important to note that you must connect to Exchange Online PowerShell with an admin account that cannot be enabled for multi-factor authentication (MFA). In a real-world environment, if your admin account is enabled for MFA, you must install the Exchange Online Remote PowerShell Module and use the **Connect-EXOPSSession** cmdlet to connect. For more information, see the following article on how to [Connect to Exchange Online PowerShell using multi-factor authentication](https://docs.microsoft.com/en-US/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).  
 	
 14. You should then run the following cmdlet to import commands, such as cmdlets, functions, and aliases, from the PSSession ($Session) created in the prior step. In this case, it imports the Exchange Online session into the PowerShell GUI. <br/>
 
 	**Import-PSSession $Session**   <br/>
-	
+
+	![](images/message8.png)
+
 	‎**Note:** You can ignore the warning message that is displayed regarding unapproved verbs.  
 	
 15. You must then run the following command to view the Information Rights configuration for Exchange Online:  <br/>
 
 	‎**Get-IRMConfiguration**  
-	
+
 16. To validate whether Azure Rights Management Services is enabled, scroll through the list of parameters that’s displayed and locate the **AzureRMSLicensingEnabled** parameter. If this value is set to **$true**, then Azure RMS is turned On and you can proceed to the next step.  <br/>
+
+	![](images/message9.png)
 
 	**Important:** If **AzureRMSLicensingEnabled** is set to **$false**, then you must run the following command to turn on Azure RMS before you can proceed to the next step: <br/>
 
