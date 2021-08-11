@@ -6,9 +6,11 @@ You are now at the point in your pilot project where you want to test the MRM an
 
 In this exercise, you will send an email from Holly Dickson to one of your pilot team users, Lynne Robbins. You will then log into Microsoft 365 as Lynne on the LON-CL2 VM, locate the email in her Inbox, and then assign the email a custom retention tag that you created. This personal retention tag will override the parent folder tag for this specific message, which will be moved to Lynne’s In-Place archive mailbox after 3 years rather than 2 years.
 
-1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should still be logged into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
 
 2. In **Microsoft Edge**, select the **Microsoft Office Home** tab, and then select the **Outlook** icon in the column of app icons on the left-side of the screen. When Outlook on the web opens, you should be automatically logged in as Holly Dickson.  <br/>
+
+	![](images/mrm1.png)
 
 	**Note:** If **Outlook on the web** was already open, then verify that you are logged in as **Holly** by checking the user icon in the upper right corner (the **HD** circle). If Outlook was open for any other user, then close the tab and repeat the instructions in this step to open Outlook on the Web for Holly.
 
@@ -24,11 +26,11 @@ In this exercise, you will send an email from Holly Dickson to one of your pilot
 
 5. Select **Send**.
 
-6. Switch to LON-CL2.
+	![](images/mrm2.png)
 
-7. If necessary, log in as the **Admin** with a password of **Pa55w.rd**.
+6. Switch to the **Chrome Browser**.
 
-8. In the **Edge** browser, you should have one tab open with Outlook on the web for Alex Wilber. Select Alex's user icon in the upper right-hand corner of the screen, and in the **My account** window that appears, select **Sign out**.
+7. In the **Chrome** browser, you should have one tab open with Outlook on the web for Alex Wilber. Select Alex's user icon in the upper right-hand corner of the screen, and in the **My account** window that appears, select **Sign out**.
 
 9. In the browser tab in which you are signed out, enter the following URL in the address bar: **https://outlook.office365.com**
 
@@ -38,6 +40,8 @@ In this exercise, you will send an email from Holly Dickson to one of your pilot
 
 12. In **Outlook on the web**, in Lynne’s **Inbox**, you should see the email message that Holly just sent to Lynne.
 
+	![](images/mrm3.png)
+
 13. Back in Lab 3, you changed the assigned retention policy for Lynne’s mailbox to **Office Retention Policy**. This policy contains the **3 Year Move – Archive after three years** personal retention tag that you created in Lab 3. <br/>
 
 	‎Upon receiving this email from Holly, Lynne has decided to tag Holly’s email to automatically archive it after three years instead of two years, which is the default policy.  <br/>
@@ -46,9 +50,13 @@ In this exercise, you will send an email from Holly Dickson to one of your pilot
 
 14. In the **Settings** pane that appears, select **View all Outlook settings**. 
 
+	![](images/mrm4.png)
+
 15. In the **Settings** window that appears, the **Mail** option is already selected by default in the left-hand pane. In the middle pane, select **Retention policies**. 
 
 16. In the **Retention policies** pane that appears on the right side of the screen, select **+Add new policy**. 
+
+	![](images/mrm5.png)
 
 17. In the **Retention policies** pane, after a few seconds the default and custom retention policies will appear. Scroll to the bottom and select the **3 Year Move - Archive after three years** retention policy that you created in a prior lab, and then select **Save**.
 
