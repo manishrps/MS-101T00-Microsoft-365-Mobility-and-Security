@@ -6,27 +6,19 @@ Now that Holly Dickson has implemented Sensitivity labels as part of her pilot p
 
 In this lesson you will create a WIP policy and assign to it the **WIP Users** group that you created in an earlier lab. This policy will protect files in Microsoft 365 Apps for enterprise (formerly Office 365 ProPlus) for users in the **WIP Users** group that have enrolled Windows 10 devices. You will perform this task on LON-CL1, so you must begin by signing out of Microsoft 365 as Alex Wilber and signing back in as Holly Dickson.
 
-1. At the end of the prior lab exercise, you were using LON-CL2. Switch to **LON-CL1**. <br/>
+1. You should still be logged into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**.
 
-	You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Alex Wilber.** 
-	
-2. In the **Edge** browser, select the **Microsoft Office Home** tab and then select Alex's user icon in the upper right-hand corner of the screen. In Alex's account window that appears, select **Sign out**. Close all browser tabs except for the **Sign out** tab.
+2. In the **Microsoft Edge** browser goto **https://admin.microsoft.com/**, In the **Microsoft 365 admin center**, select **Show all** in the left-hand navigation pane, and then under the **Admin centers** group, select **Endpoint Manager**.
 
-3. In the **Sign out** browser tab, enter the following URL in the address bar: **https://portal.office.com**
-
-4. In the **Pick an account** window, select **Holly Dickson's** account (Holly@xxxxxZZZZZZ.onmicrosoft.com) if it appears; otherwise, select **Use another account**, and then on the **Sign in** window, enter Holly's' user account (**Holly@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**.
-
-5. In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**.
-
-6. In the **Microsoft Office Home** tab, select the **Admin** icon in the column of app icons that appears on the left-side of the screen. This opens the Microsoft 365 admin center. 
-
-7. In the **Microsoft 365 admin center**, select **Show all** in the left-hand navigation pane, and then under the **Admin centers** group, select **Endpoint Manager**.
+	![](images/wip1.png)
 
 8. In the **Microsoft Endpoint Manager admin center**, in the left-hand navigation pane select **Apps**.
 
 9. In the **Apps | Overview** page, in the middle pane under the **Policy** group, select **App protection policies**.
 
 10. On the **Apps | App protection policies** page, select **+Create Policy** on the menu bar, and then in the drop-down menu that appears, select **Windows 10**.
+
+	![](images/wip2.png)
 
 11. In the **Create policy** window, the steps to create a policy are displayed at the top of the page. You are currently in step **1 - Basics**. Enter the following information and then select **Next**:
 
@@ -36,27 +28,44 @@ In this lesson you will create a WIP policy and assign to it the **WIP Users** g
 
 	- Enrollment state: **With enrollment**
 
+	![](images/wip3.png)
+
 12. In the **Create policy** window, you are now in step **2 - Targeted apps**. Enter the following information and then select **Next**:
 
 	- Protected apps: select **+Add**. In the **Add apps** pane that appears on the right, scroll to the bottom and select **Office-365-ProPlus-1810-Allowed.xml**, and then select **OK**. 
 
-	- Exempt apps: leave blank as there will be no exempt apps in this policy
+	![](images/wip4.png)
+
+	- Exempt apps: leave blank as there will be no exempt apps in this policy.
+
+	![](images/wip5.png)	
 
 13. In the **Create policy** window, you are now in step **3 - Required settings**. Enter the following information and then select **Next**:
 
 	- Windows Information Protection mode: **Block**
 	
-	- Corporate identity: verify that it displays **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **OK.**
+	- Corporate identity: verify that it displays **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider)
+
+	![](images/wip6.png)
 
 14. In the **Create policy** window, you are now in step **4 - Advanced settings**. Do not change any of the default settings, so select **Next**.
 
+	![](images/wip7.png)
+
 15. In the **Create policy** window, you are now in step **5 - Assignments**. Enter the following information and then select **Next**:
 
-	- Selected groups: select **+Select groups to include**. In the **Select groups to include** pane that appears on the right, select the **WIP Users** group and then select the **Select** button at bottom of the pane.
+	- Included groups: select **+Add groups**. In the **Select groups to include** pane that appears on the right, select the **WIP Users** group and then select the **Select** button at bottom of the pane.
+
+	![](images/wip8.png)
 
 16. In the **Create policy** window, you are now in step **6 - Review + create**. Review the settings and if anything is incorrect, select the **Previous** button to return back to the appropriate step to make your correction. If all the settings are correct, then select the **Create** button.
 
+	![](images/wip9.png)
+
 17. On the **Apps | App protection policies** window, note the value of the **Deployed** column is **No** for the **WIP Client Protection** policy that you just created. Select **Refresh** on the menu bar above the list of policies. The **Deployed** status should now display **Yes**.
+
+	![](images/wip10.png)
+	![](images/wip11.png)	
 
 18. Leave your browser and all its tabs open for the next lab.
 
@@ -67,9 +76,9 @@ You have now created an **App protection policy** (which is a Windows Informatio
 
 In this exercise you will enroll your LON-CL2 device to Azure AD. You will then test the WIP policy that you created in the prior task by creating a work document and then copy and pasting from it to a personal location. This will test the WIP protection feature that prevents copy and pasting between a protected Word document and an untrusted website in your Edge browser. Since the WIP policy that you created was assigned to the WIP Users group, you must switch to LON-CL2 and create the document while signed in as Joni Sherman, who is a member of this group.
 
-1. Switch to LON-CL2, where you should still be logged in as the **Admin** account, and you should be logged into **Outlook on the Web** as **Joni Sherman**. 
+1. Switch to the **Firefox Browser**, where you should still be logged into **Outlook on the Web** as **Joni Sherman**. If not login with  **JoniS@xxxxxZZZZZZ.onmicrosoft.com** and password **Pa55w.rd**.
 
-2. Minimize your **Edge** browser.
+2. Minimize your **Firefox** browser.
 
 3. In the **Search** box on the taskbar at the bottom of the window, type **Work** (not **Word**, but **Work**). In the menu that appears, if **Settings** is not expanded, then select it now. Under **Settings**, select **Access work or school**.
 

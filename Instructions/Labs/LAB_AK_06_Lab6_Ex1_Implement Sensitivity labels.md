@@ -210,7 +210,7 @@ In this exercise you will use the Sensitivity label that you created in the prev
 
 **You will know when the propagation is complete and that you can continue with this task when you get to step 14 and you see the Sensitivity label group in the Word ribbon.** If this group does not appear, then the label provisioning process has not finished. If this occurs, then wait until your next break time in class and check this again.
 
-1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**.
 
 2. To validate the sensitivity label that you created in the prior task, you must first sign out of Microsoft 365 as Holly and sign back in as Alex Wilber. <br/>
 
@@ -230,13 +230,21 @@ In this exercise you will use the Sensitivity label that you created in the prev
 
 9. On the **Microsoft Office Home** tab, select the **Word** icon in the column of app icons on the left-side of the screen. This will override the **Microsoft Office Home** tab by opening Microsoft Word Online in this same tab. <br/>
 
+	![](images/isl32.png)
+
 	**Note:** In the next task, you will return back to the **Microsoft Office Home** tab by selecting the **Back** arrow at the top of this **Word** tab.
 
 10. In the **Word** tab, select **New blank document**.
 
+	![](images/isl33.png)
+
 11. If a **Your privacy option** window appears, select **Close**.
 
+	![](images/isl34.png)
+
 12. If the Word ribbon displays icons for each feature but does not break the icons out by group, then select the down-arrow on the far right-side of the ribbon. This will switch the ribbon to the traditional ribbon style that is broken out by feature group (such as Undo, Clipboard, Font, Paragraph, Styles, and so forth).
+
+	![](images/isl35.png)
 
 13. In the **Word** document, type **Testing personally identifiable information (PII).**
 
@@ -245,30 +253,51 @@ In this exercise you will use the Sensitivity label that you created in the prev
 	**IMPORTANT:** If you do not see this **Sensitivity** group in the ribbon, then Microsoft 365 has not finished provisioning the sensitivity label that you created in the prior task. If this occurs, then you cannot proceed with this task. As mentioned earlier, it takes 24 hours for a new sensitivity label to be fully provisioned throughout the system. If you do not see the Sensitivity group, or if you see the group (from a prior label you created) and you select the drop-down arrow in the group and do not see your new label, then you must stop at this point and not proceed until you see the Sensitiity group and your label in the group.  <br/>
 
 	Assuming you have waited 24 hours and the **Sensitivity** group appears in the Word ribbon, select the down arrow in the **Sensitivity** group. In the drop-down menu that appears, it should display the **PII** label that you created in the prior task. Since the **PII** label is enabled for this document, a check mark is displayed next to **PII**. <br/>
-	
+
+	![](images/isl36.png)
+
 	In this first validation test, you are going to attempt to remove this sensitivity label from being applied to this document. If you'll recall, when you created the label policy and assigned the PII label to it, you selected the option whereby users must provide justification to remove a label or to select a lower classification label. You will now verify whether this setting is functioning properly. <br/>
 	
 	To remove the label from this document, select the **PII** label that appears in this drop-down menu.
 	
 15. In the **Justification Required** window that appears, select the **Other (explain)** option. In the **Explain why you're changing this label** field, enter **Testing what happens when a label is removed** and then select **Change**.
 
+	![](images/isl37.png)
+
 16. In the **Sensitivity** group in the Word ribbon, select the down arrow. In the drop-down menu that appears, note that while **PII** is displayed, it no longer has a check mark displayed next to it. This indicates the PII sensitivity label is no longer being applied to this document.  
 
-17. To re-apply the sensitivity label to the document, select **PII** in the drop-down menu. Once again select the drop-down arrow in the **Sensitivity** group. The drop-down menu that appears should display the **PII** label, and it should display a check mark next to it that indicates it is being applied to this document.
+	![](images/isl38.png)
+
+17. To re-apply the sensitivity label to the document, select **PII** in the drop-down menu. Once again select the drop-down arrow in the **Sensitivity** group. The drop-down menu that appears should display the **PII** label, and it should display a check mark next to it that indicates it is being applied to this document. Re-apply the label.
+
+	![](images/isl49.png)
 
 18. In the Word document, enter **111-11-1111** below the previous line of text that you entered. This number is the same format as a U.S. Social Security Number.
+
+	![](images/isl39.png)
 
 19. You will now save the document. On the title bar, to the right of Word, select **Document1**.  In the drop-down menu that appears, confirm the file **Location** says **Alex Wilber>Documents**. <br/>
 
 	In the **File Name** field, rename the file to **ProtectedDocument1** and then select outside of this file name menu (select inside the document). Note the new name assigned to the file in the title bar.
 
-20. On the right-side of the menu bar, select the **Share** button.
+	![](images/isl40.png)
+
+20. On the right-side of the menu bar, select the **Share** button then select **Email Link**
+
+	![](images/isl41.png)
 
 21. In the **Send link** window that appears, select **Anyone with the link can edit**. In the menu that appears, select **Specific people** then select **Apply**.
 
+	![](images/isl44.png)
+	![](images/isl45.png)	
+
 22. In the **Send link** window, enter **Joni** in the **Enter a name or Email address** field. In the list of users that appears, select **Joni Sherman** and then select **Send**.
 
+	![](images/isl42.png)
+
 23. Close the **Link sent** window. 
+
+	![](images/isl43.png)
 
 You have just successfully created an AIP protected Word document that is read-only protected. The document is accessible only by its creator, Alex Wilber, and by Joni Sherman (with Read-only permission), to whom the document was shared.
 
@@ -277,11 +306,13 @@ You have just successfully created an AIP protected Word document that is read-o
 
 In the prior task, you created a Word document and protected it with a Sensitivity label. The PII label policy should have inserted a watermark in the document, and it should have restricted permissions on the document. To verify whether the protection that you assigned to the document works, you will first email the document to Joni Sherman and to your own personal email address. You will then test what functionality is possible for both Joni and Alex Wilber.
 
-1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Alex Wilber**. 
+1. You should still be logged into Microsoft 365 as Holly Dickson (**AlexW@xxxxxZZZZZZ.onmicrosoft)** with a password of **Pa55w.rd**. 
 
 2. In your Edge browser, select the **Word** tab and then select the **Back** arrow. This should display the **Microsoft Office Home** tab.  
 
 3. In the **Microsoft Office Home** tab, select the **Outlook** icon in the column of app icons on the left-side of the screen. This opens Outlook on the web in a new tab. 
+
+	![](images/isl46.png)
 
 4. In **Outlook on the web**, select **New Message** in the upper left part of the screen.
 
@@ -295,17 +326,25 @@ In the prior task, you created a Word document and protected it with a Sensitivi
 
 	- Body of the message: enter **If you can open the protected and restricted document attached to this email, then try to change it.**
 
+	![](images/isl47.png)
+
 6. Select **Attach** from the menu bar at the top of the screen, and in the drop-down menu that appears, under the **Suggested attachments** group, select the **ProtectedDocument1.docx** file that you created in the prior task.
+
+	![](images/isl48.png)
 
 7. Once the file has been attached to the email, select the file to open it. Note the watermarks that appear in the header and footer, and in the body of the document.  After reviewing the document, select the **X** in the upper right corner of the document window to close it. 
 
+	![](images/isl50.png)
+
 8. Select **Send**.
 
-9. Switch to LON-CL2. 
+	![](images/isl51.png)
 
-10. In LON-CL2, you should be logged into **Outlook on the Web** as **Lynne Robbins** from a previous lab exercise. Sign out as Lynne.
+9. Switch to the **Chrome Browser**. 
 
-11. In your Edge browser, in the **Sign out** tab, enter the following URL in the address bar: **https://outlook.office365.com** 
+10. you should be logged into **Outlook on the Web** as **Lynne Robbins** from a previous lab exercise. Sign out as Lynne.
+
+11. In your Chrome browser, in the **Sign out** tab, enter the following URL in the address bar: **https://outlook.office365.com** 
 
 12. In the **Pick an account** window, select **Use another account**.
 
@@ -317,21 +356,29 @@ In the prior task, you created a Word document and protected it with a Sensitivi
 
 16. In Joni’s **Inbox** in **Outlook on the web**, open the email that Alex just sent her by selecting the email in the Inbox. Note the **Sensitive - Do Not Share** watermark that appears in the message (these are the header and footer watermarks that you entered in the PII label).
 
+	![](images/isl52.png)
+
 17. Select the attached file to open it.
+
+	![](images/isl53.png)
 
 18. In the **Your privacy option** dialog box that appears, select **Close**. Review the document, and note the watermarks in the header, footer, and body of the document. Close the document window. 
 
-19. This will return you to **Outlook on the web** with the email still displayed in the right-hand pane. In the body of the email, the document appears in a tile. You want to download the document. Hover your mouse over the document tile and note the two down arrows that appear. Hover your mouse over each arrow. The first displays **Download**, while the second arrow displays **More actions**. Select the **More actions** arrow, and in the drop-down menu that appears, note that it also has a **Download** option. Since you have this menu open, select the **Download** option from here.  
+19. This will return you to **Outlook on the web** with the email still displayed in the right-hand pane. In the body of the email, the document appears in a tile. You want to download the document. Hover your mouse over the document tile select the **Download** option from here.  
 
-20. In the notification bar that appears at the bottom of the screen, select **Save.** 
+	![](images/isl54.png)
+
+20. In the notification bar that appears at the bottom of the screen, select **Save.** if prompted.
 
 21. Once the file has finished downloading, in the notification bar, select **Open.**
 
 22. **Microsoft Word** should open along with a **Sign in** window (it may open behind the Outlook window, in which case select the **Word** icon on the taskbar to bring it forward). 
 
-23. Because the file is RMS protected and no AIP unified labeling client is installed on LON-CL2, you need to use the native RMS features of Word Microsoft Apps and register this installation to Joni’s account. <br/>
+23. Because the file is RMS protected and no AIP unified labeling client is installed on LabVM, you need to use the native RMS features of Word Microsoft Apps and register this installation to Joni’s account. <br/>
 
 	‎In the **Sign in** window, enter **JoniS@xxxxxZZZZZZ.onmicrosoft.com** and then select **Next.** 
+
+	![](images/isl55.png)
 
 24. In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in.**
 
@@ -351,7 +398,7 @@ In the prior task, you created a Word document and protected it with a Sensitivi
 
 	‎Since only Joni was assigned permission to read the document, you just verified that Azure Information Protection protected the document based on the PII policy parameters that you configured.
 
-31. Remain signed into LON-CL2 and signed into Outlook on the Web as Joni. Do not close your browser.
+31. Remain signed into Outlook on the Web as Joni. Do not close your browser.
 
 
 # Proceed to Lab 7 - Exercise 2
