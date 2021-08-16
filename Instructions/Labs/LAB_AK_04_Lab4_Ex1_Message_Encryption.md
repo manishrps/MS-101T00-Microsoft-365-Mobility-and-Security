@@ -85,7 +85,7 @@ In this task you will use Windows PowerShell to access Exchange Online and then,
 
 17. Now that Azure RMS is enabled, you should run the **Test-IRMConfiguration** cmdlet to test Information Rights Management (IRM) configuration and functionality, including availability of an Active Directory RMS server, pre-licensing, and journal report decryption. To perform this test, run the following command to test the IRM configuration for messages sent from Holly Dickson:<br/>
 
-	**Test-IRMConfiguration -Sender Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) 
+	**Test-IRMConfiguration -Sender Holly@xxxxxZZZZZZ.onmicrosoft.com -Recipient Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) 
 
 	**Note:** The results should appear as follows:  
 	
@@ -107,6 +107,8 @@ In this task you will use Windows PowerShell to access Exchange Online and then,
  		- PASS: IRM verified successfully.
 
 	OVERALL RESULT: PASS  
+	
+	![](images/message19.png)	
 	‎
 18. Leave your PowerShell window open as you will return to it in a later task; simply minimize the PowerShell window for now.
   
@@ -115,33 +117,57 @@ In this task you will use Windows PowerShell to access Exchange Online and then,
 
 In this task, you will create an encryption rule for messages inside your Exchange Online environment by using the Exchange admin center. In the next task, you will do the same thing but using PowerShell instead. 
 
-1. On the LON-CL1 VM, you should still be logged into the **Microsoft 365 admin center** as **Holly Dickson**. If you closed your Edge browser or the **Microsoft 365 admin center** tab, then in your Edge browser navigate to **https://portal.office.com**, sign in as **Holly@xxxxxZZZZZZ.onmicrosoft.com**, and select **Admin**. 
+1. You should still be logged into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
 
-2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** (if necessary), and then under **Admin centers**, select **Exchange**. This will open the Exchange Online admin center.
+2. In the **Microsoft Edge** browser got to **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** (if necessary), and then under **Admin centers**, select **Exchange**. This will open the Exchange Online admin center.
 
-3. In the **Exchange admin center**, in the left-hand navigation pane select **mail flow.**
+	![](images/message10.png)
 
-4. At the top of the **mail flow** page, the **Rules** tab is displayed by default. In the **Rules** tab, select the **plus sign** (**+**) icon to create a new rule. This displays a drop-down menu of actions. Select **Create a new rule.**
+3. In the **Exchange admin center**, in the left-hand navigation pane select **Rules** under **mail flow.**
+
+4. In the **Rules** tab, select the **plus sign** (**+**) icon to create a new rule. This displays a drop-down menu of actions. Select **Create a new rule.**
+
+	![](images/message11.png)
 
 5. In the **new rule** window, in the **Name** box, enter **Encrypt mail for guest@adatum.com** as the name of this rule.
 
 6. Select the drop-down arrow in the **Apply this rule if**… condition box. In the drop-down menu, select **the recipient is**. 
 
-7. For this condition, you must either select an existing name from the user list or type a new email address in the **check names** box. In this case, enter **guest@adatum.com** in the **Check names** box and then select **OK**.
+	![](images/message20.png)
+
+7. For this condition, you must either select an existing name from the user list or type a new email address in the **check names** box. In this case, enter **guest@adatum.com** in the **Check names** box then click on **Check names** and then select **OK**.
+
+	![](images/message12.png)
 
 8. You need to add more conditions, so scroll down (if necessary) and select **More options**.
 
+	![](images/message21.png)
+
 9. Select **add condition**. 
+
+	![](images/message22.png)
 
 10. Note how a second condition box appears below **The recipient is…** condition box. In this second condition box, select the drop-down arrow and select **The recipient**. Then in the drop-down menu select **is external/internal.**
 
+	![](images/message23.png)
+
 11. In the **select recipient location** dialog box, select the drop-down arrow. In the drop-down menu, select **Outside the organization** and then select **OK.** 
+
+	![](images/message13.png)
 
 12. You now need to define an action to perform when this rule is applied. In the **Do the following…** box, select the drop-down arrow. In the drop-down menu, hover your mouse over **Modify the message security…** and in the menu that appears, select **Apply Office 365 Message Encryption and rights protection.**
 
+	![](images/message24.png)
+
 13. In the **select RMS template** dialog box, select the drop-down arrow, select **Encrypt**, and then select **OK.**
 
+	![](images/message14.png)
+
 14. Select **Save.** Once the rule is saved, it should appear in the list of rules in the Exchange admin center.
+
+	![](images/message15.png)
+
+	![](images/message16.png)	
 
 15. Leave your browser tabs open and proceed to the next task. 
  
@@ -150,7 +176,7 @@ In this task, you will create an encryption rule for messages inside your Exchan
 
 In a prior task, you configured a mail flow encryption rule using the Exchange admin center. In this task, you will create a mail flow encryption rule using Windows PowerShell. 
 
-1. On the LON-CL1 VM, the PowerShell session that you used in the prior task should still be open. Select the PowerShell icon on the taskbar.<br/>
+1. Now switch to the PowerShell window that you used in the prior task. Select the PowerShell icon on the taskbar.<br/>
 
 	**Important:** If you closed the previous PowerShell session, then repeat steps 1-14 from Task 1 to create a PSSession that establishes a remote connection to Exchange Online through PowerShell and then imports the Exchange Online session into the PowerShell GUI. This is required because the New-TransportRule cmdlet used in the next step does not exist in MsolService because it is an Exchange Online cmdlet; therefore, you must connect to the Exchange Online session through PowerShell to access this cmdlet.
 
@@ -162,10 +188,14 @@ In a prior task, you configured a mail flow encryption rule using the Exchange a
 	
 	**Note:** This command will take several seconds to complete.
 
-3. To verify the rule exists, minimize your PowerShell window. In your Internet Explorer browser session, you should still be in the **mail flow** window of the **Exchange admin center**, and the **rules** tab should be displayed. The list of rules should only display the **Encrypt mail for guest@adatum.com** rule that you created in the prior task.<br/>
+	![](images/message17.png)
+
+3. To verify the rule exists, minimize your PowerShell window. In your Edge browser session, you should still be in the **mail flow** window of the **Exchange admin center**, and the **rules** tab should be displayed. The list of rules should only display the **Encrypt mail for guest@adatum.com** rule that you created in the prior task.<br/>
 
 	‎On the menu bar that appears above the list of rules, select the **Refresh** icon. In the refreshed list, the rule that you just created using PowerShell should appear as well.
-	
+
+	![](images/message18.png)
+
 4. Leave your browser session open for the next exercise.
 
 
