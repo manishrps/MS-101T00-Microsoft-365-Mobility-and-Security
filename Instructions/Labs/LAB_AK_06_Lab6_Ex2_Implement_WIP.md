@@ -82,15 +82,25 @@ In this exercise you will enroll your LON-CL2 device to Azure AD. You will then 
 
 3. In the **Search** box on the taskbar at the bottom of the window, type **Work** (not **Word**, but **Work**). In the menu that appears, if **Settings** is not expanded, then select it now. Under **Settings**, select **Access work or school**.
 
+	![](images/wip13.png)
+
+	![](images/wip14.png)
+
 4. In the **Access work or school** window, select **Connect**.
 
+	![](images/wip15.png)
+
 5. In the **Set up a work or school account**, enter **JoniS@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) in the **Email address** field and then select **Next**.
+
+	![](images/wip16.png)
 
 6. On the **Enter password** window, enter **Pa55w.rd** and select **Sign in**.
 
 7. If a **More information** is required dialog box appears, select the X in the upper-right corner to close it.
 
 8. In the **Access work or school** window, Joni's email address now appears as a work or school account. Close the **Settings** window.
+
+	![](images/wip17.png)
 
 7. Select the **Start** icon in the the bottom left corner of the taskbar, and in the **Start** menu, select **Microsoft Word**. 
 

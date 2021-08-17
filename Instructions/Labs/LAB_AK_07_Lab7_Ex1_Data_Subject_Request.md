@@ -10,11 +10,15 @@ Holly Dickson is Adatum’s Enterprise Administrator. In her role as the company
 
 **Note:** To perform this task, Holly must be assigned to the eDiscovery Manager role group so that she has the necessary permissions. You added Holly to this role group in Lab 1 at the same time that you added Joni Sherman to the role group. The reason why you were instructed to add Holly to the eDiscovery Manager role group in Lab 1 rather than at the start of this lab is that it can sometimes take up to an hour or more for permissions to successfully propagate. If you had assigned Holly to this role group just prior to this query, you would have received error messages involving parameter fields because her permissions would not have completed propagating. By adding Holly to this role group at the start of this course, enough time will have elapsed between then and now for the propagation to complete. 
 
-1. Switch to LON-CL1, where you should still be logged in as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson** (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
+1. You should still be logged into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
 
 2. In your **Microsoft Edge** browser, select the **Microsoft 365 admin center** tab, and then in the left-hand navigation pane under the **Admin centers** group, select **Compliance**.
 
-3. In the **Microsoft 365 Compliance** center, in the left-hand navigation pane select **Content search**. This initiates the **New search** wizard.
+	![](images/dsr1.png)
+
+3. In the **Microsoft 365 Compliance** center, in the left-hand navigation pane select **Content search**. Then click on **New search** This initiates the **New search** wizard.
+
+	![](images/dsr2.png)
 
 4. In the **Name and description** page, enter the following information and then select **Next**:
 
@@ -22,16 +26,24 @@ Holly Dickson is Adatum’s Enterprise Administrator. In her role as the company
 
 	- Description: **This is a test of the content search feature to pull info on Holly Dickson and the MOD administrator**
 
+	![](images/dsr3.png)
+
 5. In the **Locations** page, select the **Exchange mailboxes** toggle switch to turn it **On**. 
 
 6. To the right of **Exchange mailboxes**, select **Choose users, groups, or teams**.
 
+	![](images/dsr5.png)
+
 7. In the **Exchange mailboxes** pane that appears on the right, enter **holly** in the **Search** field and press Enter. Once Holly's mailbox is displayed, select the check box to the left of her mailbox and then select **Done**.
+
+	![](images/dsr4.png)
 
 8. In the **Locations** page, select **Next**.
 
 9. In the **Define your search conditions** page, you want to define conditions that will search for all mail sent to and from Holly Dickson and the MOD Administrator. 
 Begin by selecting **+ Add condition**. In the menu that appears, select **Sender**. Select the **Choose users** field and select **Holly Dickson** from the list of users. Select the **Choose users** field again and this time select **MOD Administrator** from the list of users.
+
+	![](images/dsr6.png)
 
 10. Repeat the prior step to add another condition. This time select **Recipients**, and in the list of users, select **Holly Dickson** and the **MOD Administrator**.
 
