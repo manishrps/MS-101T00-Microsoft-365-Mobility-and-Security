@@ -76,19 +76,7 @@ In this task, you will begin by installing the Microsoft Store for Business on y
 
     Note the change to your private store name on the menu bar at the top of the page; instead of **Adatum Corporation**, it should now say **Adatum private store**.
 
-21. On the menu bar, select **Adatum private store**.
-
-	![](images/cms13.png)
-
-22. On the **Adatum private store** page, Click on **Add Collection** then provide unique name in **Give this collection a name** and click on **Add** under **Microsoft Remote Desktop**, Select **Done** <br/>
-
-	![](images/cms14.png)
-
-23. Newly created collection will be shown in the list of collections.
-
-	![](images/cms15.png)
-
-24. Leave the **Microsoft Store for Business** tab open in your Edge browser. You will use this in the next exercise. 
+21. Leave the **Microsoft Store for Business** tab open in your Edge browser. You will use this in the next exercise. 
 
  
 # Proceed to Lab 9 - Exercise 2
