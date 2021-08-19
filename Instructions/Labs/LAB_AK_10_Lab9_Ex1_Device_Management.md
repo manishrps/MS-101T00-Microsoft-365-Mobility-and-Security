@@ -16,19 +16,19 @@ In this task you will verify that Adatum has installed the Enterprise Mobility +
 
 	![](images/dm1.png)
 
-4. On the **Licenses** page, note the number of licenses that are available with your tenant and the number that have already been assigned to user accounts for each of the available licenses. In your VM lab environment, 5 **Enterprise Mobility + Security E5** licenses were assigned to your tenant, and your lab hosting provider already assigned a license to the 4 pre-existing user accounts. <br/>
+4. On the **Licenses** page, note the number of licenses that are available with your tenant and the number that have already been assigned to user accounts for each of the available licenses. In your VM lab environment, 2 **Enterprise Mobility + Security E5** licenses were assigned to your tenant, and your lab hosting provider already assigned a license to the 1 pre-existing user account. <br/>
 
-   Note how the **Office 365 E5** & **Microsoft 365 Business Premium** licenses also available and assigned with your tenant. 
+   Note how the **Office 365 E5** license also available and assigned with your tenant. 
    
    In this task you will assign Holly an **Enterprise Mobility + Security E5** license. In the list of licenses, select **Enterprise Mobility + Security E5**.<br/>
 
 	![](images/dm2.png)
 
-5. In the **Enterprise Mobility + Security E5** page, under the list of users, verify that all 4 of the pre-existing user accounts provided by your lab hosting provider have been assigned a license. <br/>
+5. In the **Enterprise Mobility + Security E5** page, under the list of users, verify that the user **Jhoni** has been assigned a license. <br/>
 
 	![](images/dm3.png)
 
-   The one user who was not assigned an **Enterprise Mobility + Security E5** license is Adatum's Enterprise Administrator, You will now assign her an Enterprise Mobility + Security E5 license. <br/>
+   The one user need to assigned an **Enterprise Mobility + Security E5** license is Adatum's Enterprise Administrator, You will now assign her an Enterprise Mobility + Security E5 license. <br/>
 
     To assign Holly a license, select **+Assign licenses**, which appears in the menu bar above the list of users.
 
