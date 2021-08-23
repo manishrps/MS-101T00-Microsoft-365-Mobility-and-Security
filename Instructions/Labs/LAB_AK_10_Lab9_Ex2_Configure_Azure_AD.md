@@ -4,15 +4,19 @@ In this exercise you will activate automatic client enrollment to Intune for Mob
 
 ### Task 1: Integrate Azure AD with Intune
 
-1. You should still be logged into LON-CL1 as the **Admin** and in Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**.
 
-2. In your browser, select the **Microsoft 365 admin center** tab, which should still be open; if not, navigate to **https://admin.microsoft.com.** 
+2. In your Edge browser, select the **Microsoft 365 admin center** tab, which should still be open; if not, navigate to **https://admin.microsoft.com.** 
 
 3. In the **Microsoft 365 admin center**, in the left-hand navigation pane under **Admin centers**, select **Azure Active Directory**.
+
+	![](images/cad1.png)
 
 4. In the **Azure Active Directory admin center**, in the left-hand navigation pane, select **Azure Active Directory**.
 
 5. On the **Adatum Corporation | Overview** window, in the middle pane under **Manage,** select **Mobility (MDM and MAM),** and then in the details pane on the right, select **Microsoft Intune**.<br/>
+
+	![](images/cad2.png)
 
     **Note:** If you see a notification that automatic enrollment is available only for Azure AD Premium, press F5 to refresh the page in your web browser and then select **Microsoft Intune**.
 
@@ -20,9 +24,13 @@ In this exercise you will activate automatic client enrollment to Intune for Mob
 
     **Note:** By setting this parameter to **All**, you are allowing all users who join their devices to Azure AD to automatically enroll them to Intune as well.
 
+	![](images/cad3.png)
+
 7. Below the list of MDM-related fields, select **Restore default MDM URLs** to ensure the correct URLs for client enrollment are configured.
 
 8. In the menu bar at the top of the **Configure** window, select **Save**.
+
+	![](images/cad4.png)
 
 9. Leave all browser tabs open for the next task.
 
@@ -33,7 +41,7 @@ You have now configured your tenant so that all users can enroll their Windows 1
 
 In this task, you will change the default settings for users to join their devices to Adatum's Azure AD tenant.
 
-1. In your browser, in the **Azure Active Directory admin center**, in the left-hand navigation pane, select **Azure Active Directory.**
+1. In your Edge browser, in the **Azure Active Directory admin center**, in the left-hand navigation pane, select **Azure Active Directory.**
 
 2. In the **Adatum Corporation | Overview** window, in the middle section under **Manage**, select **Devices**.
 
