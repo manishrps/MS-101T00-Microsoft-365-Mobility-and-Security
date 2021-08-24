@@ -60,7 +60,7 @@ You have now created an activity alert in the Security & Compliance Center that 
 
 ### Task 2 – Validate the Mailbox Permission Alert
 
-In the prior task, you configured an alert that will notify Lynne Robbins when FullAccess permissions are granted to any mailbox within Adatum. To test this alert, Holly Dickson will change the FullAccess permission on Alex Wilber’s mailbox by granting Joni Sherman FullAccess to his mailbox. This activity should trigger the alert policy that you just created, which should send an alert notification email to Lynne Robbins’ mailbox. You will then log into the Client 2 VM as Lynne Robbins and see if she received this email. 
+In the prior task, you configured an alert that will notify Lynne Robbins when FullAccess permissions are granted to any mailbox within Adatum. To test this alert, Holly Dickson will change the FullAccess permission on Alex Wilber’s mailbox by granting Joni Sherman FullAccess to his mailbox. This activity should trigger the alert policy that you just created, which should send an alert notification email to Lynne Robbins’ mailbox.
 
 1. You should still be logged into Microsoft 365 as **Holly Dickson**. 
 
@@ -69,6 +69,9 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 	![](images/exchange-1.png)
 
 3. In the **Exchange admin center**, in the left-hand navigation pane, select **(1) recipients**. 
+
+  **Note**: If you are redirected to Old Exchange admin center window click on **Try the new Exchange admin center**.
+	![](images/exchange.png)
 
 4. In the **recipients** window, the **mailboxes** tab is displayed by default. Select **(2) Alex Wilber** from the list of mailboxes and then select the **Alex Wilber** to open up the **Alex Wilber user mailbox dialog box** and select **(3) Manage mailbox delegation**.	
 

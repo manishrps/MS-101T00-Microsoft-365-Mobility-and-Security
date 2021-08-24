@@ -43,6 +43,8 @@ As part of your pilot project for Adatum, you will configure MRM retention throu
 
 	![](images/rtp7.png)
 
+  **Note**: If you are redirected to New Exchange admin center, swicth toggle before **Default to new Exchange admin center** to change to classic exchange admin center.
+
 3. In the **compliance management** window, in the list of tabs that appear across the top of the page, select **retention tags**.
 
 4. You want to create a retention tag, so select the **plus (+) sign** icon in the toolbar that appears above the list of existing retention tags. In the drop-down menu that appears, select **applied by users to items and folders (personal)**.

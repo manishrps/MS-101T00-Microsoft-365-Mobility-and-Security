@@ -12,6 +12,12 @@ In this task, you will turn on Windows Defender for Office 365, which provides a
 
 2. In your Edge browser, select the **Microsoft 365 admin center** tab. In the left-hand navigation pane, under **Admin centers**, select **Security**. This will open a new tab in your browser for the **Office 365 Security &amp; Compliance center**. 
 
+   **Note:** If you are redirected to the **Microsoft 365 Defender** page instead of **Office 365 Security & Compliance center**, Navigate to :
+```
+https://protection.office.com/
+``` 
+
+
 3. In the **Office 365 Security &amp; Compliance center**, in the left-hand navigation pane select **Threat Management** and then select **Policy**.
 
 4. In the **Policy** window, double-click the **Safe Attachments** tile.
