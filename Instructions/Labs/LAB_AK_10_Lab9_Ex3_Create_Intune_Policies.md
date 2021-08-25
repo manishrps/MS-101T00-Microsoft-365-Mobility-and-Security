@@ -8,7 +8,7 @@ In this exercise, you will begin by creating a noncompliance notification messag
 
 In your role as Holly Dickson, Adatum's Enterprise Administrator, want to send an email message to any end user whose Windows 10 or later device becomes noncompliant. Before you create a compliance policy in task 2, you must first create the noncompliance email message template that you will assign to the policy.
 
-1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**.
 
 2. In your **Edge** browser, you should still have the **Microsoft Endpoint Manager admin center** open from the first exercise in this lab; if so, then select it now. If you closed it, then in **Microsoft 365 admin center**, under the **Admin centers** group in the left-hand navigation pane, select **Endpoint Manager**. 
 
@@ -16,15 +16,25 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, want to send a
 
 4. On the **Endpoint security | Overview** page, the **Manage** section appears in the middle of the page's navigation pane. Under this section, select **Device compliance**.
 
+	![](images/cip1.png)
+
 5. On the **Compliance policies | Policies** page, in the navigation pane for this page, select **Notifications**. 
 
 6. On the **Compliance policies | Notifications** page, select **+Create notification** on the menu bar. 
 
+	![](images/cip2.png)
+
 7. On the **Create notification** page, note the three steps that appear at the top of the page. You are currently on the step **1 - Basics** page. In the **Name** field, enter **Noncompliant OS version**. Leave all the other options set to their default settings and select **Next**.
+
+	![](images/cip3.png)
 
 8. On the step **2 - Notification message templates** page, select your appropriate **locale**, and then enter **WARNING: Noncompliant device** in the **Subject** field. Then enter **Your Windows 10 or later device is not running a compliant version of the OS. The device has been marked as noncompliant and is now locked.**, select the check box for **IsDefault**. Select **Next**.
 
+	![](images/cip4.png)
+
 9. On the step **3 - Review + create** page, review your template settings. If any need to be corrected, select **Previous** to return to the appropriate page and make the necessary edits. If everything looks correct, select **Create**.
+
+	![](images/cip5.png)
 
 10. In your browser session, leave all the tabs open for the next task.
 
@@ -35,7 +45,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you will creat
 
 Given the problems caused at Adatum by devices that are running old versions of Windows, Holly wants to mark any device as noncompliant that is running a version of the OS that is older than version 10.0.17763.1192. Marking a device as noncompliant will lock the device. In the policy that Holly wants to create, any device running a version of Windows that is older than this version will be marked as noncompliant, and an email will be sent to the end-user notifying them of the situation.
 
-1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**.
 
 2. In your **Edge** browser, you should still have the **Microsoft Endpoint Manager admin center** open from the first exercise in this lab; if so, then select it now. If you closed it, then in **Microsoft 365 admin center**, under the **Admin centers** group in the left-hand navigation pane, select **Endpoint Manager**. 
 
@@ -43,15 +53,25 @@ Given the problems caused at Adatum by devices that are running old versions of 
 
 4. In the **Devices | Overview** page, the **Policy** section appears in the middle of the page's navigation pane. Under this section, select **Compliance policies**.
 
+	![](images/cip6.png)
+
 5. On the **Compliance policies | Policies** page, select **+Create Policy** on the menu bar.
+
+	![](images/cip7.png)
 
 6. On the **Create a policy** pane that appears, select the **Platform** field, and in the drop-down menu that appears, select **Windows 10 and later**. Select **Create**.
 
+	![](images/cip8.png)
+
 7. On the **Windows 10 compliance policy** window, note the five steps that appear at the top of the page. You are currently on the step **1 - Basics** page. Enter **Compliance1** in the **Name** field and then select **Next**.
+
+	![](images/cip10.png)
 
 8. On the step **2 - Compliance settings** page, select **Device Health** to expand it. Review the available settings and then select **Device Health** again to collapse it. 
 
 9. On the step **2 - Compliance settings** page, select **Device Properties** to expand it. In the **Minimum OS version** field, enter **10.0.17763.1192** and then note the check mark that appears on the right side of the field. Select **Device Properties** again to collapse the section. 
+
+	![](images/cip9.png)
 
 10. On the step **2 - Compliance settings** page, expand the remaining sections and review them, and then when you are done, select **Next**.
 
@@ -62,7 +82,9 @@ Given the problems caused at Adatum by devices that are running old versions of 
     Leave the **Schedule (days after noncompliance)** field set to 0. <br/>
     
     Under the **Message template** column, select **None selected**. In the **Notification message templates** pane that appears, select **Noncompliant OS version** and then select the **Select** button. 
-    
+
+	![](images/cip11.png)
+
     **Note:** You will not send the email to any additional recipients. If you select **None selected** under the **Additional recipients** column, you will have to select an Azure AD group to send the email to (you cannot select an individual user). Other than the end user who owns the device, Holly does not want to notify any other group, so you will not define any additional recipients.
     
     **Note:** To the far right of the **Send email to end user** row is an ellipsis icon. If you select this icon, you can select the option to Delete this action if you decide you no longer want to include it in this policy. You want to send the email notification, so do not select this Delete option.
@@ -73,6 +95,8 @@ Given the problems caused at Adatum by devices that are running old versions of 
 
     In the **Assignments** tab under the **Included groups** section, select **Add groups**. In the **Select groups to include** pane that appears, select **Enrolled devices** and then select the **Select** button at the bottom of the pane. Select **Next**.
 
+	![](images/cip12.png)
+
 14. On the step **5 - Review + create** page, review the policy settings. If anything needs to be fixed, select **Previous** and make the necessary corrections. However, if everything looks correct, select **Create**.
 
 15. In your **Edge** browser, select the **Azure Active Directory admin center** tab. If you closed this tab at the end of the prior exercise, then in the **Microsoft 365 admin center**, in the left-hand pane under **Admin centers**, select **Azure Active Directory**.
@@ -81,9 +105,13 @@ Given the problems caused at Adatum by devices that are running old versions of 
 
 17. In the **Adatum Corporation | Overview** window, the **Manage** section appears in the middle of the page's navigation pane. Under this section, select **Mobility (MDM and MAM).**
 
+	![](images/cip13.png)
+
 18. In the **Adatum Corporation | Mobility (MDM and MAM)** window, select **Microsoft Intune.**
 
 19. In the **Configure** window, in the **MAM User scope** setting, select **All**.
+
+	![](images/cip14.png)
 
 20. Select **Save** in the menu bar at the top of the window, and then select the **X** in the upper right corner to close the **Configure** window.
 
@@ -102,9 +130,11 @@ In this task, you're going to run a command prompt in which you enter the cipher
 
 The purpose of this task is to create this RSA recovery key so that if the device on which they reside becomes compromised, you can recover the files with this DRA certificate from Intune.
 
-1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**.
 
 2. In the Search field on the taskbar at the bottom of the screen, enter **cmd,** and in the menu that appears, select **Command Prompt**.
+
+	![](images/cip15.png)
 
 3. In the **Command Prompt** window, you are going to enter a **cipher** command, which displays or alters the encryption of file directories on NTFS partitions. The **/R** parameter generate an EFS recovery key and a DRA certificate and then stores them in two respective files (for the purpose of this lab, you're going to name each file **DRAcert**; in the real-world, you can name them whatever you wish). The EFS recovery key will be written to a **DRAcert.PFX** file, and the certificate to a **DRAcert.CER** file. <br/>
 
@@ -122,6 +152,8 @@ The purpose of this task is to create this RSA recovery key so that if the devic
 
 6. If the password and confirmation password match, you will receive messages indicating that your .CER and .PFX files were created successfully.
 
+	![](images/cip16.png)
+
 7. Close the Command Prompt window.
 
 8. Leave all browser tabs open for the next task.
@@ -133,7 +165,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you are now go
 
 In this task, you will create a WIP policy that protects an entire collection of recommended apps, as well as an app from the Microsoft Store, which in this case is **Microsoft Power BI**. Since this app produces reports and queries of company trends that may be confidential, Adatum wants to restrict access to it to selected individuals.
 
-1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**.
 
 2. In your Edge browser, you should have a tab open in the **Microsoft Endpoint Manager admin center** that is displaying the **Compliance1** data compliance policy that you created in the earlier task. <br/>
 
@@ -143,6 +175,8 @@ In this task, you will create a WIP policy that protects an entire collection of
 
 4. In the **Apps | App protection policies** window, in the menu bar that appears above the list of policies, select **+Create policy.** In the drop-down menu that appears, select **Windows 10**.
 
+	![](images/cip17.png)
+
 5. On the **Create policy** window, note the six steps that appear at the top of the page. You are currently in the step **1 - Basics** page. Enter the following information:
 
     - Name: **Win10Policy**
@@ -151,11 +185,15 @@ In this task, you will create a WIP policy that protects an entire collection of
 
 6. Select **Next**.
 
+	![](images/cip18.png)
+
 7. On the step **2 - Targeted apps** page, under the **Protected apps** group, select **+Add**. 
 
 8. In the **Add apps** pane that appears on the right, select the drop-down arrow in the field that currently displays **Recommended apps**. The drop-down menu that appears displays the available app options that you can add to this policy - **Recommended apps, Store apps**, and **Desktop apps**. Since you're first going to add all the recommended apps, select **Recommended apps**. <br/>
 
     The quickest way to add all the recommended apps is to select the check box to the left of the **Name** column heading; this will select the check boxes for all the apps in the list. Select the **OK** button at the bottom of the window.
+
+	![](images/cip19.png)
 
 9. This returns you to the step **2 - Targeted apps** page. Scroll down past all the recommended apps that you just added and then select **+Add** again.
 
@@ -169,17 +207,23 @@ In this task, you will create a WIP policy that protects an entire collection of
 
 12. Select **OK** to close the **Add apps** pane, and then select **Next**.
 
+	![](images/cip20.png)
+
 13. On the step **3 - Required settings** page, in the **Windows Information Protection mode** setting, select **Block**, and then select **Next**. <br/>
+
+	![](images/cip21.png)
 
     **Note:** By choosing the **Block** setting, WIP will look for inappropriate data sharing practices and stop the user from completing the action. Blocked actions can include sharing information across non-corporate-protected apps and sharing corporate data between other people and devices outside the organization. Holly has decided to select this option given her concern over the Microsoft Power BI app, which can produce reports and queries of company trends that may be confidential.
 
 14. On the step **4 - Advanced settings** page, scroll down to the **Data protection** section. You will upload the DRA certificate that you created in the prior task, which will allow recovery of encrypted data. <br/>
 
-    To the right of the **Select a file** field, select the **file** icon. In the **File Explorer** window that appears, expand **Local Disk (C:)**, expand **Users**, and then select the **Admin** folder. Scroll down through the files in the **Admin** folder, select **DRAcert.CER**, and then select **Open**.<br/>
+    To the right of the **Select a file** field, select the **file** icon. In the **File Explorer** window that appears, expand **Local Disk (C:)**, expand **Users**, and then select the **azureuser** folder. Scroll down through the files in the **azureuser** folder, select **DRAcert.CER**, and then select **Open**.<br/>
 
     **Note:** DRAcert.CER should now appear in the certificate field in the **Data protection** section. The DRAcert certificate has now been uploaded to the App Protection policy titled **Win10Policy**. This certificate is now available for use in unencrypting protected files. <br/>
 
     **Important:** At this point in a real-world scenario, to maintain device integrity, you should copy your data recovery certificate to an offline location on a thumb drive or stored in a program for keys and passwords. You should also create a backup of this file and store it at another location. The certification is how you recover files using Intune. If the certificate is not saved, then you cannot recover the file using Windows Information Protection if the device ever becomes compromised. For this lab, you will not store the certificate to an offline device.
+
+	![](images/cip22.png)
 
 15. Select **Next**.
 
@@ -189,9 +233,13 @@ In this task, you will create a WIP policy that protects an entire collection of
 
 17. Select **Next**.
 
+	![](images/cip23.png)
+
 18. On the step **6 - Review + create** page, review the policy settings. If anything needs to be fixed, select **Previous** and make the necessary corrections. However, if everything looks correct, select **Create**.
 
 19. On the **Apps | App protection policies** window, **Win10Policy** should appear in the list of policies. However, note that its **Deployed** status is **No**. It only takes a few seconds for the policy to be deployed, so select **Refresh** on the menu bar and the **Deployed** status should change to **Yes**.
+
+	![](images/cip24.png)
 
 20. Leave all browser tabs open for the next task.
 
@@ -202,15 +250,25 @@ You have just created a new App Protection Policy (APP), which is also referred 
 
 Packaged apps, also known as Universal Windows apps, are based on an app model that ensures that all the files within an app package share the same identity. Therefore, it is possible to control the entire app using a single AppLocker rule as opposed to the non-packaged apps where each file within the app could have a unique identity. An AppLocker rule for a packaged app controls both the installation as well as the running of the app.
 
-1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**.
 
 2. In the Search field on the taskbar at the bottom of the screen, enter **SecPol** and in the menu that appears, select **Local Security Policy**.
 
+	![](images/cip25.png)
+
 3. In the **Local Security Policy** window, in the left-hand pane, expand **Application Control Policies**, expand **Applocker**, and then select **Packaged app Rules**. In the menu bar at the top of the window, select **Action** and then in the drop-down menu that appears, select **Create New Rule.**
+
+	![](images/cip26.png)
+
+	![](images/cip27.png)
 
 4. This starts the **Create Packaged app Rules** wizard. On the **Before You Begin** page, select **Next.**
 
+	![](images/cip28.png)
+
 5. On the **Permissions** page, make sure the **Action** option is set to **Allow** and the **User or group** is set to **Everyone**, and then select **Next**.
+
+	![](images/cip29.png)
 
 6. On the **Publisher** page, under the **Use an installed packaged app as a reference** option, select the **Select...** button.<br/>
 
@@ -218,43 +276,67 @@ Packaged apps, also known as Universal Windows apps, are based on an app model t
 
 7. In the **Select applications** window, pick the app that you want to use as the reference for your rule. For this lab, enter **one** in the **Search** field, and then in the list of results, select the check box to the left of **OneNote**. Select **OK**.
 
+	![](images/cip31.png)
+
 8. On the **Publisher** page, select the **Create** button at the bottom of the page.
+
+	![](images/cip30.png)
 
 9. If a dialog box appears asking whether you want to create default rules, select **No**. You must not create default rules for your WIP policy.
 
 10. In the **Local Security Policy** window, in the left-hand pane, right-click on **AppLocker** and select **Export policy.**
 
+	![](images/cip32.png)
+
 11. In the **Export policy** File Explorer window, you will export and save your new policy as an XML file. Select the **Documents** folder, enter **apprule1** in the **File name** field, verify the **Save as type** field displays **XML (\*.xml)**, and then select **Save**.
+
+	![](images/cip33.png)
 
 12. An **AppLocker** dialog box appears displaying a message that **1 rules were exported from the policy**. Select **OK.**
 
 13. In the **Local Security Policy** window, under **AppLocker**, select **Executable Rules**, and then right-click on **Executable Rules**. In the menu that appears, select **Create New Rule.**
 
+	![](images/cip34.png)
+
 14. On the **Before You Begin** page, select **Next.**
 
 15. On the **Permissions** page, make sure the **Action** option is set to **Allow** and the **User or group** is set to **Everyone**, and then select **Next.**
 
+	![](images/cip35.png)
+
 16. On the **Conditions** page, select the **Path** option and then select **Next**.
+
+	![](images/cip36.png)
 
 17. On the **Path** page, select the **Browse Folders....** button (do not confuse this with the **Browse Files** button).
 
 18. In the **Browse For Folder** window, select **Local Disk (C:)**, select **Program Files**, and then select **OK**. Select **Next**.
 
+	![](images/cip37.png)
+
 19. On the **Exceptions** page, you are not adding any exceptions, so select **Next**.
 
 20. On the **Name and Description** page, select the **Name** field, replace the existing content by entering **exerule1**, and then select **Create**.
 
+	![](images/cip38.png)
+
 21. If an **AppLocker** dialog box appears asking if you want to create the default rules, select **No**.
+
+	![](images/cip39.png)
 
 22. In the **Local Security Policy** window, in the left-hand pane, right-click on **AppLocker** and select **Export policy.**
 
 23. In the **Export policy** File Explorer window, you will export and save your new policy as an XML file. Select the **Documents** folder, enter **exerule1** in the **File name** field, verify the **Save as type** field displays **XML (\*.xml)**, and then select **Save**.
+
+	![](images/cip40.png)
 
 24. An **AppLocker** dialog box appears displaying a message that **2 rules were exported from the policy**. Select **OK.**
 
 25. In the **Executable Rules** folder right click on **exerule1**, then select **Delete**.
 
 26. An **Applocker** warning window will appear asking if your are sure that you want to delete the selected rule. Select **Yes**.
+
+	![](images/cip41.png)
 
 27. Under the **Applocker**section, select **Package app Rules**.
 
@@ -271,21 +353,29 @@ Packaged apps, also known as Universal Windows apps, are based on an app model t
 
 The purpose of this task is to show you how to use Intune to push an app to a device just like a Group Policy Object (GPO). In this task, you will use Notepad. In a previous task, Notepad was included as one of the recommended apps in the App protection policy that you created. In this task you will import into Intune the App protection policy (**apprule1.xml**) that you exported in the prior task.
 
-1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**.
 
 2. In your **Edge** browser, you should have the **Microsoft Endpoint Manager admin center** portal open in a tab titled **Apps - Microsoft Endpoint Manager admin center**. Select this tab.
 
 3. In the **Apps – App protection policies** window, it displays the list of app protection policies. In this list, select **Win10Policy**.
 
+	![](images/cip42.png)
+
 4. In the **Intune App Protection** window, in the middle pane under **Manage**, select **Properties**.
 
 5. In the **Intune App Protection | Properties** window, the detail pane displays the Intune App Protection properties by group (for example, Basics, Targeted apps, Required settings, and so on). Select **Edit** that appears next to the **Targeted apps** group.
 
+	![](images/cip43.png)
+
 6. In the **Edit policy** window, scroll down past the list of Protected apps and then select **+Import**.
+
+	![](images/cip44.png)
 
 7. In the **Import apps** pane that appears, select the folder icon that appears to the right of the **Select a file** field.
 
 8. In the **File Explorer** window that appears, select the **Documents** folder, select the **apprule1.xml** file, select **Open**, and then at the bottom of the **Import apps** pane, select **OK**.<br/>
+
+	![](images/cip45.png)
 
     **Note:** This imports the file, and the apps are added to your **Protected apps** list.
 
@@ -293,15 +383,23 @@ The purpose of this task is to show you how to use Intune to push an app to a de
 
 10. You now want to create a file that you're going to encrypt using Windows Information Protection. In the search field on your taskbar, enter **Notepad**, and then in the menu, select **Notepad**.
 
+	![](images/cip46.png)
+
 11. In the **Notepad** window, enter **This is a WIP encryption test** and then select **File**, select **Save as,** select the **Documents** folder, enter **apptest1** as the **File name**, and then select **Save.**
+
+	![](images/cip47.png)
 
 12. Close Notepad.
 
 13. In the search field on your taskbar, enter **cmd**, and then in the menu, right-click on **Command Prompt** and select **Run as administrator**.
 
+	![](images/cip48.png)
+
 14. In the **Command Prompt** window, at the prompt, enter the following command to encrypt the apptest1.txt file (the /e parameter directs the cipher command to encrypt the file):<br/>
 
-    **cipher /e   C:\Users\Admin\Documents\apptest1.txt**
+    **cipher /e   C:\Users\azureuser\Documents\apptest1.txt**
+
+	![](images/cip49.png)
 
 15. Leave the Command Prompt window open for the next task, but minimize it for now.
 
@@ -310,19 +408,25 @@ The purpose of this task is to show you how to use Intune to push an app to a de
 
 The purpose of this task is to show you how to recover a file that has been encrypted using WIP if the Windows 10 device on which it resides has been recovered after having been misplaced or stolen. In this case, you will decrypt the apptest1.txt file that you earlier encrypted. In a real-world scenario, you would start out by copying your WIP-encrypted file to a location where you have admin access; however, in this lab, we're simply going to point to the apptest1.txt file to keep things simple.
 
-1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**.
 
 2. You must now install the **DRAcert.PFX** file. To do so, select the **File Explorer** icon on the taskbar at the bottom of the screen. Maximize the **File Explorer** window.
 
-3. In **File Explorer**, expand **Local Disk (C:)**, expand **Users**, and select **Admin**.
+3. In **File Explorer**, expand **Local Disk (C:)**, expand **Users**, and select **azureuser**.
 
-4. In the list of files in the **Admin** folder, double-click on the **DRAcert.PFX** file. This initiates the **Certificate Import Wizard**.
+4. In the list of files in the **azureuser** folder, double-click on the **DRAcert.PFX** file. This initiates the **Certificate Import Wizard**.
+
+	![](images/cip50.png)
 
 5. On the **Welcome to the Certificate Import Wizard** page, select the **Current User** option and then select **Next**.
+
+	![](images/cip51.png)
 
 6. On the **File to import** page, select **Next.**
 
 7. On the **Private key protection** page, in the **Password** field, enter the password that you assigned to the DRAcert file that you created in Task 2 (in a real-world scenario, you were instructed to write this down for future use). For this lab, enter **Pa55w.rd**, which was the password that you assigned to the DRAcert file. To verify what you typed, select the **Display Password** check box. Select **Next**.
+
+	![](images/cip52.png)
 
 8. On the **Certificate store** page, select **Next.**
 
@@ -334,9 +438,11 @@ The purpose of this task is to show you how to recover a file that has been encr
 
 12. In the Command Prompt window, run the following command to decrypt the apptest1.txt file (the /d parameter directs the cipher command to decrypt the file):<br/>
 
-    **cipher /d  C:\Users\Admin\Documents\apptest1.txt** <br/>
+    **cipher /d  C:\Users\azureuser\Documents\apptest1.txt** <br/>
     
     A message should be displayed in the Command Prompt window indicating one file was decrypted.
+
+	![](images/cip53.png)
 
 13.	Close the Command Prompt and File Explorer windows.
 
@@ -346,31 +452,45 @@ The purpose of this task is to show you how to recover a file that has been encr
 ### Task 8: Configure enrollment restrictions
 When enrolling devices to Microsoft Intune, you have the option to Allow or Block personally owned devices from being enrolled. This is done by restricting what device type platforms you want to allow when devices are enrolled. For example, if you configured Intune to only allow iOS devices to be enrolled and a user attempts to enroll an Android device, the operation would be blocked from enrolling.
 
-1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**.
 
 2. In your Edge browser, you should have a tab open for the **Microsoft Endpoint Manager admin center** that's displaying the **Intune App Protection | Properties** window. In the left-hand navigation pane, select **Devices**. <br/>
 
 3. In the **Devices| Overview** window, the **Device enrollment** section appears in the middle of the page's navigation pane. Under this section, select **Enroll devices.**
 
+	![](images/cip54.png)
+
 4. In the **Enroll devices | Windows enrollment** window, in the navigation pane for this page, select **Enrollment restrictions**.
 
 5. In the **Enroll devices | Enrollment restrictions** window, in the **Device type restrictions** section, on the **Default** restriction type, select **All users**.
+
+	![](images/cip55.png)
 
 6. In the **All Users** window, the **Manage** section appears towards the top of the page's navigation pane. Under this section,  select **Properties.**
 
 7. In the **All Users | Properties** window, select **Edit** that appears next to **Platform settings**.
 
+	![](images/cip56.png)
+
 8. In the **Edit restriction** window, under the **Platform** column, select **Block** for the **iOS/iPadOS** and **macOS** types, select the **Review + save** button at the bottom of the screen, and then review your changes. Both platform settings should display **Block (edited)** under the **Platform** column. All other device types should be allowed. Select **Save.**
+
+	![](images/cip57.png)
 
 9. In the navigation thread at the top of the page (**Home > Devices > Enroll devices > All users**), select **Enroll devices**. 
 
 10. In the **Enroll devices | Enrollment restrictions** window, in the **Device limit restrictions** section, on the **Default** row, select **All users**.
 
+	![](images/cip58.png)
+
 11. In the **All Users** window, in the middle pane under the **Manage** section, select **Properties.**
 
 12. In the **All Users | Properties** window, select **Edit** that appears next to **Device limit**.
 
+	![](images/cip59.png)
+
 13. In the **Edit restriction** window, select the **Device limit** field, in the drop-down menu select **3**, and then select **Review + save.** Review your change and then select **Save.**
+
+	![](images/cip60.png)
 
 14. Leave all browser tabs open for the next task.
 
@@ -379,7 +499,7 @@ When enrolling devices to Microsoft Intune, you have the option to Allow or Bloc
 
 The purpose of this task is to simply review the different platforms that are available to be assigned to a device configuration profile. You will not create a profile; you will simply review the platforms that are available to assign to a profile.
 
-1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**.
 
 2. In your **Edge** browser, you should have a tab open for the **Microsoft Endpoint Manager admin center** that's displaying the **All Users | Properties** window. In the left-hand navigation pane, select **Devices**.
 
@@ -387,7 +507,11 @@ The purpose of this task is to simply review the different platforms that are av
 
 5. On the **Devices |Configuration profiles** page, select **+Create profile** that appears on the menu bar above the list of profiles.
 
+	![](images/cip61.png)
+
 6. On the **Create a profile** pane, select the **Platform** field to see the different platforms that are available. **Do not select any option.** The purpose of this task is to simply see what platforms are available that can be assigned to a new device profile, should you want to ever create one.
+
+	![](images/cip62.png)
 
 7. Close the **Create a profile** pane.
 
