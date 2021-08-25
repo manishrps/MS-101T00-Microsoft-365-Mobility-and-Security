@@ -121,6 +121,8 @@ In this task, you are going to sign into the Microsoft Store for Business as one
 
 5. In the **Microsoft Store for Business**, on the menu bar at the top of the page, select **Adatum private store.**
 
+  **Note**: If you get **Activate private store** window when you try to acces Adatum private store, click on it then accept license terms.
+
 6. In the **Adatum private store**, verify that Joni can see the following: 
 
 	- The **Collection1** app that you created in the prior task that includes: **Fresh Paint, Microsoft Remote Desktop,** and **3D Builder**.

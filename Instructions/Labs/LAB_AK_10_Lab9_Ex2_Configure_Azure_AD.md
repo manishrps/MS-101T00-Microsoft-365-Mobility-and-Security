@@ -45,23 +45,37 @@ In this task, you will change the default settings for users to join their devic
 
 2. In the **Adatum Corporation | Overview** window, in the middle section under **Manage**, select **Devices**.
 
-3. In the **Devices | All devices** window, in the details pane on the right, verify that **LON-CL2** is displayed in the list of devices. <br/>
+	![](images/cad6.png)
 
-   **Note:** Back in Lab 5, you performed a task that configured Mobile Device Management (MDM) auto-enrollment; this was a prerequisite to performing a later Windows Information Protection lab. When you performed this MDM configuration lab, it automatically enrolled the devices belonging to members of the WIP Users group. At the time, Joni Sherman was logged into Microsoft 365 on LON-CL2, and since she was a member of the WIP Users group, LON-CL2 was automatically enrolled into Intune as its MDM authority.
+3. In the **Devices | All devices** window, in the details pane on the right, verify that **VM-XXXXXX** (XXXXXX is the deployment ID) is displayed in the list of devices. <br/>
+
+	![](images/cad7.png)
+
+   **Note:** Back in Lab 6, you performed a task that configured Mobile Device Management (MDM) auto-enrollment; this was a prerequisite to performing a later Windows Information Protection lab. When you performed this MDM configuration lab, it automatically enrolled the devices belonging to members of the WIP Users group. At the time, Joni Sherman was logged into Microsoft 365 on this VM, and since she was a member of the WIP Users group, **VM-XXXXXX** was automatically enrolled into Intune as its MDM authority.
 
 4. In the **Devices | All devices** window, in the middle pane, select **Device settings**.
 
 5. In the **Devices | Device settings** window, in the details pane on the right, in the **Users may join devices to Azure AD** option, verify that **All** is selected. This means that all Azure AD users can join their devices to Azure Active Directory.
 
+	![](images/cad8.png)
+
 6. Scroll down to the bottom of the window. Under **Additional local administrators on all Azure AD joined devices**, no local administrators are displayed. Select the **Manage Additional local administrators on all Azure AD joined devices**. <br/>
+
+	![](images/cad9.png)
 
    On the **Device Administrators | Assignments** window, note that there are no additional assignments. In the next several steps, you will add a role assignment.
 
 7. In the **Device Administrators | Assignments** window, select **+Add assignments** on the menu bar.
 
+	![](images/cad10.png)
+
 8. In the **Add assignments** pane on the right, select **Alex Wilber** in the list of users and then select the **Add** button at the bottom of the screen.
 
+	![](images/cad11.png)
+
 9. Select the **Back arrow** on the address bar to return to the **Devices | Device settings** page. Verify the **Require Multi-Factor Auth to join devices** toggle switch is set to **No**. The **Maximum number of devices per user** is currently set to **50**; select this field and in the drop-down menu that appears, select **10**.
+
+	![](images/cad12.png)
 
 10. On the menu bar at the top of the page, select **Save**.
 
@@ -80,7 +94,11 @@ In this task, Holly wants to create a new Security group for enrolled devices wi
 
 2. In the **Adatum Corporation | Overview** window, in the middle pane under **Manage,** select **Groups**.
 
+	![](images/cad13.png)
+
 3. In the **Groups | All groups** window, in the details pane on the right, select **+New group** on the menu bar.
+
+	![](images/cad14.png)
 
 4. In the **New Group** window, enter the following information:
 
@@ -88,8 +106,12 @@ In this task, Holly wants to create a new Security group for enrolled devices wi
     - Group name: **Enrolled Devices**
     - Membership type: **Dynamic Device**
     - Owner: select **no owners selected**, then in the **Add Owners** window, select **Alex Wilber** and then select the **Select** button
-    
+
+	![](images/cad15.png)
+
 5. At the bottom of the **New Group** window, under **Dynamic device members**, select **Add dynamic query**.
+
+	![](images/cad17.png)
 
 6. In the **Dynamic membership rules** window, configure the following fields for this expression:
 
@@ -100,6 +122,8 @@ In this task, Holly wants to create a new Security group for enrolled devices wi
 7. Select **+Add expression**. It should display the following in the **Rule syntax** field:<br/>
 
     **(device.managementType -eq  &quot;MDM&quot;)**
+
+	![](images/cad16.png)
 
 8. Select **Save** in the menu bar at the top of the window.
 
