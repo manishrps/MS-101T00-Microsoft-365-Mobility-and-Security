@@ -163,4 +163,4 @@ In this task, you will create a conditional access policy that Holly plans to im
 You have now created a conditional access policy and enabled it for Adatum's pilot project.
 
 
-# End of Lab 10
+# End of Lab 9
