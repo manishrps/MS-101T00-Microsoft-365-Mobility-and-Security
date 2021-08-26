@@ -226,4 +226,4 @@ You will begin by having Holly create a new SharePoint site collection. You will
 43. Leave your browser open for the next lab; do not close any of the tabs. 
 
 
-# End of Lab 4
+# Proceed to Lab 4 - Exercise 3
