@@ -133,4 +133,4 @@ In an earlier lab you configured integration between Azure AD and Intune. Becaus
 9. Leave all browser tabs open for the next task.
 
 
-# Proceed to Lab 4 - Exercise 5
+# Proceed to Lab 9 - Exercise 5
