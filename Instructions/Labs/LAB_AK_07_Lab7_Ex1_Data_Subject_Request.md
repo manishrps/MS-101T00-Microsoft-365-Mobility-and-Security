@@ -137,4 +137,4 @@ When someone opens a case to search for content, you typically export the result
 You have successfully exported a case report to your local computer. Note: Because the report contains only a report and not the message or document content, you could not process this report to fulfill the data subject request's legal requirements.
 
 
-# Proceed to Lab 8 - Exercise 2
+# Proceed to Lab 7 - Exercise 2
