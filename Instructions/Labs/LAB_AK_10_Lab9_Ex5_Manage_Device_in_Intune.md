@@ -144,7 +144,7 @@ In this task, you will create a conditional access policy that Holly plans to im
 
 13.  On the **Grant** pane that appears, select the **Require device to be marked as compliant** check box, and then select the **Select** button.
 
-	![](images/md16.png)
+    	![](images/md16.png)
 
 14. On the **New** pane, under **Access Controls**, select the **Session** section.
 
