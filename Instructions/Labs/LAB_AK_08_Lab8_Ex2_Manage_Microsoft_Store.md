@@ -132,4 +132,4 @@ In this task, you are going to sign into the Microsoft Store for Business as one
 7. In your browser, close the **Microsoft Store for Business** tab.
 
 
-# End of Lab 9
+# End of Lab 8
