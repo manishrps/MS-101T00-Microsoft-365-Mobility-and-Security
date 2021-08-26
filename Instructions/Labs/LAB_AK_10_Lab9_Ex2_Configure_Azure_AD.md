@@ -134,4 +134,4 @@ In this task, Holly wants to create a new Security group for enrolled devices wi
 11. Leave all browser tabs open for the next task.
 
 
-# Proceed to Lab 10 - Exercise 3
+# Proceed to Lab 9 - Exercise 3
