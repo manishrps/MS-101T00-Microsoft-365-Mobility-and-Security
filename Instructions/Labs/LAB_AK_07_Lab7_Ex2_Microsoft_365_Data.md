@@ -141,4 +141,4 @@ In this task, you will create an eDiscovery case, add an In-Place Hold to the ca
 You have now created an eDiscovery case, added an In-Place Hold to preserve mailbox content, and created a search to discover data from the hold.
 
 
-# End of Lab 8
+# End of Lab 7
