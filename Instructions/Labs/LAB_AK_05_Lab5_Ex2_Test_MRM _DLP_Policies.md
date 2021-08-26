@@ -126,4 +126,4 @@ Therefore, when you send an email with two IP addresses in this task, all you ca
 13. Leave your Edge browser and all its tabs open on LON-CL2.
 
 
-# End of Lab 6
+# End of Lab 5
