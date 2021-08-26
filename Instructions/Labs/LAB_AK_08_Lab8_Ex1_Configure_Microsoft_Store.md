@@ -79,4 +79,4 @@ In this task, you will begin by installing the Microsoft Store for Business on y
 21. Leave the **Microsoft Store for Business** tab open in your Edge browser. You will use this in the next exercise. 
 
  
-# Proceed to Lab 9 - Exercise 2
+# Proceed to Lab 8 - Exercise 2
