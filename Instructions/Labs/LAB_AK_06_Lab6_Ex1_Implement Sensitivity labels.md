@@ -401,4 +401,4 @@ In the prior task, you created a Word document and protected it with a Sensitivi
 31. Remain signed into Outlook on the Web as Joni. Do not close your browser.
 
 
-# Proceed to Lab 7 - Exercise 2
+# Proceed to Lab 6 - Exercise 2
