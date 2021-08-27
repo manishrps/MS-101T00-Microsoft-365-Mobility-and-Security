@@ -74,9 +74,9 @@ You have now created an **App protection policy** (which is a Windows Informatio
 
 ### Task 2 – Use Windows Information Protection
 
-In this exercise you will enroll your LON-CL2 device to Azure AD. You will then test the WIP policy that you created in the prior task by creating a work document and then copy and pasting from it to a personal location. This will test the WIP protection feature that prevents copy and pasting between a protected Word document and an untrusted website in your Edge browser. Since the WIP policy that you created was assigned to the WIP Users group, you must switch to LON-CL2 and create the document while signed in as Joni Sherman, who is a member of this group.
+In this exercise you will enroll your Lab VM device to Azure AD. You will then test the WIP policy that you created in the prior task by creating a work document and then copy and pasting from it to a personal location. This will test the WIP protection feature that prevents copy and pasting between a protected Word document and an untrusted website in your Edge browser. Since the WIP policy that you created was assigned to the WIP Users group, you must switch to Lab VM and create the document while signed in as Joni Sherman, who is a member of this group.
 
-1. Switch to the **Firefox Browser**, where you should still be logged into **Outlook on the Web** as **Joni Sherman**. If not login with  **JoniS@xxxxxZZZZZZ.onmicrosoft.com** and password **Pa55w.rd**.
+1. Switch to the **Chrome Browser**, where you should still be logged into **Outlook on the Web** as **Joni Sherman**. If not login with  **JoniS@xxxxxZZZZZZ.onmicrosoft.com** and password **Pa55w.rd**.
 
 2. Minimize your **Firefox** browser.
 
@@ -104,27 +104,39 @@ In this exercise you will enroll your LON-CL2 device to Azure AD. You will then 
 
 7. Select the **Start** icon in the the bottom left corner of the taskbar, and in the **Start** menu, select **Microsoft Word**. 
 
+	![](images/wip20.png)
+
 8. Select **Blank document**.
 
 9. If a **What’s New** window opens, close it.
 
 10. In the document, type **Protected business content**.
 
+	![](images/wip21.png)
+
 11. Select **File** from the menu bar above the ribbon, select **Save As** on the left menu, and then select **Browse** from the **Save As** menu.
+
+	![](images/wip22.png)
 
 12. In the **File Explorer** window, you should see a **lock symbol** that appears to the left of the **File name** field. Next to this lock symbol is a drop-down arrow. Select this arrow, and in the menu that appears, select **Work (xxxxxZZZZZZ.onmicrosoft.com).**
 
 13. Accept the default file name **Protected business content.docx**, change the file path to your **Documents** folder and select **Save**.
 
+	![](images/wip23.png)
+
 14. In the Word document, select the sentence that you typed in the document, then right-click on the selected text and select **Copy**.
 
-15. Select the **Edge** icon on the taskbar. In your browser, open a new tab, click in the Search box and press **Ctrl-V** on your keyboard to paste in the copied text. Instead of seeing the copied text, a pop-up window should appear with the following message: **Can’t use work content here. Your organization doesn't allow you to use work content here.** Select **OK**.
+	![](images/wip24.png)
+
+15. Select the **Chrome** icon on the taskbar (Make sure JoniS@xxxxxZZZZZZ.onmicrosoft.com already loggin in another tab). In your browser, open a new tab, click in the Search box and press **Ctrl-V** on your keyboard to paste in the copied text. Instead of seeing the copied text, a pop-up window should appear with the following message: **Your organization doesn't allow you to use work content here.** Select **OK**.
+
+	![](images/wip25.png)
 
 	You have just verified that WIP protection prevents copy and pasting between a protected Word document and an untrusted website in your Edge browser.
 
-16. Leave your LON-CL2 VM and browser open for the next lab.
+16. Leave your Lab VM and browser open for the next lab.
 
-You have just enrolled the Client 2 VM to your tenant, so the Client app protection policy **WIP Client Protection** that you configured in the last task could be applied to protect the content of a Word document.
+You have just enrolled the Lab VM to your tenant, so the Client app protection policy **WIP Client Protection** that you configured in the last task could be applied to protect the content of a Word document.
 
 
 # End of Lab 6
