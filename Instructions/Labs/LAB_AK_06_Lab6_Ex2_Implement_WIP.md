@@ -120,6 +120,8 @@ In this exercise you will enroll your Lab VM device to Azure AD. You will then t
 
 12. In the **File Explorer** window, you should see a **lock symbol** that appears to the left of the **File name** field. Next to this lock symbol is a drop-down arrow. Select this arrow, and in the menu that appears, select **Work (xxxxxZZZZZZ.onmicrosoft.com).**
 
+  **Note**: If you can't see lock symbol when you try to save then come back to this exercise after some, It takes few hours time for the option to show up.
+
 13. Accept the default file name **Protected business content.docx**, change the file path to your **Documents** folder and select **Save**.
 
 	![](images/wip23.png)
