@@ -18,9 +18,11 @@ In Lab 6 Exercise 2 we have added **JoniS@xxxxxZZZZZZ.onmicrosoft.com** as work 
 
 	![](images/ew5.png)
 
-3. When prompted for **yes** to continue, select it.
+3. When prompted for **Yes** to continue, select it.
 
 	![](images/ew6.png)
+
+  **Note**: If it prompted for **Reboot**, then reboot the VM.
 
 4. Now verify there are no accounts logged in.
 

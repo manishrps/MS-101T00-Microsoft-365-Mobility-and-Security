@@ -81,7 +81,7 @@ However, the email will be blocked if two or more IP addresses are discovered in
 
 Therefore, when you send an email with two IP addresses in this task, all you can do is verify that the email message is blocked. The policy tip will not display; therefore, you will be unable to override the blockage and send the email. While we wanted you to experience creating mail transport rules in the earlier lab, we also knew this would not allow you to see policy tips in this lab. But it was felt that learning how to create mail transport rules in the earlier lab was worth this minor inconvenience in this lab. 
 
-1. Switch to LON-CL1, where you should still be logged into Microsoft 365 as Holly Dickson. 
+1. You should still be logged into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**.
 
 2. You will now send an email from Holly to Lynne, and you will include an IP address in the body of the email. In **Microsoft Edge**, the **Outlook on the web** tab should still be open for Holly. If necessary, select the **Outlook on the web** tab.
 
