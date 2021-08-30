@@ -54,31 +54,31 @@ Given that, you will still configure a policy tip for the DLP policy that you cr
 
 10. On the **Create rule** page, enter the following information then select **Save**.
     
-      - Name: **IP Address DLP**.
+    - Name: **IP Address DLP**.
     
-     - Description: **leave blank**.
+    - Description: **leave blank**.
     
-      - In the Conditions section select the **Add condtion** then select content contains.
+    - In the Conditions section select the **Add condtion** then select content contains.
 
 	![](images/dlp9.png)
 
-        - In the **Content contains** field select the **Add** drop-down menu, then select **Sensitive info types**.
+    - In the **Content contains** field select the **Add** drop-down menu, then select **Sensitive info types**.
 
 	![](images/dlp10.png)
 
-        - In the **Sensitive info types** pane, type Ip address inside the **Search** field.
+    - In the **Sensitive info types** pane, type Ip address inside the **Search** field.
         
-        - Select **Ip Address**, then select **Add**.
+    - Select **Ip Address**, then select **Add**.
 
 	![](images/dlp11.png)
 
-     - In the **Actions** section, select the **Add an action** drop-down menu. Then select **Restrict access or encrypt the content in Microsoft locations**. Then again select check box for **Restrict access or encrypt the content in Microsoft locations** and also select check box for **Block everyone**
+    - In the **Actions** section, select the **Add an action** drop-down menu. Then select **Restrict access or encrypt the content in Microsoft locations**. Then again select check box for **Restrict access or encrypt the content in Microsoft locations** and also select check box for **Block everyone**
 
 	![](images/dlp12.png)
 
 	![](images/dlp19.png)
 
-     - In the **User notifications** section, set the **Use notifications to inform your users and help educate them on the proper use of sensitive info** to the **On** position.
+    - In the **User notifications** section, set the **Use notifications to inform your users and help educate them on the proper use of sensitive info** to the **On** position.
 
 	![](images/dlp13.png)
 
