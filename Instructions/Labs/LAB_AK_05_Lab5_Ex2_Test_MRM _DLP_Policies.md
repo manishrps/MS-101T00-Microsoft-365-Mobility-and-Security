@@ -2,7 +2,38 @@
 
 You are now at the point in your pilot project where you want to test the MRM and DLP policies that you created in previous lab exercises. You have decided to test the MRM policy that affects how email messages are archived, and then you want to test the DLP policy related to emails that contain sensitive information. 
 
-### Task 1 – Test an MRM Policy to Archive Email Messages
+### Task 1 – Activate In-Place Archiving
+
+In this next phase of your Adatum pilot project, you will access the Microsoft 365 Compliance Center to activate Holly Dickson’s archive mailbox.   
+
+1. You should still be logged into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**.
+
+2. In Microsoft Edge, in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Compliance** to open the Microsoft 365 Compliance center.
+
+	![](images/rtp2.png)
+
+3. In the **Microsoft 365 Compliance** center, in the left-hand navigation pane, select **Information governance**. 
+
+	![](images/rtp5.png)
+
+4. On the **Information governance** page, the **Labels** tab appears by default. In the list of tabs along the top of the page, select **Archive**.
+
+4. On the **Archive** page, verify that Lynne Robbins Archive mailbox status is Disbled.
+
+	![](images/mrm.png)
+
+5. To enable Lynne Robbins archive mailbox, select the check box next to **Lynne Robbins** in the user list and then select **Enable Archive** in the menu bar that appears above the list of users.
+
+	![](images/mrm6.png)
+
+6. In the **Warning** dialog box that appears, select **Enable** to confirm this action.
+
+	![](images/rtp4.png)
+
+7. In your Microsoft Edge browser, leave the Microsoft 365 Compliance Center tab open as you will use it in a later task in this lab. 
+ 
+
+### Task 2 – Test an MRM Policy to Archive Email Messages
 
 In this exercise, you will send an email from Holly Dickson to one of your pilot team users, Lynne Robbins. You will then log into Microsoft 365 as Lynne on the LON-CL2 VM, locate the email in her Inbox, and then assign the email a custom retention tag that you created. This personal retention tag will override the parent folder tag for this specific message, which will be moved to Lynne’s In-Place archive mailbox after 3 years rather than 2 years.
 
@@ -42,7 +73,7 @@ In this exercise, you will send an email from Holly Dickson to one of your pilot
 
 	![](images/mrm3.png)
 
-13. Back in Lab 3, you changed the assigned retention policy for Lynne’s mailbox to **Office Retention Policy**. This policy contains the **3 Year Move – Archive after three years** personal retention tag that you created in Lab 3. <br/>
+13. Back in Lab 4, you changed the assigned retention policy for Lynne’s mailbox to **Office Retention Policy**. This policy contains the **3 Year Move – Archive after three years** personal retention tag that you created in Lab 4. <br/>
 
 	‎Upon receiving this email from Holly, Lynne has decided to tag Holly’s email to automatically archive it after three years instead of two years, which is the default policy.  <br/>
 	
@@ -52,24 +83,26 @@ In this exercise, you will send an email from Holly Dickson to one of your pilot
 
 	![](images/mrm4.png)
 
-15. In the **Settings** window that appears, the **Mail** option is already selected by default in the left-hand pane. In the middle pane, select **Retention policies**. 
+15. In the **Settings** window that appears, the **Mail** option is already selected by default in the left-hand pane. In the middle pane, select **Retention policies**.
 
-16. In the **Retention policies** pane that appears on the right side of the screen, select **+Add new policy**. 
+16. In the **Retention policies** pane, after a few seconds the default and custom retention policies will appear. Scroll to the bottom and verify the **3 Year Move - Archive after three years** retention policy appeared in the list of policies.
 
-	![](images/mrm5.png)
+	![](images/mrm7.png)
 
-17. In the **Retention policies** pane, after a few seconds the default and custom retention policies will appear. Scroll to the bottom and select the **3 Year Move - Archive after three years** retention policy that you created in a prior lab, and then select **Save**.
+  **Note**: You can add default and custom policies from the **Add new policy** option. It takes few hours for the policies to show in the list of policies, try logout and login for the user, still if you can't see them note this exercise and verify after some time.
 
-18. Verify you selected the correct retention policy and then close the **Settings** window by selecting the **X** in the upper right corner. This returns you to Lynne’s mailbox.
+17. Close the **Settings** window by selecting the **X** in the upper right corner. This returns you to Lynne’s mailbox.
 
-19. In the **Inbox**, right-click the message that she received from Holly with the subject: **Archive Test**. In the menu that appears, scroll to the bottom and select **Advanced actions**, and then in the menu that appears, select **Assign policy**. In the **Assign Policy** menu that appears, under the **Archive Policy** section, select **3 Year Move - Archive after three years.**  <br/>
+18. In the **Inbox**, right-click the message that she received from Holly with the subject: **Archive Test**. In the menu that appears, scroll to the bottom and select **Advanced actions**, and then in the menu that appears, select **Assign policy**. In the **Assign Policy** menu that appears, under the **Archive Policy** section, select **3 Year Move - Archive after three years.**  <br/>
+
+	![](images/mrm8.png)
 
 	‎**Note:** This personal retention policy will now override the parent folder policy for this specific message, which will be moved to Lynne’s In-Place archive mailbox after 3 years.
 
-20. Leave Outlook on the web open in the LON-CL2 VM as you will return there as Lynne in the next task after receiving another email from Holly.
+19. Leave Outlook on the web open in the Lab VM as you will return there as Lynne in the next task after receiving another email from Holly.
 
 
-### Task 2 – Test a DLP Policy for Sensitive Emails
+### Task 3 – Test a DLP Policy for Sensitive Emails
 
 In the previous exercise, you created a custom DLP policy that searches emails for sensitive information related to IP addresses in your Adatum tenant. In this exercise, you will send two emails from Holly Dickson to Lynne Robbins; the first will include one IP address, and the second email will include two IP addresses. You will verify how each email is handled as a result of the DLP policy.
 
@@ -95,11 +128,15 @@ Therefore, when you send an email with two IP addresses in this task, all you ca
 
 	- Message area: type **I will configure this IP address: 192.168.0.1.**
 
+	![](images/mrm9.png)
+
 	**Note:** When drafting this email with sensitive data (in this case, an IP address) that triggers the DLP policy, a policy tip should be displayed indicating the email violated a DLP policy. Unfortunately, the policy tip will not be displayed as previously mentioned. 
 
 5. Select **Send.**
 
 6. Holly should receive an email in her Inbox from **Microsoft Outlook** with the subject **Notification: <policy name>** (in this case, <policy name> should be the name of the policy you created that tested for IP addresses in emails, which was **DLP policy test**). Review the content of this email. 
+
+	![](images/mrm11.png)
 
 7. You will now send a second message from Holly to Lynne that contains multiple IP addresses. Repeat the process as before for creating an email to Lynne Robbins with the following information: 
 
@@ -109,21 +146,23 @@ Therefore, when you send an email with two IP addresses in this task, all you ca
 
 	**Note:** When drafting this email with sensitive data (in this case, two IP addresses) that triggers the DLP policy, a policy tip should be displayed indicating the email violated a DLP policy. Because there are two IP addresses, the policy tip would indicate that the email will be blocked, but it would give you the option to override the blockage by entering a business justification for sending this sensitive data. Unfortunately, the policy tip will not be displayed as previously mentioned. 
 
+	![](images/mrm10.png)
+
 8. Immediately after sending the email, Holly should receive two emails in her Inbox from **Microsoft Outlook**. <br/>
 
-	- The first email should have the subject **Rule detected - High volume of content detected IP address DLP policy**. Select this email and review its contents.  <br/>
-	
+	- The first email should have the subject **Rule detected - Low volume of content detected IP address DLP policy**. Select this email and review its contents.  <br/>
+
+	![](images/mrm13.png)
+
 	- The second email should be a **Message Blocked** notification for the email that you just sent. Select this email to review its contents.  <br/>
-	
-9. Switch to LON-CL2. 
 
-10. If you need to sign into the VM, the **Admin** account should appear by default, so enter **Pa55w.rd** in the **Password** field to log in. 
+	![](images/mrm12.png)
 
-11. You should still be logged into **Outlook on the Web** in the LON-CL2 VM as **Lynne Robbins**. In your **Edge** browser, Lynne’s mailbox should still be open in **Outlook on the web** from when you last used it in the previous task.
+9. Switch to Chrome Browser. You should still be logged into **Outlook on the Web** in the Chrome as **Lynne Robbins**. In your browser, Lynne’s mailbox should still be open in **Outlook on the web** from when you last used it in the previous task.
 
-12. In Lynne’s **Inbox**, you should see the first message (**DLP policy test**) that you sent, but not the second (**Second DLP policy test**). Remember, when Holly sent the second email, she received a notification that it had been blocked. 
+10. In Lynne’s **Inbox**, you should see the first message (**DLP policy test**) that you sent, but not the second (**Second DLP policy test**). Remember, when Holly sent the second email, she received a notification that it had been blocked. 
 
-13. Leave your Edge browser and all its tabs open on LON-CL2.
+11. Leave your browser and all its tabs open on Lab VM.
 
 
 # End of Lab 5

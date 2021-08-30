@@ -72,9 +72,11 @@ Given that, you will still configure a policy tip for the DLP policy that you cr
 
 	![](images/dlp11.png)
 
-     - In the **Actions** section, select the **Add an action** drop-down menu. Then select **Restrict access or encrypt the content in Microsoft locations**.
+     - In the **Actions** section, select the **Add an action** drop-down menu. Then select **Restrict access or encrypt the content in Microsoft locations**. Then again select check box for **Restrict access or encrypt the content in Microsoft locations** and also select check box for **Block everyone**
 
 	![](images/dlp12.png)
+
+	![](images/dlp19.png)
 
      - In the **User notifications** section, set the **Use notifications to inform your users and help educate them on the proper use of sensitive info** to the **On** position.
 
