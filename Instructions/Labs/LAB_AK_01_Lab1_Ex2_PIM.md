@@ -35,7 +35,7 @@ Before moving on to the tasks of this lab we will first **disable security defau
 
    ![](images/tenant-properties.png)
 
-6. On the **Tenant Properties** scroll down and select **(1) Manage Security defaults**, On the **Enable Security defaults** pane select **(2) No**. Check the **(3) Other** box and enter **(4) NA** as the comment and finally select **(5) Save**.
+6. On the **Tenant Properties** scroll down and select **Manage Security defaults**, On the **Enable Security defaults** pane verify **No** is selected by default. 
 
    ![](images/disable-default.png)
 
