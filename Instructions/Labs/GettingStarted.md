@@ -8,10 +8,10 @@
   
   ![](images/getttingstarted-4.png)  
 
-1. To get the lab environment details, you can select **Environment Details** tab. You can also open the Lab Guide on separate and full window by selecting the **Split Window** from lower right corner. 
+2. To get the lab environment details, you can select **Environment Details** tab. You can also open the Lab Guide on separate and full window by selecting the **Split Window** from lower right corner. 
 
     ![](images/getttingstarted-2.png)
 
-1. Also, you can **start, stop and restart** the virtual machines from **Resources** tab.
+3. Also, you can **start, stop and restart** the virtual machines from **Resources** tab.
 
     ![](images/getttingstarted-3.png)
