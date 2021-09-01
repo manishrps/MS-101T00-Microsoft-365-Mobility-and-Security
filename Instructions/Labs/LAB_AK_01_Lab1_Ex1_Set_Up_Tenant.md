@@ -386,22 +386,13 @@ In Lab 3, you will create Alert Policies using the Security and Compliance Cente
 
 	Select the **Microsoft 365 admin center** tab in your Edge browser. 
 
-2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **Security**. This will open the Office 365 Security and Compliance center.
+2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **Compliance**. This will open the Office 365 Compliance center.
 
-**Note:** If you are redirected to the **Microsoft 365 Defender** page instead of **Office 365 Security & Compliance center**, Navigate to :
-```
-https://protection.office.com/
-``` 
+3. In the **Office 365 Compliance center**, in the left-hand navigation pane, select **Audit** under **Solutions**. Then click on **Start recording user and admin activity **
 
-3. In the **Office 365 Security &amp; Compliance center**, in the left-hand navigation pane, select **Search**, and then under it, select **Audit log search**.
+   ![](images/audit-enable.png)
 
-   ![](images/audit-log-search.png)
-
-4. In the **Audit log search** window, a warning message is displayed at the top of the page. Select the **Turn on auditing** button that appears on the right-side of this message, and then in the **Security &amp; Compliance** dialog box that appears, select **Yes** to confirm that your organization settings need to be updated. <br/>
-
-	**Note:** It may take several minutes for the setting to be updated, at which time the **Security &amp; Compliance** dialog box will disappear.
-
-5. Leave the LabVM and the Security and Compliance Center open and proceed to the next lab.
+4. Leave the LabVM and Compliance Center open and proceed to the next lab.
 
 ### Task 9 – Prepare Users for Content Searches
 
