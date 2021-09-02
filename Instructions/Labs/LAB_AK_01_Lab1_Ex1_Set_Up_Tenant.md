@@ -1,6 +1,6 @@
 # Learning Path 1 - Lab 1 - Exercise 1 - Set up your Microsoft 365 Tenant
 
-In the labs for this course, you are taking on the role of Holly Dickson, Adatum Corporation's Enterprise Administrator. Adatum does NOT have legacy, on-premises servers; therefore, you will be implementing Microsoft 365 in a cloud-only deployment. You have deployed Microsoft 365 in a virtualized lab environment, and you have been tasked with completing a pilot project that tests the security, compliance, and device management features in Microsoft 365 as they relate to Adatum's business requirements.
+In the labs for this course, you are taking on the role of Holly Dickson, Adatum Corporation's Enterprise Administrator. Adatum Corporation is a subsidiary of Contoso Electronics. Adatum does NOT have legacy, on-premises servers; therefore, you will be implementing Microsoft 365 in a cloud-only deployment. You have deployed Microsoft 365 in a virtualized lab environment, and you have been tasked with completing a pilot project that tests the security, compliance, and device management features in Microsoft 365 as they relate to Adatum's business requirements.
 
 You have just started the pilot project; therefore, in this first lab you will set up a personalized Microsoft 365 user account for Holly that will be used throughout all the labs in this course. This first exercise also requires that you perform several setup tasks that will initialize your trial tenant for the remaining labs in this course. You must configure your trial tenant, create a personalized Global Admin user account in Microsoft 365 for Holly, configure several test users and groups that will be used throughout the remaining labs, and turn on Information Rights Management (IRM) in SharePoint Online as well as audit logging.
 
@@ -235,30 +235,25 @@ In the prior task, you successfully added the Global administrator role to Holly
 
 2. In the **Microsoft 365 admin center**, in the left-hand navigation pane under **Admin centers**, select **Security**.
 
-**Note:** If you are redirected to the **Microsoft 365 Defender** page instead of **Office 365 Security & Compliance center**, Navigate to :
-```
-https://protection.office.com/
-``` 
-
-3. In the **Office 365 Security & Compliance center**, select **Permissions** in the left-hand navigation pane.
+3. In the **Microsoft 365 Defender** window, select **Permissions & roles** in the left-hand navigation pane.
     
-4. In the **Home \> Permissions** page in the **Search** field, type **Org** then select the search glass.
+4. In the **Permissions & roles** page, the roles are displayed under two groups - **Azure AD** and **Email & collaboration roles**. Under the **Email & collaboration roles** group, select **Roles**
     
-5. On the **Home \> Permissions** page list, select the **Organization Management** role.
+5. On the **Permissions & roles > Permissions** page, select the **Organization Management** role.
 
     ![](images/security-permissions.png)
 
-6. On the **Organization Management** page under the **Members** section, select the **Edit** icon.
+6. On the **Organization Management** pane that appears, scroll down to the **Members**section and select **Edit**.
 
-7. On the **Editing choose members** page, select **Choose Members**.
+7. On the **Editing Choose members** page, it displays a message indicating **The list is currently empty.** Select **Choose members** that appears below this message.
 
-8. On the **Choose Members** page, select the **Add** icon.
+8. On the **Choose members** page, select the **+Add** button.
 
-9. On the **Choose Members** list, select the **Holly Dickson** account.Then select the **Add** icon.
+9. On the **Choose members** list, select the **Holly Dickson** account and then select the **Add** button.
 
-10. On the **Choose Members** page, select the**Done** icon.
+10. On the **Choose members** page, select the **Done** button.
 
-11. On the **Editing choose members** page, select the **Save** icon.
+11. On the **Editing Choose members** page, select the **Save** button.
 
 12. Select **Close**.
 
@@ -386,45 +381,42 @@ In Lab 3, you will create Alert Policies using the Security and Compliance Cente
 
 	Select the **Microsoft 365 admin center** tab in your Edge browser. 
 
-2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **Compliance**. This will open the Office 365 Compliance center.
+2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **Security**. This will open **Microsoft 365 Defender**.
 
-3. In the **Office 365 Compliance center**, in the left-hand navigation pane, select **Audit** under **Solutions**. Then click on **Start recording user and admin activity **
+3. In **Microsoft 365 Defender**, in the left-hand navigation pane, select **Audit**.
 
-   ![](images/audit-enable.png)
+4. In the **Audit** window, if auditing is not turned on for your organization, a banner is displayed that says: **Start recording user and admin activity**. This banner is your prompt to turn on audit logging. <br/>
 
-4. Leave the LabVM and Compliance Center open and proceed to the next lab.
+	Select this banner now to turn on audit logging. 
+
+5. Leave the LabVM and Compliance Center open and proceed to the next lab.
 
 ### Task 9 – Prepare Users for Content Searches
 
 In Module 8, you will perform a Content Search lab that requires that Joni Sherman and Holly Dickson be members of the eDiscovery Manager role. In this exercise, you will add Joni and Holly to this role. The reason you are doing this now is that it can sometimes take up to an hour or more for newly assigned permissions to successfully propagate. If you waited and assigned Holly and Joni to this role group at the time you performed the Content Search lab in Module 8, you would receive error messages involving parameter fields because their permissions would not have finished propagating. By adding them to this role group now, enough time will elapse for the propagation to complete by the time you get to the Module 8 lab. 
 
-1. Yyou should be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. In your **Microsoft Edge** browser, you should still have the **Office 365 Security and Compliance Center** open in a tab from the prior task. If you closed that tab, then in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Security**.
+2. In your **Microsoft Edge** browser, you should still have **Microsoft 365 Defender** open in a tab from the prior task. If you closed that tab, then in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Security**.
 
-**Note:** If you are redirected to the **Microsoft 365 Defender** page instead of **Office 365 Security & Compliance center**, Navigate to :
-```
-https://protection.office.com/
-``` 
+3. In **Microsoft 365 Defender**, in the left-hand navigation pane, select **Permissions & roles**.
 
-3. In the **Office 365 Security and Compliance Center**, in the left-hand navigation pane, select **Permissions.**
+4. In the **Permissions & roles** page, under the **Email & collaboration roles** section, select **Roles**.
 
-4. In the **Home &gt; Permissions** page, select the **eDiscovery Manager** check box.
+5. On the **Permissions & roles > Permissions** page, you want to select the **eDiscovery Manager** role. To quickly locate the role, enter **edisc** in the **Search** field on the menu bar and then select the **Search** icon. When the **eDiscovery Manager** role appears, select its check box.
 
-   ![](images/ediscovery.png)
+6. In the **eDiscovery Manager** pane that appears, scroll down to the **eDiscovery Manager** section and select **Edit**.
 
-5. In the **eDiscovery Manager** pane that appears, scroll down to the **eDiscovery Manager** section and select **Edit**.
+7. The **Editing Choose eDiscovery Manager** wizard opens. The list of users who are assigned this role should be empty. Select **Choose eDiscovery Manager**.
 
-6. The **Editing Choose eDiscovery Manager** wizard opens. The list of users who are assigned this role should be empty. Select **Choose eDiscovery Manager**.
+8. In the **Choose eDiscovery Manager window**, select **(+) Add**.
 
-7. In the **Choose eDiscovery Manager window**, select **(+) Add**.
+9. In the list of users that’s displayed, select **Joni Sherman** and **Holly Dickson**, select **Add**, and then select **Done**. 
 
-8. In the list of users that’s displayed, select **Joni Sherman** and **Holly Dickson**, select **Add**, and then select **Done**. 
+10. In the **Editing Choose eDiscovery Manager** window, select **Save**.
 
-9. In the **Editing Choose eDiscovery Manager** window, select **Save**.
+11. In the **eDiscovery Manager** window, select **Close**.
 
-10. In the **eDiscovery Manager** window, select **Close**.
-
-11. Leave your browser open and do not close any of the tabs.
+12. Leave your browser open and do not close any of the tabs.
 
 # End of Lab 1
