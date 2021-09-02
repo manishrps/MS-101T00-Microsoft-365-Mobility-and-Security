@@ -20,13 +20,11 @@ Given that, you will still configure a policy tip for the DLP policy that you cr
 
 3. In the **Microsoft 365 compliance** center, in the left-hand navigation pane, select **Data loss prevention**.
 
-	![](images/dlp1.png)
-
 4. On the **Data loss prevention** window, selecty the **Policies** tab.
 
-	![](images/dlp2.png)
-
 4. In the **Policies** tab, select **+Create policy** on the menu bar to start the wizard for creating a new data loss prevention policy.
+
+	![](images/dlp2.png)
 
 5. On the **Start with a template or create a custom policy** page, there are four types of policies listed in the left-hand pane - Financial, Medical and health, Privacy, and Custom. The first three (Financial, Medical and health, and Privacy) provide templates that can be used to create a policy. The **Custom** type is not based on a template. The column in the left-hand pane displays the policy categories, while the middle pane displays the available templates to choose from for that policy type. When you select a template in the middle pane, the right-hand pane displays the type of information that is protected in that template. <br/> 
 
@@ -76,17 +74,15 @@ Given that, you will still configure a policy tip for the DLP policy that you cr
 
     - In the **Actions** section, select **+ Add an action**. In the drop-down menu that appears, select **Restrict access or encrypt the content in Microsoft 365 locations**.
 
-	- In the **User notifications** section, set the **Use notifications to inform your users and help educate them on the proper use of sensitive info** toggle switch to **On**.
-
 	![](images/dlp12.png)
 
-	![](images/dlp19.png)
+	- In the **User notifications** section, set the **Use notifications to inform your users and help educate them on the proper use of sensitive info** toggle switch to **On**.
+
+	![](images/dlp13.png)
 
     - In the **Incident reports** section, set the **Sent an alert to admins when a rule match occurs** toggle switch to **On**.
 
     - Select the **Save** button at the page of the page.
-
-	![](images/dlp13.png)
 
 	![](images/dlp14.png)
 
@@ -102,13 +98,21 @@ Given that, you will still configure a policy tip for the DLP policy that you cr
 
       - In the **Conditions** section, select **+Add condtion** and then select **Content contains**. Then enter the following condition settings:
 
-        - In the **Content contains** field, select the **Add** drop-down menu and then select **Sensitive info types**.
+	![](images/dlp20.png)
 
-        - In the **Sensitive info types** pane, type **IP address** inside the **Search** field and then hit Enter.
+      - In the **Content contains** field, select the **Add** drop-down menu and then select **Sensitive info types**.
 
-        - Select the **IP Address** check box and then select **Add**.
+	![](images/dlp10.png)
 
-        - Under the **Sensitive Info types** section, the **IP Address** info type is displayed. On the right side of the IP Address row, the **Instance count** setting is set from **1** to **Any**. Change the value of the first field from 1 to **2**. By making this change, this rule will apply if 2 or more IP address appear in the email.  
+      - In the **Sensitive info types** pane, type **IP address** inside the **Search** field and then hit Enter.
+
+      - Select the **IP Address** check box and then select **Add**.
+
+	![](images/dlp11.png)
+
+      - Under the **Sensitive Info types** section, the **IP Address** info type is displayed. On the right side of the IP Address row, the **Instance count** setting is set from **1** to **Any**. Change the value of the first field from 1 to **2**. By making this change, this rule will apply if 2 or more IP address appear in the email.  
+
+	![](images/dlp22.png)
 
      - In the **Actions** section, select **+ Add an action**. In the drop-down menu that appears, select **Restrict access or encrypt the content in Microsoft 365 locations**. Then enter the following condition settings:
 
@@ -116,21 +120,25 @@ Given that, you will still configure a policy tip for the DLP policy that you cr
 
         - Under the **Block users from accessing shared SharePoint, OneDrive, and Teams content** option, select the **Block everyone. Only the content owner, last modifier, and site admin will continue to have access** option.
 
+	![](images/dlp21.png)
+
      - In the **User notifications** section, set the **Use notifications to inform your users and help educate them on the proper use of sensitive info** toggle switch to **On**. 
+
+	![](images/dlp13.png)
 
     - In the **Incident reports** section, set the **Sent an alert to admins when a rule match occurs** toggle switch to **On**.
 
     - Select the **Save** button at the page of the page.
 
-	![](images/dlp16.png)
+	![](images/dlp14.png)
 
 13. On the **Customize advanced DLP rules** page, both rules should now appear. Select **Next**.
 
 14. On the **Test or turn on the policy** page, select the **Turn it on right away** option and then select **Next**.
 
-15. On the **Review your policy and create it** page, review the policy that you just created. If anything needs to be corrected, select the appropriate **Edit** option and make your corrections. When everything appears OK, select **Submit**.
+	![](images/dlp16.png)
 
-	![](images/dlp17.png)
+15. On the **Review your policy and create it** page, review the policy that you just created. If anything needs to be corrected, select the appropriate **Edit** option and make your corrections. When everything appears OK, select **Submit**.
 
 	![](images/dlp18.png)
     
