@@ -12,9 +12,9 @@ To test archiving and retention in your Adatum pilot project, you will create a 
 
 	At this point, you probably have quite a few tabs open in your browser. If you wish, you can take this opportunity to close every tab except for the **Office 365 Home** tab and the **Microsoft 365 admin center** tab.
 
-3. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Groups** and then select **Active groups** below it.
+3. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Teams & groups** and then select **Active teams & groups** below it.
 
-4. On the **Active groups** window, select **Add a group** to create a new group for compliance testing. 
+4. On the **Active teams and groups** window, select **Add a group** to create a new group for compliance testing. 
 
 	![](images/comp1.png)
 
