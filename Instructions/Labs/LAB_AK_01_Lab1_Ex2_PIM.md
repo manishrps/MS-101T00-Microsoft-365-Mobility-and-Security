@@ -212,6 +212,8 @@ Back in Task 1, Holly set herself up as the approver for the Global Administrato
 
 4. In the **Approve requests | Azure AD roles** window, in the **Requests for role activations** section, select the check box to the left of the Global Administrator request from Patti Fernandez, and then select the **Approve** button.
 
+      ![](images/pim1.png)
+
 5. In the **Approve Request** pane that appears, enter **PIM testing** in the **Justification** field and then select **Confirm**.
 
 6.  Switch back to the InPrivate browser session where Patti is signed in. In the **My roles | Azure AD roles** window that should still be displayed, the **Active assignments** tab is currently selected from the prior task, prior to approving Patti's request. Select **Refresh** on the menu bar. Note how the Global Administrator role is now activated for Patti. 
