@@ -35,9 +35,13 @@ Perform the following steps to assign Lynne Robbins the Compliance Data Administ
 
 5. In the **Compliance Data Administrator** pane, scroll to the bottom and in the **Members** section, select **Edit**. 
 
+    ![](images/pa1.png)
+
 6. In the **Editing Choose members** window, select **Choose members**. 
 
 7. In the **Choose members** window, select **+Add**, and then in the list of users that appears, select **Lynne Robbins,** and then select **Add.**
+
+    ![](images/pa2.png)
 
 8. In the **Choose members** window, select **Done.**
 
