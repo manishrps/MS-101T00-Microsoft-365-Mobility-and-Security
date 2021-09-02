@@ -23,9 +23,13 @@ In this task, you will create a Safe Links policy that applies to all users in y
 
 5. On the **Safe links** page, select **+Create** on the menu bar. This initiates the **Create Safe Links Policy** wizard.
 
+    ![](images/safe6.png)
+
 6. On the **Name your policy** page, enter **LinkPolicy1** in the **Name** field and then select **Next**.
 
 7. On the **Users and domains** page, in the **Domians** field type **onmicrosoft.com**. In the menu that appears, select Adatum's **onmicrosoft.com** domain. Adatum's domain will now appear below the **Dommains** field. Select **Next**.
+
+    ![](images/safe7.png)
 
 8. On the **Protection settings** select the following settings and then select **Next**:
 
@@ -36,7 +40,9 @@ In this task, you will create a Safe Links policy that applies to all users in y
         - Wait for URL scanning to complete before delivering the message
         - Apply safe links to email messages sent within the organization
         - Do not track user clicks
-        - Do not allow users to click through to original URL
+        - Do not let users to click through to original URL
+
+    ![](images/safe8.png)
 
 9. On the **Notification** page, leave the default option selected (**Use the default notification text**) and select **Next**.
 
@@ -84,7 +90,7 @@ In this task, you will test the Safe Links Policy that you just created that blo
 
     ![](images/send-message-odl.png)
 
-8. In the **Insert link** window, the text that you highlighted in the body of the message should be displayed in the **Display as** field. In the **Web address (URL)** field, enter the following URL: **http://tailspintoys.com/aboutus/freetoys**.
+8. In the **Insert link** window, the text that you highlighted in the body of the message should be displayed in the **Display as** field. In the **Web address (URL)** field, enter the following URL: **http://tailspintoys.com/aboutus/freetoys**
 
     ![](images/insert-link.png)
 

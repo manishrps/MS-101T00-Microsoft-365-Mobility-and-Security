@@ -405,6 +405,8 @@ In Lab 3, you will create Alert Policies using the Security and Compliance Cente
 
 5. If you get warning **Your organization settings need to be updated. Do you want to continue?**, select **Yes**.
 
+  **Note**: If you get following error **Sorry! We couldn't update your organization settings. Please try again.**, Make a note of this step and try this after completing lab 2.
+
 6. Leave the LabVM and all browser tabs open and proceed to the next lab.
 
 ### Task 9 – Prepare Users for Content Searches
