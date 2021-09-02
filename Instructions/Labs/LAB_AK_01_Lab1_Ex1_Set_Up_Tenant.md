@@ -159,9 +159,13 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you have been 
 
 13. After selecting the users, scroll to the bottom of the **Release preferences** pane to verify you selected the required users. Close the **Release preferences** pane once you verified these four users were selected. 
 
+   ![](images/st1.png)
+
 14. In the list of organization profile data, select **Custom themes**.
 
 15. In the **Custom themes** pane, Select **+ Add Theme** and on the **General** pane and select the **Show the user's display name** check box. <br/>
+
+   ![](images/st2.png)
 
 	As you scroll through the pane, review the various theme and branding options that are available for you to update. For the purpose of this lab, you can change any of the options or leave the default values as is. For example, you can add the logo of your company and set the background image as the default for all your users. Along with these options you can change the colors for your navigation pane, text color, icon color, and accent color. Go ahead and explore the different options for your tenant and make any changes that you wish. <br/>
 
@@ -225,6 +229,8 @@ Holly Dickson is Adatum’s Enterprise Administrator. We have already set up the
 
 13. Select the **Global admin**, **Security admin**, and **Attack Simulation Administrator** check box and then select **Save Changes**.
 
+   ![](images/st3.png)
+
 14. Remain logged into LabVM with the Microsoft 365 admin center open in your browser for the next task.
 
 ### Task 5 - Assign RBAC to a Microsoft 365 user account in the Security and Compliance center
@@ -238,12 +244,14 @@ In the prior task, you successfully added the Global administrator role to Holly
 3. In the **Microsoft 365 Defender** window, select **Permissions & roles** in the left-hand navigation pane.
     
 4. In the **Permissions & roles** page, the roles are displayed under two groups - **Azure AD** and **Email & collaboration roles**. Under the **Email & collaboration roles** group, select **Roles**
-    
+
+   ![](images/st4.png)
+
 5. On the **Permissions & roles > Permissions** page, select the **Organization Management** role.
 
-    ![](images/security-permissions.png)
-
 6. On the **Organization Management** pane that appears, scroll down to the **Members**section and select **Edit**.
+
+   ![](images/st5.png)
 
 7. On the **Editing Choose members** page, it displays a message indicating **The list is currently empty.** Select **Choose members** that appears below this message.
 
@@ -252,6 +260,8 @@ In the prior task, you successfully added the Global administrator role to Holly
 9. On the **Choose members** list, select the **Holly Dickson** account and then select the **Add** button.
 
 10. On the **Choose members** page, select the **Done** button.
+
+   ![](images/st6.png)
 
 11. On the **Editing Choose members** page, select the **Save** button.
 
@@ -301,17 +311,17 @@ Each user is a key member of your pilot project team. While their user accounts 
 
 13. Repeat steps 10-12 for **Joni Sherman**, **Lynne Robbins**, and **Patti Fernandez**. For these three accounts, paste in the **Pa55w.rd** password that you copied for Alex. You do not need to change the password for the **ODL_user Administrator** because you must continue using the default password provided by your lab hosting provider for this tenant admin account.
 
-14. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Groups**, and then under it, select **Active groups**.
+14. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Teams & groups**, and then under it, select **Active teams & groups**.
 
-    ![](images/active-users-group.png)
+    ![](images/st7.png)
 
-15. In the **Active groups** window, select **Add a group** that appears on the menu bar.
+15. In the **Active teams and groups** window, select **Add a group** that appears under Microsoft 365.
 
 16. In the **Choose a group type** pane, select **Microsoft 365 (recommended)** and then select **Next**.
 
 17. In the **Set up the basics** pane, enter **Sales Group** in the **Name** field. You must select the **Description** field to enable the **Next** button. Leave the **Description** field blank and select **Next**. 
 
-18. In the **Assign owners** pane, enter **Joni** in the **Owners** field. A list of users whose name starts with Joni will appear; select **Joni Sherman** and then select **Add** and select **Next**.
+18. In the **Assign owners** pane, Click on **Assign Owners** select **Joni** in the list of users field then click **Add** and select **Next**.
 
 19. Select **Next** on the members pane.
 
@@ -320,6 +330,8 @@ Each user is a key member of your pilot project team. While their user accounts 
 	Under the **Privacy** section, select the **Public – Anyone can see group content** option (even if this option is selected by default, select it again to enable the **Next** button), and leave the **Create a team for this group** check box selected. Select **Next**.
 
 20. In the **Review and finish adding group** pane, review your selections. If anything needs to be corrected, select the corresponding **Edit** option. When everything is correct, select **Create group**.
+
+    ![](images/st8.png)
 
 21. Once the group is created, select the **Close** button on the **New group created** window.
 
@@ -338,6 +350,8 @@ Each user is a key member of your pilot project team. While their user accounts 
 	**Note:** You will not add Patti Fernandez to this group. Patti's key role in the pilot project is to test the Privileged Identity Management functionality in the next lab exercise. 
 
 28. The **Sales Group** window now displays the three members of the group. Select **Close**.
+
+    ![](images/st9.png)
 
 29. Close the **Sales Group** pane by selecting the **X** in the upper right-hand corner.
 
