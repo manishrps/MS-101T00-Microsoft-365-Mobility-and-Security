@@ -85,9 +85,14 @@ In this exercise, you will send an email from Holly Dickson to one of your pilot
 
 15. In the **Settings** window that appears, the **Mail** option is already selected by default in the left-hand pane. In the middle pane, select **Retention policies**.
 
-16. In the **Retention policies** pane, after a few seconds the default and custom retention policies will appear. Scroll to the bottom and verify the **3 Year Move - Archive after three years** retention policy appeared in the list of policies.
+16. In the **Retention policies** pane, after a few seconds the default and custom retention policies will appear. Verify the **3 Year Move - Archive after three years** retention policy appeared in the list of policies.
 
 	![](images/mrm7.png)
+
+  - If the above Policy is not listed then click on **+ Add new Policy** and scroll to bottom of list of policies then select **3 Year Move - Archive after three years**, click on **Save**.
+
+	![](images/policy1.png)
+	![](images/policy2.png)	
 
   **Note**: You can add default and custom policies from the **Add new policy** option. It takes few hours for the policies to show in the list of policies, try logout and login for the user, still if you can't see them note this exercise and verify after some time.
 
