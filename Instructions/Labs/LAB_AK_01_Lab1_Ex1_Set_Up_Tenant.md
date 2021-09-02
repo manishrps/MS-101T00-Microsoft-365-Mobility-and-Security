@@ -391,9 +391,7 @@ In Lab 3, you will create Alert Policies using the Security and Compliance Cente
 
 **Note:** If you see an error message, "Fail to opt in, please refresh", Audit Logging is being enabled in the background and the message can safely be ignored.
 
-1. You should be logged into Microsoft 365 as **Holly Dickson**. <br/>
-
-	Select the **Microsoft 365 admin center** tab in your Edge browser. 
+1. You should be logged into Microsoft 365 as **Holly Dickson**. Select the **Microsoft 365 admin center** tab in your Edge browser. 
 
 2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **Security**. This will open **Microsoft 365 Defender**.
 
@@ -403,7 +401,11 @@ In Lab 3, you will create Alert Policies using the Security and Compliance Cente
 
 	Select this banner now to turn on audit logging. 
 
-5. Leave the LabVM and Compliance Center open and proceed to the next lab.
+   ![](images/st10.png)
+
+5. If you get warning **Your organization settings need to be updated. Do you want to continue?**, select **Yes**.
+
+6. Leave the LabVM and all browser tabs open and proceed to the next lab.
 
 ### Task 9 – Prepare Users for Content Searches
 
@@ -417,6 +419,8 @@ In Module 8, you will perform a Content Search lab that requires that Joni Sherm
 
 4. In the **Permissions & roles** page, under the **Email & collaboration roles** section, select **Roles**.
 
+   ![](images/st11.png)
+
 5. On the **Permissions & roles > Permissions** page, you want to select the **eDiscovery Manager** role. To quickly locate the role, enter **edisc** in the **Search** field on the menu bar and then select the **Search** icon. When the **eDiscovery Manager** role appears, select its check box.
 
 6. In the **eDiscovery Manager** pane that appears, scroll down to the **eDiscovery Manager** section and select **Edit**.
@@ -426,6 +430,8 @@ In Module 8, you will perform a Content Search lab that requires that Joni Sherm
 8. In the **Choose eDiscovery Manager window**, select **(+) Add**.
 
 9. In the list of users that’s displayed, select **Joni Sherman** and **Holly Dickson**, select **Add**, and then select **Done**. 
+
+   ![](images/st12.png)
 
 10. In the **Editing Choose eDiscovery Manager** window, select **Save**.
 
