@@ -143,6 +143,8 @@ Therefore, when you send an email with two IP addresses in this task, all you ca
 
 	![](images/mrm11.png)
 
+  **Note**: Check **Other** tab if you can't recieve email in **Focused** tab
+
 7. You will now send a second message from Holly to Lynne that contains multiple IP addresses. Repeat the process as before for creating an email to Lynne Robbins with the following information: 
 
 	- Add a subject: **Second DLP Policy Test**
