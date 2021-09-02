@@ -16,14 +16,20 @@ In this task, you will turn on Windows Defender for Office 365, which provides a
 
 4. In the **Policies & rules** window, select **Threat policies**.
 
+    ![](images/safe1.png)
+
 5. In the **Threat policies** window, under the **Policies** section, select **Safe attachments**.
 
 6. In the **Safe attachments** window, on the menu bar, select **Global settings**.
+
+    ![](images/safe2.png)
 
 7. In the **Global settings** pane that appears, set the following options and then select **Save**:
 
     - **Turn on Defender for SharePoint, OneDrive and Microsoft Teams** - set the toggle switch to **On** (this enables Windows Defender for Office 365, formerly known as Advanced Threat Protection, or ATP)
     - **Turn on Safe Documents for Office clients** - set the toggle switch to **On**
+
+    ![](images/safe3.png)
 
 8. On the **Safe attachments** window, select **+Create** on the menu bar to initiate the **Create Safe Attachments policy** wizard.
 
@@ -31,11 +37,15 @@ In this task, you will turn on Windows Defender for Office 365, which provides a
 
 10. On the **Users and domains** page, in the **Domians** field type **onmicrosoft.com**. In the menu that appears, select Adatum's **onmicrosoft.com** domain. Adatum's domain will now appear below the **Dommains** field. Select **Next**.
 
+    ![](images/safe4.png)
+
 11. On the **Settings** page, select the **Dynamic Delivery** option. This option will still send the email but will hold the attachment until it has been scanned and marked acceptable.
 
 12. Under the **Redirect messages with detected attachments** section, select the **Enable redirect** check box. 
 
 13. In the **Send messages that contain blocked, monitored, or replaced attachments to the specified email address** field, enter **JoniS@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), and then select **Next**.
+
+    ![](images/safe5.png)
 
 14. On the **Review** page, review the options that you selected. If any need to be corrected, select the appropriate **Edit** option and make the necessary corrections. Once all the settings are correct, select **Submit**.
 
