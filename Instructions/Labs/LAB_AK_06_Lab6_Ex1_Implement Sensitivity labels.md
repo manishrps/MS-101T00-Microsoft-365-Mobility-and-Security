@@ -126,8 +126,7 @@ In this exercise you will create an Sensitivity Label and add it to the default 
 
 16. In the **Sensitive info types** window, hover your mouse to the left of the **Name** column heading. Select the check box that appears, which automatically selects all info types. Select **Add**, which will add all these info types to your label.
 
-	![](images/isl16.png)
-	![](images/isl21.png)
+	![](images/isl56.png)
 
 17. On the **Auto-labeling for files and emails** page, all of the sensitive information types that you selected will be displayed. Scroll to the bottom on the window and update the following settings:
 
@@ -149,15 +148,19 @@ In this exercise you will create an Sensitivity Label and add it to the default 
 
 21. On the **Review your settings and finish** page, review the information you entered. If any settings need to be corrected, select the corresponding **Edit** option and make any necessary changes. When all information appears correct, select **Create label**.
 
-	![](images/isl18.png)
-
 23. An **Error** dialog box should appear that states the generated rule blob for the label you are attempting to create is too long. The maximum size of sensitive information type selections you can make at one time per rule is **49152**. By selecting all the sensitive information types like you did in the **Sensitive info types** window a few steps back, you have exceeded this limit. **We purposely had you select all the sensitive information types so that you would receive this error.** We wanted you to experience this error so that if it happens in your production environments, you will know why you received the error and how you can correct it.  <br/>
 
+	![](images/isl57.png)
+
 	To correct this issue, select **OK** in the **Error** dialog box, and then on the **Review your settings and finish** page, scroll down to the **Auto-labeling** section and select **Edit**.
-	
+
+	![](images/isl58.png)
+
 24. On the **Choose protection settings for files and emails** section of the wizard, select **Next** on the **Encryption** page, and then select **Next** on the **Content Marking** page. This will take you to the **Auto-labeling for files and emails** page. 
 
 25. On the **Auto-labeling for files and emails** page, to the right of the **Content contains** condition, select the **trash can icon**. This will remove the existing **Content contains** condition for the **PII** label that you created. <br/>
+
+	![](images/isl59.png)
 
 	In the remaining steps, you will add a new condition that only contains two sensitivity information types rather than all the sensitivity information types like you did originally.
 
@@ -166,6 +169,9 @@ In this exercise you will create an Sensitivity Label and add it to the default 
 27. In the **Content contains** window, select the **Add** drop-down arrow and then select **Sensitive info types**.
 
 28. In the **Sensitive info types** window, in the list of sensitive information types, this time only select the **ABA routing number** and the **U.S. Social security Number (SSN)** check boxes, select **Add**, and then select **Next**.
+
+	![](images/isl16.png)
+	![](images/isl21.png)
 
 29. On the **Define protection settings for groups and sites** page, leave the two check boxes blank and select **Next**.
 
@@ -179,17 +185,25 @@ In this exercise you will create an Sensitivity Label and add it to the default 
 
 34. Select **Publish label**, which appears in the menu bar above the list of labels. This initiates a **Create policy** wizard.
 
+	![](images/isl60.png)
+
 35. In the **Create policy** wizard, on the **Choose sensitivity labels to publish** page, the **PII** label is already listed, so select **Next**.
 
 36. On the **Publish to users and groups** page, you can either select **All** users and groups, or you can select specific users and groups. Select **Choose user or group**.
 
 37. A **Users and groups** pane appears that displays all the Adatum users and groups. Hover your mouse to the left of the **Name** column heading and select the check box that appears. This will automatically select all the check boxes. Select **Done**.
 
+	![](images/isl61.png)
+
 38. On the **Publish to users and groups** page, select **Next**.
 
 39. On the **Policy settings** page, select the **Users must proide a justification to remove a label or lower its classification** check box, and then select **Next**. 
 
+	![](images/isl62.png)
+
 40. On the **Apply a default label to documents** page, select the **Apply this default label to documents** field. Select **PII** in the drop-down menu that appears, and then select **Next**.
+
+	![](images/isl63.png)
 
 41. On the **Apply a default label to emails** page, select the **Apply this default label to emails** field. Select **PII** in the drop-down menu that appears, and then select **Next**.
 
