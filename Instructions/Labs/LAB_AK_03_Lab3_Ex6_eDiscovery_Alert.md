@@ -16,7 +16,7 @@ In this task, you will verify whether a default Microsoft 365 alert is triggered
 
 4. On the **Policies & rules** page, select **Alert policy**. 
 
-	![](images/ediscovery1.png)
+	![](images/alert-policy-ex-5.png)
 
 5. On the **Alert policy** page, You want to search through the default system policies for a policy named **eDiscovery search started or exported**. Since there are so many pre-existing system policies, the easiest way to locate the policy is to search for it. In the **Search** field at the top of the screen, enter **eDiscovery**.
 
@@ -58,11 +58,7 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 
 3. In the **Microsoft 365 admin center**, in the left-hand navigation pane under the **Admin centers** group, select **Compliance**.
 
-	![](images/ediscovery5.png)
-
 4. In the **Microsoft 365 compliance** portal, in the left-hand navigation pane, under the **Solutions** group, select **Content search**.
-
-	![](images/ediscovery6.png)
 
 5. The **Content search** window has two tabs - a **Search** tab and an **Export** tab. The **Search** tab is displayed by default. Select **+New search** that appears on the menu bar. This initiates the **New search** wizard.
 
@@ -70,9 +66,9 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 
 6. In the **New search** wizard, in the **Name and description** page, enter **Confidential search** in the **Name** field and then select **Next**.
 
-	![](images/ediscovery8.png)
-
 7. In the **Locations** page, the **Specific locations** option is selected by default. There are three groups of locations, each of which can be turned On or Off through its respective toggle switch. Turn the toggle switch **On** for **Exchange mailboxes**, but leave the toggle switches **Off** for the other two locations. Select **Next**. <br/>
+
+	![](images/ediscovery8.png)
 
 	**Note:** The **Included** column indicates that all mailboxes will be included in the search, but it also provides the option to optionally choose specific mailboxes if you wish. For this lab, leave the default value as is to search all mailboxes.
 
@@ -100,8 +96,6 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 	![](images/ediscovery11.png)	
 
 15. In your **Edge** browser, switch back to the **Microsoft 365 Compliance** portal (the **Content search** tab) and under the **Solutions** group in the left-hand navigation pane, select **Audit**. 
-
-	![](images/ediscovery12.png)
 
 16. At the bottom of the page, select the **Search** button to display all recent activity. This will display the activity that created this alert. <br/>
 
