@@ -123,9 +123,9 @@ In this task, you will create an encryption rule for messages inside your Exchan
 
 	![](images/message10.png)
 
-3. In the **Exchange admin center**, in the left-hand navigation pane select **Rules** under **mail flow.**
+3. In the **Exchange admin center**, in the left-hand navigation pane select **Mail flow** to expand this group, and then select **Rules**.
 
-4. In the **Rules** tab, select the **plus sign** (**+**) icon to create a new rule. This displays a drop-down menu of actions. Select **Create a new rule.**
+4. On the **Rules** page, select the **plus sign** (**+**) icon on the menu bar to create a new rule. This displays a drop-down menu of actions. Select **Create a new rule.**
 
 	![](images/message11.png)
 
