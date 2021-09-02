@@ -7,9 +7,9 @@ In this exercise you will configure and test an alert that notifies Lynne Robbin
 
 1. You should still be logged into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**.
 
-2. In your Edge browser, in the **Office 365 Security &amp; Compliance** center, in the **Alerts** section in the left-hand navigation pane, select **Alert policies**.
+2. IIn your Edge browser, in the **Microsoft 365 Defender** tab, you should still be in the **Alert policy** window from the prior lab exercise (if not, then in the left-hand navigation pane, select **Policies & rules** and then select **Alert policy**).
 
-3. In the **Alert policies** window, select the **+New alert policy** button.
+3. In the **Alert policy** window, select the **+New alert policy** on the menu bar.
 
 	![](images/alert-policy-ex-5.png)
 
@@ -53,7 +53,7 @@ In this exercise you will configure and test an alert that notifies Lynne Robbin
 
 11. Verify your new alert policy appears in the list on the Alert policies page and its Status in On. !
 
-12. Leave the Edge Browser and the Microsoft 365 admin center and Security and Compliance Center tabs open for the next task!
+12. Leave the Edge Browser tabs open for the next task!
 
 You have now configured an additional alert policy that monitors when a site collection administrator is added to SharePoint Online site collections.
 
@@ -73,7 +73,7 @@ In the prior task, you configured an alert that will notify Lynne Robbins when a
 
 	![](images/alert-share6.png)
 
-5. In the **Site Collection Administrators** dialog box, the Company Administrator is displayed by default in the data entry field. To the right of Company Administrator, enter **Alex**, select **Alex Wilber** from the list of users that appears, and then select **OK**. 
+5. In the **Site Collection Administrators** dialog box, the administrator accounts assigned to this role group are displayed in the data entry field. To the right of the final account, enter **Alex**, select **Alex Wilber** from the list of users that appears, and then select **OK**. 
 
 	![](images/alert-share7.png)
 
@@ -95,7 +95,7 @@ In the prior task, you configured an alert that will notify Lynne Robbins when a
 
 9. Switch back to the Edge Browser.
 
-10. In the **Office 365 Security &amp; Compliance** center, in the left-hand navigation pane under the **Alerts** section, select **View Alerts**. The notification that was just created based on the **Site collection admin permissions** alert should appear in the list.
+10. In your Edge browser, select the **Alert policy** tab that displays **Microsoft 365 Defender**. In the left-hand navigation pane, select **Incidents & alerts** to expand the group, and then select **Alerts**. The notification that was just created based on the **Site collection admin permissions** alert should appear in the list.
 
 	![](images/alert-share10.png)
 
