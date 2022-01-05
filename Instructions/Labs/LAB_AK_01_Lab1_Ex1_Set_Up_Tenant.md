@@ -1,6 +1,6 @@
-# Learning Path 1 - Lab 1 - Exercise 1 - Set up your Microsoft 365 Tenant
+# Module 1 - Lab 1 - Exercise 1 - Set up your Microsoft 365 Tenant
 
-In the labs for this course, you are taking on the role of Holly Dickson, Adatum Corporation's Enterprise Administrator. Adatum does NOT have legacy, on-premises servers; therefore, you will be implementing Microsoft 365 in a cloud-only deployment. You have deployed Microsoft 365 in a virtualized lab environment, and you have been tasked with completing a pilot project that tests the security, compliance, and device management features in Microsoft 365 as they relate to Adatum's business requirements.
+In the labs for this course, you are taking on the role of Holly Dickson, Adatum Corporation's Enterprise Administrator. Adatum Corporation is a subsidiary of Contoso Electronics. Adatum does NOT have legacy, on-premises servers; therefore, you will be implementing Microsoft 365 in a cloud-only deployment. You have deployed Microsoft 365 in a virtualized lab environment, and you have been tasked with completing a pilot project that tests the security, compliance, and device management features in Microsoft 365 as they relate to Adatum's business requirements.
 
 You have just started the pilot project; therefore, in this first lab you will set up a personalized Microsoft 365 user account for Holly that will be used throughout all the labs in this course. This first exercise also requires that you perform several setup tasks that will initialize your trial tenant for the remaining labs in this course. You must configure your trial tenant, create a personalized Global Admin user account in Microsoft 365 for Holly, configure several test users and groups that will be used throughout the remaining labs, and turn on Information Rights Management (IRM) in SharePoint Online as well as audit logging.
 
@@ -92,9 +92,9 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you have been 
 
 23. After selecting the users, scroll to the bottom of the **Release preferences** pane to verify you selected the required users. Close the **Release preferences** pane once you verified these four users were selected. 
 
-24. Tn the list of organization profile data, select **Custom themes**.
+24. In the list of organization profile data, select **Custom themes**.
 
-25. In the **Custom themes** pane, scroll to the bottom of the pane and select the **Show the user's display name** check box. <br/>
+25. In the **Customize theme** pane, you can choose **Default theme** or click **+ Add Theme** to create your customized theme. Clicking the **+Add theme** will take you to the **New group theme** pane, enter the **Name** and the **Groups or users** to apply this theme and scroll to the bottom of the pane and select the **Show the user's display name** check box. <br/>
 
 	As you scroll through the pane, review the various theme and branding options that are available for you to update. For the purpose of this lab, you can change any of the options or leave the default values as is. For example, you can add the logo of your company and set the background image as the default for all your users. Along with these options you can change the colors for your navigation pane, text color, icon color, and accent color. Go ahead and explore the different options for your tenant and make any changes that you wish. <br/>
 
@@ -162,7 +162,7 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 	- Select location: **United States**
 
-	- Licenses: The **Assign user a product license** option should be selected by default; under this option, select **Office 365 E5** 
+	- Licenses: The **Assign user a product license** option should be selected by default; under this option, select **Microsoft 365 E5** 
 
 10. Select **Next.**
 
@@ -172,7 +172,7 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 	**Note:** If you scroll down past this list of the most commonly used admin roles and select **Show all by category**, the complete list of admin roles will be displayed (sorted by category). For Holly, you do not need to view all the admin roles by category, since Holly will be assigned the Global admin role that appears in the list of most commonly used roles.
 
-13. Select the **Global admin**, **Security admin**, and **Attack Simulation Administrator** check box and then select **Next**.
+13. Select the **Global administrator**, **Security admin**, and **Attack Simulation Administrator** check box and then select **Next**.
 
 14. On the **Review and finish** window, review your selections. If anything needs to be changed, select the appropriate **Edit** link and make the necessary changes. Otherwise, if everything is correct, select **Finish adding**. 
 
@@ -251,19 +251,19 @@ Each user is a key member of your pilot project team. While their user accounts 
 
 11. In the **Reset password** pane for Alex, select **Let me create the password**, enter **Pa55w.rd** in the **Password** field, select and copy this value so that you can paste it in for Joni and Lynne's accounts, and then unselect the **Require this user to change their password when they first sign in** check box.
 
-12. Select **Reset** and then select **Close**.
+12. Select **Reset Password** and then select **Close**.
 
 13. Repeat steps 10-12 for **Joni Sherman**, **Lynne Robbins**, and **Patti Fernandez**. For these three accounts, paste in the **Pa55w.rd** password that you copied for Alex. You do not need to change the password for the **MOD Administrator** because you must continue using the default password provided by your lab hosting provider for this tenant admin account.
 
-14. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Groups**, and then under it, select **Active groups**.
+14. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Teams & groups**, and then under it, select **Active teams & groups**.
 
-15. In the **Active groups** window, select **Add a group** that appears on the menu bar.
+15. In the **Active teams & groups** window, select **Add a group** that appears on the menu bar.
 
 16. In the **Choose a group type** pane, select **Microsoft 365 (recommended)** and then select **Next**.
 
 17. In the **Set up the basics** pane, enter **Sales Group** in the **Name** field. You must select the **Description** field to enable the **Next** button. Leave the **Description** field blank and select **Next**. 
 
-18. In the **Assign owners** pane, enter **Joni** in the **Owners** field. A list of users whose name starts with Joni will appear; select **Joni Sherman** and then select **Add**.
+18. In the **Assign owners** pane, enter **Joni** in the **Owners** field. A list of users whose name starts with Joni will appear; select **Joni Sherman** and then select **Add**.Select **Next** and no change needed at **Add members** page and select **Next**.
 
 19. In the **Edit settings** pane, enter **salesgroup** in the **Group email address** field (Note: the domain should be the xxxxxZZZZZZ.onmicrosoft.com domain, which you should have verified in a prior task is the default domain for Adatum). <br/>
 
@@ -273,7 +273,7 @@ Each user is a key member of your pilot project team. While their user accounts 
 
 21. Once the group is created, select the **Close** button on the **New group created** window.
 
-22. This will return you to the **Groups** window. You may need to select the **Refresh** option on the menu bar for the **Sales Group** to appear in the list of groups. In fact, you may have to wait a few minutes for the Sales Group to appear, so you may need to select the **Refresh** option on the menu bar once or twice.
+22. This will return you to the **Teams & groups** window. You may need to select the **Refresh** option on the menu bar for the **Sales Group** to appear in the list of groups. In fact, you may have to wait a few minutes for the Sales Group to appear, so you may need to select the **Refresh** option on the menu bar once or twice.
 
 23. Once the **Sales Group** appears in the list of groups, select it.
 
@@ -294,7 +294,7 @@ Each user is a key member of your pilot project team. While their user accounts 
 30. Leave the **Microsoft 365 admin center** tab open in your browser and proceed to the next task.
 
 
-### ‎Task 6 - Enable IRM for SharePoint Online 
+### Task 6 - Enable IRM for SharePoint Online 
 
 In this task, you will turn on Information Rights Management (IRM) for SharePoint Online. 
 
@@ -327,11 +327,11 @@ In Lab 3, you will create Alert Policies using the Security and Compliance Cente
 
 	Select the **Microsoft 365 admin center** tab in your Edge browser. 
 
-2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **Security**. This will open the Office 365 Security and Compliance center.
+2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **Security**. This will open **Microsoft 365 Defender**.
 
-3. In the **Office 365 Security &amp; Compliance center**, in the left-hand navigation pane, select **Search**, and then under it, select **Audit log search**.
+3. In the ****Microsoft 365 Defender****, in the left-hand navigation pane, select **Search**, and then under it, select **Audit**.
 
-4. In the **Audit log search** window, a warning message is displayed at the top of the page. Select the **Turn on auditing** button that appears on the right-side of this message, and then in the **Security &amp; Compliance** dialog box that appears, select **Yes** to confirm that your organization settings need to be updated. <br/>
+4. In the **Audit** window, a warning message is displayed at the top of the page. Select the **Turn on auditing** button that appears on the right-side of this message, and then in the **Security &amp; Compliance** dialog box that appears, select **Yes** to confirm that your organization settings need to be updated. <br/>
 
 	**Note:** It may take several minutes for the setting to be updated, at which time the **Security &amp; Compliance** dialog box will disappear.
 
